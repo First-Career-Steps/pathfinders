@@ -173,7 +173,7 @@ export default function ReviewPage() {
           <p className="text-gray-600">
             {hasActiveSubscription
               ? "Everything looks good? Create your resume now — it's included in your subscription."
-              : "Everything looks good? Create your resume. You'll complete a one-time payment ($9/year) to unlock it."
+              : "Everything looks good? Create your resume. You'll complete a payment ($1.99/year) to unlock it."
             }
           </p>
         </div>
@@ -279,7 +279,7 @@ export default function ReviewPage() {
                     {isSavingDraft ? 'Saving...' : 'Save as Draft'}
                   </Button>
                   <p className="text-xs text-center text-gray-500 mt-2">
-                    You&apos;ll go to payment ($9/year) to unlock this resume • Unlimited resumes for one year
+                    You&apos;ll go to payment ($1.99/year) to unlock this resume • Unlimited resumes for one year
                   </p>
                 </>
               )}

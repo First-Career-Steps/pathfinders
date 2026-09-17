@@ -144,12 +144,19 @@ interface ResumeData {
     location?: string;
 }
 
+const formatFullNameForPDF = (fullName?: string) => {
+    const normalized = (fullName || 'Your Name').trim().replace(/\s+/g, ' ');
+    // React-PDF can visually collapse normal whitespace when letter spacing is applied.
+    // Non-breaking spaces keep first/middle/last names visibly separated in the PDF.
+    return normalized.replace(/ /g, '\u00A0');
+};
+
 export const ProfessionalResumePDF = ({ data }: { data: ResumeData }) => (
     <Document>
         <Page size="A4" style={styles.page}>
             {/* Header */}
             <View style={styles.header}>
-                <Text style={styles.name}>{data.fullName || 'Your Name'}</Text>
+                <Text style={styles.name}>{formatFullNameForPDF(data.fullName)}</Text>
                 {data.headline && <Text style={styles.headline}>{data.headline}</Text>}
                 <Text style={styles.contactInfo}>
                     {[

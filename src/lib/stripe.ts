@@ -130,7 +130,7 @@ export function handleStripeError(operation: string, error: any, context?: any) 
 // Stripe configuration constants
 export const STRIPE_CONFIG = {
     PRODUCT_NAME: 'Resume Builder Annual Subscription',
-    AMOUNT: 900, // $9.00 in cents
+    AMOUNT: 199, // $1.99 in cents
     CURRENCY: 'usd',
     SUCCESS_URL: '/checkout/success',
     CANCEL_URL: '/checkout/cancel',

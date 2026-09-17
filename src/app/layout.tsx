@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "FirstCareerSteps - Build Your Professional Resume",
   description:
-    "Build a professional resume with our AI-powered builder. Perfect for students and first-time job seekers. Download your resume as PDF for just $9.",
+    "Build a professional resume with our AI-powered builder. Perfect for students and first-time job seekers. Download your resume as PDF for just $1.99/year.",
   keywords: [
     "student resume",
     "resume builder",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FirstCareerSteps - Build Your Professional Resume",
     description:
-      "Build a professional resume in under 10 minutes. Download as PDF for $9.",
+      "Build a professional resume in under 10 minutes. Download as PDF for $1.99/year.",
     type: "website",
     locale: "en_US",
   },
