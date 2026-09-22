@@ -1,15 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
-import OpenAI from 'openai';
+import { generateResumeText, resumeAIErrorResponse } from '@/lib/resume-ai';
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
+export const maxDuration = 60;
 
 export async function POST(request: NextRequest) {
     try {
-        const { aboutMe, accomplishment, goals } = await request.json();
+        const { aboutMe, accomplishment, goals } = (await request.json()) ?? {};
 
-        if (!aboutMe || !accomplishment || !goals) {
+        if (![aboutMe, accomplishment, goals].every(value => typeof value === 'string' && value.trim())) {
             return NextResponse.json(
                 { error: 'Missing required fields' },
                 { status: 400 }
@@ -31,30 +29,13 @@ Requirements:
 
 Return ONLY the about section text, no extra formatting or labels.`;
 
-        const completion = await openai.chat.completions.create({
-            model: 'gpt-3.5-turbo',
-            messages: [
-                {
-                    role: 'system',
-                    content: 'You are a professional resume writer specializing in student resumes. Create compelling, authentic about sections.',
-                },
-                {
-                    role: 'user',
-                    content: prompt,
-                },
-            ],
-            temperature: 0.7,
-            max_tokens: 250,
+        const enhancedText = await generateResumeText({
+            system: 'You are a professional resume writer specializing in student resumes. Use only the facts provided; never invent achievements or qualifications.',
+            prompt,
+            maxTokens: 400,
         });
-
-        const enhancedText = completion.choices[0]?.message?.content?.trim() || '';
-
         return NextResponse.json({ enhancedText });
-    } catch (error) {
-        console.error('OpenAI API Error:', error);
-        return NextResponse.json(
-            { error: 'Failed to enhance about section' },
-            { status: 500 }
-        );
+    } catch (error: unknown) {
+        return resumeAIErrorResponse(error, 'about');
     }
 }

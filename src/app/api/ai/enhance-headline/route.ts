@@ -1,26 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
-import OpenAI from 'openai';
+import { generateResumeText, parseResumeLines, resumeAIErrorResponse } from '@/lib/resume-ai';
+
+export const maxDuration = 60;
 
 export async function POST(request: NextRequest) {
     try {
-        // Check if API key exists
-        if (!process.env.OPENAI_API_KEY) {
-            console.error('OPENAI_API_KEY is not set in environment variables');
-            return NextResponse.json(
-                { error: 'OpenAI API key not configured' },
-                { status: 500 }
-            );
-        }
+        const { interests, school, graduationYear, currentHeadline } = (await request.json()) ?? {};
 
-        const openai = new OpenAI({
-            apiKey: process.env.OPENAI_API_KEY,
-        });
-
-        const { interests, school, graduationYear, currentHeadline } = await request.json();
-
-        console.log('Headline API called with:', { interests, school, graduationYear, currentHeadline });
-
-        if (!interests || !school || !graduationYear) {
+        if (!Array.isArray(interests) || !interests.every(value => typeof value === 'string') ||
+            typeof school !== 'string' || !school.trim() ||
+            !['string', 'number'].includes(typeof graduationYear) || !String(graduationYear).trim() ||
+            (currentHeadline != null && typeof currentHeadline !== 'string')) {
             return NextResponse.json(
                 { error: 'Missing required fields' },
                 { status: 400 }
@@ -51,45 +41,15 @@ Aspiring Technology Professional | Class of 2025
 Motivated Student Passionate About Computer Science | 2025 Graduate
 Future Software Developer | Technology Enthusiast`;
 
-        console.log('Calling OpenAI API...');
-
-        const completion = await openai.chat.completions.create({
-            model: 'gpt-3.5-turbo',
-            messages: [
-                {
-                    role: 'system',
-                    content: 'You are a professional resume writer specializing in student resumes. Generate concise, impactful headlines.',
-                },
-                {
-                    role: 'user',
-                    content: prompt,
-                },
-            ],
-            temperature: 0.7,
-            max_tokens: 200,
+        const text = await generateResumeText({
+            system: 'You are a professional resume writer specializing in student resumes. Generate concise headlines using only the facts provided.',
+            prompt,
+            maxTokens: 300,
         });
-
-        console.log('OpenAI API response received');
-
-        const response = completion.choices[0]?.message?.content || '';
-        const suggestions = response
-            .split('\n')
-            .filter(line => line.trim())
-            .slice(0, 3);
-
-        console.log('Generated suggestions:', suggestions);
-
+        const suggestions = parseResumeLines(text, 3);
+        if (suggestions.length === 0) throw new Error('No usable headlines returned');
         return NextResponse.json({ suggestions });
     } catch (error: unknown) {
-        const errorDetails = error instanceof Error ? {
-            message: error.message,
-            name: error.name,
-        } : { message: 'Unknown error occurred' };
-
-        console.error('OpenAI API Error Details:', errorDetails);
-        return NextResponse.json(
-            { error: 'Failed to generate headlines', details: errorDetails.message },
-            { status: 500 }
-        );
+        return resumeAIErrorResponse(error, 'headline');
     }
 }

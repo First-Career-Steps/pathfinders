@@ -6,6 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { BuilderLayout } from "@/components/layout";
 import { Button, Input, TextArea, Select, Card } from "@/components/ui";
 import { useProfile, Experience } from "@/contexts/ProfileContext";
+import { requestResumeAI, requireAILines } from "@/lib/resume-ai-client";
 import { LiveResumePreview } from "@/components/LiveResumePreview";
 
 const EXPERIENCE_TYPES = [
@@ -90,32 +91,25 @@ export default function Step4Page() {
   };
 
   const handleEnhanceAI = async () => {
-    if (!formData.description.trim()) {
-      setErrors({ description: "Please describe your experience first" });
+    if (!formData.title.trim() || !formData.organization.trim() || !formData.description.trim()) {
+      setErrors({ description: "Please enter your role, organization, and experience description first" });
       return;
     }
 
     setIsEnhancing(true);
+    setErrors({});
     try {
-      const response = await fetch('/api/ai/enhance-experience', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          title: formData.title,
-          organization: formData.organization,
-          description: formData.description,
-          type: formData.type,
-        }),
+      const data = await requestResumeAI('/api/ai/enhance-experience', {
+        title: formData.title,
+        organization: formData.organization,
+        description: formData.description,
+        type: formData.type,
       });
-
-      if (!response.ok) throw new Error('Failed to enhance');
-
-      const data = await response.json();
-      const bullets = data.bullets || [];
-      setFormData({ ...formData, description: bullets.join('\n') });
+      const bullets = requireAILines(data.bullets);
+      setFormData(current => ({ ...current, description: bullets.join('\n') }));
     } catch (error) {
       console.error('AI Error:', error);
-      setErrors({ description: 'Failed to enhance. Please try again.' });
+      setErrors({ description: error instanceof Error ? error.message : 'AI writing is temporarily unavailable. Please try again.' });
     } finally {
       setIsEnhancing(false);
     }
