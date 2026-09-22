@@ -4,6 +4,12 @@ import { NextResponse } from 'next/server';
 class AIConfigurationError extends Error {}
 class AIResponseError extends Error {}
 
+// Use a low-cost text model compatible with this Chat Completions request.
+// An owner can select another compatible, enabled model without editing code.
+export function getResumeAIModel() {
+    return process.env.OPENAI_RESUME_MODEL?.trim() || 'gpt-4o-mini';
+}
+
 // Create the client inside the request so missing credentials return a controlled
 // response instead of crashing the route during module initialization.
 export async function generateResumeText(options: {
@@ -24,7 +30,7 @@ export async function generateResumeText(options: {
     });
 
     const completion = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: getResumeAIModel(),
         messages: [
             { role: 'system', content: options.system },
             { role: 'user', content: options.prompt },
@@ -54,7 +60,16 @@ export function resumeAIErrorResponse(error: unknown, section: string) {
     let code = 'AI_UNAVAILABLE';
     let message = 'AI writing is temporarily unavailable. Please try again shortly. You can still edit your resume.';
 
-    if (error instanceof AIConfigurationError || apiError?.status === 401 || apiError?.status === 403) {
+    const modelAccessError = apiError && (
+        ['model_not_found', 'model_not_available', 'model_access_denied'].includes(apiError.code || '') ||
+        (apiError.status === 403 && /does not have access to model/i.test(apiError.message))
+    );
+
+    if (modelAccessError) {
+        status = 503;
+        code = 'AI_MODEL_ACCESS_ERROR';
+        message = 'AI writing is unavailable while the site updates its AI service. You can still write or edit your resume.';
+    } else if (error instanceof AIConfigurationError || apiError?.status === 401 || apiError?.status === 403) {
         status = 503;
         code = 'AI_CONFIGURATION_ERROR';
         message = 'AI writing is unavailable because the site needs to reconnect its AI service. You can still write or edit your resume.';
@@ -89,7 +104,7 @@ export function resumeAIErrorResponse(error: unknown, section: string) {
     // Do not log the provider's raw message: it may contain a partial API key.
     // Never include resume text or other personal data in these diagnostics.
     console.error('[resume-ai]', {
-        section, code, providerStatus: apiError?.status,
+        section, code, model: getResumeAIModel(), providerStatus: apiError?.status,
         providerCode: apiError?.code, requestId: apiError?.requestID,
     });
     return NextResponse.json({ error: message, code }, { status });

@@ -20,13 +20,14 @@ beforeEach(() => {
     process.env.OPENAI_API_KEY = 'test-key-not-a-real-credential';
     delete process.env.OPENAI_ORG_ID;
     delete process.env.OPENAI_PROJECT_ID;
+    delete process.env.OPENAI_RESUME_MODEL;
     mock.method(console, 'error', () => {});
     mock.method(globalThis, 'fetch', async () => { throw new Error('Unexpected network call'); });
 });
 
 afterEach(() => {
     mock.restoreAll();
-    for (const name of ['OPENAI_API_KEY', 'OPENAI_ORG_ID', 'OPENAI_PROJECT_ID']) {
+    for (const name of ['OPENAI_API_KEY', 'OPENAI_ORG_ID', 'OPENAI_PROJECT_ID', 'OPENAI_RESUME_MODEL']) {
         if (originalEnv[name] === undefined) delete process.env[name];
         else process.env[name] = originalEnv[name];
     }
@@ -43,6 +44,41 @@ test('About generation returns usable text through the real OpenAI SDK', async (
     const response = await about(request(aboutInput));
     assert.equal(response.status, 200);
     assert.deepEqual(await response.json(), { enhancedText: 'I enjoy science and led my school science club.' });
+});
+
+test('All resume routes use GPT-4o mini by default', async () => {
+    const models: string[] = [];
+    mock.method(globalThis, 'fetch', async (_url: string | URL | Request, init?: RequestInit) => {
+        models.push(JSON.parse(init?.body as string).model);
+        return Response.json({ choices: [{ message: { content: 'A complete result.' }, finish_reason: 'stop' }] });
+    });
+    for (const [handler, input] of [[about, aboutInput], [headline, headlineInput], [experience, experienceInput]] as const) {
+        assert.equal((await handler(request(input))).status, 200);
+    }
+    assert.deepEqual(models, ['gpt-4o-mini', 'gpt-4o-mini', 'gpt-4o-mini']);
+});
+
+test('The model can be configured without a code change', async () => {
+    process.env.OPENAI_RESUME_MODEL = ' gpt-4.1-mini ';
+    mock.method(globalThis, 'fetch', async (_url: string | URL | Request, init?: RequestInit) => {
+        assert.equal(JSON.parse(init?.body as string).model, 'gpt-4.1-mini');
+        return Response.json({ choices: [{ message: { content: 'A complete summary.' }, finish_reason: 'stop' }] });
+    });
+    assert.equal((await about(request(aboutInput))).status, 200);
+});
+
+test('Model access failures are distinguished from invalid credentials', async () => {
+    for (const [status, code, message] of [
+        [403, null, 'Project `proj_example` does not have access to model `gpt-4o-mini`'],
+        [404, 'model_not_found', 'The requested model is not available'],
+    ] as const) {
+        mock.method(globalThis, 'fetch', async () => Response.json({ error: { message, code } }, { status }));
+        const response = await about(request(aboutInput));
+        const body = await response.json();
+        assert.equal(response.status, 503);
+        assert.equal(body.code, 'AI_MODEL_ACCESS_ERROR');
+        assert.ok(!JSON.stringify(body).includes('proj_example'));
+    }
 });
 
 test('Headline generation normalizes numbered suggestions', async () => {
