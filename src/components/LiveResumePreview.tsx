@@ -64,7 +64,6 @@ export function LiveResumePreview({
     experiences,
     certifications,
 
-    isPaid = false,
     variant = 'preview',
 }: LiveResumePreviewProps) {
     const router = useRouter();
@@ -101,25 +100,6 @@ export function LiveResumePreview({
 
     return (
         <div className={containerClasses}>
-            {/* Watermark Overlay - NOT visible if paid */}
-            {!isPaid && (
-                <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-xl z-10">
-                    {[...Array(20)].map((_, i) => (
-                        <div
-                            key={i}
-                            className="absolute text-4xl font-bold text-gray-300 opacity-20 transform -rotate-45"
-                            style={{
-                                top: `${Math.random() * 100}%`,
-                                left: `${Math.random() * 100}%`,
-                                whiteSpace: 'nowrap',
-                            }}
-                        >
-                            FirstCareerSteps.com
-                        </div>
-                    ))}
-                </div>
-            )}
-
             {/* Content */}
             <div className="relative z-10">
                 {/* Header - Centered */}

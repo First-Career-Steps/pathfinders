@@ -286,16 +286,9 @@ export default function ReviewPage() {
             </div>
           </div>
 
-          {/* Right Column - Live Preview with Watermark */}
+          {/* Right Column - Live Preview */}
           <div className="flex-1 lg:sticky lg:top-6 h-fit">
             <h2 className="text-xl font-bold text-charcoal mb-4">Preview</h2>
-            {!hasActiveSubscription && (
-              <div className="bg-yellow-50 border-2 border-yellow-300 rounded-lg p-3 mb-4">
-                <p className="text-sm text-yellow-800 font-medium">
-                  🔒 Preview only — watermark is removed when you complete payment
-                </p>
-              </div>
-            )}
             <LiveResumePreview
               fullName={profile.fullName}
               email={user?.email}

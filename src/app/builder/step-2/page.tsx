@@ -6,6 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { BuilderLayout } from "@/components/layout";
 import { Button, Card } from "@/components/ui";
 import { useProfile } from "@/contexts/ProfileContext";
+import { requestResumeAI, requireAILines } from "@/lib/resume-ai-client";
 import { LiveResumePreview } from "@/components/LiveResumePreview";
 
 export default function Step2Page() {
@@ -34,24 +35,16 @@ export default function Step2Page() {
     setError("");
 
     try {
-      const response = await fetch('/api/ai/enhance-headline', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          interests: profile.interests,
-          school: profile.highSchool,
-          graduationYear: profile.graduationYear,
-          currentHeadline: headline.trim() || undefined,
-        }),
+      const data = await requestResumeAI('/api/ai/enhance-headline', {
+        interests: profile.interests,
+        school: profile.highSchool,
+        graduationYear: profile.graduationYear,
+        currentHeadline: headline.trim() || undefined,
       });
-
-      if (!response.ok) throw new Error('Failed to generate headlines');
-
-      const data = await response.json();
-      setGeneratedHeadlines(data.suggestions || []);
+      setGeneratedHeadlines(requireAILines(data.suggestions));
     } catch (error) {
       console.error('AI Generation Error:', error);
-      setError('Failed to generate AI suggestions. Please try again.');
+      setError(error instanceof Error ? error.message : 'AI writing is temporarily unavailable. Please try again.');
     } finally {
       setIsGenerating(false);
     }
@@ -133,7 +126,7 @@ export default function Step2Page() {
                 maxLength={120}
               />
               <div className="flex justify-between text-xs">
-                <span className="text-red-500">{error}</span>
+                <span role="alert" className="text-red-500">{error}</span>
                 <span className={headline.length > 120 ? "text-red-500" : "text-gray-500"}>
                   {headline.length}/120 characters
                 </span>

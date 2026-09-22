@@ -6,6 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { BuilderLayout } from "@/components/layout";
 import { Button, TextArea, Card } from "@/components/ui";
 import { useProfile } from "@/contexts/ProfileContext";
+import { requestResumeAI, requireAIText } from "@/lib/resume-ai-client";
 import { LiveResumePreview } from "@/components/LiveResumePreview";
 
 export default function Step3Page() {
@@ -55,23 +56,15 @@ export default function Step3Page() {
     setErrors({});
 
     try {
-      const response = await fetch('/api/ai/enhance-about', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          aboutMe: formData.aboutMe,
-          accomplishment: formData.proudestAccomplishment,
-          goals: formData.futureGoals,
-        }),
+      const data = await requestResumeAI('/api/ai/enhance-about', {
+        aboutMe: formData.aboutMe,
+        accomplishment: formData.proudestAccomplishment,
+        goals: formData.futureGoals,
       });
-
-      if (!response.ok) throw new Error('Failed to generate');
-
-      const data = await response.json();
-      setGeneratedAbout(data.enhancedText || "");
+      setGeneratedAbout(requireAIText(data.enhancedText));
     } catch (error) {
       console.error('AI Error:', error);
-      setErrors({ generated: 'Failed to generate. Please try again.' });
+      setErrors({ generated: error instanceof Error ? error.message : 'AI writing is temporarily unavailable. Please try again.' });
     } finally {
       setIsGenerating(false);
     }
@@ -177,7 +170,7 @@ export default function Step3Page() {
                 maxLength={2000}
               />
               {errors.generated && (
-                <p className="text-xs text-red-500">{errors.generated}</p>
+                <p role="alert" className="text-xs text-red-500">{errors.generated}</p>
               )}
             </div>
           </Card>

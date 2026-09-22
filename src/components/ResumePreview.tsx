@@ -32,23 +32,6 @@ export function ResumePreview({
 }: ResumePreviewProps) {
     return (
         <div className="relative bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto border-2 border-gray-200">
-            {/* Watermark Overlay */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-xl">
-                {[...Array(20)].map((_, i) => (
-                    <div
-                        key={i}
-                        className="absolute text-gray-200 font-bold text-2xl opacity-10 select-none"
-                        style={{
-                            transform: `rotate(-45deg)`,
-                            top: `${(i % 5) * 20}%`,
-                            left: `${Math.floor(i / 5) * 25}%`,
-                        }}
-                    >
-                        FirstCareerSteps
-                    </div>
-                ))}
-            </div>
-
             {/* Content */}
             <div className="relative z-10">
                 {/* Header */}
