@@ -128,21 +128,20 @@ export default function ReviewPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-soft-sky/30 to-white flex flex-col">
-      <Header showBack onBack={() => router.push("/builder/step-6")} minimal />
+      <Header showBack onBack={() => router.push("/builder/step-5")} minimal />
 
       {/* Progress Bar */}
       <div className="bg-white border-b border-gray-100 px-4 py-3 sticky top-[73px] z-40">
         <div className="max-w-7xl mx-auto lg:w-[80%] overflow-hidden">
           <ProgressBar
-            currentStep={7}
-            totalSteps={7}
+            currentStep={6}
+            totalSteps={6}
             stepLabels={[
               "Basics",
               "Headline",
               "About",
               "Experience",
               "Skills",
-              "Photo",
               "Review/Pay",
             ]}
           />
@@ -222,14 +221,6 @@ export default function ReviewPage() {
             >
               <h3 className="font-semibold text-charcoal mb-1">Skills</h3>
               <p className="text-sm text-gray-600">{profile.skills?.length || 0} skills selected</p>
-            </button>
-
-            <button
-              onClick={() => handleEditSection(6)}
-              className="w-full text-left p-4 bg-white rounded-lg border-2 border-gray-200 hover:border-career-blue transition-all"
-            >
-              <h3 className="font-semibold text-charcoal mb-1">Profile Photo</h3>
-              <p className="text-sm text-gray-600">{profile.photoUrl ? "Photo added" : "No photo"}</p>
             </button>
 
             {/* Action Buttons */}

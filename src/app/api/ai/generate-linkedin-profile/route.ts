@@ -1,138 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server';
-import OpenAI from 'openai';
-import { getResumeAIModel } from '@/lib/resume-ai';
-import type { LinkedInContent } from '@/types/linkedin';
+import { ownedLinkedInResume } from '@/lib/linkedin-server';
+import { linkedInFromProfile, parseLinkedInContent } from '@/lib/linkedin-content';
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
-
+// Preserve the existing URL. Reuse reviewed profile text without another AI bill.
 export async function POST(request: NextRequest) {
     try {
-        const { headline, aboutText, experiences, skills } = await request.json();
-
-        if (!process.env.OPENAI_API_KEY) {
-            console.error('OPENAI_API_KEY is not set');
-            return NextResponse.json(
-                { error: 'OpenAI API key not configured' },
-                { status: 500 }
-            );
-        }
-
-        // Create a comprehensive prompt for LinkedIn profile optimization
-        const prompt = `You are a LinkedIn profile optimization expert helping high school and college students create professional LinkedIn profiles.
-
-Given the following resume information, generate optimized LinkedIn profile content:
-
-HEADLINE: ${headline || 'Student'}
-ABOUT: ${aboutText || 'High school/college student'}
-EXPERIENCES: ${experiences?.map((exp: { title: string; organization: string }) => `${exp.title} at ${exp.organization}`).join(', ') || 'None'}
-SKILLS: ${skills?.join(', ') || 'None'}
-
-Generate the following sections:
-
-1. HEADLINE (120 characters max):
-   - Professional and concise
-   - Include key interests or career goals
-   - Age-appropriate for students
-
-2. ABOUT SECTION (300-500 words):
-   - First person narrative
-   - Authentic and genuine
-   - Highlight accomplishments without exaggeration
-   - Include future goals and aspirations
-   - Professional but student-appropriate tone
-
-3. EXPERIENCE DESCRIPTIONS:
-   - For each experience, create 3-4 bullet points
-   - Use action verbs
-   - Quantify achievements where possible
-   - Be truthful and realistic for student-level work
-   - Format as bullet points with • symbol
-
-4. SKILLS SUMMARY:
-   - Organize skills into categories if applicable
-   - Keep it concise
-
-Return ONLY a valid JSON object with this exact structure:
-{
-  "headline": "string",
-  "about": "string",
-  "experiences": [
-    {
-      "title": "string",
-      "organization": "string",
-      "description": "string with bullet points"
+        const { resumeId } = await request.json();
+        const access = await ownedLinkedInResume(resumeId);
+        if (access.error) return access.error;
+        const { db, user, resume } = access;
+        if (resume.status !== 'paid') return NextResponse.json({ error: 'Unlock your resume before preparing LinkedIn content.' }, { status: 402 });
+        const existing = parseLinkedInContent(resume.linkedin_content);
+        if (existing) return NextResponse.json(existing);
+        const [profile, experiences] = await Promise.all([
+            db.from('profile').select('headline, about_text, skills, high_school, graduation_year').eq('user_id', user.id).single(),
+            db.from('experiences').select('title, organization, bullets, start_date, end_date, is_current').eq('user_id', user.id).order('start_date', { ascending: false }),
+        ]);
+        if (profile.error || experiences.error || !profile.data) return NextResponse.json({ error: 'Unable to load your profile. Please try again.' }, { status: 503 });
+        const content = linkedInFromProfile(profile.data, experiences.data || []);
+        if (!content.headline || !content.about) return NextResponse.json({ error: 'Finish your headline and About section in the builder first.' }, { status: 400 });
+        const { error } = await db.from('resumes')
+            .update({ linkedin_content: JSON.stringify(content), updated_at: new Date().toISOString() })
+            .eq('id', resume.id).eq('user_id', user.id);
+        if (error) return NextResponse.json({ error: 'Your LinkedIn content could not be saved. Please try again.' }, { status: 503 });
+        return NextResponse.json(content);
+    } catch (error) {
+        return NextResponse.json({ error: error instanceof SyntaxError ? 'Invalid request.' : 'Unable to prepare LinkedIn content. Please try again.' }, { status: error instanceof SyntaxError ? 400 : 500 });
     }
-  ],
-  "skills": ["string"],
-  "copyableText": "Complete formatted text ready to paste"
-}`;
-
-        const completion = await openai.chat.completions.create({
-            model: getResumeAIModel(),
-            messages: [
-                {
-                    role: 'system',
-                    content: 'You are a LinkedIn profile expert helping students create professional, authentic profiles. Always return valid JSON.',
-                },
-                {
-                    role: 'user',
-                    content: prompt,
-                },
-            ],
-            temperature: 0.7,
-            max_tokens: 2000,
-            response_format: { type: 'json_object' },
-        });
-
-        const content = completion.choices[0]?.message?.content;
-
-        if (!content) {
-            throw new Error('No content generated');
-        }
-
-        // Parse the JSON response
-        const linkedInContent: LinkedInContent = JSON.parse(content);
-
-        // Generate copyable text if not provided
-        if (!linkedInContent.copyableText) {
-            linkedInContent.copyableText = generateCopyableText(linkedInContent);
-        }
-
-        return NextResponse.json(linkedInContent);
-    } catch (error: unknown) {
-        console.error('LinkedIn profile generation error:', error);
-
-        if (error instanceof Error) {
-            return NextResponse.json(
-                { error: error.message || 'Failed to generate LinkedIn profile content' },
-                { status: 500 }
-            );
-        }
-
-        return NextResponse.json(
-            { error: 'Failed to generate LinkedIn profile content' },
-            { status: 500 }
-        );
-    }
-}
-
-function generateCopyableText(content: LinkedInContent): string {
-    let text = `HEADLINE:\n${content.headline}\n\n`;
-    text += `ABOUT:\n${content.about}\n\n`;
-
-    if (content.experiences && content.experiences.length > 0) {
-        text += `EXPERIENCE:\n\n`;
-        content.experiences.forEach((exp) => {
-            text += `${exp.title} at ${exp.organization}\n`;
-            text += `${exp.description}\n\n`;
-        });
-    }
-
-    if (content.skills && content.skills.length > 0) {
-        text += `SKILLS:\n${content.skills.join(' • ')}\n`;
-    }
-
-    return text;
 }

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import { ProfileProvider } from "@/contexts/ProfileContext";
+import { CampaignCapture } from "@/components/CampaignCapture";
 import { AuthProvider } from "@/contexts/AuthContext";
 
 const poppins = Poppins({
@@ -19,6 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.firstcareersteps.com"),
   title: "FirstCareerSteps - Build Your Professional Resume",
   description:
     "Build a professional resume with our AI-powered builder. Perfect for students and first-time job seekers. Download your resume as PDF for just $1.99/year.",
@@ -57,6 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
       <body className="min-h-screen">
+        <CampaignCapture />
         <AuthProvider>
           <ProfileProvider>{children}</ProfileProvider>
         </AuthProvider>

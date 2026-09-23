@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import type { Campaign } from "@/lib/acquisition";
 import Stripe from 'stripe';
 import { loadStripe, Stripe as StripeClient } from '@stripe/stripe-js';
 
@@ -138,7 +139,7 @@ export const STRIPE_CONFIG = {
 };
 
 // Helper function to create subscription checkout session
-export async function createSubscriptionCheckoutSession(userId: string, customerEmail?: string) {
+export async function createSubscriptionCheckoutSession(userId: string, customerEmail?: string, campaign: Campaign = {}) {
     try {
         const stripe = getStripe();
 
@@ -196,10 +197,12 @@ export async function createSubscriptionCheckoutSession(userId: string, customer
                 },
             ],
             metadata: {
+                ...campaign,
                 userId,
             },
             subscription_data: {
                 metadata: {
+                    ...campaign,
                     userId,
                 },
             },

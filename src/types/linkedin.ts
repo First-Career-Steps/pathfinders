@@ -12,6 +12,7 @@ export interface LinkedInContent {
     experiences: LinkedInExperience[];
     skills: string[];
     copyableText: string;
+    education?: string;
 }
 
 export interface GenerateLinkedInProfileRequest {

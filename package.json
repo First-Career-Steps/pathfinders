@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:resume-ai": "node --import tsx --test tests/resume-ai.test.ts"
+    "test:resume-ai": "node --import tsx --test tests/resume-ai.test.ts",
+    "test:conversion": "node --import tsx --test tests/conversion.test.ts"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.2",

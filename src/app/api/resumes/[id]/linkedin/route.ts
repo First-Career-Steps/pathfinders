@@ -1,101 +1,33 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
+import { ownedLinkedInResume } from '@/lib/linkedin-server';
+import { parseLinkedInContent } from '@/lib/linkedin-content';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+type Context = { params: Promise<{ id: string }> };
 
-export async function POST(
-    request: NextRequest,
-    { params }: { params: Promise<{ id: string }> }
-) {
+export async function GET(_request: NextRequest, { params }: Context) {
     try {
-        const { linkedInContent } = await request.json();
-        const { id: resumeId } = await params;
-
-        // Get user from session
-        const authHeader = request.headers.get('authorization');
-        if (!authHeader) {
-            return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-        }
-
-        // Create Supabase client with service role for admin operations
-        const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
-        // Verify user owns this resume
-        const { data: resume, error: fetchError } = await supabase
-            .from('resumes')
-            .select('user_id')
-            .eq('id', resumeId)
-            .single();
-
-        if (fetchError || !resume) {
-            return NextResponse.json({ error: 'Resume not found' }, { status: 404 });
-        }
-
-        // Update the resume with LinkedIn content
-        const { data, error } = await supabase
-            .from('resumes')
-            .update({
-                linkedin_content: JSON.stringify(linkedInContent),
-                updated_at: new Date().toISOString(),
-            })
-            .eq('id', resumeId)
-            .select()
-            .single();
-
-        if (error) {
-            console.error('Error updating LinkedIn content:', error);
-            return NextResponse.json(
-                { error: 'Failed to save LinkedIn content' },
-                { status: 500 }
-            );
-        }
-
-        return NextResponse.json({ success: true, data });
-    } catch (error) {
-        console.error('Error saving LinkedIn content:', error);
-        return NextResponse.json(
-            { error: 'Failed to save LinkedIn content' },
-            { status: 500 }
-        );
+        const access = await ownedLinkedInResume((await params).id);
+        if (access.error) return access.error;
+        return NextResponse.json({ linkedInContent: parseLinkedInContent(access.resume.linkedin_content) }, { headers: { 'Cache-Control': 'private, no-store' } });
+    } catch {
+        return NextResponse.json({ error: 'Unable to load LinkedIn content.' }, { status: 500 });
     }
 }
 
-export async function GET(
-    request: NextRequest,
-    { params }: { params: Promise<{ id: string }> }
-) {
+export async function POST(request: NextRequest, { params }: Context) {
     try {
-        const { id: resumeId } = await params;
-
-        const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
-        const { data: resume, error } = await supabase
-            .from('resumes')
-            .select('linkedin_content, status')
-            .eq('id', resumeId)
-            .single();
-
-        if (error || !resume) {
-            return NextResponse.json({ error: 'Resume not found' }, { status: 404 });
-        }
-
-        // Parse LinkedIn content if it exists
-        let linkedInContent = null;
-        if (resume.linkedin_content) {
-            try {
-                linkedInContent = JSON.parse(resume.linkedin_content);
-            } catch {
-                linkedInContent = resume.linkedin_content;
-            }
-        }
-
-        return NextResponse.json({ linkedInContent });
+        const access = await ownedLinkedInResume((await params).id);
+        if (access.error) return access.error;
+        if (access.resume.status !== 'paid') return NextResponse.json({ error: 'Unlock your resume first.' }, { status: 402 });
+        const body = await request.json();
+        const content = parseLinkedInContent(body.linkedInContent);
+        if (!content) return NextResponse.json({ error: 'Invalid LinkedIn content.' }, { status: 400 });
+        const { error } = await access.db.from('resumes')
+            .update({ linkedin_content: JSON.stringify(content), updated_at: new Date().toISOString() })
+            .eq('id', access.resume.id).eq('user_id', access.user.id);
+        if (error) return NextResponse.json({ error: 'Unable to save LinkedIn content.' }, { status: 503 });
+        return NextResponse.json({ success: true });
     } catch (error) {
-        console.error('Error fetching LinkedIn content:', error);
-        return NextResponse.json(
-            { error: 'Failed to fetch LinkedIn content' },
-            { status: 500 }
-        );
+        return NextResponse.json({ error: 'Unable to save LinkedIn content.' }, { status: error instanceof SyntaxError ? 400 : 500 });
     }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { LinkedInSetupGuide } from "@/components/LinkedInSetupGuide";
 import type { LinkedInContent } from '@/types/linkedin';
 import Image from 'next/image';
 
@@ -44,7 +45,7 @@ export default function LinkedInContentModal({
                         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-career-blue"></div>
                     </div>
                     <p className="text-center text-gray-600 mt-4">
-                        Generating your LinkedIn content...
+                        Preparing your LinkedIn guide...
                     </p>
                 </div>
             </div>
@@ -57,7 +58,7 @@ export default function LinkedInContentModal({
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-charcoal">
-                        LinkedIn Profile Content
+                        Your LinkedIn Setup Guide
                     </h2>
                     <button
                         onClick={onClose}
@@ -95,6 +96,8 @@ export default function LinkedInContentModal({
                     Copy and paste these sections directly into your LinkedIn profile
                 </p>
 
+                <LinkedInSetupGuide />
+
                 {/* Headline Section */}
                 <div className="mb-6 p-4 bg-soft-sky/20 rounded-xl">
                     <div className="flex items-center justify-between mb-2">
@@ -122,6 +125,16 @@ export default function LinkedInContentModal({
                     </div>
                     <p className="text-charcoal-light whitespace-pre-wrap">{content.about}</p>
                 </div>
+
+                {content.education && (
+                    <div className="mb-6 p-4 bg-soft-sky/20 rounded-xl">
+                        <div className="flex items-center justify-between mb-2">
+                            <h3 className="font-semibold text-charcoal">Education</h3>
+                            <button onClick={() => copyToClipboard(content.education || '', 'education')} className="min-h-11 px-3 py-2 text-sm bg-career-blue text-white rounded-lg hover:bg-career-blue-dark">{copiedSection === 'education' ? 'Copied!' : 'Copy'}</button>
+                        </div>
+                        <p className="whitespace-pre-wrap text-charcoal-light">{content.education}</p>
+                    </div>
+                )}
 
                 {/* Experiences Section */}
                 {content.experiences && content.experiences.length > 0 && (
