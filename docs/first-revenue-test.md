@@ -4,13 +4,17 @@ Status: prepared for review. No outreach, ads or spending has started.
 
 ## Offer and goal
 
-Preserve the current **$1.99/year individual subscription**, billed annually. The first goal is **25 unrelated paid customers = $49.75 in initial gross receipts**, before payment fees and AI/hosting costs. This is annual revenue, not monthly revenue. Do not count test payments or complimentary access.
+The code still charges **$1.99/year**, billed annually. Following the company budget discussion, the recommendation is to test **$4.99/year for new customers after checkout is verified**, hold it steady for 30 days and retain existing subscribers' terms. No price change is included in this PR.
+
+If approved and implemented, the first target is ten independent buyers = $49.90 in initial annual receipts; stretch target twenty-five buyers = $124.75. These are targets before fees and costs, not forecasts or monthly revenue. Exclude paid testers, reimbursed purchases and complimentary access.
+
+The proposed LLC-wide launch ceiling is $1,000, including $200 of uncommitted contingency, while protecting $2,000 of the approximately $3,000 cash balance. FirstCareerSteps should use educator and hiring-touchpoint distribution during this month.
 
 The offer is a first resume plus an optional LinkedIn setup guide. The builder reuses the student's actual reviewed headline, About section, experience and education for LinkedIn, with copy buttons and setup instructions. LinkedIn account creation and publishing remain under the student's control. A photo is not part of the resume flow.
 
 ## First distribution test: no paid advertising
 
-At $1.99 per year, an acquisition cost of $2 already exceeds the initial sale before operating costs. Start with existing distribution rather than buying broad traffic:
+At the current $1.99 annual price, a $2 acquisition cost exceeds the initial sale. At the proposed $4.99 annual price, a $5 acquisition cost still exceeds first-year receipts after processing fees. Start with existing distribution rather than buying broad traffic:
 
 1. Make the link available at Brenz hiring touchpoints as an optional resource. Never require a purchase to apply for a job.
 2. Invite five counselors, teachers or youth-program leaders to review `/for-educators`, then ask two to use it with a small group. Get permission before messaging or sharing student results.
@@ -21,9 +25,13 @@ Student link: `https://www.firstcareersteps.com/?utm_source=brenz&utm_medium=qr&
 
 Educator link: `https://www.firstcareersteps.com/for-educators?utm_source=partner&utm_medium=referral&utm_campaign=first_resume`
 
-Suggested public post:
+Suggested public post at the current price (update all price references together if the $4.99 test is approved):
 
 “Writing your first resume can be hard when you haven't had a job yet. FirstCareerSteps helps you turn school projects, volunteering and everyday experience into a resume, then walks you through setting up LinkedIn if you want to. Preview your resume free; PDF downloads cost $1.99 per year, billed annually. Built for students and first-time job seekers.”
+
+## Price test decision
+
+Aim for fifty relevant visitors from the same partner channels, with at least twenty completed previews. This is a directional learning sample, not a statistically conclusive experiment. If twenty completed previews produce no purchases, talk to five people who stopped and inspect payment errors before cutting the price again.
 
 ## Measurement and decision
 
