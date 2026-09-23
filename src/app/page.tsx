@@ -35,7 +35,7 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 animate-fade-in">
                 <span className="w-2 h-2 bg-step-green rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-charcoal">
-                  Built for students, trusted by schools
+                  For students and first-time job seekers
                 </span>
               </div>
 
@@ -47,16 +47,16 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg sm:text-xl text-charcoal-light max-w-xl mx-auto lg:mx-0 mb-8 animate-slide-up">
-                Build a professional profile, resume, and online presence —
-                even if you don&apos;t know where to start.
+                Turn school, volunteering and everyday experience into a resume. Then get step-by-step help setting up LinkedIn.
               </p>
 
+              <p className="mb-5 text-center lg:text-left text-sm font-semibold text-charcoal">Preview your resume free. PDF downloads are $1.99/year, billed annually.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up">
                 <Link
                   href="/signup"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-career-blue text-white font-semibold text-lg rounded-xl hover:bg-career-blue-dark transition-all duration-200 active:scale-[0.98] shadow-lg shadow-career-blue/25"
                 >
-                  Build My Profile
+                  Build My Resume
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -199,9 +199,9 @@ export default function HomePage() {
                     />
                   </svg>
                 ),
-                title: "Trusted by Schools",
+                title: "Ready for the Classroom",
                 description:
-                  "Used by counselors and educators to help students prepare for their future careers.",
+                  "A guided activity counselors and educators can use to help students prepare for their first job.",
                 color: "step-green",
               },
               {
@@ -220,7 +220,7 @@ export default function HomePage() {
                     />
                   </svg>
                 ),
-                title: "Less Than 10 Minutes",
+                title: "One Guided Process",
                 description:
                   "Our AI-powered tools help you create a professional profile quickly and easily.",
                 color: "optimism-orange",
@@ -306,9 +306,9 @@ export default function HomePage() {
               },
               {
                 step: "6",
-                title: "Profile Photo",
-                description: "Polish your photo to look professional",
-                icon: "📸",
+                title: "Review & Download",
+                description: "Review your resume, then download a PDF for $1.99/year",
+                icon: "📄",
               },
             ].map((feature, index) => (
               <div
@@ -342,7 +342,7 @@ export default function HomePage() {
             Ready to take your first step?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
-            Join thousands of students building their professional future. It
+            Start building your professional future with experience you already have. It
             only takes 10 minutes.
           </p>
           <Link

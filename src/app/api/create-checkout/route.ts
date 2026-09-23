@@ -1,3 +1,4 @@
+import { CAMPAIGN_COOKIE, parseCampaign } from "@/lib/acquisition";
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import { createServerClient } from '@supabase/ssr';
@@ -172,7 +173,7 @@ export async function POST(_request: NextRequest) {
         }
 
         // No active subscription - create subscription checkout session
-        const result = await createSubscriptionCheckoutSession(user.id, user.email);
+        const result = await createSubscriptionCheckoutSession(user.id, user.email, parseCampaign(cookieStore.get(CAMPAIGN_COOKIE)?.value));
 
         if ('error' in result) {
             return NextResponse.json(

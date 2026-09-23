@@ -18,14 +18,13 @@ interface BuilderLayoutProps {
 export function BuilderLayout({
   children,
   currentStep,
-  totalSteps = 7,
+  totalSteps = 6,
   stepLabels = [
     "Basics",
     "Headline",
     "About",
     "Experience",
     "Skills",
-    "Photo",
     "Review/Pay",
   ],
   title,

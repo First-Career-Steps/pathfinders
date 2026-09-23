@@ -79,9 +79,9 @@ export default function ResumeBuilderPage() {
                                 },
                                 {
                                     step: "6",
-                                    title: "Profile Photo",
-                                    description: "Polish your photo to look professional",
-                                    icon: "📸",
+                                    title: "Review & Download",
+                                    description: "Review your resume, then download a PDF for $1.99/year",
+                                    icon: "📄",
                                 },
                             ].map((feature, index) => (
                                 <div

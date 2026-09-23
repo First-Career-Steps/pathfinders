@@ -109,7 +109,7 @@ export default function Step5Page() {
 
     updateProfile({ skills: selectedSkills });
     setCurrentStep(6);
-    router.push("/builder/step-6");
+    router.push("/builder/review");
   };
 
   const handleBack = () => {

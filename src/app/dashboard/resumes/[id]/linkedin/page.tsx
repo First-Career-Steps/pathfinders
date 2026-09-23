@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 
+import { LinkedInSetupGuide } from "@/components/LinkedInSetupGuide";
 import type { LinkedInContent } from '@/types/linkedin';
 
 export default function LinkedInContentPage() {
@@ -101,11 +102,13 @@ export default function LinkedInContentPage() {
                 </button>
 
                 <div className="mb-8">
-                    <h1 className="text-3xl font-bold text-charcoal mb-2">LinkedIn Profile Content</h1>
+                    <h1 className="text-3xl font-bold text-charcoal mb-2">Your LinkedIn Setup Guide</h1>
                     <p className="text-gray-600">
                         Copy and paste these sections directly into your LinkedIn profile
                     </p>
                 </div>
+
+                <LinkedInSetupGuide />
 
                 {/* Headline Section */}
                 <div className="mb-6 p-6 bg-white rounded-xl shadow-sm">
@@ -134,6 +137,16 @@ export default function LinkedInContentPage() {
                     </div>
                     <p className="text-charcoal-light whitespace-pre-wrap">{content.about}</p>
                 </div>
+
+                {content.education && (
+                    <div className="mb-6 p-4 bg-soft-sky/20 rounded-xl">
+                        <div className="flex items-center justify-between mb-2">
+                            <h3 className="font-semibold text-charcoal">Education</h3>
+                            <button onClick={() => copyToClipboard(content.education || '', 'education')} className="min-h-11 px-3 py-2 text-sm bg-career-blue text-white rounded-lg hover:bg-career-blue-dark">{copiedSection === 'education' ? 'Copied!' : 'Copy'}</button>
+                        </div>
+                        <p className="whitespace-pre-wrap text-charcoal-light">{content.education}</p>
+                    </div>
+                )}
 
                 {/* Experiences Section */}
                 {content.experiences && content.experiences.length > 0 && (

@@ -280,29 +280,6 @@ export default function SignUpPage() {
                     )}
                   </div>
 
-                  {/* LinkedIn Profile (Optional) */}
-                  <div>
-                    <label htmlFor="linkedinLink" className="block text-sm font-semibold text-charcoal mb-2">
-                      LinkedIn Profile <span className="text-gray-400 text-xs">(Optional)</span>
-                    </label>
-                    <input
-                      type="url"
-                      id="linkedinLink"
-                      name="linkedinLink"
-                      value={formData.linkedinLink}
-                      onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 transition-colors ${errors.linkedinLink
-                        ? 'border-red-300 focus:ring-red-500'
-                        : 'border-gray-300 focus:ring-career-blue'
-                        }`}
-                      placeholder="https://linkedin.com/in/yourprofile"
-                      disabled={loading}
-                    />
-                    {errors.linkedinLink && (
-                      <p className="mt-1 text-sm text-red-600">{errors.linkedinLink}</p>
-                    )}
-                  </div>
-
                   {/* Submit Button */}
                   <button
                     type="submit"
