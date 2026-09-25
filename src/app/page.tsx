@@ -35,7 +35,7 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 animate-fade-in">
                 <span className="w-2 h-2 bg-step-green rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-charcoal">
-                  For students and first-time job seekers
+                  Built for students · Made in Columbus, Ohio
                 </span>
               </div>
 
@@ -199,9 +199,9 @@ export default function HomePage() {
                     />
                   </svg>
                 ),
-                title: "Ready for the Classroom",
+                title: "You're in Control",
                 description:
-                  "A guided activity counselors and educators can use to help students prepare for their first job.",
+                  "Our AI suggests the words. You review and edit everything before you download or share it.",
                 color: "step-green",
               },
               {
@@ -342,8 +342,8 @@ export default function HomePage() {
             Ready to take your first step?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
-            Start building your professional future with experience you already have. It
-            only takes 10 minutes.
+            Start building your first resume and professional profile today. It takes
+            about 10 minutes.
           </p>
           <Link
             href="/signup"
@@ -386,8 +386,8 @@ export default function HomePage() {
               className="h-11 w-auto"
             />
             <p className="text-gray-400 text-sm text-center">
-              © {new Date().getFullYear()} FirstCareerSteps. Built for students,
-              by educators.
+              © {new Date().getFullYear()} Pathfinders Ventures LLC.
+              FirstCareerSteps is made in Columbus, Ohio.
             </p>
           </div>
         </div>
@@ -395,4 +395,3 @@ export default function HomePage() {
     </div>
   );
 }
-
