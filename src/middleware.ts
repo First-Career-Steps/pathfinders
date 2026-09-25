@@ -4,10 +4,7 @@ import type { NextRequest } from 'next/server';
 import { logger } from '@/lib/logger';
 
 // Routes that require authentication
-const protectedRoutes = [
-    '/builder',
-    '/success',
-];
+const protectedRoutes = ['/dashboard', '/resume', '/career-roadmap', '/builder', '/success'];
 
 // Routes that should redirect to builder if already authenticated
 const authRoutes = ['/login', '/signup'];

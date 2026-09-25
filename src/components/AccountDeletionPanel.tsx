@@ -26,7 +26,9 @@ export default function AccountDeletionPanel() {
         throw new Error(result.error || 'Deletion did not finish. Please retry.');
       }
       // Clear only this application's transient flags. Never claim success before the API does.
-      for (const key of ['payment_completed', 'resume_created', 'currentResumeId']) sessionStorage.removeItem(key);
+      try {
+        for (const key of ['payment_completed', 'resume_created', 'currentResumeId']) sessionStorage.removeItem(key);
+      } catch { /* A browser storage restriction must not hide successful deletion. */ }
       await createBrowserClient().auth.signOut({ scope: 'local' }).catch(() => undefined);
       await signOut().catch(() => undefined);
       window.location.replace('/?account=deleted');
