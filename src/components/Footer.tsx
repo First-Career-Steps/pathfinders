@@ -7,6 +7,8 @@ export default function Footer() {
         <footer className="bg-charcoal text-white py-12">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <nav className="flex flex-wrap gap-6 text-sm" aria-label="Footer">
+                    <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+                    <Link href="/terms" className="hover:underline">Terms of Service</Link>
                     <Link href="/for-educators" className="hover:underline">First resume workshop</Link>
                     <Link href="/resume-builder" className="hover:underline">Resume builder</Link>
                 </nav>
@@ -26,7 +28,7 @@ export default function Footer() {
                         className="h-11 w-auto"
                     />
                     <p className="text-gray-400 text-sm text-center">
-                        © {new Date().getFullYear()} FirstCareerSteps. Built for your first career steps.
+                        © {new Date().getFullYear()} Pathfinders Ventures LLC. FirstCareerSteps is made in Columbus, Ohio.
                     </p>
                 </div>
             </div>

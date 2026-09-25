@@ -1,3 +1,4 @@
+import { privateAssetPath } from '@/lib/student-privacy';
 import { pdf } from '@react-pdf/renderer';
 import { createAdminClient } from '@/lib/supabase';
 import { ProfessionalResumePDF } from './templates/professional';
@@ -120,7 +121,7 @@ export async function uploadPDFToStorage(
 ): Promise<{ url: string | null; error: Error | null }> {
     try {
         const supabase = createAdminClient();
-        const fileName = `resume_${userId}_${Date.now()}.pdf`;
+        const fileName = `${userId}/resume_${Date.now()}.pdf`;
 
         // Upload to Supabase Storage
         const { error: uploadError } = await supabase.storage
@@ -135,12 +136,7 @@ export async function uploadPDFToStorage(
             return { url: null, error: uploadError };
         }
 
-        // Get public URL
-        const { data: urlData } = supabase.storage
-            .from('resumes')
-            .getPublicUrl(fileName);
-
-        return { url: urlData.publicUrl, error: null };
+        return { url: privateAssetPath('resumes', fileName), error: null };
     } catch (error) {
         console.error('Error uploading PDF:', error);
         return { url: null, error: error as Error };

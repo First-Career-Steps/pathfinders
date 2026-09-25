@@ -371,6 +371,10 @@ export default function HomePage() {
       <footer className="bg-charcoal text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Footer Navigation */}
+          <nav aria-label="Legal" className="flex flex-wrap justify-center gap-6 text-sm">
+            <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+            <Link href="/terms" className="hover:underline">Terms of Service</Link>
+          </nav>
           {/* Internal navigation removed as requested */}
 
           {/* Divider */}

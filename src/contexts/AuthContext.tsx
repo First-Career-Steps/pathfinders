@@ -93,6 +93,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
                     data: {
                         full_name: fullName,
                         linkedin_link: linkedinLink || null,
+                        privacy_version: '2026-09-24',
+                        terms_version: '2026-09-24',
+                        terms_accepted_at: new Date().toISOString(),
                     },
                     emailRedirectTo: `${window.location.origin}/builder/step-1`,
                 },

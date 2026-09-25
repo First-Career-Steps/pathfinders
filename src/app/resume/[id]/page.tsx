@@ -21,7 +21,7 @@ export default async function ResumeViewPage({ params }: Props) {
   if (user.app_metadata?.deletion_in_progress) redirect('/dashboard/settings');
   // Owner-scoped cookie client, never an admin client or a public share token.
   const { data: resume, error } = await supabase.from('resumes')
-    .select('title, status').eq('id', id).eq('user_id', user.id).maybeSingle();
+    .select('title, status').eq('id', id).eq('user_id', user.id).eq('status', 'paid').maybeSingle();
   if (error || !resume) notFound();
   const [personResult, profileResult, experienceResult, certificationResult] = await Promise.all([
     supabase.from('users').select('full_name, email, linkedin_link').eq('id', user.id).single(),

@@ -1,3 +1,4 @@
+import { privateAssetPath } from '@/lib/student-privacy';
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { createClient } from '@supabase/supabase-js';
@@ -807,12 +808,7 @@ async function uploadImageToStorage(
             throw uploadError;
         }
 
-        // Get public URL
-        const { data: { publicUrl } } = supabase.storage
-            .from('roadmaps')
-            .getPublicUrl(filePath);
-
-        return publicUrl;
+        return privateAssetPath('roadmaps', filePath);
     } catch (error) {
         console.error('Error uploading image to storage:', error);
         // If it's a string URL, return it; otherwise throw

@@ -1,5 +1,6 @@
 'use client';
 
+import { privateAssetUrl } from '@/lib/student-privacy';
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { createBrowserClient } from '@/lib/supabase';
@@ -40,7 +41,7 @@ export default function RoadmapsPage() {
                 .order('created_at', { ascending: false });
 
             if (error) throw error;
-            setRoadmaps(data || []);
+            setRoadmaps((data || []).map(row => ({ ...row, infographic_url: privateAssetUrl(row.infographic_url) || null, milestone_roadmap_url: privateAssetUrl(row.milestone_roadmap_url) || null })));
         } catch (error) {
             console.error('Error fetching roadmaps:', error);
         } finally {
