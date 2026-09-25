@@ -1,0 +1,57 @@
+name: Privacy hardening verification
+on:
+  push:
+    branches: [security/student-privacy-20260924]
+    paths: [scripts/privacy-apply.py]
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'First-Career-Steps/pathfinders'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: https://example.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: test-only-public-key
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: security/student-privacy-20260924
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Apply exact source transformations
+        run: python3 scripts/privacy-apply.py
+      - run: npm ci
+      - name: Privacy tests
+        run: node --import tsx --test tests/student-privacy.test.ts
+      - name: Existing tests
+        run: npm run test:resume-ai && npm run test:conversion
+      - name: Type check and production build
+        run: npx tsc --noEmit && npm run build
+      - name: Save verified changes on isolated branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src tests sql docs package.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'security: enforce private student accounts and real deletion'
+            git push origin HEAD:security/student-privacy-20260924
+          fi
+      - name: Preserve diagnostic output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: privacy-verification
+          path: |
+            src
+            tests
+            sql
+            docs
+            package.json
+            package-lock.json
+            tsconfig.json
+          retention-days: 3
