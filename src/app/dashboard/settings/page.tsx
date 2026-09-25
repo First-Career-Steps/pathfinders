@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import AccountDeletionPanel from '@/components/AccountDeletionPanel';
 import { useAuth } from '@/contexts/AuthContext';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -8,18 +8,8 @@ import Link from 'next/link';
 export default function SettingsPage() {
     const { user, signOut } = useAuth();
     const router = useRouter();
-    const [loading, setLoading] = useState(false);
 
-    const handleDeleteAccount = async () => {
-        if (!confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
-            return;
-        }
 
-        setLoading(true);
-        // TODO: Implement account deletion
-        alert('Account deletion will be implemented in the next phase.');
-        setLoading(false);
-    };
 
     const handleSignOut = async () => {
         await signOut();
@@ -92,26 +82,12 @@ export default function SettingsPage() {
                     </div>
                 </div>
 
-                {/* Danger Zone */}
-                <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
-                    <h2 className="text-xl font-bold text-red-700 mb-6">Danger Zone</h2>
-
-                    <div className="flex items-center justify-between">
-                        <div>
-                            <h3 className="font-semibold text-red-900">Delete Account</h3>
-                            <p className="text-sm text-red-700">
-                                Permanently delete your account and all associated data
-                            </p>
-                        </div>
-                        <button
-                            onClick={handleDeleteAccount}
-                            disabled={loading}
-                            className="px-4 py-2 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors disabled:opacity-50"
-                        >
-                            {loading ? 'Processing...' : 'Delete Account'}
-                        </button>
-                    </div>
-                </div>
+                <section className="mb-6 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+                    <h2 className="text-xl font-bold text-charcoal">Your profile is private</h2>
+                    <p className="mt-3 text-gray-600">Only your signed-in account can view your saved profile and download stored files. We do not publish a student directory or public resume links. Authorized staff and providers may process data to operate the service. You choose who receives a downloaded resume.</p>
+                    <p className="mt-3 text-sm"><Link href="/privacy" className="text-career-blue underline">Privacy Policy</Link> · <Link href="/terms" className="text-career-blue underline">Terms of Service</Link></p>
+                </section>
+                <AccountDeletionPanel />
 
                 {/* Back Link */}
                 <div className="mt-8">

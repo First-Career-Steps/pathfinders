@@ -31,6 +31,7 @@ export async function generateResumeText(options: {
 
     const completion = await openai.chat.completions.create({
         model: getResumeAIModel(),
+        store: false,
         messages: [
             { role: 'system', content: options.system },
             { role: 'user', content: options.prompt },

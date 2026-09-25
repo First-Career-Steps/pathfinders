@@ -1,6 +1,8 @@
+import { privateAssetPath } from '@/lib/student-privacy';
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
-import { createClient } from '@supabase/supabase-js';
+import type { SupabaseClient } from '@supabase/supabase-js';
+import { createServerClient } from '@/lib/supabase-server';
 import { ImageResponse } from '@vercel/og';
 import type { RoadmapResponse, CareerRoadmap } from '@/types/roadmap';
 
@@ -8,21 +10,22 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
-
-const supabase = createClient(supabaseUrl, supabaseServiceKey);
+// Requests and storage writes use the student's session and database ownership policies.
 
 export async function POST(request: NextRequest) {
     try {
-        const { careerGoal, userId } = await request.json();
-
-        if (!careerGoal || !userId) {
-            return NextResponse.json(
-                { error: 'Career goal and user ID are required' },
-                { status: 400 }
-            );
+        const supabase = await createServerClient();
+        const { data: { user }, error: authError } = await supabase.auth.getUser();
+        if (authError || !user) return NextResponse.json({ error: 'Sign in required' }, { status: 401 });
+        if (user.app_metadata?.deletion_in_progress) return NextResponse.json({ error: 'Account deletion in progress' }, { status: 409 });
+        const body = await request.json().catch(() => null);
+        if (!body || typeof body.careerGoal !== 'string' || !body.careerGoal.trim() || body.careerGoal.length > 2000) {
+            return NextResponse.json({ error: 'Enter a career goal of up to 2,000 characters.' }, { status: 400 });
         }
+        if (body.userId && body.userId !== user.id) return NextResponse.json({ error: 'Not authorized' }, { status: 403 });
+        const careerGoal = body.careerGoal.trim();
+        const userId = user.id;
+
 
         if (!process.env.OPENAI_API_KEY) {
             console.error('OPENAI_API_KEY is not set');
@@ -91,6 +94,7 @@ Return ONLY a valid JSON object with this exact structure:
         console.log('Generating roadmap content...');
         const completion = await openai.chat.completions.create({
             model: 'gpt-4o',
+            store: false,
             messages: [
                 {
                     role: 'system',
@@ -139,7 +143,8 @@ Return ONLY a valid JSON object with this exact structure:
         const infographicUrl = await uploadImageToStorage(
             infographicBuffer,
             userId,
-            'infographic'
+            'infographic',
+            supabase
         );
 
         console.log('Creating milestone roadmap with Canvas...');
@@ -160,7 +165,8 @@ Return ONLY a valid JSON object with this exact structure:
         const milestoneRoadmapUrl = await uploadImageToStorage(
             milestoneBuffer,
             userId,
-            'milestone'
+            'milestone',
+            supabase
         );
 
         // Images are already uploaded, use the URLs directly
@@ -200,7 +206,7 @@ Return ONLY a valid JSON object with this exact structure:
 
         if (error instanceof Error) {
             return NextResponse.json(
-                { error: error.message || 'Failed to generate career roadmap' },
+                { error: 'Unable to generate the roadmap. Please try again.' },
                 { status: 500 }
             );
         }
@@ -765,7 +771,8 @@ function wrapText(text: string, maxWidth: number, fontSize: number): string[] {
 async function uploadImageToStorage(
     imageUrl: string | Buffer,
     userId: string,
-    type: 'infographic' | 'milestone'
+    type: 'infographic' | 'milestone',
+    supabase: SupabaseClient
 ): Promise<string> {
     try {
         let buffer: Buffer;
@@ -807,12 +814,7 @@ async function uploadImageToStorage(
             throw uploadError;
         }
 
-        // Get public URL
-        const { data: { publicUrl } } = supabase.storage
-            .from('roadmaps')
-            .getPublicUrl(filePath);
-
-        return publicUrl;
+        return privateAssetPath('roadmaps', filePath);
     } catch (error) {
         console.error('Error uploading image to storage:', error);
         // If it's a string URL, return it; otherwise throw

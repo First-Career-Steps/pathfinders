@@ -4,10 +4,7 @@ import type { NextRequest } from 'next/server';
 import { logger } from '@/lib/logger';
 
 // Routes that require authentication
-const protectedRoutes = [
-    '/builder',
-    '/success',
-];
+const protectedRoutes = ['/dashboard', '/resume', '/career-roadmap', '/builder', '/success'];
 
 // Routes that should redirect to builder if already authenticated
 const authRoutes = ['/login', '/signup'];
@@ -53,6 +50,17 @@ export async function middleware(request: NextRequest) {
         }
 
         const isAuthenticated = !!user;
+        const isProtectedApi = pathname.startsWith('/api/ai/') || pathname.startsWith('/api/resumes/') || ['/api/create-checkout', '/api/check-subscription'].includes(pathname);
+        if (isProtectedApi && !user) return NextResponse.json({ error: 'Sign in required' }, { status: 401 });
+        if (user?.app_metadata?.deletion_in_progress && !['/', '/privacy', '/terms', '/dashboard/settings', '/login', '/signup', '/blocked'].includes(pathname)) {
+            if (isProtectedApi) return NextResponse.json({ error: 'Account deletion in progress' }, { status: 409 });
+            return NextResponse.redirect(new URL('/dashboard/settings', request.url));
+        }
+        if (isProtectedApi || protectedRoutes.some(route => pathname === route || pathname.startsWith(route + '/'))) {
+            response.headers.set('Cache-Control', 'private, no-store');
+            response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
+        }
+
 
         logger.debug('Middleware', 'Route access check', {
             pathname,
@@ -81,7 +89,7 @@ export async function middleware(request: NextRequest) {
         }
 
         // Blocked users: redirect to /blocked when accessing app routes (not public pages)
-        if (isAuthenticated && pathname !== '/blocked' && pathname !== '/' && !pathname.startsWith('/login') && !pathname.startsWith('/signup')) {
+        if (isAuthenticated && !['/blocked', '/', '/privacy', '/terms', '/dashboard/settings'].includes(pathname) && !pathname.startsWith('/login') && !pathname.startsWith('/signup')) {
             const { data: userRow } = await supabase.from('users').select('blocked_at').eq('id', user.id).single();
             if (userRow?.blocked_at) {
                 return NextResponse.redirect(new URL('/blocked', request.url));
@@ -90,7 +98,7 @@ export async function middleware(request: NextRequest) {
 
         // Check if the route is protected
         const isProtectedRoute = protectedRoutes.some((route) =>
-            pathname.startsWith(route)
+            pathname === route || pathname.startsWith(route + '/')
         );
 
         // Check if the route is an auth route
@@ -122,7 +130,11 @@ export async function middleware(request: NextRequest) {
         return response;
     } catch (error) {
         logger.error('Middleware', error as Error, { pathname });
-        // Allow the request to continue even if middleware fails
+        // Fail closed on account pages; public information remains available.
+        if (pathname.startsWith('/api/')) return NextResponse.json({ error: 'Authentication unavailable' }, { status: 503 });
+        if (protectedRoutes.some(route => pathname === route || pathname.startsWith(route + '/')) || pathname.startsWith('/admin')) {
+            return NextResponse.redirect(new URL('/login', request.url));
+        }
         return NextResponse.next();
     }
 }
@@ -130,6 +142,10 @@ export async function middleware(request: NextRequest) {
 // Configure which routes use this middleware
 export const config = {
     matcher: [
+        '/api/ai/:path*',
+        '/api/resumes/:path*',
+        '/api/create-checkout',
+        '/api/check-subscription',
         /*
          * Match all request paths except for the ones starting with:
          * - api (API routes)

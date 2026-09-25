@@ -1,5 +1,6 @@
 "use client";
 
+import { privateAssetUrl } from '@/lib/student-privacy';
 import React, { createContext, useContext, useState, useEffect, useMemo, ReactNode } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { createBrowserClient } from "@/lib/supabase";
@@ -244,8 +245,8 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
             location: exp.location || "",
           })) || [],
           skills: profileData?.skills || [],
-          photoUrl: profileData?.photo_url || null,
-          photoEnhancedUrl: profileData?.photo_enhanced_url || null,
+          photoUrl: privateAssetUrl(profileData?.photo_url) || null,
+          photoEnhancedUrl: privateAssetUrl(profileData?.photo_enhanced_url) || null,
           showPhotoOnResume: profileData?.show_photo_on_resume ?? true,
           photoSettings: {
             brightness: 100,

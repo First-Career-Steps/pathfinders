@@ -1,5 +1,6 @@
 "use client";
 
+import AIPrivacyNotice from '@/components/AIPrivacyNotice';
 import React from "react";
 import { Header } from "./Header";
 import { ProgressBar } from "@/components/ui";
@@ -66,7 +67,8 @@ export function BuilderLayout({
         )}
 
         {/* Step Content */}
-        <div className="animate-slide-up">{children}</div>
+        <div className="animate-slide-up"><AIPrivacyNotice />
+          {children}</div>
       </main>
 
       {/* Safe area padding for mobile */}

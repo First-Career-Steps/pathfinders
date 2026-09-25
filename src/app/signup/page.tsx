@@ -280,6 +280,10 @@ export default function SignUpPage() {
                     )}
                   </div>
 
+                  <label className="flex items-start gap-3 text-sm leading-relaxed text-gray-600">
+                    <input type="checkbox" required name="acceptTerms" className="mt-1" disabled={loading} />
+                    <span>I am at least 13 (or the higher minimum age where I live), and have a parent or guardian&apos;s permission if under 18. I agree to the <Link href="/terms" className="text-career-blue underline" target="_blank">Terms</Link> and have read the <Link href="/privacy" className="text-career-blue underline" target="_blank">Privacy Policy</Link>, including how OpenAI processes AI requests.</span>
+                  </label>
                   {/* Submit Button */}
                   <button
                     type="submit"

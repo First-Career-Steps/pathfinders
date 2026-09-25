@@ -1,5 +1,6 @@
 'use client';
 
+import { privateAssetUrl } from '@/lib/student-privacy';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
@@ -62,7 +63,7 @@ export default function ResumesPage() {
 
             if (error) throw error;
             hasFetchedOnceRef.current = true;
-            setResumes(data || []);
+            setResumes((data || []).map(row => ({ ...row, pdf_url: privateAssetUrl(row.pdf_url) || null })));
         } catch (error) {
             console.error('Error fetching resumes:', error);
         } finally {
@@ -206,7 +207,7 @@ export default function ResumesPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
                     <div>
                         <h1 className="text-3xl font-bold text-charcoal mb-2">My Resumes</h1>
-                        <p className="text-gray-600">Download your resume, then prepare your LinkedIn guide from your current profile.</p>
+                        <p className="text-gray-600">Your saved resumes are private. Download a copy when you are ready to share it, or prepare your LinkedIn guide.</p>
                     </div>
                     <Link
                         href="/builder/step-1"
@@ -290,29 +291,13 @@ export default function ResumesPage() {
                                                 <>
                                                     <button
                                                         onClick={() => {
-                                                            if (resume.shareable_link) {
-                                                                window.open(`/resume/${resume.shareable_link}?download=true`, '_blank');
-                                                            } else {
-                                                                alert('Shareable link not found.');
-                                                            }
+                                                            window.open(`/resume/${resume.id}?download=true`, '_blank', 'noopener,noreferrer');
                                                         }}
                                                         className="px-4 py-2 bg-career-blue text-white font-medium rounded-lg hover:bg-career-blue-dark transition-colors text-center"
                                                     >
                                                         Download PDF
                                                     </button>
-                                                    {resume.shareable_link && (
-                                                        <button
-                                                            onClick={() => {
-                                                                navigator.clipboard.writeText(
-                                                                    `${window.location.origin}/resume/${resume.shareable_link}`
-                                                                );
-                                                                alert('Shareable link copied to clipboard!');
-                                                            }}
-                                                            className="px-4 py-2 border-2 border-career-blue text-career-blue font-medium rounded-lg hover:bg-soft-sky transition-colors text-center"
-                                                        >
-                                                            Copy Link
-                                                        </button>
-                                                    )}
+                                                    <Link href={`/resume/${resume.id}`} target="_blank" rel="noopener noreferrer" className="px-4 py-2 border-2 border-career-blue text-career-blue font-medium rounded-lg text-center">Private preview</Link>
                                                 </>
                                                 {resume.linkedin_content ? (
                                                     <Link

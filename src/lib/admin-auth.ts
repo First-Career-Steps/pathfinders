@@ -18,7 +18,7 @@ export async function getAdminUser(): Promise<AdminUser | null> {
         error: authError,
     } = await supabase.auth.getUser();
 
-    if (authError || !user) return null;
+    if (authError || !user || user.app_metadata?.deletion_in_progress) return null;
 
     const adminClient = createAdminClient();
     const { data: row, error: dbError } = await adminClient
