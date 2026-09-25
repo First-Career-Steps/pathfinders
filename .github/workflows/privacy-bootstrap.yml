@@ -13,9 +13,13 @@ jobs:
     env:
       NEXT_PUBLIC_SUPABASE_URL: https://example.supabase.co
       NEXT_PUBLIC_SUPABASE_ANON_KEY: test-only-public-key
+      SUPABASE_SERVICE_ROLE_KEY: test-only-server-key-not-a-real-credential
       NEXT_PUBLIC_APP_URL: http://localhost:3000
       NEXT_TELEMETRY_DISABLED: '1'
       OPENAI_API_KEY: sk-test-build-only-not-a-real-key
+      STRIPE_SECRET_KEY: sk_test_build_only_not_a_real_key
+      STRIPE_WEBHOOK_SECRET: whsec_build_only_not_a_real_key
+      RESEND_API_KEY: re_build_only_not_a_real_key
     steps:
       - uses: actions/checkout@v4
         with:
