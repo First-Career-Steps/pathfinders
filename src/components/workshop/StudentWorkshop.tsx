@@ -3,6 +3,14 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { checkWriting, draftKey, emptyDraft, type WorkshopDraft } from '@/lib/workshop';
 import Link from 'next/link';
+import WorkshopSlides from './WorkshopSlides';
+
+const teaching = [
+    {title:'Start with what you personally did',body:'Write down an action, who or what it helped, and one detail you remember. Use a number only when your notes support it.',example:'“I checked in guests at two school fundraisers.” Two events is supported. The number of guests is still unknown.'},
+    {title:'Choose a verb you can defend',body:'Read the first verb aloud. If an interviewer asks for the story behind it, the verb should match your actual responsibility.',example:'“Checked in guests” describes the job. “Led fundraising operations” implies responsibility for the entire event.'},
+    {title:'Check the AI draft against your notes',body:'Underline each action, number and result. Keep the wording you can trace to your experience. Remove or revise anything the tool added.',example:'“Labeled parts bins” describes an observable action. “Increased team efficiency by 30%” needs a measurement.'},
+    {title:'Prepare a short interview answer',body:'Tell the listener what was happening, what you personally did and what you observed next. Give teammates credit for their part.',example:'“Families were searching mixed racks. I sorted the coats by size and showed people where to start.”'},
+];
 
 const transfer = [
     ['Trained the robotics team and secured first place.', 'Who did the training? Who won? The notes give neither of those facts.'],
@@ -81,7 +89,7 @@ export default function StudentWorkshop({ userId, learnerName }: { userId: strin
     }
     return <div className="space-y-6">
         <p className="text-sm text-gray-600">{storageWarning?'Your browser could not save this draft. Download your work before leaving.':'Your writing stays in this browser tab while you work. Download a copy before closing it.'}</p>
-        <section className={section}><h2 className="text-2xl">1. Find the claim you can support</h2>
+        <WorkshopSlides title="Write a resume bullet you can defend" slides={teaching}><section className={section}><h2 className="text-2xl">1. Find the claim you can support</h2>
             <p>Your notes say, “At robotics club I labeled the parts bins and showed two new members where to find tools.” Which line could you explain to an interviewer?</p>
             <fieldset className="space-y-2"><legend className="sr-only">Choose a supported bullet</legend>{transfer.map(([label], i)=>
                 <label key={label} className="workshop-choice"><input type="radio" className="mr-2" name="practice" checked={choice===i} onChange={()=>{setChoice(i);setWork(w=>({...w,passed:i===1,finished:false}));}}/>{label}</label>)}</fieldset>
@@ -116,5 +124,5 @@ export default function StudentWorkshop({ userId, learnerName }: { userId: strin
             <h2>{learnerName}</h2><p>Completed the student workshop <strong>Write a resume bullet you can defend</strong>.</p>
             <p>Practiced checking an AI draft, writing an evidence-based resume bullet, and explaining it in an interview.</p><p>No CPE offered.</p></div>
             <p className="text-sm">In one week, check whether this bullet made it onto your resume and practice saying the answer once more.</p></section>}
-    </div>;
+    </WorkshopSlides></div>;
 }

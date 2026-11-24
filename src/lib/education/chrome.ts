@@ -52,7 +52,7 @@ export function courseNavigation(screen: Screen, signed = false) {
 
 export function themeRestaurantPlayer(document: string) {
     return document
-        .replace('</head>', '<link rel="stylesheet" href="/learning-assets/course-nav.css"></head>')
+        .replace('</head>', '<link rel="stylesheet" href="/learning-assets/course-nav.css"><link rel="stylesheet" href="/learning-assets/slides.css"><script type="module" src="/learning-assets/slides.js"></script><script type="module" src="/learning-assets/restaurant-decks.js"></script></head>')
         .replace('<body>', '<body class="learning-screen" data-player="restaurant">')
         .replace(/<header>[\s\S]*?<\/header>/, () => courseNavigation('restaurant-player',true));
 }

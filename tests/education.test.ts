@@ -65,3 +65,32 @@ test('the entitled restaurant document keeps its controls and receives the share
     assert.ok(page.includes('<main id="main"></main><script>const index = 0;</script>'));
     assert.doesNotMatch(page, /Old title/);
 });
+
+test('each AI class teaches first, then presents a complete scoreable quiz', async () => {
+    const { aiPresentation } = await import('../src/lib/education/presentation');
+    const lessons = (await import('../src/lib/education/ai-decks.json')).default;
+    for (const [slug,lesson] of Object.entries(lessons)) {
+        const route = ('ai/'+slug) as keyof typeof courseFiles;
+        const html = aiPresentation(route)!;
+        const [teaching,assessment] = html.split('<section data-check>');
+        assert.equal(teaching.match(/<section data-slide>/g)?.length,lesson.slides.length);
+        assert.doesNotMatch(teaching, /<fieldset|type="radio"/);
+        assert.equal(assessment.match(/<fieldset>/g)?.length,lesson.questions.length);
+        assert.equal(assessment.match(/data-right="yes"/g)?.length,lesson.questions.length);
+        assert.ok(assessment.includes('/learn/'+route+'?view=workbook'));
+        for (const question of lesson.questions) {
+            assert.ok(question.correct >= 0 && question.correct < question.options.length);
+            assert.equal(question.feedback.length,question.options.length);
+        }
+    }
+});
+
+test('each leadership sample puts its scenario interaction in the final panel', () => {
+    for (const file of ['restaurant','cpa-leading-the-close','cpa-coaching-accounting-teams','cpa-changing-finance-operations']) {
+        const html = readFileSync('education/'+file+'.html','utf8');
+        const [teaching,assessment] = html.split('<section data-check>');
+        assert.equal(teaching.match(/<section data-slide>/g)?.length,2);
+        assert.doesNotMatch(teaching, /<fieldset|type="radio"/);
+        assert.ok(assessment?.includes('</fcs-slide-deck>'));
+    }
+});

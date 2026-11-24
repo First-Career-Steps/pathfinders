@@ -1,0 +1,391 @@
+{
+  "prompting": {
+    "title": "Basics of AI and Effective Prompting",
+    "outcome": "Build a reusable prompt, refine it for a different reader, and verify a claim in the response.",
+    "slides": [
+      {
+        "title": "Build a prompt with RTCF",
+        "body": "A language model predicts what text plausibly comes next. That makes it useful for drafting and reformatting, but a fluent answer can still invent a fact. Give it a role, task, context, and format (RTCF). Include the relevant source again if a long conversation has drifted.",
+        "example": "“Tell me about databases” could produce a textbook chapter. Try “Act as a patient technical trainer. Explain when a spreadsheet stops being enough. Our store leads share one inventory sheet and sometimes overwrite counts. Give two examples and a three-row comparison.”"
+      },
+      {
+        "title": "Give the model a source it can use",
+        "body": "Put the source in a clearly labeled block. Say which details can change and what to do if a detail is missing. This gives you a way to check the draft.",
+        "example": "Shift note: “Friday produce delivery moves to 9. Sam will receive it.” Ask for a two-line handoff using only this note. If the draft names a loading door, cut that detail or confirm it with the receiver."
+      },
+      {
+        "title": "Refine the first answer",
+        "body": "Change one variable at a time. First add a constraint. Then change the reader or format. If tone matters, give a short example of the style you want.",
+        "example": "First pass: “A database improves consistency.” Follow-up 1: “Use our inventory example and name one tradeoff.” Follow-up 2: “Rewrite that as a 60-word note to an opening manager.” Now you can see which change helped."
+      },
+      {
+        "title": "Read the draft as the recipient",
+        "body": "A useful handoff lets the next person act. Look for an owner, an action and a time. Mark missing information for the sender to supply.",
+        "example": "Draft: “Prepare for the new delivery.” Revision: “Sam, receive the produce at 9 on Friday. Please confirm the delivery location with the supplier.” The second sentence assigns a genuine unknown."
+      },
+      {
+        "title": "Catch an unsupported claim",
+        "body": "Trace an important claim to an independent source. Another model repeating it is weak evidence. Check the exact dates, limits, and exceptions before using the answer.",
+        "example": "Practice source: “Each store submits its count by 4 p.m. Friday. The regional lead reviews differences Monday.” AI draft: “Stores must submit by noon Friday for the regional lead’s same-day review.” Both the deadline and the review day changed."
+      }
+    ],
+    "questions": [
+      {
+        "question": "You need a handoff the opening lead can use. Which instruction gives the AI enough direction?",
+        "options": [
+          "Write something professional.",
+          "Use these shift notes to write two bullets for the opening lead, naming the delivery time and who checks it.",
+          "Imagine what the opening lead probably needs."
+        ],
+        "correct": 1,
+        "feedback": [
+          "Name the reader, provide the notes and specify the output.",
+          "Name the reader, provide the notes and specify the output.",
+          "Name the reader, provide the notes and specify the output."
+        ]
+      },
+      {
+        "question": "The answer is accurate but too technical for a new hire. What would let you judge whether your revision helped?",
+        "options": [
+          "Change the audience and ask for plain language while keeping the facts fixed.",
+          "Change the topic, length and source together.",
+          "Ask for a more advanced vocabulary."
+        ],
+        "correct": 0,
+        "feedback": [
+          "Holding the facts constant makes the effect of changing the audience easier to see.",
+          "Holding the facts constant makes the effect of changing the audience easier to see.",
+          "Holding the facts constant makes the effect of changing the audience easier to see."
+        ]
+      },
+      {
+        "question": "Your prompt asks for a policy citation. The answer gives a convincing title and page number. What should you do next?",
+        "options": [
+          "Send it because the citation is specific.",
+          "Open the policy and check the wording and page.",
+          "Ask the same model whether it is confident."
+        ],
+        "correct": 1,
+        "feedback": [
+          "Specific detail can still be invented. Find the underlying policy.",
+          "Yes. Check that the cited text actually supports the claim.",
+          "Confidence does not independently verify the citation."
+        ]
+      }
+    ]
+  },
+  "brainstorming": {
+    "title": "Brainstorming with AI",
+    "outcome": "Generate alternatives, choose a direction, and design a small experiment for its riskiest assumption.",
+    "slides": [
+      {
+        "title": "Open up the options",
+        "body": "Separate generating from judging. Start with quantity. Ask for 15 unconventional ideas, group them into themes, then expand your most interesting three before ranking them.",
+        "example": "A shift handoff keeps missing delivery changes. Three different directions are a spoken read-back, a shared change log, and a reminder tied to the delivery time. Each tackles a different point of failure."
+      },
+      {
+        "title": "Group ideas by how they would work",
+        "body": "Give each idea a verb. Ideas with different names may ask the team to do exactly the same thing. Keep a shortlist that tests different explanations for the problem.",
+        "example": "A reminder sticker, a checklist sticker and a brightly colored label all depend on seeing a cue. A read-back tests a different explanation: perhaps the incoming lead heard the change but interpreted it differently."
+      },
+      {
+        "title": "Change the lens",
+        "body": "SCAMPER asks what you could Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, or Reverse. Then look through the eyes of a skeptical buyer, a new user, or a competitor. Constraints often expose a simpler idea.",
+        "example": "Reverse the handoff: the incoming lead asks for outstanding changes. A skeptical operator asks who will remember. A constraint of five minutes and no new software suggests testing the existing shift sheet first."
+      },
+      {
+        "title": "Choose a measure that changes the decision",
+        "body": "Write down what success would look like while you still have several options. Track the workplace outcome and the effort required to achieve it.",
+        "example": "If the goal is an accurate handoff, count changes the incoming lead can correctly repeat. Counting new checklists printed tells you about supplies. It tells you little about what the next shift knows."
+      },
+      {
+        "title": "Design the smallest useful test",
+        "body": "An experiment should tell you whether an assumption holds. Define who tries it, what you observe, and the result that would change your decision.",
+        "example": "Assumption: incoming leads will use the change log during a rush. Try it with two shifts this week. Count how many delivery changes are read back correctly. If both shifts skip the log, change the handoff routine before building an app."
+      }
+    ],
+    "questions": [
+      {
+        "question": "A team keeps missing delivery changes. Which set gives it genuinely different ideas?",
+        "options": [
+          "Three names for the same handoff app.",
+          "Three colors for the same reminder.",
+          "A spoken read-back, a written change log, and a timed reminder."
+        ],
+        "correct": 2,
+        "feedback": [
+          "The three approaches address different points where information can be lost.",
+          "The three approaches address different points where information can be lost.",
+          "The three approaches address different points where information can be lost."
+        ]
+      },
+      {
+        "question": "You have five minutes per shift and no new software. Which pilot fits?",
+        "options": [
+          "Buy a tool before choosing a measure.",
+          "Use the existing shift sheet twice and count correctly acknowledged changes.",
+          "Ask the AI which option people will use."
+        ],
+        "correct": 1,
+        "feedback": [
+          "A small trial with an observable result tests the assumption within the constraint.",
+          "A small trial with an observable result tests the assumption within the constraint.",
+          "A small trial with an observable result tests the assumption within the constraint."
+        ]
+      },
+      {
+        "question": "You have 15 ideas. Which next step will teach you the most before you build?",
+        "options": [
+          "Choose the most original idea and commit to it.",
+          "Ask for 50 more versions of the favorite.",
+          "Test the assumption most likely to make the favorite fail."
+        ],
+        "correct": 2,
+        "feedback": [
+          "Novelty alone tells you little about adoption.",
+          "More variations do not test whether a real user will adopt it.",
+          "Yes. A small test can change your decision while it is still cheap to change."
+        ]
+      }
+    ]
+  },
+  "multiple-ais": {
+    "title": "Leveraging Multiple AIs",
+    "outcome": "Take an idea from a ChatGPT planning conversation to a self-contained Grok prompt and review the resulting requirements.",
+    "slides": [
+      {
+        "title": "Explore the idea in ChatGPT",
+        "body": "Use the first conversation to clarify the user, problem, constraints, and edge cases. A second tool does not automatically share that conversation. Carry the facts that matter into the handoff.",
+        "example": "“Build a shift log” leaves key questions open. Who posts a change? Who confirms reading it? Can an entry be corrected? For a first version, the opening lead only needs to see unacknowledged items from the previous shift."
+      },
+      {
+        "title": "Separate decisions from open questions",
+        "body": "A second tool cannot tell which suggestions your team actually approved. Label the agreed constraints and give unresolved choices to a named human decision maker.",
+        "example": "Approved: use the existing shift sheet for a one-week pilot. Open: who handles a late delivery? Owner: closing manager. Ask the second tool to flag any proposed requirement that assumes an answer."
+      },
+      {
+        "title": "Hand a lean prompt to Grok",
+        "body": "Ask the first assistant to draft a short brief for a fresh conversation. Include the problem, the intended user, decisions already made, and questions that still need an owner. Read the brief before handing it over.",
+        "example": "Vague handoff: “Use our plan above.” Portable handoff: “A closing lead logs a change; the opening lead confirms it. For the pilot, support one store and a single acknowledgement. Flag retention as undecided.”"
+      },
+      {
+        "title": "Compare the handoff with the output",
+        "body": "Read the second draft alongside the approved brief. Mark each requirement as supported, missing or newly proposed before sending the packet to anyone who will build it.",
+        "example": "The approved brief says one store, one week, no new software. A polished plan for a regional mobile app introduces two new commitments. Return those lines to the ideas list and restore the one-store pilot."
+      },
+      {
+        "title": "Review a requirements packet",
+        "body": "In the second tool, request the executive summary, personas, functional and non-functional requirements, constraints and assumptions, scope exclusions, and open questions. Look for measurable acceptance criteria and invented decisions. A second answer still needs human review.",
+        "example": "“The log should be easy to use” is hard to test. “Given an open item, when the incoming lead acknowledges it, then it disappears from the open list and the acknowledgement remains in its history” is testable."
+      }
+    ],
+    "questions": [
+      {
+        "question": "A second assistant opens a new conversation. What should you give it?",
+        "options": [
+          "Only the name of the first conversation.",
+          "A self-contained brief with the goal, agreed constraints and open questions.",
+          "Every message from every project."
+        ],
+        "correct": 1,
+        "feedback": [
+          "The new conversation needs enough context to work independently.",
+          "The new conversation needs enough context to work independently.",
+          "The new conversation needs enough context to work independently."
+        ]
+      },
+      {
+        "question": "Which acceptance criterion could a teammate test?",
+        "options": [
+          "Make the handoff intuitive.",
+          "The team should love the log.",
+          "After acknowledgement, an item leaves the open list and stays in history."
+        ],
+        "correct": 2,
+        "feedback": [
+          "The starting state, action and observable result make the criterion testable.",
+          "The starting state, action and observable result make the criterion testable.",
+          "The starting state, action and observable result make the criterion testable."
+        ]
+      },
+      {
+        "question": "The second tool chose a retention period that nobody discussed. How should the handoff handle it?",
+        "options": [
+          "Record it as an open question and ask the owner.",
+          "Keep it because two-tool workflows are more accurate.",
+          "Delete the whole requirements packet."
+        ],
+        "correct": 0,
+        "feedback": [
+          "Yes. Separate an unconfirmed assumption from an approved requirement.",
+          "A precise number can still be an invented requirement.",
+          "You can keep the useful requirements and flag the unsupported decision."
+        ]
+      }
+    ]
+  },
+  "building": {
+    "title": "Building with AI",
+    "outcome": "Define a small feature, test its behavior, review the implementation, and document one improvement.",
+    "slides": [
+      {
+        "title": "Define the smallest feature",
+        "body": "Start with one observable behavior from your requirements. Sketch the inputs, outputs, and failure paths before asking for code. Keep data handling, permissions, and external inputs explicit when you plan a larger system.",
+        "example": "Build a low-stock flag for a shift checklist. Inputs are whole numbers for stock on hand and a reorder threshold. Return “Reorder” at or below the threshold, “OK” above it, and “Invalid” for missing, negative, or fractional counts."
+      },
+      {
+        "title": "Write example inputs and expected results",
+        "body": "Use a normal case, a boundary and a missing value. Decide the behavior before you ask for an implementation. A concrete example settles disagreements about words like “low.”",
+        "example": "Rule: flag stock below three trays. Two trays shows “Reorder.” Three shows “In stock.” A blank count shows “Count needed.” The blank count requires a different action from an actual count of zero."
+      },
+      {
+        "title": "Build and run the feature",
+        "body": "Test three kinds of input: an ordinary count, a count exactly at the threshold, and an invalid count. Change one rule at a time and rerun all three tests. The optional workbook includes a working test bench.",
+        "example": "A test with stock 8 and threshold 5 can pass even if your boundary logic is wrong. Stock 5 and threshold 5 exposes the difference between < and <=. An empty count needs its own test."
+      },
+      {
+        "title": "Make the first run easy to inspect",
+        "body": "Start with sample data and compare the results one row at a time. When something fails, change one part of the requirement or implementation, then rerun the original cases.",
+        "example": "The app flags three trays for reorder. Recheck the agreed threshold, correct the comparison, and retry two, three and blank. The same examples tell the next shift exactly what behavior was tested."
+      },
+      {
+        "title": "Review and iterate",
+        "body": "Read the implementation yourself, then ask a second assistant to critique it against the brief. Add an independent test, rerun the suite, and write down the design decision. For your own feature, commit the smallest verified change and include a short usage example.",
+        "example": "A reviewer notices the tests only use a threshold of 5. Add stock 0, threshold 0. Expect “Reorder.” Then test a negative threshold and expect “Invalid.”"
+      }
+    ],
+    "questions": [
+      {
+        "question": "The agreed rule says reorder at or below five. What should a count of exactly five return?",
+        "options": [
+          "Reorder.",
+          "OK.",
+          "Invalid."
+        ],
+        "correct": 0,
+        "feedback": [
+          "The threshold is inclusive. Equality is a boundary worth checking explicitly.",
+          "The threshold is inclusive. Equality is a boundary worth checking explicitly.",
+          "The threshold is inclusive. Equality is a boundary worth checking explicitly."
+        ]
+      },
+      {
+        "question": "The stock field is blank. Why test it separately from zero?",
+        "options": [
+          "They must always give the same answer.",
+          "A missing count is invalid, while a measured zero is valid and can trigger a reorder.",
+          "Blank stock means the threshold is blank too."
+        ],
+        "correct": 1,
+        "feedback": [
+          "Treating missing data as a measured zero would hide an input error.",
+          "Treating missing data as a measured zero would hide an input error.",
+          "Treating missing data as a measured zero would hide an input error."
+        ]
+      },
+      {
+        "question": "The AI-generated function passes its own happy-path tests. What would you do before using it?",
+        "options": [
+          "Ship it once the model says it is correct.",
+          "Read it, test boundary and invalid inputs independently, and review the results.",
+          "Ask for a longer explanation instead of running it."
+        ],
+        "correct": 1,
+        "feedback": [
+          "The tests may share the same blind spot as the code.",
+          "Yes. Own the behavior, including inputs the generator forgot to test.",
+          "An explanation cannot show whether the function actually passes a boundary test."
+        ]
+      }
+    ]
+  },
+  "basics": {
+    "title": "AI Basics for Teams",
+    "outcome": "Write a useful prompt, organize its sources, give a reusable assistant boundaries, and pick a tool that fits the job.",
+    "slides": [
+      {
+        "title": "Write for the person using the answer",
+        "body": "A useful prompt tells the assistant who will read the result, what it should do, and how to present it. Include the facts the answer must use.",
+        "example": "Instead of “Write a handoff,” give the shift notes and ask for two bullets for the opening lead. Each bullet should name the delivery time and the person who will check it."
+      },
+      {
+        "title": "Keep the source with the project",
+        "body": "Group the approved reference, the working draft and the final version. Label which source is current so the next person can tell what the AI used.",
+        "example": "In a shift-handoff folder, keep the current opening checklist next to a dated sample handoff. Archive the superseded checklist before drafting."
+      },
+      {
+        "title": "Keep a human review step",
+        "body": "Decide who can approve the output and what they will check. A small checklist is easier to use when it mirrors the document people already rely on.",
+        "example": "A draft onboarding note says trainees can swap shifts without approval. The lead opens the current scheduling policy, corrects the sentence and adds the approval step before sharing the note."
+      },
+      {
+        "title": "Give a recurring assistant a stopping rule",
+        "body": "Write down the job, allowed inputs, tone and the decision that requires a person. A reusable assistant needs a clear response when required information is missing.",
+        "example": "A handoff assistant can summarize the shift notes. If a delivery has no confirmed time, it should flag the gap and ask the shift lead to confirm."
+      },
+      {
+        "title": "Choose tools for the work",
+        "body": "Decide what the tool needs to do and what information it can handle. Check approved data handling for private material, scheduling for recurring reports, and testing for a prototype.",
+        "example": "A daily summary needs access to the source and a way to run on a schedule. A chat window alone supplies neither guarantee."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Which prompt tells the assistant what a new shift lead needs?",
+        "options": [
+          "Give two handoff bullets from these notes with the delivery time and owner.",
+          "Improve this.",
+          "Make our operations better."
+        ],
+        "correct": 0,
+        "feedback": [
+          "A defined task, reader and format make the result usable.",
+          "A defined task, reader and format make the result usable.",
+          "A defined task, reader and format make the result usable."
+        ]
+      },
+      {
+        "question": "Two checklists disagree. What should the project owner do first?",
+        "options": [
+          "Combine both silently.",
+          "Confirm and label the current approved source.",
+          "Use the longer checklist."
+        ],
+        "correct": 1,
+        "feedback": [
+          "The owner resolves which source governs before the assistant reuses it.",
+          "The owner resolves which source governs before the assistant reuses it.",
+          "The owner resolves which source governs before the assistant reuses it."
+        ]
+      },
+      {
+        "question": "Your assistant sees an unconfirmed arrival time. Which rule helps?",
+        "options": [
+          "Invent a plausible ETA.",
+          "Omit the delivery entirely.",
+          "Flag the missing time for a person to confirm."
+        ],
+        "correct": 2,
+        "feedback": [
+          "A stopping rule keeps an unknown from becoming a promise.",
+          "A stopping rule keeps an unknown from becoming a promise.",
+          "A stopping rule keeps an unknown from becoming a promise."
+        ]
+      },
+      {
+        "question": "What matters first for a recurring daily report?",
+        "options": [
+          "The longest response allowed.",
+          "A schedule and permission to reach the right sources.",
+          "The number of chat themes available."
+        ],
+        "correct": 1,
+        "feedback": [
+          "Reliable delivery depends on timing and authorized source access.",
+          "Reliable delivery depends on timing and authorized source access.",
+          "Reliable delivery depends on timing and authorized source access."
+        ]
+      }
+    ]
+  }
+}

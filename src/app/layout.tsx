@@ -1,3 +1,4 @@
+import '../../public/learning-assets/slides.css';
 import type { Metadata, Viewport } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";

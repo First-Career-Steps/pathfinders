@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import WorkshopSlides from './WorkshopSlides';
 import { WORKSHOP } from '@/lib/workshop';
 
 const choices = [
@@ -11,7 +12,7 @@ const choices = [
 
 export default function FreeBulletLesson({ inBuilder = false }: { inBuilder?: boolean }) {
     const [choice, setChoice] = useState<number | null>(null);
-    return <div className="space-y-4">
+    const question = <div className="space-y-4">
         <p className="text-gray-700">You volunteered at two school fundraisers. Compare your notes with the AI draft.</p>
         <div className="grid gap-3 sm:grid-cols-2">
             <div className="rounded-xl bg-soft-sky p-4"><strong>What you did</strong><p>“I checked people in at two school fundraisers.”</p></div>
@@ -24,4 +25,9 @@ export default function FreeBulletLesson({ inBuilder = false }: { inBuilder?: bo
         <p role="status" className="workshop-feedback font-medium text-charcoal">{choice === null ? '' : choices[choice][1]}</p>
         {inBuilder && <Link className="font-semibold text-career-blue underline" href={WORKSHOP} target="_blank" rel="noopener">Practice with your own experience · View the $4.99 workshop (opens in a new tab)</Link>}
     </div>;
+    if (inBuilder) return question;
+    return <WorkshopSlides title="Free resume lesson" slides={[
+        {title:'A resume bullet makes a claim',body:'Choose an action verb that matches the part you played. A stronger-sounding verb can accidentally give you credit for someone else’s work.'},
+        {title:'Compare the draft with the evidence',body:'Look for responsibility, numbers and results. Check each one against your notes before you keep it.',example:'Your notes say you checked people in at two fundraisers. You can defend the check-in work and the number of events.'},
+    ]}><h2>Check the claim</h2>{question}</WorkshopSlides>;
 }

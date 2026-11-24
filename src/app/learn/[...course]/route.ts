@@ -1,4 +1,5 @@
 import { courseNavigation } from '@/lib/education/chrome';
+import { aiPresentation, slideAssets } from '@/lib/education/presentation';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileFor, isCourse, learnerCourse } from '@/lib/education/catalog';
@@ -15,9 +16,19 @@ export async function GET(request: Request, {params}: Context) {
     if (course === 'leadership/cpa/fieldbook' && !signed) {
         return Response.redirect(new URL('/learn/signin?next=/learn/leadership/cpa/fieldbook',url), 307);
     }
-    const file = fileFor(course, signed);
-    const source = await readFile(join(process.cwd(), 'education', file + '.html'), 'utf8');
-    const html = source.replace('<!-- course-navigation -->', () => courseNavigation(course, signed));
+    let html = url.searchParams.get('view') === 'workbook' ? undefined : aiPresentation(course);
+    if (!html) {
+        const source = await readFile(join(process.cwd(), 'education', fileFor(course, signed && url.searchParams.get('view') !== 'sample') + '.html'), 'utf8');
+        html = source.replace('<!-- course-navigation -->', () => courseNavigation(course, signed))
+            .replace('</head>', slideAssets + '</head>');
+        if (signed && url.searchParams.get('view') === 'sample' && course.startsWith('leadership/cpa/')) {
+            html = html.replace('href="#journal"', 'href="/learn/' + course + '#journal"')
+                .replace('href="#resources"', 'href="/learn/' + course + '#resources"');
+        }
+        if (course.startsWith('ai/') && url.searchParams.get('view') === 'workbook') {
+            html = html.replace('</header>', '</header><p class="slide-wrapper slide-extra"><a href="/learn/' + course + '">Return to the slide lesson</a></p>');
+        }
+    }
     return new Response(html, {headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'private, no-store','Vary':'Cookie','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'}});
 }
 

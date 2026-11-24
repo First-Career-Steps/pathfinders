@@ -51,9 +51,18 @@ function player(d,i,s,draft=''){
     consequence='<p><b>Your call</b> · '+esc(d.options[d.first])+'</p><p class="shift-note">'+esc(d.branch.outcome)+'</p>';
     body='<fieldset><legend>'+esc(d.branch.followUp)+'</legend>'+options(d.branch.choices,'choice')+'</fieldset><label for="note" class="label">Your next-shift action</label><p>'+esc(d.challenge)+'</p><textarea class="write" id="note" name="note" required minlength="8" maxlength="600" placeholder="What will you do on your next shift?">'+esc(draft)+'</textarea><button class="primary">Try this follow-up</button>';
   }
-  panel('<article class="focus">'+boardLink+'<p class="eyebrow">'+(s.requiredShifts.includes(i)?'Core shift '+(s.requiredShifts.indexOf(i)+1)+' of 3':'Optional scenario')+' · Book chapters '+esc(d.chapters)+'</p><h1>'+esc(d.title)+'</h1>'+scenario+consequence+
-    (d.feedback?'<p class="shift-feedback" role="status"><b>'+(d.done?'Shift completed.':'Try the follow-up again.')+'</b> '+esc(d.feedback)+'</p>':'')+
-    (d.done?completed:'<form class="shift-form">'+body+'</form>')+alertBox+'</article>');
+  const answers=consequence+(d.feedback?'<p class="shift-feedback" role="status"><b>'+(d.done?'Shift completed.':'Try the follow-up again.')+'</b> '+esc(d.feedback)+'</p>':'')+
+    (d.done?completed:'<form class="shift-form">'+body+'</form>')+alertBox;
+  const teaching=[
+    'Name the point where the ticket sequence broke down. Give one person the rail and one person the guest update. Agree when they will check back.',
+    'Ask which responsibility the teammate wants to learn. Offer one bounded assignment, a named coach and a time to review it.',
+    'Look for a signal people miss in the current environment. Change one cue at the handoff, then observe the next few handoffs.',
+    'Compare the handoff with the standard. Ask the person responsible what happened, agree on the next check and record what you observed.',
+    'Describe the specific choice you saw and its effect. Address a separate correction privately so each message is clear.',
+    'Compare the routines across shifts. Agree on a shared result, an owner and a check that works even when the original lead is away.'
+  ];
+  const deck='<fcs-slide-deck data-start="'+(d.branch?2:0)+'"><section data-slide><h2>Lead this shift</h2><p>'+esc(s.shifts[i]?.objective||d.title)+'</p><div class="slide-example"><strong>On the floor</strong>'+esc(teaching[i] || d.challenge)+'</div></section><section data-slide><h2>Case briefing</h2>'+scenario+'</section><section data-check><h2>Make the call</h2><details><summary>Read the case again</summary>'+scenario+'</details>'+answers+'</section></fcs-slide-deck>';
+  panel('<article class="focus">'+boardLink+'<p class="eyebrow">Book chapters '+esc(d.chapters)+'</p><h1>'+esc(d.title)+'</h1>'+(d.done?answers:deck)+'</article>');
   const form=main.querySelector('form');
   if(form)form.onsubmit=async e=>{
     e.preventDefault();const btn=e.submitter, route=navigation;btn.disabled=true;

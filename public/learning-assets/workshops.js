@@ -7,7 +7,12 @@ function readState(slug) {
 }
 for (const label of document.querySelectorAll('[data-progress]')) {
   const state = readState(label.dataset.progress);
-  label.textContent = state.complete ? 'Completed in this browser' : state.values ? 'In progress in this browser' : '';
+  let slidesComplete = false;
+  try {
+    const quiz = JSON.parse(localStorage.getItem('fcs.slide-quiz.v1.'+label.dataset.progress) || 'null');
+    slidesComplete = quiz?.passed === true;
+  } catch { /* The catalog can be browsed without storage. */ }
+  label.textContent = slidesComplete ? 'Slide lesson complete in this browser' : state.complete ? 'Completed in this browser' : state.values ? 'In progress in this browser' : '';
 }
 const status = document.querySelector('#status');
 let clearMessage;
