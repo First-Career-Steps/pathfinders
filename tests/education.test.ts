@@ -91,6 +91,8 @@ test('each leadership sample puts its scenario interaction in the final panel', 
         const [teaching,assessment] = html.split('<section data-check>');
         assert.equal(teaching.match(/<section data-slide>/g)?.length,2);
         assert.doesNotMatch(teaching, /<fieldset|type="radio"/);
-        assert.ok(assessment?.includes('</fcs-slide-deck>'));
+        const [questions,after] = assessment.split('</fcs-slide-deck>');
+        assert.ok(questions.includes('<fieldset'));
+        assert.doesNotMatch(after, /<fieldset|<textarea/);
     }
 });
