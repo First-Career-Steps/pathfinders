@@ -1,0 +1,12 @@
+{
+  "ai/prompting": [
+    {
+      "slide": 1,
+      "title": "Watch the prompt come together · 25 seconds",
+      "video": "/learning-assets/media/handoff.mp4",
+      "poster": "/learning-assets/media/handoff-poster.jpg",
+      "captions": "/learning-assets/media/handoff.vtt",
+      "transcript": "The role is “Act as a shift supervisor.” The task is “Write a handoff for the opening lead.” The source fact is “Sam receives the produce on Friday at 9.” The format is “Use two bullets. Name the owner and time.” Read the four parts together before sending."
+    }
+  ]
+}

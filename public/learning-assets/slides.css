@@ -41,3 +41,61 @@ fcs-slide-deck .slide-example {margin:1.1rem 0 0;padding:.9rem 1.1rem;border-lef
 fcs-slide-deck :focus-visible {outline:3px solid #1676b0;outline-offset:2px}
 @media(max-width:480px){.slide-controls {gap:.35rem}.slide-controls button {font-size:.9rem;padding:.5rem .6rem}.slide-position {font-size:.8rem}}
 @media print {fcs-slide-deck {border:0;box-shadow:none}fcs-slide-deck > section[hidden] {display:block!important}fcs-slide-deck > section {break-inside:avoid;min-height:0!important}.slide-meter,.slide-controls {display:none!important}}
+
+/* The same presentation and controls serve both subjects, including enrolled lessons. */
+.learning-screen main.classroom-main {width:min(100% - 2rem,68rem);max-width:none;margin:clamp(1.1rem,3vw,2.6rem) auto 4rem;padding:0}
+.classroom {--lesson-dark:#112a43;--lesson-mid:#234f6d;--lesson-accent:#a9e3f0;--lesson-action:#13587f}
+.classroom[data-subject=leadership] {--lesson-dark:#142f2c;--lesson-mid:#24594e;--lesson-accent:#b5e2c4;--lesson-action:#226149}
+.classroom .lesson-cover {display:grid;grid-template-columns:minmax(0,1.24fr) minmax(0,.88fr);align-items:center;gap:clamp(1.5rem,5vw,4rem);padding:clamp(1.6rem,5.5vw,4.6rem);background:radial-gradient(ellipse at 95% 105%,var(--lesson-mid),transparent 66%),var(--lesson-dark);border-radius:1.2rem;color:white;margin:0;min-height:26rem;box-sizing:border-box}
+.learning-screen .lesson-cover h1 {color:white;font:600 clamp(2.1rem,4.6vw,3.85rem)/1.01 Georgia,serif;letter-spacing:-.047em;max-width:18ch;margin:.95rem 0 1rem;text-wrap:balance}
+.lesson-cover .lesson-series,.lesson-heading > p {color:var(--lesson-accent);font:650 .9rem/1.4 system-ui,sans-serif;letter-spacing:.015em;margin:0}
+.lesson-cover .cover-goal {color:#e0eaf2;font-size:1.08rem;line-height:1.55;max-width:47ch;margin:0}
+.lesson-cover .cover-meta {color:#c3d6de;font:500 .9rem/1.5 system-ui,sans-serif;margin:1.4rem 0 .7rem}
+.classroom a.start-lesson {display:inline-flex;align-items:center;border-radius:.5rem;text-decoration:none;color:var(--lesson-dark);background:#fff;font:700 1rem/1.4 system-ui,sans-serif;padding:.78rem 1.2rem;min-height:2.9rem;box-sizing:border-box}
+.classroom a.start-lesson:hover {background:var(--lesson-accent)}
+.lesson-cover .lesson-exhibit {background:#f9fcfd;color:#172e3c;border-top:.36rem solid var(--lesson-accent);border-radius:.55rem;margin:0;padding:clamp(1.15rem,2.4vw,2rem);box-shadow:0 .7rem 2rem #0003}
+.lesson-exhibit figcaption {font:650 .84rem/1.4 system-ui,sans-serif;color:#48616d}
+.learning-screen .lesson-exhibit h2 {font:600 clamp(1.5rem,2.6vw,2.05rem)/1.13 Georgia,serif;letter-spacing:-.03em;margin:.45rem 0 1.2rem;color:#173344}
+.lesson-exhibit dl {display:grid;margin:0}.lesson-exhibit dl div {border-top:1px solid #ccdae0;padding:.55rem 0;display:grid;grid-template-columns:minmax(4.1rem,.65fr) 1.75fr;gap:.6rem}
+.lesson-exhibit dt {font-size:.88rem;color:#476172;font-weight:650}.lesson-exhibit dd {font-size:.97rem;line-height:1.4;margin:0}
+.lesson-photo {display:block;width:100%;height:100%;min-height:16rem;max-height:22rem;object-fit:cover;border-radius:.55rem}
+.classroom .lesson-heading {margin:0 0 1rem}.lesson-heading>p {color:var(--lesson-action)}
+.learning-screen .lesson-heading h1 {font:650 clamp(1.45rem,3vw,2.15rem)/1.14 system-ui,sans-serif;letter-spacing:-.035em;margin:.3rem 0 0;max-width:none}
+.classroom [hidden] {display:none!important}
+.classroom fcs-slide-deck {max-width:none;margin:0;border-radius:.95rem;box-shadow:0 .45rem 1.8rem #1c3e5210;--deck-blue:var(--lesson-action)}
+.classroom fcs-slide-deck > section {padding:clamp(1.25rem,4.4vw,3.2rem);box-sizing:border-box}
+.classroom fcs-slide-deck > [data-slide] {min-height:19rem}
+.classroom fcs-slide-deck h2 {font:600 clamp(1.8rem,3.6vw,2.7rem)/1.07 Georgia,serif;letter-spacing:-.035em}
+.classroom fcs-slide-deck p,.classroom fcs-slide-deck .slide-example {max-width:73ch}
+.classroom .slide-example {color:#244156;background:#eff5f8;border-inline-start:3px solid var(--lesson-action);max-width:73ch;padding:1rem 1.15rem}
+.classroom .slide-example strong {color:var(--lesson-action)}
+.slide-tools {display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.45rem clamp(.85rem,3vw,1.7rem);background:#f5f8fa;border-bottom:1px solid #d9e2e8}
+.slide-tools span {font:650 .88rem/1.4 system-ui,sans-serif;color:#405d70}
+.slide-tools button,.slide-outline button,.quiz-pager button {border:1px solid #bacbd5;color:#25485e;background:white;border-radius:.45rem;font:600 .9rem/1.4 system-ui,sans-serif;cursor:pointer;padding:.45rem .7rem;min-height:2.75rem}
+.slide-outline {background:#f5f8fa;padding:.35rem clamp(.85rem,3vw,1.7rem) 1rem;border-bottom:1px solid #d9e2e8}
+.slide-outline ol {margin:0;padding-left:1.6rem}.slide-outline li {padding:.12rem;color:#455e6e}.slide-outline button {width:100%;text-align:start;border:0;background:transparent}
+.slide-outline button[aria-current=step] {background:#dfeef3;color:#17364c}.slide-outline button:hover {background:#e7f0f4}
+.classroom .slide-controls .slide-next,.classroom .slide-quiz button[type=submit],.classroom .quiz-pager [data-forward] {background:var(--lesson-action);border-color:var(--lesson-action);color:white}
+.lesson-demo {margin:1.15rem 0 0;border-top:1px solid #cbdce4;padding-top:.6rem}
+.lesson-demo summary,.lesson-resources>summary {cursor:pointer;font-weight:650;color:#1d4e6d;min-height:2.75rem;align-content:center}
+.lesson-demo video {width:100%;max-width:48rem;border-radius:.45rem;display:block;background:#142c41;margin:.5rem 0}
+.classroom-main .lesson-resources {margin:1.45rem 0;color:#475f70;font:400 1rem/1.55 system-ui,sans-serif}
+.classroom-main details.lesson-resources {border-top:1px solid #cbdbe2;border-bottom:1px solid #cbdbe2;padding:.3rem .15rem}
+.lesson-resources a,.slide-quiz a {color:#155578;text-decoration:underline;text-underline-offset:.2em}
+.lesson-resources .box {margin-top:1rem}.lesson-credit {font-size:.9rem}
+.quiz-pager {display:flex;gap:.6rem;align-items:center;margin:1rem 0}.quiz-progress {font-weight:650;color:#435d70;font-size:.92rem}
+.slide-quiz [data-finished] {display:flex;flex-wrap:wrap;gap:.8rem 1.5rem}.slide-quiz [data-score]:not(:empty){font-weight:650}
+@media(max-width:680px){
+ .learning-screen main.classroom-main {width:calc(100% - 1.25rem);margin-top:.65rem}
+ .classroom .lesson-cover {grid-template-columns:1fr;gap:1.35rem;min-height:0;padding:1.45rem 1.25rem;border-radius:.85rem}
+ .lesson-cover .cover-meta {margin-top:.9rem}.lesson-exhibit dl div {padding:.32rem 0}.learning-screen .lesson-exhibit h2 {margin-bottom:.65rem}
+ .lesson-cover .lesson-photo {min-height:0;height:10rem;object-position:50% 42%}
+ .slide-controls button {min-height:2.75rem}.classroom .lesson-heading {padding:.35rem}
+}
+@media print {
+ .classroom .lesson-cover {display:block!important;background:white;color:#111;min-height:0;padding:0}
+ .lesson-cover .cover-copy :is(h1,p){color:#111!important}.lesson-cover .lesson-exhibit,.lesson-cover .lesson-photo,.start-lesson,.slide-tools,.slide-outline,.lesson-heading,.lesson-demo,.quiz-pager {display:none!important}
+ .classroom #lesson-player[hidden], .classroom fcs-slide-deck>section[hidden], .classroom .slide-quiz fieldset[hidden]{display:block!important}
+}
+.track-start {margin:1.25rem 0 1.85rem}
+.learning-screen fcs-slide-deck:not(.classroom fcs-slide-deck) > [data-slide] h2 {font:600 clamp(1.7rem,3.5vw,2.45rem)/1.1 Georgia,serif}

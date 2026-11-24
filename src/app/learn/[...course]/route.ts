@@ -1,3 +1,4 @@
+import { leadershipCover, slideMedia } from '@/lib/education/classroom';
 import { courseNavigation } from '@/lib/education/chrome';
 import { aiPresentation, slideAssets } from '@/lib/education/presentation';
 import { readFile } from 'node:fs/promises';
@@ -20,6 +21,8 @@ export async function GET(request: Request, {params}: Context) {
     if (!html) {
         const source = await readFile(join(process.cwd(), 'education', fileFor(course, signed && url.searchParams.get('view') !== 'sample') + '.html'), 'utf8');
         html = source.replace('<!-- course-navigation -->', () => courseNavigation(course, signed))
+            .replace(/<!-- slide-media-(\d+) -->/g, (_, slide) => slideMedia(course, Number(slide)))
+            .replace('<!-- lesson-cover -->', () => leadershipCover(course))
             .replace('</head>', slideAssets + '</head>');
         if (signed && url.searchParams.get('view') === 'sample' && course.startsWith('leadership/cpa/')) {
             html = html.replace('href="#journal"', 'href="/learn/' + course + '#journal"')
