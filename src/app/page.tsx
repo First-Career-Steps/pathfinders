@@ -335,6 +335,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="workshops" className="py-12 bg-soft-sky/40 border-y border-gray-100">
+        <div className="max-w-5xl mx-auto px-5 grid gap-6 md:grid-cols-[1fr_auto] items-center">
+          <div><p className="font-semibold text-career-blue-dark mb-2">Student workshop · $4.99 once</p>
+            <h2 className="text-3xl font-bold">Write a resume bullet you can defend</h2>
+            <p className="mt-3 max-w-2xl text-charcoal-light">Practice on a school fundraiser, then use AI to turn your own experience into a resume bullet and an interview answer.</p>
+          </div>
+          <Link className="btn-primary text-center" href="/workshops/resume-bullet">Try the free example</Link>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-gradient-brand py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">

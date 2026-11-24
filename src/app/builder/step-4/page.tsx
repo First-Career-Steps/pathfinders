@@ -7,6 +7,8 @@ import { BuilderLayout } from "@/components/layout";
 import { Button, Input, TextArea, Select, Card } from "@/components/ui";
 import { useProfile, Experience } from "@/contexts/ProfileContext";
 import { requestResumeAI, requireAILines } from "@/lib/resume-ai-client";
+import FreeBulletLesson from "@/components/workshop/FreeBulletLesson";
+import { draftKey } from "@/lib/workshop";
 import { LiveResumePreview } from "@/components/LiveResumePreview";
 
 const EXPERIENCE_TYPES = [
@@ -61,6 +63,19 @@ export default function Step4Page() {
     endDate: "",
     isCurrent: false,
   });
+
+  useEffect(() => {
+    if (!user || new URLSearchParams(window.location.search).get('from') !== 'workshop') return;
+    try {
+      const key = draftKey(user.id) + '.transfer';
+      const bullet = sessionStorage.getItem(key);
+      if (!bullet) return;
+      setFormData(current => ({...current, description: bullet}));
+      setShowForm(true);
+      sessionStorage.removeItem(key);
+      window.history.replaceState(window.history.state, '', '/builder/step-4');
+    } catch { /* The learner can still paste the downloaded bullet. */ }
+  }, [user]);
 
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -209,6 +224,10 @@ export default function Step4Page() {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Column - Form */}
         <div className="flex-1 space-y-6">
+          <details className="rounded-xl border border-gray-200 bg-white p-4">
+            <summary className="cursor-pointer font-semibold text-career-blue-dark">Try a free example: would you put this AI bullet on your resume?</summary>
+            <div className="mt-4"><FreeBulletLesson inBuilder /></div>
+          </details>
           {/* Experience List */}
           {experiences.length > 0 && !showForm && (
             <div className="space-y-3">

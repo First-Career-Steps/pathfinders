@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { WORKSHOP, workshopLogin } from '@/lib/workshop';
 
 import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
@@ -11,6 +12,8 @@ import { logger } from '@/lib/logger';
 export default function SignUpPage() {
 
   const { signUp } = useAuth();
+  const [workshop, setWorkshop] = useState(false);
+  useEffect(() => { setWorkshop(new URLSearchParams(location.search).get('product') === 'resume-workshop'); }, []);
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -88,7 +91,8 @@ export default function SignUpPage() {
         formData.email,
         formData.password,
         formData.fullName,
-        formData.linkedinLink || undefined
+        formData.linkedinLink || undefined,
+        workshop
       );
 
       if (error) {
@@ -110,7 +114,7 @@ export default function SignUpPage() {
       }
 
       // Redirect to builder (hard navigation so middleware sees auth cookies immediately)
-      window.location.assign('/builder/step-1');
+      window.location.assign(workshop ? WORKSHOP : '/builder/step-1');
     } catch (error) {
       logger.error('Sign Up Form', error as Error, { email: formData.email });
       setServerError('An unexpected error occurred. Please try again.');
@@ -152,11 +156,11 @@ export default function SignUpPage() {
                 </h1>
                 <p className="text-gray-600 mb-8">
                   We&apos;ve sent a confirmation link to <span className="font-semibold text-charcoal">{formData.email}</span>.
-                  Please click the link to verify your account and start building your resume.
+                  Please click the link to verify your account and {workshop ? "return to your workshop" : "start building your resume"}.
                 </p>
                 <div className="space-y-4">
                   <Link
-                    href="/login"
+                    href={workshop ? workshopLogin : "/login"}
                     className="block w-full px-6 py-3 bg-career-blue text-white font-semibold rounded-xl hover:bg-career-blue-dark transition-all duration-200"
                   >
                     Go to Sign In
@@ -296,7 +300,7 @@ export default function SignUpPage() {
 
                 <p className="mt-6 text-center text-sm text-gray-600">
                   Already have an account?{' '}
-                  <Link href="/login" className="text-career-blue font-semibold hover:underline">
+                  <Link href={workshop ? workshopLogin : "/login"} className="text-career-blue font-semibold hover:underline">
                     Sign In
                   </Link>
                 </p>

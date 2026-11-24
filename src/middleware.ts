@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server';
 import { logger } from '@/lib/logger';
 
 // Routes that require authentication
-const protectedRoutes = ['/dashboard', '/resume', '/career-roadmap', '/builder', '/success'];
+const protectedRoutes = ['/workshops/resume-bullet/learn', '/dashboard', '/resume', '/career-roadmap', '/builder', '/success'];
 
 // Routes that should redirect to builder if already authenticated
 const authRoutes = ['/login', '/signup'];
@@ -50,7 +50,7 @@ export async function middleware(request: NextRequest) {
         }
 
         const isAuthenticated = !!user;
-        const isProtectedApi = pathname.startsWith('/api/ai/') || pathname.startsWith('/api/resumes/') || ['/api/create-checkout', '/api/check-subscription'].includes(pathname);
+        const isProtectedApi = pathname.startsWith('/api/workshops/') || pathname.startsWith('/api/ai/') || pathname.startsWith('/api/resumes/') || ['/api/create-checkout', '/api/check-subscription'].includes(pathname);
         if (isProtectedApi && !user) return NextResponse.json({ error: 'Sign in required' }, { status: 401 });
         if (user?.app_metadata?.deletion_in_progress && !['/', '/privacy', '/terms', '/dashboard/settings', '/login', '/signup', '/blocked'].includes(pathname)) {
             if (isProtectedApi) return NextResponse.json({ error: 'Account deletion in progress' }, { status: 409 });
@@ -142,6 +142,7 @@ export async function middleware(request: NextRequest) {
 // Configure which routes use this middleware
 export const config = {
     matcher: [
+        '/api/workshops/:path*',
         '/api/ai/:path*',
         '/api/resumes/:path*',
         '/api/create-checkout',

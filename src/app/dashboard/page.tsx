@@ -41,6 +41,12 @@ export default function DashboardPage() {
                 <p className="text-gray-600">{email}</p>
             </div>
 
+            <Link href="/workshops/resume-bullet" className="block rounded-2xl border border-gray-200 bg-white p-6 mb-6 hover:border-career-blue">
+                <span className="font-semibold text-career-blue-dark">Student workshop</span>
+                <h2 className="text-xl mt-1">Write a resume bullet you can defend</h2>
+                <p className="text-gray-600">Try the free exercise or return to your purchased workshop.</p>
+            </Link>
+
             {/* Quick Actions */}
             <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <Link

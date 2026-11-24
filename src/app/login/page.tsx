@@ -3,6 +3,7 @@
 import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import { WORKSHOP, workshopSignup } from '@/lib/workshop';
 import { useAuth } from '@/contexts/AuthContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -268,7 +269,7 @@ function LoginContent() {
                   ) : (
                     <>
                       Don&apos;t have an account?{' '}
-                      <Link href="/signup" className="text-career-blue font-semibold hover:underline">
+                      <Link href={searchParams.get('redirect')?.startsWith(WORKSHOP) ? workshopSignup : '/signup'} className="text-career-blue font-semibold hover:underline">
                         Create Account
                       </Link>
                     </>

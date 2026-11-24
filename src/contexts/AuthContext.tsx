@@ -9,7 +9,7 @@ interface AuthContextType {
     user: User | null;
     session: Session | null;
     loading: boolean;
-    signUp: (email: string, password: string, fullName: string, linkedinLink?: string) => Promise<{ error: string | null; needsConfirmation?: boolean }>;
+    signUp: (email: string, password: string, fullName: string, linkedinLink?: string, workshop?: boolean) => Promise<{ error: string | null; needsConfirmation?: boolean }>;
     signIn: (email: string, password: string) => Promise<{ error: string | null }>;
     signOut: () => Promise<void>;
     resetPasswordForEmail: (email: string) => Promise<{ error: string | null }>;
@@ -81,7 +81,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         email: string,
         password: string,
         fullName: string,
-        linkedinLink?: string
+        linkedinLink?: string,
+        workshop = false
     ): Promise<{ error: string | null; needsConfirmation?: boolean }> => {
         try {
             authLogger.info('Sign up attempt', { email, hasLinkedin: !!linkedinLink });
@@ -97,7 +98,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
                         terms_version: '2026-09-24',
                         terms_accepted_at: new Date().toISOString(),
                     },
-                    emailRedirectTo: `${window.location.origin}/builder/step-1`,
+                    emailRedirectTo: `${window.location.origin}${workshop ? "/workshops/resume-bullet" : "/builder/step-1"}`,
                 },
             });
 

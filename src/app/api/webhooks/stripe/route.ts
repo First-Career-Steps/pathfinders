@@ -5,6 +5,7 @@ import { verifyWebhookSignature } from '@/lib/stripe';
 import { createAdminClient } from '@/lib/supabase';
 import { logger, paymentLogger } from '@/lib/logger';
 import crypto from 'crypto';
+import { handleWorkshopEvent } from '@/lib/workshop-commerce';
 // NOTE: sendEmail and email templates are imported dynamically where needed
 // to avoid crashing the entire webhook module if Resend initialization fails.
 
@@ -201,6 +202,8 @@ export async function POST(request: NextRequest) {
             type: event.type,
             id: event.id,
         });
+
+        if (await handleWorkshopEvent(event)) return NextResponse.json({ received: true });
 
         // Handle the event
         switch (event.type) {
