@@ -1,40 +1,45 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import styles from './home.module.css';
 
 const paths = [
-    {name:'AI workshops', type:'Interactive courses', body:'Take an idea from a rough prompt to a tested feature. Save a workbook you can use on your next project.', href:'/learn/ai', action:'Explore AI', color:'blue'},
-    {name:'Leadership', type:'Courses & assessments', body:'Practice a tough call on a restaurant shift or inside a finance team. See what changes when you choose a different response.', href:'/learn/leadership', action:'Explore Leadership', color:'green'},
-    {name:'Resume Builder', type:'Career service', body:'Turn school, volunteer and work experience into a resume. Preview it free. PDF downloads are $1.99 per year, billed annually.', href:'/resume-builder', action:'Build my resume', color:'gold'},
+    { name: 'AI workshops', type: 'Interactive courses', body: 'Write a better prompt, compare AI tools and take an idea through to a tested feature.', detail: '4 workshops and an AI basics course', href: '/learn/ai', action: 'Explore AI', tone: 'blue' },
+    { name: 'Leadership', type: 'Courses & assessments', body: 'Make a tough call on a restaurant shift or inside a finance team. See how your decision plays out.', detail: 'Restaurant and accounting tracks', href: '/learn/leadership', action: 'Explore Leadership', tone: 'green' },
+    { name: 'Resume Builder', type: 'Career service', body: 'Turn your school, volunteer and work experience into a resume you can use.', detail: 'Free preview · PDF downloads $1.99/year', href: '/resume-builder', action: 'Build my resume', tone: 'gold' },
 ];
 
 export default function HomePage() {
     return <><Header/><main className={styles.home}>
-        <section className={styles.hero}>
-            <div className={styles.heroInner}>
-                <div><p className={styles.kicker}>First Career Steps · Workplace learning</p>
-                    <h1>Build skills for<br/>your <em>next step.</em></h1>
-                    <p className={styles.intro}>Try a real workplace decision, practice with AI, or build a resume from what you’ve already done.</p>
-                    <a href="#paths" className={styles.primary}>Choose your path <span aria-hidden="true">↓</span></a>
+        <div className={styles.container}>
+            <header className={styles.intro}>
+                <p className={styles.kicker}>Workplace learning &amp; career tools</p>
+                <h1>Build skills for your next step.</h1>
+                <p>Choose a course, try a workplace decision, or put your experience on paper.</p>
+            </header>
+            <section className={styles.paths} aria-label="Choose your path">
+                {paths.map(path => <article key={path.name} className={styles[path.tone]}>
+                    <div className={styles.cardTop}><p>{path.type}</p><h2>{path.name}</h2></div>
+                    <div className={styles.cardBody}><p>{path.body}</p><small>{path.detail}</small>
+                        <a className={styles.cardLink} href={path.href}>{path.action}</a>
+                    </div>
+                </article>)}
+            </section>
+            <section className={styles.practice} aria-labelledby="practice-title">
+                <div className={styles.sectionHead}><h2 id="practice-title">Try a free exercise</h2><Link href="/learn">View all courses</Link></div>
+                <div className={styles.examples}>
+                    <article className={styles.feature}>
+                        <Image src="/learning-assets/lead-the-shift.webp" alt="A shift lead coaching a teammate at the pizza pass" width={320} height={220}/>
+                        <div><p className={styles.kicker}>Restaurant leadership</p><h3>Two cooks start the same remake.</h3><p>Four guests are waiting. What do you do in the next 30 seconds?</p>
+                            {/* Course players open as standalone HTML documents. */}
+                            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                            <a href="/learn/leadership/restaurant#case">Try the shift decision</a></div>
+                    </article>
+                    <article className={styles.student}><p className={styles.kicker}>Resume &amp; interview practice</p><h3>Write a resume bullet you can defend.</h3><p>Compare what you did with what AI wrote. The full student workshop is $4.99.</p>
+                        <Link href="/workshops/resume-bullet#free-example">Try the resume exercise</Link></article>
                 </div>
-                <div className={styles.feature}>
-                    <Image src="/learning-assets/lead-the-shift.webp" alt="A shift lead and teammate at the restaurant pass" width={640} height={340} priority/>
-                    <div className={styles.caption}><p className={styles.kicker}>Try a leadership case</p><h2>Two cooks start the same remake. Four guests are waiting.</h2>
-                    {/* The course player serves a complete interactive HTML document. */}
-                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-                    <a href="/learn/leadership/restaurant#case">What do you do in the next 30 seconds? <span aria-hidden="true">→</span></a></div>
-                </div>
-            </div>
-        </section>
-        <section className={styles.section} id="paths" aria-labelledby="paths-title"><h2 id="paths-title">Choose your path</h2>
-            <div className={styles.cards}>{paths.map(path=><article key={path.name} className={styles[path.color]}>
-                <p className={styles.kicker}>{path.type}</p><h3>{path.name}</h3><p>{path.body}</p><a href={path.href}>{path.action} <span aria-hidden="true">→</span></a>
-            </article>)}</div>
-        </section>
-        <section className={styles.workshop}><div><p className={styles.kicker}>Student workshop · About 20 minutes</p>
-            <h2>Write a resume bullet you can defend.</h2><p>Turn something you actually did into a resume bullet and an interview answer. Try the free example or take the full $4.99 workshop.</p></div>
-            <Link href="/workshops/resume-bullet" className={styles.secondary}>Try the free example <span aria-hidden="true">→</span></Link></section>
+            </section>
+        </div>
     </main><Footer/></>;
 }

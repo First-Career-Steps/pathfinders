@@ -1,3 +1,4 @@
+import { courseNavigation } from '@/lib/education/chrome';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileFor, isCourse, learnerCourse } from '@/lib/education/catalog';
@@ -16,9 +17,7 @@ export async function GET(request: Request, {params}: Context) {
     }
     const file = fileFor(course, signed);
     const source = await readFile(join(process.cwd(), 'education', file + '.html'), 'utf8');
-    const account = signed ? '<form method="post" action="/learn/signout"><button class="academy-signout">Sign out of Leadership</button></form>' :
-        '<a href="/learn/signin?next=/learn/' + course + '">Learner sign-in</a>';
-    const html = source.replace('<!-- learner-session -->',account);
+    const html = source.replace('<!-- course-navigation -->', () => courseNavigation(course, signed));
     return new Response(html, {headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'private, no-store','Vary':'Cookie','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'}});
 }
 

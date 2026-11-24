@@ -9,7 +9,7 @@ const transfer = [
     ['Labeled parts bins and showed two new members where to find tools.', 'You kept the concrete actions and the supported count.'],
     ['Improved team efficiency by reorganizing the entire workshop.', 'The notes describe labeling bins. They give no measured improvement or shop-wide responsibility.'],
 ];
-const section = 'rounded-2xl border border-gray-200 bg-white p-5 sm:p-7 space-y-4';
+const section = 'workshop-panel space-y-4';
 type Saved = WorkshopDraft & { passed: boolean; reviewed: string; finished: boolean };
 const initial: Saved = { ...emptyDraft, passed:false, reviewed:'', finished:false };
 
@@ -84,8 +84,8 @@ export default function StudentWorkshop({ userId, learnerName }: { userId: strin
         <section className={section}><h2 className="text-2xl">1. Find the claim you can support</h2>
             <p>Your notes say, “At robotics club I labeled the parts bins and showed two new members where to find tools.” Which line could you explain to an interviewer?</p>
             <fieldset className="space-y-2"><legend className="sr-only">Choose a supported bullet</legend>{transfer.map(([label], i)=>
-                <label key={label} className="block p-3 bg-gray-50 rounded-lg"><input type="radio" className="mr-2" name="practice" checked={choice===i} onChange={()=>{setChoice(i);setWork(w=>({...w,passed:i===1,finished:false}));}}/>{label}</label>)}</fieldset>
-            <p role="status">{choice!==null && transfer[choice][1]}</p></section>
+                <label key={label} className="workshop-choice"><input type="radio" className="mr-2" name="practice" checked={choice===i} onChange={()=>{setChoice(i);setWork(w=>({...w,passed:i===1,finished:false}));}}/>{label}</label>)}</fieldset>
+            <p role="status" className="workshop-feedback">{choice!==null && transfer[choice][1]}</p></section>
         <section className={section}><h2 className="text-2xl">2. Write one bullet from your own notes</h2>
             <p>Pick a project, volunteer shift, job, or responsibility at home. Write what your hands actually did, who it was for, and one detail you remember. A number is optional.</p>
             <label className="block font-semibold">My factual notes<textarea disabled={busy} className="input-base mt-1" rows={3} maxLength={1600} value={work.facts} onChange={e=>edit('facts',e.target.value)} placeholder="I sorted donated coats by size and helped families find the right rack."/></label>

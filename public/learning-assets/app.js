@@ -75,9 +75,19 @@ function refPage(){block('<div class="focus"><a class="crumb" href="#resources">
 function exam(){
  if(state.passed){record();return}if(state.done.length<catalog.length){block('<div class="focus box"><div class="eyebrow">Final assessment</div><h2>Finish your fieldwork first.</h2><p>'+state.done.length+' of '+catalog.length+' activities complete. Your final assessment opens once each lesson has a saved response.</p>'+kickoff()+'</div>');return}
  if(!examDraft)examDraft={answers:Array(questions.length).fill(-1),name:state.name||'',id:crypto.randomUUID(),time:{value:0,at:null}};clockOpen(examDraft.time);
- block('<div class="focus"><a class="crumb" href="#home">Course overview</a><div class="sectionhead"><div class="eyebrow">Final assessment</div><h1>Make the call.</h1><p>Choose the strongest response to each case. You need '+Math.ceil(meta.examCount*.8)+' correct answers out of '+meta.examCount+' to complete the course.</p></div>'+(lastReview?'<div class="case"><h3>Last attempt · '+lastReview.score+'%</h3>'+timingLink()+'<p>Revisit the fieldwork before trying again.</p><ul>'+lastReview.review.filter(r=>!r.correct).map(r=>'<li>'+esc(r.title)+'</li>').join('')+'</ul></div>':'')+'<form id="test"><label class="label" for="learner">Name for your completion record</label><input class="write" required minlength="2" maxlength="100" id="learner" autocomplete="name" value="'+esc(examDraft.name)+'">'+questions.map((q,i)=>'<div class="examq"><div class="eyebrow">Decision '+(i+1)+' of '+meta.examCount+'</div><fieldset><legend>'+esc(q.question)+'</legend>'+q.choices.map((x,j)=>'<label class="option"><input required type="radio" name="q'+i+'" value="'+j+'" '+(examDraft.answers[i]===j?'checked':'')+'>'+esc(x)+'</label>').join('')+'</fieldset></div>').join('')+'<div class="row space"><button class="primary">Submit assessment</button><span role="status" id="examerr"></span></div></form></div>');
+ block('<div class="focus"><a class="crumb" href="#home">Course overview</a><div class="sectionhead"><div class="eyebrow">'+esc(meta.title)+'</div><h1>Final assessment</h1><p>Choose the strongest response to each case. You need '+Math.ceil(meta.examCount*.8)+' correct answers out of '+meta.examCount+' to complete the course.</p></div>'+(lastReview?'<div class="case"><h3>Last attempt · '+lastReview.score+'%</h3>'+timingLink()+'<p>Revisit the fieldwork before trying again.</p><ul>'+lastReview.review.filter(r=>!r.correct).map(r=>'<li>'+esc(r.title)+'</li>').join('')+'</ul></div>':'')+'<form id="test"><div class="exam-progress no-print"><label for="answer-count">Assessment progress</label><progress id="answer-count" max="'+questions.length+'"></progress><span id="answer-caption" role="status"></span></div><label class="label" for="learner">Name for your completion record</label><input class="write" required minlength="2" maxlength="100" id="learner" autocomplete="name" value="'+esc(examDraft.name)+'">'+questions.map((q,i)=>'<div class="examq"><div class="eyebrow">Decision '+(i+1)+' of '+meta.examCount+'</div><fieldset><legend>'+esc(q.question)+'</legend>'+q.choices.map((x,j)=>'<label class="option"><input required type="radio" name="q'+i+'" value="'+j+'" '+(examDraft.answers[i]===j?'checked':'')+'>'+esc(x)+'</label>').join('')+'</fieldset></div>').join('')+'<div class="row space"><button class="primary">Submit assessment</button><span role="status" id="examerr"></span></div></form></div>');
  get('learner').oninput=e=>examDraft.name=e.target.value;
- get('test').onchange=e=>{if(/^q\d+$/.test(e.target.name))examDraft.answers[Number(e.target.name.slice(1))]=Number(e.target.value)};
+ function showAnswered(){
+   const count = examDraft.answers.filter(answer => answer >= 0).length;
+   get('answer-count').value = count;
+   get('answer-caption').textContent = count + ' of ' + questions.length + ' answered';
+ }
+ showAnswered();
+ get('test').onchange=e=>{
+   if (!/^q\d+$/.test(e.target.name)) return;
+   examDraft.answers[Number(e.target.name.slice(1))] = Number(e.target.value);
+   showAnswered();
+ };
  get('test').onsubmit=async e=>{e.preventDefault();const btn=e.submitter;btn.disabled=true;try{const d=examDraft;lastReview=await api('exam',{name:d.name,answers:d.answers,seconds:seconds(d.time),attemptId:d.id});await refresh();examDraft=null;if(lastReview.passed){location.hash='record'}else{exam();window.scrollTo(0,0)}}catch(err){get('examerr').textContent=err.message}finally{btn.disabled=false}}
 }
 function record(){if(!state.passed){location.hash='exam';return}block('<div class="focus"><div id="credential"></div>'+timingLink()+'<div class="row space no-print">'+button('#journal','View action plan','soft')+'</div><form class="box no-print" id="evaluation"><h3>Evaluate the course</h3><label class="label" for="rating">How well did the course meet its objectives?</label><select class="write" id="rating" required><option value="">Choose a rating</option>'+[1,2,3,4,5].map(i=>'<option value="'+i+'">'+i+([' · Poorly','',' · Adequately','',' · Very well'][i-1])+'</option>').join('')+'</select><label class="label space" for="comment">What would you change about the cases, timing, materials, or assessment?</label><textarea id="comment" class="write" maxlength="3000"></textarea><button class="primary">Save evaluation</button><p id="evalmsg" role="status"></p></form></div>');mountCredential(get('credential'),state.certificateId).catch(e=>notify(e.message));get('evaluation').onsubmit=async e=>{e.preventDefault();e.submitter.disabled=true;try{await api('evaluation',{rating:Number(get('rating').value),comment:get('comment').value});get('evalmsg').textContent='Thank you. Your evaluation has been saved.'}catch(err){get('evalmsg').textContent=err.message}finally{get('evaluation').querySelector('button').disabled=false}}}
@@ -93,7 +103,7 @@ async function certificateHistory(id){
 }
 async function route(){
  const ticket=++routeTicket;clockStop();activeClock=null;
- const [page,arg]=location.hash.substring(1).split('/');document.querySelectorAll('nav a').forEach(a=>{const curr=page==='journal'?'journal':['resources','reference'].includes(page)?'resources':'home';if(a.hash==='#'+curr)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+ const [page,arg]=location.hash.substring(1).split('/');document.querySelectorAll('.fcs-course-actions a').forEach(a=>{const curr=page==='journal'?'journal':['resources','reference'].includes(page)?'resources':'home';if(a.hash==='#'+curr)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
  try{
  if(['lesson','reference','exam','record'].includes(page)&&!state.entitled){enroll();return}
  if(page==='lesson'&&!lessons.length)lessons=await api('lessons');
@@ -112,7 +122,7 @@ async function route(){
 function errorPage(e){block('<div class="focus box"><h2>We couldn’t load this page.</h2><p>'+esc(e.message)+'</p><button class="primary" id="retry">Try again</button></div>');get('retry').onclick=()=>location.reload()}
 async function start(){try{if(seriesCourse){
   meta=await api('outline');catalog=meta.outline;parts=meta.parts;descriptions=meta.descriptions;
-  document.title=meta.title+' · Little Black Book Leadership';
+  document.title=meta.title+' · First Career Steps';
  }else{const r=await fetch('/learning-assets/outline.json');if(!r.ok)throw new Error('Course outline unavailable.');catalog=await r.json();}
  await refresh();const sid=new URLSearchParams(location.search).get('session_id');if(sid&&signed){await api('checkout/confirm',{sessionId:sid});await refresh();history.replaceState(null,'',location.pathname+location.hash)}await route();window.addEventListener('hashchange',route)}catch(e){errorPage(e)}}
 start();

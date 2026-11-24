@@ -1,14 +1,19 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
+import { courseNavigation, themeRestaurantPlayer } from '../src/lib/education/chrome';
 import { courseFiles, fileFor, learnerCourse } from '../src/lib/education/catalog';
 import { changeSession, educationCookies, learnerApi } from '../src/lib/education/session';
 
 test('public course documents and their scripts, styles and route links resolve', () => {
-    const routes = new Set([...Object.keys(courseFiles).map(course=>'/learn/'+course), '/learn', '/', '/resume-builder','/learn/signin']);
+    const routes = new Set([...Object.keys(courseFiles).map(course=>'/learn/'+course), '/learn', '/', '/resume-builder','/learn/signin','/dashboard']);
     for (const course of Object.keys(courseFiles) as (keyof typeof courseFiles)[]) {
         for (const signed of [true,false]) {
-            const html = readFileSync('education/'+fileFor(course,signed)+'.html','utf8');
+            const template = readFileSync('education/'+fileFor(course,signed)+'.html','utf8');
+            assert.match(template,/class="learning-screen"/);
+            assert.match(template,/<!-- course-navigation -->/);
+            const html = template.replace('<!-- course-navigation -->', () => courseNavigation(course, signed));
+            assert.match(html,/aria-label="Breadcrumb"/);
             for (const [,path] of html.matchAll(/(?:src|href)="(\/[^"#?]*)/g)) {
                 assert.ok(routes.has(path) || existsSync('public'+path), course+' links to '+path);
             }
@@ -48,4 +53,15 @@ test('enrolled API calls keep the learner identity, refresh both course cookies,
     assert.equal(response.status,403);
     assert.equal(response.headers.getSetCookie().length,2);
     assert.equal(response.headers.get('cache-control'),'private, no-store');
+});
+
+test('the entitled restaurant document keeps its controls and receives the shared course navigation', () => {
+    const source = '<html><head><style>body{margin:0}</style></head><body><header><div>Old title</div></header><main id="main"></main><script>const index = 0;</script></body></html>';
+    const page = themeRestaurantPlayer(source);
+    assert.match(page, /course-nav\.css/);
+    assert.match(page, /class="learning-screen" data-player="restaurant"/);
+    assert.match(page, /href="#record"/);
+    assert.match(page, /action="\/learn\/signout"/);
+    assert.ok(page.includes('<main id="main"></main><script>const index = 0;</script>'));
+    assert.doesNotMatch(page, /Old title/);
 });

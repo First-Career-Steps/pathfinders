@@ -58,6 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
+      <head><link rel="stylesheet" href="/learning-assets/course-nav.css" /></head>
       <body className="min-h-screen">
         <CampaignCapture />
         <AuthProvider>

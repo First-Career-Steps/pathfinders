@@ -1,3 +1,4 @@
+import { courseNavigation, themeRestaurantPlayer } from './chrome';
 import { learnerCourse, type Course } from './catalog';
 
 const academy = 'https://www.littleblackbookleadership.com';
@@ -36,7 +37,7 @@ export function signInPage(course: Course, message = '', status = 200) {
     headers.set('Content-Type', 'text/html; charset=utf-8');
     headers.set('X-Robots-Tag', 'noindex');
     headers.set('Content-Security-Policy', "default-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'none'");
-    return new Response(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Leadership learner sign-in · First Career Steps</title><link rel="stylesheet" href="/learning-assets/style.css"><link rel="stylesheet" href="/learning-assets/course-nav.css"></head><body><header><div class="mast"><a class="brand" href="/"><img src="/logo.svg" alt="First Career Steps home"></a><nav><a href="/learn/leadership">Leadership</a></nav></div></header><main class="focus"><section class="box"><h1>Leadership learner sign-in</h1><p>Use your Little Black Book Leadership course email and password. First Career Steps uses that course account to open your saved work, assessments and certificates.</p>${message ? '<p role="alert">' + message + '</p>' : ''}<form method="post" action="/learn/signin"><input type="hidden" name="next" value="/learn/${course}"><label class="label">Course email<input name="email" type="email" autocomplete="username" class="write" maxlength="254" required></label><label class="label">Course password<input name="password" type="password" autocomplete="current-password" class="write" maxlength="256" required></label><p><button class="primary">Sign in to Leadership</button></p></form><p>For course access or a password reset, contact your course organizer.</p><a href="/learn/leadership#practice">Try a public practice case</a></section></main></body></html>`, { status, headers });
+    return new Response(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Leadership learner sign-in · First Career Steps</title><link rel="stylesheet" href="/learning-assets/style.css"><link rel="stylesheet" href="/learning-assets/course-nav.css"></head><body class="learning-screen" data-player="fieldbook">${courseNavigation('signin')}<main class="focus"><section class="box"><h1>Leadership learner sign-in</h1><p>Use your Little Black Book Leadership course email and password. First Career Steps uses that course account to open your saved work, assessments and certificates.</p>${message ? '<p role="alert">' + message + '</p>' : ''}<form method="post" action="/learn/signin"><input type="hidden" name="next" value="/learn/${course}"><label class="label">Course email<input name="email" type="email" autocomplete="username" class="write" maxlength="254" required></label><label class="label">Course password<input name="password" type="password" autocomplete="current-password" class="write" maxlength="256" required></label><p><button class="primary">Sign in to Leadership</button></p></form><p>For course access or a password reset, contact your course organizer.</p><a href="/learn/leadership#practice">Try a public practice case</a></section></main></body></html>`, { status, headers });
 }
 
 async function readBody(request: Request, limit: number) {
@@ -119,7 +120,7 @@ export async function learnerApi(request: Request, action: string) {
         if (request.method === 'HEAD') return new Response(null, {status:upstream.status, headers:output});
         // Only the paid course player is a document. Its service checks entitlement before returning HTML.
         if (action === 'restaurant/courses' && upstream.ok && upstream.headers.get('content-type')?.startsWith('text/html')) {
-            const html = (await upstream.text()).replace('<strong>Leadership · Restaurant practice</strong>', '<a href="/learn/leadership/restaurant">Back to Restaurant Leadership</a>');
+            const html = themeRestaurantPlayer(await upstream.text());
             return new Response(html, {headers:output});
         }
         if (action.endsWith('checkout') && upstream.ok) {

@@ -12,14 +12,14 @@ const topics = [
 ];
 
 export default function Catalog() {
-    return <><Header/><main className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
-        <p className="text-sm font-semibold text-career-blue-dark">First Career Steps</p><h1 className="mt-2 text-4xl sm:text-5xl">Courses and assessments</h1>
+    return <><Header/><main className="fcs-workshop"><div className="fcs-library">
+        <h1 className="mt-2 text-4xl sm:text-5xl">Courses and assessments</h1>
         <p className="mt-4 text-lg">Choose a topic or jump straight into a practice case.</p>
-        <div className="mt-8 grid md:grid-cols-2 gap-5">{topics.map(topic=><section key={topic.title} className="rounded-2xl border border-slate-200 p-6 sm:p-8">
+        <div className="mt-8 grid md:grid-cols-2 gap-5">{topics.map(topic=><section key={topic.title} className="workshop-panel catalog-topic">
             <h2 className="text-2xl"><a href={topic.href}>{topic.title}</a></h2><p className="mt-3 text-slate-700">{topic.intro}</p>
-            <ul className="mt-5 space-y-3">{topic.links.map(([title,href])=><li key={href}><a className="underline text-career-blue-dark underline-offset-4" href={href}>{title}</a></li>)}</ul>
+            <ul className="catalog-list">{topic.links.map(([title,href])=><li key={href}><a className="catalog-course" href={href}>{title}</a></li>)}</ul>
         </section>)}</div>
-        <section className="mt-8 rounded-2xl bg-soft-sky p-6"><h2 className="text-2xl">Resume and interview practice</h2><p className="mt-2">Turn one experience into a bullet you can explain in an interview.</p>
+        <section className="mt-6 workshop-panel"><h2 className="text-2xl">Resume and interview practice</h2><p className="mt-2">Turn one experience into a bullet you can explain in an interview.</p>
         <div className="mt-3 flex flex-wrap gap-5 text-career-blue-dark font-semibold underline"><a href="/workshops/resume-bullet">Try the student workshop</a><a href="/resume-builder">Open the Resume Builder</a></div></section>
-    </main><Footer/></>;
+    </div></main><Footer/></>;
 }

@@ -18,10 +18,10 @@ export default function FreeBulletLesson({ inBuilder = false }: { inBuilder?: bo
             <div className="rounded-xl bg-orange-50 p-4"><strong>What AI wrote</strong><p>“Led fundraising operations for two school events.”</p></div>
         </div>
         <fieldset className="space-y-2"><legend className="mb-2 font-semibold">What would you change before putting this on your resume?</legend>
-        {choices.map(([label],i)=><label key={label} className="flex items-start gap-3 rounded-xl border border-gray-200 p-3 cursor-pointer">
+        {choices.map(([label],i)=><label key={label} className="workshop-choice flex items-start gap-3 rounded-xl border border-gray-200 p-3 cursor-pointer">
             <input type="radio" className="mt-1.5" name="fundraiser-example" checked={choice===i} onChange={()=>setChoice(i)} />{label}
         </label>)}</fieldset>
-        <p role="status" className="font-medium text-charcoal">{choice === null ? '' : choices[choice][1]}</p>
+        <p role="status" className="workshop-feedback font-medium text-charcoal">{choice === null ? '' : choices[choice][1]}</p>
         {inBuilder && <Link className="font-semibold text-career-blue underline" href={WORKSHOP} target="_blank" rel="noopener">Practice with your own experience · View the $4.99 workshop (opens in a new tab)</Link>}
     </div>;
 }
