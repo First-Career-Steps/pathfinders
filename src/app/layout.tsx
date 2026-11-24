@@ -21,10 +21,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.firstcareersteps.com"),
-  title: "FirstCareerSteps - Build Your Professional Resume",
+  title: "First Career Steps | Workplace Learning and Resume Builder",
   description:
-    "Build a professional resume with our AI-powered builder. Perfect for students and first-time job seekers. Download your resume as PDF for just $1.99/year.",
+    "Practice AI and leadership skills through interactive courses and assessments, prepare for an interview, or build your first resume.",
   keywords: [
+    "interactive AI courses",
+    "leadership assessments",
     "student resume",
     "resume builder",
     "career builder",
@@ -35,9 +37,9 @@ export const metadata: Metadata = {
   authors: [{ name: "FirstCareerSteps" }],
   creator: "FirstCareerSteps",
   openGraph: {
-    title: "FirstCareerSteps - Build Your Professional Resume",
+    title: "First Career Steps | Workplace Learning and Resume Builder",
     description:
-      "Build a professional resume in under 10 minutes. Download as PDF for $1.99/year.",
+      "Explore interactive AI workshops, leadership courses and assessments, and the First Career Steps Resume Builder.",
     type: "website",
     locale: "en_US",
   },
@@ -46,8 +48,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   themeColor: "#1E88E5",
 };
 

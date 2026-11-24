@@ -7,6 +7,7 @@ export default function Footer() {
         <footer className="bg-charcoal text-white py-12">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <nav className="flex flex-wrap gap-6 text-sm" aria-label="Footer">
+                    <Link href="/learn" className="hover:underline">Courses &amp; assessments</Link>
                     <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
                     <Link href="/terms" className="hover:underline">Terms of Service</Link>
                     <Link href="/for-educators" className="hover:underline">First resume workshop</Link>

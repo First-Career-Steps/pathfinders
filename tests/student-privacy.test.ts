@@ -124,9 +124,10 @@ test('database: migration removes public access and protects administrative priv
 });
 test('legal: provider named on both pages; signup, settings and both footers link policies', () => {
   for (const path of ['src/app/privacy/page.tsx','src/app/terms/page.tsx']) assert.match(file(path), /OpenAI/);
-  for (const path of ['src/components/Footer.tsx','src/app/page.tsx','src/app/signup/page.tsx','src/app/dashboard/settings/page.tsx']) {
+  for (const path of ['src/components/Footer.tsx','src/app/signup/page.tsx','src/app/dashboard/settings/page.tsx']) {
     assert.match(file(path), /href="\/privacy"/); assert.match(file(path), /href="\/terms"/);
   }
+  assert.match(file('src/app/page.tsx'), /<Footer\s*\//);
   assert.doesNotMatch(file('src/app/dashboard/settings/page.tsx'), /Account deletion will be implemented/);
   assert.match(file('src/lib/resume-ai.ts'), /store: false/);
 });

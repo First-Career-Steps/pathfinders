@@ -27,7 +27,7 @@ export default function Header() {
 
     return (
         <header className="w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-50">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
                 <div className="flex items-center justify-between">
                     <Link href="/">
                         <Image
@@ -35,12 +35,13 @@ export default function Header() {
                             alt="FirstCareerSteps"
                             width={240}
                             height={55}
-                            className="h-10 md:h-14 w-auto"
+                            className="h-9 sm:h-10 md:h-14 w-auto"
                         />
                     </Link>
 
 
 
+                    <div className="hidden lg:block"><nav aria-label="Products" className="flex gap-5 text-sm font-semibold text-career-blue-dark"><Link href="/learn">Courses &amp; assessments</Link><Link href="/resume-builder">Resume Builder</Link></nav></div>
                     <div className="flex items-center gap-3 md:gap-4">
                         {loading ? (
                             // Show loading state
@@ -86,6 +87,7 @@ export default function Header() {
 
                     </div>
                 </div>
+                <div className="lg:hidden pt-2"><nav aria-label="Products" className="flex gap-5 text-sm font-semibold text-career-blue-dark"><Link href="/learn">Courses &amp; assessments</Link><Link href="/resume-builder">Resume Builder</Link></nav></div>
             </div>
         </header>
     );

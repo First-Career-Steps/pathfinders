@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Practice writing prompts, organizing AI projects, designing a bot and choosing a tool for everyday work. Four hands-on lessons from Little Black Book Leadership.">
+  <title>AI Basics for Teams · First Career Steps</title>
+  <link rel="stylesheet" href="/learning-assets/ai.css">
+  <script src="/learning-assets/ai.js" defer></script>
+<link rel="stylesheet" href="/learning-assets/course-nav.css"></head>
+<body>
+  <a class="skip" href="#lessons">Skip to lessons</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/" aria-label="First Career Steps home"><img src="/logo.svg" alt="First Career Steps" width="128" height="54"></a>
+      <span class="site-name">Workplace courses</span>
+      <a class="catalog-link" href="/learn/ai">AI class series</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="course-name">
+      <div class="wrap hero-grid">
+        <div class="intro">
+          <p class="eyebrow">AI basics for teams</p>
+          <h1 id="course-name">Put AI to <em>work.</em></h1>
+          <p class="lede">Turn a rough request into a useful prompt. Then build a project, design a reusable bot, and choose a tool for the job.</p>
+          <a class="primary" id="start-course" href="#lessons">Start the class</a>
+          <p class="course-meta">4 hands-on lessons <span aria-hidden="true">·</span> Self-paced</p>
+        </div>
+        <div class="preview">
+          <div class="preview-head"><span class="prompt-icon" aria-hidden="true">Aa</span><h2>A prompt, before &amp; after</h2></div>
+          <div class="segmented js-only" role="group" aria-label="Compare the handoff prompts">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <noscript><p>Before: “Write a handoff.”</p></noscript>
+          <div class="example" aria-live="polite">
+            <p id="example-prompt">Write two bullets for the opening lead using these shift notes. Include the delivery time and who will check it.</p>
+            <p id="example-note">The reader, task, and format are clear.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap workspace" id="lessons">
+      <aside aria-label="Lesson navigation">
+        <h2>Your lessons</h2>
+        <p class="progress-text js-only" id="progress-label">0 of 4 complete</p>
+        <progress class="js-only" id="progress" aria-labelledby="progress-label" max="4" value="0"></progress>
+        <nav class="lesson-nav" aria-label="Jump to a lesson">
+          <a href="#prompts"><span class="step">1</span><span>Simple prompts</span></a>
+          <a href="#projects"><span class="step">2</span><span>Projects and folders</span></a>
+          <a href="#bots"><span class="step">3</span><span>Reusable bots</span></a>
+          <a href="#models"><span class="step">4</span><span>Choosing a model</span></a>
+        </nav>
+        <p class="storage-note js-only" id="storage-note">Your drafts and progress stay in this browser. Use sample details in your answers.</p>
+      </aside>
+
+      <div class="lesson-area">
+        <noscript><p>You can read all four lessons below. Enable JavaScript to build previews and save progress in this browser.</p></noscript>
+        <section class="lesson" id="prompts">
+          <p class="eyebrow">Lesson 1 of 4</p>
+          <h2 tabindex="-1">Write a clear prompt</h2>
+          <p>A useful prompt gives the AI three things: who it’s helping, what you need, and how the answer should look.</p>
+          <div class="exercise">
+            <h3>Build your prompt</h3>
+            <p>“Write something about our new break policy” leaves the AI guessing. Give it instructions a supervisor could use.</p>
+            <form>
+              <label>Who is this for?<input name="audience" placeholder="Frontline supervisors" required maxlength="200"></label>
+              <label>What should the AI do?<textarea name="task" placeholder="Explain the new break policy in an email." required maxlength="1600" rows="2"></textarea></label>
+              <label>What should the answer look like?<input name="format" placeholder="120 words, plain language, three action items" required maxlength="420"></label>
+              <div class="output js-only"><h4>Your assembled prompt</h4><p data-output>Fill in the fields to build your prompt.</p></div>
+              <button class="primary js-only" type="submit">Complete lesson</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="lesson" id="projects">
+          <p class="eyebrow">Lesson 2 of 4</p>
+          <h2 tabindex="-1">Organize a project</h2>
+          <p>A project keeps related conversations, files, and instructions together. Group related projects in a folder where your team can find them. Before starting a conversation, open the project and add the references the AI needs.</p>
+          <div class="exercise">
+            <h3>Set up a project folder</h3>
+            <p>Pick a recurring task. Name its home and two references you would bring to it.</p>
+            <form>
+              <label>Folder<input name="folder" placeholder="Store operations" required maxlength="170"></label>
+              <label>Project<input name="project" placeholder="New hire onboarding" required maxlength="170"></label>
+              <label>First reference file<input name="fileOne" placeholder="First shift checklist.pdf" required maxlength="190"></label>
+              <label>Second reference file<input name="fileTwo" placeholder="Trainer notes.docx" required maxlength="190"></label>
+              <div class="output js-only"><h4>Your project outline</h4><p data-output>Fill in the fields to see your project outline.</p></div>
+              <button class="primary js-only" type="submit">Complete lesson</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="lesson" id="bots">
+          <p class="eyebrow">Lesson 3 of 4</p>
+          <h2 tabindex="-1">Design a reusable bot</h2>
+          <p>A bot can reuse a set of instructions for repeated work. Define its purpose, inputs, tone, and rules. Try the instructions on several examples before sharing the bot with your team.</p>
+          <div class="exercise">
+            <h3>Write the bot’s instructions</h3>
+            <p>Choose a weekly task. Write instructions you could paste into your team’s AI tool.</p>
+            <form>
+              <label>What job should it do?<input name="job" placeholder="Draft a weekly operations recap" required maxlength="240"></label>
+              <label>What will you give it?<input name="inputs" placeholder="Notes from each shift lead" required maxlength="300"></label>
+              <label>What tone should it use?<input name="tone" placeholder="Direct, friendly, and brief" required maxlength="180"></label>
+              <label>What rule must it follow?<textarea name="rule" placeholder="If a location hasn’t reported, flag the missing update." required maxlength="900" rows="2"></textarea></label>
+              <div class="output js-only"><h4>Your bot brief</h4><p data-output>Fill in the fields to see your bot brief.</p></div>
+              <button class="primary js-only" type="submit">Complete lesson</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="lesson" id="models">
+          <p class="eyebrow">Lesson 4 of 4</p>
+          <h2 tabindex="-1">Choose a model for the job</h2>
+          <p>Start with the work. A recurring report needs scheduling and access to its sources. A prototype needs a way to build and test. For confidential work, check which tools and settings your organization approves.</p>
+          <details class="tool-notes"><summary>See four tools from the class</summary>
+            <ul><li><strong>Grok</strong> · Explore a recurring summary workflow.</li><li><strong>Claude</strong> · Try drafting and revising a carefully worded note.</li><li><strong>ChatGPT</strong> · Explore ideas with a teammate in a conversational interface.</li><li><strong>Grok Build</strong> · Try prototyping a small internal tool.</li></ul>
+          </details>
+          <div class="exercise">
+            <h3>Make the call</h3>
+            <p>Choose the feature you would check first in each situation. Compare your picks with the reasoning, then explain one choice.</p>
+            <form>
+              <label>A confidential HR note<select name="hr" required><option value="">Choose a priority</option><option value="policy">Approved data handling</option><option value="speed">Fast prototyping</option><option value="schedule">Scheduled execution</option></select></label>
+              <label>A one-page internal tool<select name="build" required><option value="">Choose a priority</option><option value="visual">Shared visual exploration</option><option value="speed">Build and test a prototype</option><option value="schedule">Scheduled execution</option></select></label>
+              <label>A daily summary bot<select name="daily" required><option value="">Choose a priority</option><option value="speed">Fast prototyping</option><option value="visual">Shared visual exploration</option><option value="schedule">Scheduling and source access</option></select></label>
+              <label>Exploring an idea with a teammate<select name="idea" required><option value="">Choose a priority</option><option value="schedule">Scheduled execution</option><option value="visual">Easy back-and-forth exploration</option><option value="policy">Data retention controls</option></select></label>
+              <div class="output js-only"><h4>Compare your choices</h4><p data-output>Choose a priority to see the reasoning.</p></div>
+              <label>Which tool would you try for one of these jobs, and why?<textarea name="reason" required maxlength="1200" rows="2"></textarea></label>
+              <button class="primary js-only" type="submit">Complete lesson</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="finish" id="review">
+          <h2 tabindex="-1">Bring it back to your team</h2>
+          <p>Share one project outline or bot brief with your manager. Try it together on a real task and discuss what you would change.</p>
+          <div class="js-only" id="review-actions" hidden><button class="secondary" type="button" id="print">Print my practice notes</button></div>
+        </section>
+        <p class="credit"><strong>No CPE offered.</strong> Your organization may issue a certificate of completion.</p>
+        <p class="sr" role="status" id="notice"></p>
+      </div>
+    </div>
+  </main>
+  <footer><div class="wrap footer-row"><a class="handbook" href="/learn#handbook"><img src="/learning-assets/book-cover.jpg" alt="" width="34" height="51"><span>Course handbook<br><strong>The Little Black Book on Leadership</strong></span></a><span>© 2026 Brenen Morse · Pathfinders Ventures</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.catalog-nav,.lead-actions {display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.catalog-nav {margin-left:auto}
+.catalog-nav a,.catalog-nav button {font:600 .94rem Inter,Arial,sans-serif;color:var(--deep-blue);text-decoration:none}
+.catalog-nav button {background:white;border:1px solid var(--line);border-radius:.6rem;padding:.5rem .8rem}
+.catalog-nav a:hover,.assessment-item a:hover {text-decoration:underline}
+.catalog-main {padding:clamp(2.8rem,6vw,4.5rem) 0;background:linear-gradient(118deg,#e5f3ff,#d6eaf8 58%,#e0f2e6)}
+.catalog-main h1,.lead-intro h1 {font-size:clamp(2.65rem,5.5vw,4.6rem);margin:0 0 .55rem;letter-spacing:-.055em}
+.topic-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin-top:2rem}
+.topic-card {background:white;border:1px solid #cbdde8;border-top:5px solid #287bb9;border-radius:1rem;box-shadow:0 8px 24px #2348610c;padding:clamp(1.35rem,3vw,2.25rem);display:flex;flex-direction:column;align-items:flex-start}
+.topic-card h2 {font-size:clamp(2rem,4vw,2.8rem)}
+.topic-card p,.book-strip p,.section-note,.bundle-note p {color:var(--muted);margin:.7rem 0 0}
+.topic-foot {margin-top:auto;padding-top:1.15rem;display:grid;gap:1rem;justify-items:start}
+.topic-foot span,.lead-credit {font-size:.92rem;color:#425762}
+.leadership-topic {border-top-color:#318061}
+.leadership-topic .primary,.lead-intro .primary {background:var(--green)}
+.leadership-topic .primary:hover,.lead-intro .primary:hover {background:#195b42}
+.book-strip {display:flex;align-items:center;gap:1.5rem;padding-block:clamp(2rem,4vw,3rem)}
+.book-strip h2 {font-size:clamp(1.25rem,2vw,1.65rem);margin-top:.3rem}
+.book-strip img,.lead-intro img {display:block;object-fit:contain;border-radius:.2rem;box-shadow:0 4px 12px #26323822}
+.book-strip .eyebrow {margin:0}
+.lead-intro {padding-block:clamp(2rem,5vw,3.5rem);background:linear-gradient(120deg,#e9f6ee,#e0f3ec 52%,#dceef6)}
+.lead-intro-grid {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:2rem}
+.lead-intro .eyebrow {color:var(--green);margin-bottom:.65rem}
+.lead-intro img {width:clamp(6rem,13vw,9.5rem);height:auto;margin-right:clamp(0rem,7vw,5rem)}
+.lead-credit {margin:1rem 0}
+.lead-actions a {text-decoration:none}
+.lead-body {padding-block:clamp(2rem,5vw,3.25rem);display:grid;gap:2.7rem}
+.lead-body section {scroll-margin-top:1rem}
+.section-note {max-width:68ch;margin-bottom:1rem}
+.lead-case {border:1px solid var(--line);border-radius:.8rem;margin:.65rem 0;background:white}
+.lead-case > summary {padding:1rem 1.15rem;line-height:1.4}
+.lead-case > summary small {font-weight:500;color:var(--muted);display:block;margin:.25rem 0 0 1rem;font-size:.9rem}
+.case-body {padding:0 clamp(1rem,3vw,1.45rem) 1.1rem;max-width:80ch}
+.preview-choices {border:0;padding:0;margin:1rem 0 .25rem;min-width:0}
+.preview-choices legend {font-weight:700;margin-bottom:.5rem;padding:0}
+.preview-choices details {border:1px solid var(--line);border-radius:.55rem;padding:.7rem .85rem;margin:.45rem 0;background:#f6fafc}
+.preview-choices details[open] {background:#edf7f2;border-color:#a1c6b3}
+.preview-choices summary {font-weight:500;color:var(--ink)}
+.preview-feedback p {margin:.7rem 0 .2rem}
+.assessment-item {display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.assessment-item h3 {font-size:1.12rem;letter-spacing:-.025em}
+.assessment-item p {margin:.25rem 0 0;color:var(--muted);font-size:.95rem}
+.assessment-item a {font-weight:600;flex-shrink:0;text-underline-offset:.15em}
+.bundle-note {background:#f0f6f3;padding:clamp(1.25rem,3vw,2rem);border:1px solid #c5dcd0;border-radius:.85rem}
+.bundle-note h2 {font-size:1.55rem}
+.bundle-note p {margin-bottom:1rem;max-width:68ch}
+@media(max-width:700px) {
+  .topic-grid {grid-template-columns:minmax(0,1fr)}
+  .lead-intro-grid {grid-template-columns:minmax(0,1fr)}
+  .lead-intro img {display:none}
+  .assessment-item {align-items:flex-start;flex-direction:column;gap:.3rem}
+  .header-row {flex-wrap:wrap;gap:.65rem;padding-block:.5rem}
+  .catalog-nav {gap:.75rem}
+}
+@media(max-width:450px) {.book-strip {gap:1rem}.book-strip img {width:3.5rem;height:auto}.catalog-nav a {font-size:.88rem}}

@@ -16,7 +16,7 @@ export default function ResumeBuilderPage() {
                             Resume Builder
                         </h1>
                         <p className="text-lg text-charcoal-light max-w-2xl mx-auto mb-8">
-                            Create a professional resume that stands out. Our AI-powered builder guides you through each step to craft the perfect resume in minutes.
+                            Build a resume from school, work and volunteer experience. Preview it free. PDF downloads are $1.99 per year, billed annually.
                         </p>
                         <Link
                             href="/builder/step-1"

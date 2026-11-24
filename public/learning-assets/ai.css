@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #263238;
+  --muted: #485c67;
+  --blue: #126db6;
+  --deep-blue: #095991;
+  --green: #246e51;
+  --line: #d5e2e9;
+  --heading: Poppins, Inter, Arial, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: white;
+}
+* {box-sizing: border-box}
+body {margin: 0; font-size: 1rem; line-height: 1.58}
+h1,h2,h3,h4,p {margin: 0}
+h1,h2,h3 {font-family: var(--heading); line-height: 1.18}
+h2 {font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -.04em}
+button,input,textarea,select {font: inherit}
+button,a {touch-action: manipulation}
+a {color: var(--deep-blue)}
+button {cursor: pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible,h2:focus-visible {outline: 3px solid #085fa7; outline-offset: 4px}
+[hidden], .js-only {display: none !important}
+.enhanced .js-only:not([hidden]) {display: revert !important}
+.wrap {width: min(68rem, calc(100% - 3rem)); margin-inline: auto}
+.sr,.skip:not(:focus) {position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap}
+.skip:focus {position:absolute;z-index:5;top:.5rem;left:.5rem;background:white;padding:.65rem}
+.site-header {background: white; border-bottom: 1px solid #d8e6ec}
+.header-row,.footer-row {display: flex; gap: 1.2rem; align-items: center}
+.header-row {min-height: 4.75rem}
+.brand {display: flex; align-items: center}
+.brand img {width: 7.5rem; height: 3.3rem; object-fit: contain}
+.site-name {padding-left: 1.2rem; border-left: 1px solid var(--line); font-size: .9rem; font-weight: 600; color: var(--muted)}
+.catalog-link {margin-left: auto; padding: .58rem 1rem; border: 1px solid #cbdde8; border-radius: .7rem; text-decoration: none; font-weight: 600; font-size: .92rem}
+.catalog-link:hover,.secondary:hover {background: #eef7fc}
+.hero {
+  padding: clamp(3rem,6vw,5.5rem) 0;
+  background: radial-gradient(ellipse at 95% 110%, #e0f5df 0%, transparent 44%), linear-gradient(112deg,#e7f5ff 0%,#bfdef8 61%,#d5ecf2 100%);
+}
+.hero-grid {display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: clamp(2rem,6vw,5rem)}
+.eyebrow {font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: #265b77}
+h1 {margin: .65rem 0 1rem; font-size: clamp(3.2rem,6.2vw,5.4rem); line-height: 1.03; letter-spacing: -.065em; font-weight: 700}
+h1 em {font-style: normal; color: #167e82; background: linear-gradient(90deg,#1477be,#248e56); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent}
+.lede {font-size: clamp(1.06rem,2vw,1.22rem); line-height: 1.6; max-width: 34rem; color: #37474f}
+.primary,.secondary {display: inline-block; padding: .78rem 1.35rem; min-height: 2.9rem; border: 0; border-radius: .85rem; font-weight: 700; text-decoration: none}
+.primary {color: white; background: var(--blue); box-shadow: 0 4px 8px #1042691a}
+.primary:hover {background: var(--deep-blue)}
+.secondary {background: white; color: var(--deep-blue); border: 1px solid #a1c4d8}
+.intro .primary {margin-top: 1.45rem}
+.course-meta {margin-top: .75rem; font-size: .92rem; font-weight: 500; color: #405762}
+.course-meta span {padding: 0 .25rem}
+.preview {background: #fff; border-radius: 1.4rem; box-shadow: 0 16px 44px #24536c24; border: 1px solid #ffffffab; padding: clamp(1.2rem,3vw,1.85rem)}
+.preview-head {display: flex; gap: .85rem; align-items: center; margin-bottom: 1.1rem}
+.preview-head h2 {font-size: clamp(1.13rem,1.8vw,1.35rem); letter-spacing: -.035em}
+.prompt-icon {width: 2.65rem; height: 2.65rem; flex-shrink: 0; display: grid; place-items: center; border-radius: .85rem; color: #17669a; background: #e3f1ff; font: 600 1.1rem var(--heading)}
+.enhanced .segmented.js-only:not([hidden]) {display: inline-flex !important}
+.segmented {background: #edf3f6; padding: .23rem; border-radius: .65rem; gap: .18rem; margin-bottom: 1rem}
+.segmented button {border: 0; padding: .42rem .95rem; border-radius: .48rem; font-size: .9rem; font-weight: 600; background: transparent; color: #455a66}
+.segmented button[aria-pressed=true] {background: white; box-shadow: 0 1px 4px #23465a29; color: var(--deep-blue)}
+.example {border-left: 4px solid #34885f; border-radius: 0 .65rem .65rem 0; padding: 1rem 1.1rem; background: #f0f8f2; min-height: 9rem}
+.preview[data-mode=before] .example {background: #fff7e9; border-color: #b67413}
+#example-prompt {font-size: 1.08rem; font-weight: 600; line-height: 1.48}
+#example-note {margin-top: .65rem; font-size: .9rem; color: var(--muted)}
+.workspace {display: grid; grid-template-columns: minmax(13rem, .39fr) minmax(0,1fr); align-items: start; gap: clamp(1.4rem,5vw,4.4rem); padding-block: clamp(2rem,5vw,4rem); scroll-margin-top: 1rem}
+aside {padding: 1.35rem; background: #f5f9fb; border: 1px solid var(--line); border-radius: 1rem}
+aside h2 {font-size: 1.22rem}
+.progress-text,.storage-note {font-size: .88rem; color: var(--muted)}
+.progress-text {margin-top: .6rem}
+progress {appearance: none; width: 100%; height: .47rem; background: #d9e5eb; border: 0; border-radius: 1rem; overflow: hidden}
+progress::-webkit-progress-bar {background: #d9e5eb; border-radius: 1rem}
+progress::-webkit-progress-value {background: #32895f; border-radius: 1rem}
+progress::-moz-progress-bar {background: #32895f}
+.lesson-nav {display: grid; gap: .25rem; margin: 1rem -.4rem}
+.lesson-nav a {display: flex; align-items: center; gap: .65rem; padding: .55rem .4rem; border-radius: .6rem; text-decoration: none; color: #354b59; font-weight: 600; font-size: .95rem}
+.lesson-nav a:hover {background: #eaf2f7}
+.lesson-nav a[aria-current=step] {background: #dfedfb; color: #104f82}
+.step {display: grid; place-items: center; flex: 0 0 1.9rem; height: 1.9rem; border-radius: .6rem; background: #e6eef2; font-size: .9rem}
+[aria-current=step] .step {background: #1672b8; color: white}
+.lesson-nav .done .step {background: #d9f0df; color: #185a3a}
+.lesson-area {min-width: 0}
+.lesson {margin: 0 0 2rem; scroll-margin-top: 1.5rem}
+.lesson h2,.finish h2 {margin-block: .45rem .75rem}
+.lesson > p:not(.eyebrow),.finish p {color: var(--muted); max-width: 72ch}
+.exercise,.tool-notes {margin-top: 1.25rem; border: 1px solid var(--line); border-radius: 1rem}
+.exercise {padding: clamp(1rem,3vw,1.65rem)}
+.exercise h3 {font-size: 1.32rem; letter-spacing: -.03em}
+.exercise > p {color: var(--muted); margin: .4rem 0 1.15rem}
+form {display: grid; gap: 1rem}
+form label {display: grid; gap: .35rem; font-size: .96rem; font-weight: 600}
+input,select,textarea {display: block; width: 100%; min-width: 0; color: var(--ink); background: white; border-radius: .6rem; border: 1px solid #97adb9; padding: .63rem .8rem; line-height: 1.5; font-size: 1rem; font-weight: 400}
+textarea {resize: vertical}
+::placeholder {color: #687780; opacity: 1}
+select {appearance: none; padding-right: 2.15rem; background-image: linear-gradient(45deg,transparent 50%,#466578 50%),linear-gradient(135deg,#466578 50%,transparent 50%); background-size: 5px 5px; background-position: right 15px center,right 10px center; background-repeat: no-repeat}
+.output {padding: .95rem 1.05rem; background: #ecf6ff; border-radius: .75rem; color: #224960}
+.output h4 {font-size: .96rem}
+.output p {white-space: pre-line; overflow-wrap: anywhere; margin-top: .3rem}
+form button,.secondary {justify-self: start}
+.tool-notes {padding: .75rem 1rem; background: #f6fafc}
+summary {font-weight: 600; cursor: pointer; color: var(--deep-blue)}
+.tool-notes li+li {margin-top: .35rem}
+.finish {margin: 1.5rem 0; padding: 1.35rem; border: 1px solid #c0decb; background: #eff8f3; border-radius: 1rem}
+.finish h2 {font-size: 1.5rem}
+.finish button {margin-top: 1rem}
+.credit {color: var(--muted); font-size: .91rem}
+footer {border-top: 1px solid var(--line)}
+.footer-row {min-height: 5rem; justify-content: space-between; color: var(--muted); font-size: .9rem}
+@media (max-width: 760px) {
+  .hero-grid,.workspace {grid-template-columns: minmax(0,1fr)}
+  .hero-grid {gap: 1.6rem}
+  .hero {padding-block: 2.5rem}
+  .wrap {width: min(100% - 2rem,40rem)}
+  .example {min-height: 0}
+  .lesson-nav {grid-template-columns: repeat(2,minmax(0,1fr)); margin-block: .7rem}
+  .lesson-nav a {line-height: 1.33}
+  .footer-row {align-items: flex-start; flex-direction: column; gap: .3rem; padding-block: 1rem}
+}
+@media (max-width: 440px) {
+  .site-name {display: none}
+  .header-row {min-height: 4.25rem}
+  aside {padding: 1rem}
+  .lesson-nav a {font-size: .87rem}
+}
+@media (forced-colors: active) {h1 em {-webkit-text-fill-color: currentColor} .step {border: 1px solid}}
+@media print {
+  .hero,aside,.site-header,footer,.credit + p,.finish button,form label,form button,.tool-notes,.exercise > p,.exercise h3,.lesson > p:not(.eyebrow),.storage-note {display: none !important}
+  .wrap,.workspace,.lesson-area {display: block; width: auto; padding: 0}
+  .lesson[hidden],.finish[hidden] {display: block !important}
+  .lesson {break-inside: avoid; margin: 0 0 1rem}
+  .lesson h2 {font-size: 1.35rem}
+  .exercise,.finish,.output {padding: .55rem; border: 0; box-shadow: none}
+  .output p {color: black}
+  .enhanced .primary.js-only:not([hidden]),.enhanced #review-actions.js-only:not([hidden]) {display: none !important}
+}
+.handbook {display: inline-flex; align-items: center; gap: .7rem; color: var(--muted); line-height: 1.4; text-decoration: none}
+.handbook img {width: 1.9rem; height: auto; border-radius: 2px}
+.handbook strong {color: var(--ink)}
+.handbook:hover strong {text-decoration: underline}
+@media (prefers-reduced-motion: no-preference) {
+  .primary,.segmented button,.lesson-nav a {transition: background-color .15s, box-shadow .15s}
+  .primary:active {transform: translateY(1px)}
+}

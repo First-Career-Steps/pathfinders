@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI prompt library · First Career Steps</title><link rel="stylesheet" href="/learning-assets/ai.css"><link rel="stylesheet" href="/learning-assets/topics.css"><link rel="stylesheet" href="/learning-assets/workshops.css"><script defer src="/learning-assets/workshops.js"></script><link rel="stylesheet" href="/learning-assets/course-nav.css"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-row"><a class="brand" href="/"><img src="/logo.svg" alt="First Career Steps" width="128" height="54"></a><span class="site-name">Workplace courses</span><nav class="catalog-nav" aria-label="Course navigation"><a href="/learn">All topics</a><a href="/learn/ai">AI series</a><a href="/learn/ai/prompts">Prompt library</a></nav></div></header><main id="main"><section class="catalog-main"><div class="wrap"><h1>Prompt library</h1><p class="lede">Choose a template, replace the bracketed details, and paste it into your preferred AI tool.</p><nav class="lead-actions" aria-label="Prompt groups"><a class="secondary" href="#prompting">Class 1</a><a class="secondary" href="#brainstorming">Class 2</a><a class="secondary" href="#multiple-ais">Class 3</a><a class="secondary" href="#building">Class 4</a></nav></div></section><div class="wrap resources"><section id="prompting" class="resource-group"><p class="eyebrow">Class 1</p><h2>Basics of AI and Effective Prompting</h2><details><summary>Clarifying questions first</summary><div class="copy-box"><pre data-copy-text>Before you answer, ask me the 3 most important clarifying questions. After I reply, give your full response.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Step-by-step reasoning</summary><div class="copy-box"><pre data-copy-text>Think step by step.
+1. Restate the problem and list the constraints.
+2. Outline 2–3 possible approaches.
+3. Recommend one approach and explain why.
+4. Provide the solution.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Strict JSON format</summary><div class="copy-box"><pre data-copy-text>Respond only with valid JSON using exactly these keys: &quot;summary&quot;, &quot;key_points&quot;, &quot;risks&quot;, &quot;next_actions&quot;. No other text.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Audience + length control</summary><div class="copy-box"><pre data-copy-text>Explain [topic] to a [audience level]. Use no more than [N] words. Include one analogy and one concrete example.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><p><a href="/learn/ai/prompting">Open the class</a></p></section><section id="brainstorming" class="resource-group"><p class="eyebrow">Class 2</p><h2>Brainstorming with AI</h2><details><summary>Quantity first</summary><div class="copy-box"><pre data-copy-text>Generate 15 unconventional ideas for [problem or opportunity]. Prioritize novelty over immediate practicality. For each idea give a one-sentence description and one potential benefit.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>SCAMPER</summary><div class="copy-box"><pre data-copy-text>Apply the SCAMPER technique to this concept: [idea].
+For each of the seven letters (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse) produce two concrete variations.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Perspective shifting</summary><div class="copy-box"><pre data-copy-text>Analyze this idea from three viewpoints:
+1. A skeptical buyer with budget authority
+2. A first-time user with no domain knowledge
+3. A competitor looking for weaknesses
+For each viewpoint list 3 concerns and 2 opportunities.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Seed expansion</summary><div class="copy-box"><pre data-copy-text>Take this seed idea: [paste]. Expand it in three directions:
+1. Minimal viable version
+2. Ambitious full vision
+3. Adjacent opportunity that solves a related problem
+For each, state the target user, core value proposition, and key differentiator.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Riskiest assumption</summary><div class="copy-box"><pre data-copy-text>Here is my current idea: [paste].
+Identify the single riskiest assumption. Then propose the smallest, fastest experiment that would test that assumption.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><p><a href="/learn/ai/brainstorming">Open the class</a></p></section><section id="multiple-ais" class="resource-group"><p class="eyebrow">Class 3</p><h2>Leveraging Multiple AIs</h2><details><summary>Master meta-prompt (ChatGPT → Grok requirements)</summary><div class="copy-box"><pre data-copy-text>I have been developing this idea with you: [paste developed idea or clear summary]
+
+Please create a single, lean, and highly structured prompt that I can copy and paste into Grok to generate professional software requirements.
+
+The prompt you create must:
+- Be concise — no unnecessary preamble or fluff
+- Instruct Grok to act as an expert product manager and technical architect
+- Request exactly these sections:
+  1. Executive Summary (3–5 sentences)
+  2. User Personas (2–3)
+  3. Functional Requirements (numbered user stories with acceptance criteria)
+  4. Non-Functional Requirements (performance, security, scalability, reliability, etc.)
+  5. Technical Constraints and Assumptions
+  6. Out of Scope
+  7. Open Questions
+- Emphasize precision, completeness, and developer-readiness
+- Tell Grok to flag any ambiguities or missing information explicitly
+- Output the finished prompt inside a clean code block so it is easy to copy
+
+Make the prompt as tight and effective as possible.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Edge-case discovery</summary><div class="copy-box"><pre data-copy-text>Review the requirements. List the 10 most important edge cases or failure modes that are not adequately covered. For each, suggest how it should be handled.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><p><a href="/learn/ai/multiple-ais">Open the class</a></p></section><section id="building" class="resource-group"><p class="eyebrow">Class 4</p><h2>Building with AI</h2><details><summary>Generate function + tests</summary><div class="copy-box"><pre data-copy-text>Write a [language] function that [specific behavior].
+
+Requirements:
+- Input: [describe types and constraints]
+- Output: [describe]
+- Edge cases to handle: [list]
+- Error handling: [specify approach]
+- Include type hints / docstrings
+- Follow [framework or style] conventions
+
+Provide the code plus 3 unit-test examples.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Code review</summary><div class="copy-box"><pre data-copy-text>Review this code for bugs, security issues, performance concerns, readability, and missing error handling.
+
+Code:
+[paste]
+
+Provide specific suggestions with corrected snippets.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Debugging</summary><div class="copy-box"><pre data-copy-text>I'm getting this error: [paste full error]
+
+Relevant code:
+[paste]
+
+Context: [what you were trying to accomplish]
+
+List the most likely causes in order of probability and provide a concrete fix for the top cause.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Architecture design</summary><div class="copy-box"><pre data-copy-text>Design the architecture for [system].
+
+Constraints:
+- Expected load: [describe]
+- Team size and skills: [describe]
+- Must integrate with: [systems]
+- Preferred technologies (or recommend): [list]
+
+Deliver:
+1. High-level architecture description
+2. Component responsibilities
+3. Data flow
+4. Technology choices with brief rationale
+5. Main scaling or operational risks</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><details><summary>Database schema</summary><div class="copy-box"><pre data-copy-text>Design a practical database schema for [application].
+
+Entities: [list or describe]
+Key relationships: [describe]
+
+Provide entity definitions with important fields, relationship notes, and recommended indexes.</pre><button type="button" class="secondary copy" data-copy>Copy prompt</button></div></details><p><a href="/learn/ai/building">Open the class</a></p></section></div></main><footer><div class="wrap footer-row"><span>First Career Steps · Pathfinders Ventures</span><span>No CPE offered</span></div></footer><p id="status" role="status" class="status"></p></body></html>
