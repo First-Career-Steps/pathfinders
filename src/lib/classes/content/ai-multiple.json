@@ -359,8 +359,8 @@
     "prompts": [
       {
         "id": 1,
-        "title": "General handoff meta-prompt",
-        "use": "After exploration, ask ChatGPT for one clean prompt to paste into Grok.",
+        "title": "General handoff meta-prompt (ChatGPT writes a prompt for Grok)",
+        "use": "You have already worked an idea out and want a tight prompt to paste into Grok (or another second tool).",
         "text": "You are helping me turn the work we just did into a single, tight prompt I will paste into Grok.\n\nRules for the prompt you write:\n- No fluff or preamble. Output only the prompt, in a code block.\n- Start with a clear role and a clear task.\n- Include only the facts, decisions, and constraints we already agreed on. Do not invent new ones.\n- Tell Grok what format to return.\n- Tell Grok to flag anything that is missing or uncertain instead of guessing, using [AMBIGUITY: …] when needed.\n- Keep it as short as it can be while still being complete enough for someone who did not see this chat.\n\nHere is the outcome I want from Grok:\n[WHAT YOU WANT GROK TO PRODUCE]\n\nHere is my frozen decision list (use only this; if something needed is missing, ask me before inventing it):\n[PASTE DECISIONS, CONSTRAINTS, AND OPEN QUESTIONS]",
         "worksheet": true,
         "compact": "Write one prompt for Grok. Use only my frozen decisions, provide a role, task and output format, and flag gaps as [AMBIGUITY: …]. Return only the prompt in a code block. Outcome: [GOAL]. Frozen list: [LIST]."
@@ -368,7 +368,7 @@
       {
         "id": 2,
         "title": "Decision freeze",
-        "use": "Extract accepted facts and unresolved questions.",
+        "use": "The exploration chat is messy and you need a clean list before any handoff.",
         "text": "From this conversation, list only what I have actually decided or provided. Use these headings:\n1) Goal\n2) Decisions (things we chose)\n3) Constraints\n4) Explicit non-goals\n5) Open questions\nDo not upgrade a maybe into a decision. Do not add ideas I did not accept. If something is unclear, put it under Open questions, not Decisions.",
         "worksheet": true,
         "compact": "From [NOTES], list Goal, Decisions, Constraints, Non-goals and Open questions. Never turn a maybe into a decision."
@@ -376,29 +376,29 @@
       {
         "id": 3,
         "title": "Compare two outputs",
-        "use": "Check disagreement against your frozen decisions.",
+        "use": "ChatGPT and Grok (or two passes) disagree, and you need a structured comparison — you will still decide.",
         "text": "Compare Output A and Output B against my frozen decision list only. For each difference, say: (1) whether it matches a decision, (2) whether it is a new invention, or (3) whether it is an open question. Do not declare a winner. Do not invent a compromise fact. List anything I should verify before using it.\n\nFrozen decisions:\n[LIST]\n\nOutput A:\n[PASTE]\n\nOutput B:\n[PASTE]",
         "worksheet": true,
         "compact": "Compare [A] and [B] only with [DECISIONS]. Mark matches, inventions and open questions. List claims to verify. Leave the choice to me."
       },
       {
         "id": 4,
-        "title": "Software-requirements meta-prompt",
-        "use": "Use in ChatGPT to write a lean prompt for Grok.",
+        "title": "Meta-prompt that creates a lean software-requirements prompt",
+        "use": "You want ChatGPT (or another allowed tool) to write a streamlined prompt you will paste into Grok to generate software requirements. This is the “prompt that makes the prompt.”",
         "worksheet": true,
         "canonical": "meta"
       },
       {
         "id": 5,
-        "title": "Software-requirements prompt",
-        "use": "Fill [PRODUCT IDEA] and use in Grok or a fresh allowed chat.",
+        "title": "The software-requirements prompt itself",
+        "use": "You already have the lean prompt from Prompt 4 and you are ready to paste it into Grok, with [PRODUCT IDEA] filled in.",
         "worksheet": true,
         "canonical": "requirements"
       },
       {
         "id": 6,
         "title": "Review this Grok output",
-        "use": "Check the second answer for inventions and gaps.",
+        "use": "You have Grok’s (or any second tool’s) answer and need a disciplined edit pass.",
         "text": "Review the output below against my frozen decisions. List: (1) requirements or claims that match the decisions, (2) anything that was invented, (3) anything still ambiguous, (4) what I should verify before using it. Suggest a revised outline that removes inventions. Do not add new features.\n\nFrozen decisions:\n[LIST]\n\nOUTPUT:\n[PASTE]",
         "worksheet": true,
         "compact": "Review [OUTPUT] against [FROZEN LIST]. Identify matches, inventions, ambiguities and verification. Remove extra features."
@@ -406,7 +406,7 @@
       {
         "id": 7,
         "title": "Shorten the handoff without losing constraints",
-        "use": "Cut repetition before transferring a prompt.",
+        "use": "The prompt ChatGPT wrote for Grok is too long or still chatty.",
         "text": "Shorten the handoff prompt below. Keep every decision, constraint, non-goal, format instruction, and “do not invent facts” rule. Cut fluff, repetition, and leftover chat tone. Return only the revised prompt in a code block.\n\nHANDOFF PROMPT:\n[PASTE]",
         "worksheet": true,
         "compact": "Shorten [HANDOFF]. Retain decisions, constraints, non-goals, format and no-invention rule. Return only the prompt."
@@ -414,7 +414,7 @@
       {
         "id": 8,
         "title": "Cross-check a factual claim",
-        "use": "Identify an independent way to test an answer.",
+        "use": "Two tools (or two passes) produced a fact you might rely on.",
         "text": "I need to treat the following as unverified until I check it. Tell me: (1) how a person would verify this with a primary source, (2) what would make this claim false, (3) whether the wording overstates certainty. Do not invent a source title or URL. If you are not sure, say so.\n\nCLAIM:\n[PASTE THE CLAIM]",
         "worksheet": true,
         "compact": "How could I verify [CLAIM] with a primary source? What would disprove it? Flag overstated certainty. Never invent a source."
@@ -485,7 +485,7 @@
     {
       "prompt": "What is the taught four-step workflow in this class?",
       "options": [
-        "Paste the entire ChatGPT thread into Grok and ask it to make it better.",
+        "Paste the entire ChatGPT thread into Grok and ask it to “make it better.”",
         "Explore in ChatGPT, freeze only the decisions you actually made, have ChatGPT write a tight prompt for Grok, then review and verify Grok’s output.",
         "Ask both tools the same one-line question and average the answers.",
         "Use Grok first for messy brainstorming, then ChatGPT to invent extra features."
@@ -496,20 +496,20 @@
     {
       "prompt": "What belongs on the frozen decision list?",
       "options": [
-        "Every idea the first chat mentioned, including rejected ones, written as requirements.",
+        "Every idea the first chat mentioned, including ones you rejected, written as requirements.",
         "Only decisions and facts you actually accepted, plus real constraints, non-goals, and open questions.",
-        "Made-up budget numbers so the second tool has something to work with.",
+        "Made-up budget numbers so the second tool has “something to work with.”",
         "Your classmates’ emails so the tool feels realistic."
       ],
       "answer": 1,
       "why": "Maybes and rejected ideas are not decisions. Private data should not be in the handoff."
     },
     {
-      "prompt": "Grok adds in-app payments and live GPS tracking, which you never asked for. What should you do?",
+      "prompt": "Grok’s requirements add “in-app payments” and “live GPS tracking,” which you never asked for. What should you do?",
       "options": [
         "Keep them; extra features are always an improvement.",
         "Treat them as invented: cut them or move them to Open Questions. They are not requirements until you decide they are.",
-        "Add them silently so the document looks complete.",
+        "Add them silently to your plan so the document looks complete.",
         "Start over and never use a second tool again."
       ],
       "answer": 1,
@@ -519,20 +519,20 @@
       "prompt": "What is the software-requirements meta-prompt for?",
       "options": [
         "It is the document a developer would build from, already filled in.",
-        "It is a prompt you use, usually in ChatGPT, so that tool writes a lean, structured prompt you can paste into Grok to generate software requirements.",
+        "It is a prompt you use (usually in ChatGPT) so that tool writes a lean, structured prompt you can paste into Grok to generate software requirements.",
         "It is a payment form for a $4.99 class.",
-        "It tells Grok to invent a tech stack without labeling assumptions."
+        "It is a prompt that tells Grok to invent a tech stack if you did not provide one, without labeling assumptions."
       ],
       "answer": 1,
       "why": "The meta-prompt writes the requirements prompt. The requirements prompt is what Grok uses to write the document."
     },
     {
-      "prompt": "You are not allowed to use one of the named tools or only have access to one AI. What is the honest, still-useful move?",
+      "prompt": "You are not allowed to use one of the two named tools, or you only have access to one AI. What is the honest, still-useful move?",
       "options": [
         "Borrow someone else’s account, even if you are under the age or terms limit.",
         "Skip the class; the method only works with those two brand names.",
-        "Use the same roles — explore, freeze, write a tight brief, run a fresh pass, verify — in one allowed tool or two allowed tools and follow their current terms.",
-        "Paste sensitive personal data into several tools so one has context."
+        "Use the same roles — explore, freeze, write a tight brief, run a fresh pass, verify — in one allowed tool or in two allowed tools, and follow each tool’s current terms.",
+        "Paste sensitive personal data into several tools so at least one “has context.”"
       ],
       "answer": 2,
       "why": "The method is bigger than the brand names. Account and privacy rules still apply."

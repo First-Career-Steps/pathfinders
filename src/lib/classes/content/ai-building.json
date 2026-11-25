@@ -377,21 +377,21 @@
       {
         "id": 1,
         "title": "Software-requirements meta-prompt",
-        "use": "Use in ChatGPT to write the prompt. This is not yet the requirements document.",
+        "use": "You want ChatGPT (or another allowed tool) to write a lean, structured prompt that you will paste into Grok to generate software requirements. This writes the prompt. It is not yet the requirements document.",
         "worksheet": true,
         "canonical": "meta"
       },
       {
         "id": 2,
-        "title": "Software-requirements prompt",
-        "use": "Fill [PRODUCT IDEA] and paste into Grok or a fresh allowed chat.",
+        "title": "The software-requirements prompt itself",
+        "use": "You are ready to paste into Grok (or a fresh allowed chat) and generate the requirements document. Fill in [PRODUCT IDEA] first. Do not leave the placeholder blank.",
         "worksheet": true,
         "canonical": "requirements"
       },
       {
         "id": 3,
-        "title": "Fill [PRODUCT IDEA] without inventing scope",
-        "use": "Turn a frozen list into a paragraph you can edit.",
+        "title": "Help me fill [PRODUCT IDEA] without inventing scope",
+        "use": "You have notes or a frozen decision list and want a tight paragraph for the placeholder — which you will still edit.",
         "text": "Turn my frozen decisions into a single [PRODUCT IDEA] paragraph I can paste into a software-requirements prompt. Use only what I provided. Do not add features, users, vendors, or a tech stack I did not decide. End with a short list of open questions, separately, so I can keep them out of the paragraph or clearly marked. Return the paragraph in a code block.\n\nFROZEN DECISIONS:\n[PASTE]",
         "worksheet": true,
         "compact": "Turn [FROZEN DECISIONS] into a [PRODUCT IDEA] paragraph. Include only accepted facts and constraints. List open questions separately."
@@ -399,7 +399,7 @@
       {
         "id": 4,
         "title": "Turn requirements into a small-step build plan",
-        "use": "Plan the next few concrete steps.",
+        "use": "You have a reviewed requirements doc and want the next concrete steps, not the whole roadmap at once.",
         "text": "Using only the requirements below, propose the next 5 build steps. Each step should be small enough to test on its own and should name what “done” looks like. Do not add features that are in Out of Scope. If a step depends on an Open Question, say so and offer a way to proceed without pretending it is decided. Do not invent a calendar or a team I do not have.\n\nREQUIREMENTS:\n[PASTE THE REVIEWED DOC, OR A SHORT VERSION YOU HAVE EDITED]",
         "worksheet": true,
         "compact": "From [REQUIREMENTS], propose five small testable steps. State done for each. Flag open decisions. Add no features, team or timeline."
@@ -407,7 +407,7 @@
       {
         "id": 5,
         "title": "Implement only step N",
-        "use": "Keep a small implementation within the agreed requirements.",
+        "use": "You are ready to draft or build one step, not the whole product.",
         "text": "Help me implement only Step [N] below. Do not start other steps. Follow the requirements and constraints I provide. If you need a decision I have not made, stop and ask. Do not invent data about real people; use clearly fake placeholder names. After the work, tell me exactly how to test this step, and list anything you assumed.\n\nStep [N]: [DESCRIPTION]\nRelevant requirements:\n[PASTE ONLY WHAT APPLIES]\nConstraints:\n[PASTE]",
         "worksheet": true,
         "compact": "Implement only step [N] using [REQUIREMENTS] and [CONSTRAINTS]. Use fictional data. Ask before assuming. Explain how I can test it."
@@ -415,7 +415,7 @@
       {
         "id": 6,
         "title": "Structured debug",
-        "use": "Describe one unexpected result.",
+        "use": "Something did not work. Avoid “fix it” with no detail.",
         "text": "I need help debugging this. Do not rewrite unrelated parts. Ask me a question if a needed fact is missing.\n\nWhat I expected: [EXPECTED]\nWhat actually happened: [SYMPTOMS]\nThe step I was on: [STEP]\nWhat I tried already: [TRIES]\nRelevant snippet or description:\n[PASTE ONLY WHAT IS NEEDED — NO SECRETS, NO REAL ROSTERS]",
         "worksheet": true,
         "compact": "Debug only [STEP]. Expected: [X]. Observed: [Y]. Tried: [Z]. Relevant excerpt: [SAFE SNIPPET]. Ask for missing facts."
@@ -423,7 +423,7 @@
       {
         "id": 7,
         "title": "Explain this and quiz me",
-        "use": "Check your own understanding before sharing work.",
+        "use": "You want to understand a plan or a piece of generated work before you claim it or ship it.",
         "text": "Explain the following in plain language to a first-time builder. Then quiz me with 5 short questions, one at a time, and wait for my answers. If I am wrong, explain why. Do not invent behavior that is not in the material.\n\nMATERIAL:\n[PASTE THE PLAN, STORY, OR SNIPPET]",
         "worksheet": true,
         "compact": "Explain [MATERIAL] in plain language. Quiz me with five questions, one at a time. Wait and explain mistakes. Invent no behavior."
@@ -431,7 +431,7 @@
       {
         "id": 8,
         "title": "Shrink scope to a finishable v1",
-        "use": "Keep the core job within the time you have.",
+        "use": "The requirements (or your ambition) are too big for the time you have.",
         "text": "Help me cut this to a v1 I could finish in [TIME BOX, for example “one weekend”]. Keep the core job of the product. Move everything else to Out of Scope or a later list. Do not add new ideas. Return: (1) the trimmed v1 in 10 lines or fewer, (2) what moved out of scope, (3) open questions that still block v1.\n\nCURRENT IDEA OR REQUIREMENTS:\n[PASTE]",
         "worksheet": true,
         "compact": "Trim [IDEA] to a v1 for [TIME BOX]. Keep the core job. Return the trimmed scope, excluded work and open questions. Add no new ideas."
@@ -470,7 +470,8 @@
       "ChatGPT explores → freeze decisions → ChatGPT writes the prompt → Grok drafts requirements → you verify. With one allowed tool, start a fresh pass after freezing.",
       "Seven sections: Executive Summary; User Personas; Functional Requirements; Non-Functional Requirements; Technical Constraints and Assumptions; Out of Scope; Open Questions.",
       "Do not invent facts. Mark [AMBIGUITY] and the decision it blocks. Check for invented features, unlabeled assumptions, untestable stories, unverified prices or vendors and privacy problems.",
-      "Use fictional data. Follow school and tool rules. Disclose help when required. Can you explain and test the work yourself?"
+      "Use fictional data. Follow school and tool rules. Disclose help when required. Can you explain and test the work yourself?",
+      "Work on safe, allowed projects. Choose another idea if the tool would expose private information or harm someone."
     ]
   },
   "mid": [
@@ -520,9 +521,9 @@
     {
       "prompt": "You use the meta-prompt in ChatGPT and the software-requirements prompt in Grok. What is the difference?",
       "options": [
-        "They are two names for the same text.",
-        "The meta-prompt asks ChatGPT to write a lean requirements prompt; the software-requirements prompt is what you paste into Grok, with [PRODUCT IDEA] filled in, to generate the document.",
-        "The meta-prompt generates production code; the other generates invoices.",
+        "There is no difference; they are two names for the same text.",
+        "The meta-prompt asks ChatGPT to write a lean requirements prompt; the software-requirements prompt is what you paste into Grok (with [PRODUCT IDEA] filled in) to generate the document.",
+        "The meta-prompt generates production code; the other one generates invoices.",
         "The software-requirements prompt is only for resume bullets."
       ],
       "answer": 1,
@@ -531,19 +532,19 @@
     {
       "prompt": "Which Given/When/Then acceptance criterion is actually testable?",
       "options": [
-        "Given the user wants a delightful experience, when they sign up, then they feel inspired.",
-        "Given a shift has at least one open spot, when a member confirms Claim, then remaining spots decrease by one and their display name appears on that shift.",
-        "The system should scale to the world.",
-        "It should probably email people sometimes."
+        "“Given the user wants a delightful experience, When they sign up, Then they feel inspired.”",
+        "“Given a shift has at least one open spot, When a member confirms Claim, Then remaining spots decrease by one and their display name appears on that shift.”",
+        "“The system should scale to the world.”",
+        "“It should probably email people sometimes.”"
       ],
       "answer": 1,
       "why": "You can set up the situation, take the action, and check the result."
     },
     {
-      "prompt": "The document lists a paid app-store release and a real vendor price you never researched. What should you do?",
+      "prompt": "The generated document lists a paid app-store release and a real vendor price you never researched. What should you do?",
       "options": [
         "Leave it in Functional Requirements so the project looks ambitious.",
-        "Move it out of requirements. Put undecided items in Out of Scope or Open Questions, and treat unverified prices or vendors as unverified instead of presenting them as fact.",
+        "Move it out of requirements. Put un-decided items in Out of Scope or Open Questions, and treat unverified prices or vendors as unverified — do not present them as fact.",
         "Publish the price on your club’s poster.",
         "Delete the Open Questions section so the doc looks finished."
       ],
@@ -551,15 +552,15 @@
       "why": "Do not invent scope, vendors, or prices. Flag what you have not decided or verified."
     },
     {
-      "prompt": "You used AI on a class project whose rules require disclosure and understanding. What is honest?",
+      "prompt": "You used AI to help specify and draft a small tool for a class project whose rules require you to disclose AI help and to understand your work. What is honest?",
       "options": [
-        "Submit it as entirely unaided if the AI was just helping.",
+        "Submit it as 100% unaided if the AI was “just helping.”",
         "Follow the rules, disclose what the instructions require, and only claim work you can explain and test.",
         "Paste a real student roster into the prompt so the demo looks authentic.",
-        "Add a certified AI developer badge because you finished this class."
+        "Add a “certified AI developer” badge to your resume because you finished this class."
       ],
       "answer": 1,
-      "why": "Honesty, privacy, and understanding are part of building. This class is not a certification."
+      "why": "Honesty, privacy, and understanding are part of building — not extras. This class is not a certification."
     }
   ],
   "walkthrough": {
