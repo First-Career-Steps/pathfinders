@@ -50,7 +50,7 @@ export default async function Landing({ params }: Context) {
             {c.published
               ? paidClassesEnabled()
                 ? "Enrolled learners"
-                : "Free class"
+                : "Published · Free"
               : "Coming soon"}
           </p>
           <h1>{c.title}</h1>
