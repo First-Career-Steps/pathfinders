@@ -1,7 +1,8 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
+import { series } from "@/lib/classes/series";
 import StudentPlayer from "@/components/classes/StudentPlayer";
-import { classBySlug, classOpen } from "@/lib/classes/catalog";
+import { classBySlug, classOpen, retiredTitle } from "@/lib/classes/catalog";
 import { quizzesFor, slidesFor, walkthroughs } from "@/lib/classes/lessons";
 import { readProgress, studentSession } from "@/lib/classes/progress";
 export const dynamic = "force-dynamic";
@@ -16,6 +17,7 @@ export default async function Learn({
 }) {
   const { slug } = await params;
   const course = classBySlug(slug);
+  if (retiredTitle(slug)) redirect("/classes/" + slug);
   if (!course) notFound();
   if (!course.published) redirect("/classes/" + slug);
   const { db, user } = await studentSession();
@@ -53,6 +55,7 @@ export default async function Learn({
       userId={user.id}
       mid={tests.mid.map(show)}
       final={tests.final.map(show)}
+      materials={series[slug]?.materials}
       walkthrough={walkthroughs[slug]}
     />
   );

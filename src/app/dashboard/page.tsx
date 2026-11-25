@@ -4,6 +4,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useProfile } from '@/contexts/ProfileContext';
 import { createBrowserClient } from '@/lib/supabase';
 import { useEffect, useState } from 'react';
+import RetiredRecords from "@/components/classes/RetiredRecords";
 import Link from 'next/link';
 
 export default function DashboardPage() {
@@ -42,6 +43,7 @@ export default function DashboardPage() {
             </div>
 
             <Link href="/classes" className="block rounded-2xl border border-gray-200 bg-white p-6 mb-6 hover:border-career-blue"><h2 className="text-xl">Student classes</h2><p className="mt-1 text-gray-600">Start or continue a class on leadership or using AI for school and your first job.</p></Link>
+            {user && <RetiredRecords key={user.id} userId={user.id}/>}
             <Link href="/learn" className="block rounded-2xl border border-gray-200 bg-white p-6 mb-6 hover:border-career-blue"><h2 className="text-xl">Courses and assessments</h2><p className="mt-1 text-gray-600">Open an AI workbook, practice a leadership case, or return to a Leadership assessment.</p></Link>
             <Link href="/workshops/resume-bullet" className="block rounded-2xl border border-gray-200 bg-white p-6 mb-6 hover:border-career-blue">
                 <span className="font-semibold text-career-blue-dark">Student workshop</span>

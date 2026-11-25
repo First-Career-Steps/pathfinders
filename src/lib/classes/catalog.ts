@@ -125,90 +125,102 @@ export const classes: ClassInfo[] = [
     skills: [],
   },
   {
-    slug: "ai-honestly",
-    title: "Use AI Honestly — School, Resumes, and Job Search",
+    slug: "ai-basics",
+    title: "Basics of AI",
     track: "AI",
     published: true,
     minutes: 45,
-    count: 40,
-    promise:
-      "Turn rough notes into a resume bullet you can explain in an interview.",
+    count: 44,
+    promise: "Know the tool before you lean on it.",
     outcome:
-      "Recognize when AI can coach, check a draft against the facts and edit it into your own voice.",
+      "Write a five-part prompt, recognize common AI errors and verify a claim while keeping private information out.",
     audience:
-      "High school and college students trying AI for school, a resume or a first job application.",
-    worksheet: "Honesty Checklist",
+      "Anyone learning how a chat-based AI works, including students under 18 and adults.",
+    preparation: "No prerequisites. An AI account is optional.",
+    worksheet: "Basics of AI — Prompt Cheat Sheet",
     worksheetFields: [
-      "School, resume and job-search checks",
-      "Facts about my work",
-      "Before and after bullet",
+      "My prompt this week",
+      "What I verified, where I checked and what remains uncertain",
     ],
-    skills: [
-      "Checking AI-generated text",
-      "Resume editing",
-      "Interview preparation",
-    ],
+    skills: ["Writing clear prompts", "Verifying AI-generated claims"],
   },
   {
-    slug: "ai-prompting",
-    title: "Prompting That Gets Useful Answers",
+    slug: "ai-brainstorming",
+    title: "Brainstorming with AI",
     track: "AI",
-    published: false,
-    minutes: 40,
-    count: 36,
-    promise: "Turn a vague request into a prompt grounded in real facts.",
+    published: true,
+    minutes: 45,
+    count: 42,
+    promise: "Generate more options, then make a choice you can explain.",
     outcome:
-      "Use role, facts, audience, constraints and uncertainty to improve one earned resume bullet.",
-    audience: "Students who get vague or inflated AI drafts.",
-    worksheet: "My Prompt Patterns",
-    worksheetFields: [
-      "Five-part resume template",
-      "Five-part school template",
-      "Five-part interview template",
-    ],
-    skills: [],
-  },
-  {
-    slug: "ai-spot-errors",
-    title: "Catch Bad AI Answers",
-    track: "AI",
-    published: false,
-    minutes: 40,
-    count: 36,
-    promise:
-      "Find invented details before they reach a teacher or hiring manager.",
-    outcome:
-      "Run a six-point check and repair an unsupported claim in a resume or school draft.",
-    audience: "Students who use AI to help draft or edit.",
-    worksheet: "6-Point Check",
-    worksheetFields: [
-      "Six verification questions",
-      "Source facts",
-      "My corrected draft",
-    ],
-    skills: [],
-  },
-  {
-    slug: "ai-privacy-safety",
-    title: "AI Privacy and Safety for Students",
-    track: "AI",
-    published: false,
-    minutes: 35,
-    count: 34,
-    promise: "Get useful help while sharing less personal information.",
-    outcome:
-      "Sort prompt inputs and rewrite an oversharing request using only the facts it needs.",
+      "Write a brief, generate and critique options, and rewrite a one-paragraph plan in your own words.",
     audience:
-      "Students, including ages 13–17, and parents learning alongside them.",
-    worksheet: "What I Will and Won’t Share",
+      "Learners planning a club activity, a service event, an allowed school project or a personal project.",
+    preparation:
+      "Basics of AI is recommended. Check facts, protect private details and follow school rules and each tool’s current age terms.",
+    worksheet: "Brainstorming with AI — Prompt Cheat Sheet",
     worksheetFields: [
-      "My sharing rules",
-      "Details I will remove",
-      "One rewritten prompt",
+      "My brief",
+      "My shortlist of three",
+      "My plan in my own words",
+      "What I still need to verify or get approved",
     ],
-    skills: [],
+    skills: ["Writing project briefs", "Comparing options against constraints"],
+  },
+  {
+    slug: "ai-multiple",
+    title: "Leveraging Multiple AIs",
+    track: "AI",
+    published: false,
+    minutes: 50,
+    count: 46,
+    promise:
+      "Work an idea out in ChatGPT, then brief Grok with a tight prompt.",
+    outcome:
+      "Freeze decisions, write a handoff prompt and review a second answer for inventions, uncertainty and facts to verify.",
+    audience:
+      "Learners ready to move a project from a messy conversation into a clear brief. No programming experience needed.",
+    preparation:
+      "Basics of AI and Brainstorming with AI are helpful. Follow school and age rules, protect private information and verify claims in both tools. A fresh pass in one allowed tool also works.",
+    worksheet: "Leveraging Multiple AIs — Handoff Cheat Sheet",
+    worksheetFields: [
+      "My frozen decision list",
+      "My tight Grok prompt",
+      "Kept / cut / still verifying",
+    ],
+    skills: ["Writing handoff prompts", "Reviewing project requirements"],
+  },
+  {
+    slug: "ai-building",
+    title: "Building with AI",
+    track: "AI",
+    published: false,
+    minutes: 55,
+    count: 48,
+    promise: "Write a spec first, then build in small steps.",
+    outcome:
+      "Turn a small idea into seven sections of requirements, write a testable user story and plan a first build step.",
+    audience:
+      "First-time builders planning a small tool, checklist or project board, including learners who have never written code.",
+    preparation:
+      "Leveraging Multiple AIs is strongly recommended. Explore in ChatGPT, freeze decisions, write a prompt for Grok and verify its output. One permitted tool works too. Keep data private and follow school and account rules.",
+    worksheet: "Building with AI — Prompt Cheat Sheet",
+    worksheetFields: [
+      "My [PRODUCT IDEA] paragraph",
+      "Three build steps in my own words",
+      "What I still must verify or decide",
+    ],
+    skills: ["Writing acceptance criteria", "Planning testable build steps"],
   },
 ];
+export const retiredClasses: Record<string, string> = {
+  "ai-honestly": "Use AI Honestly — School, Resumes, and Job Search",
+  "ai-prompting": "Prompting That Gets Useful Answers",
+  "ai-spot-errors": "Catch Bad AI Answers",
+  "ai-privacy-safety": "AI Privacy and Safety for Students",
+};
+export const retiredTitle = (slug: string) =>
+  Object.hasOwn(retiredClasses, slug) ? retiredClasses[slug] : undefined;
 export const classBySlug = (slug: string) =>
   classes.find((item) => item.slug === slug);
 export const paidClassesEnabled = () =>

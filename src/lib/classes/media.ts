@@ -7,6 +7,7 @@ export interface Walkthrough {
   minutes: string;
   steps: [string, string][];
   recording?: Recording;
+  narration?: string[];
 }
 export const narration: Record<string, string[]> = {
   "lead-yourself": [

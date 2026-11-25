@@ -1,0 +1,563 @@
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "Brainstorming with AI",
+      "body": "More options, then a better choice. Turn one real problem into a shortlist and a paragraph you can explain to the people who will do the work.",
+      "aria": "Brainstorming with AI",
+      "kind": "lesson"
+    },
+    {
+      "key": "s02",
+      "title": "Bring a problem you can work on",
+      "body": "Allow about 45 minutes. Basics of AI is helpful. Pick a club event, an allowed project plan, a work-shift handoff or a personal project. A pencil and paper work for every activity.",
+      "aria": "Bring a problem you can work on",
+      "kind": "lesson"
+    },
+    {
+      "key": "s03",
+      "title": "What you’ll practice",
+      "body": "Write a brief, generate different options, group and critique them, compare three against your criteria, then explain the plan you choose. Your worksheet will hold each step.",
+      "aria": "What you’ll practice",
+      "kind": "lesson"
+    },
+    {
+      "key": "s04",
+      "title": "What do you want help thinking about?",
+      "body": "Imagine the club has one Saturday to help its neighbors. A tool can suggest possible jobs. Only the group can decide whom it can help, what is kind to offer and what it has permission to do.",
+      "aria": "What do you want help thinking about?",
+      "kind": "lesson"
+    },
+    {
+      "key": "s05",
+      "title": "Two passes serve different jobs",
+      "body": "Diverge means generate different possibilities. Converge means group, test and narrow them. If you judge the first idea immediately, you may never see an alternative that fits better.",
+      "aria": "Two passes serve different jobs",
+      "kind": "lesson"
+    },
+    {
+      "key": "s06",
+      "title": "Why vague requests sound alike",
+      "body": "“Give me fundraiser ideas” could produce a bake sale, raffle and walkathon for almost anyone. The list says nothing about whether your group can cook, sell tickets or reserve a route.",
+      "aria": "Why vague requests sound alike",
+      "kind": "lesson"
+    },
+    {
+      "key": "s07",
+      "title": "Build a brief first",
+      "body": "Write who the work serves, the goal and your real limits. Define success in observable terms. Include what you already tried or rejected so the tool doesn’t keep recommending it.",
+      "aria": "Build a brief first",
+      "kind": "lesson"
+    },
+    {
+      "key": "s08",
+      "title": "Ask for ideas you can judge",
+      "body": "Give the brief, a number of options and a way to group them. Ask the tool to flag missing permission. End by reserving the decision for yourself.",
+      "aria": "Ask for ideas you can judge",
+      "kind": "lesson",
+      "promptIds": [
+        1
+      ]
+    },
+    {
+      "key": "s09",
+      "title": "Compare two service-day requests",
+      "body": "“Give me ideas for a volunteer event” leaves the time, supplies and people unspecified. Use the brief below. A classroom backup is a possibility until the advisor confirms room access.",
+      "aria": "Compare two service-day requests",
+      "kind": "lesson",
+      "promptIds": [
+        8
+      ]
+    },
+    {
+      "key": "s10",
+      "title": "Get volume, then structure",
+      "body": "Try 12 one-line ideas grouped into three themes. Keep ideas that genuinely differ. Label anything that requires a room, money or approval you haven’t secured.",
+      "aria": "Get volume, then structure",
+      "kind": "lesson"
+    },
+    {
+      "key": "s11",
+      "title": "Change the second pass",
+      "body": "If five ideas are variations on collecting cans, ask for options that use different kinds of work. Combine related ideas, or add a real constraint, such as finishing before lunch.",
+      "aria": "Change the second pass",
+      "kind": "lesson",
+      "promptIds": [
+        2
+      ]
+    },
+    {
+      "key": "s12",
+      "title": "Six ways to push further",
+      "body": "Expand the list. Combine two ideas. Ask what would make one fail. Tighten a limit. Ask what is missing. Make the strongest honest case for an option you almost discarded.",
+      "aria": "Six ways to push further",
+      "kind": "lesson"
+    },
+    {
+      "key": "s13",
+      "title": "Star three of these ten ideas",
+      "body": "Fictional list: clean a nearby path; sort donated books; make weather-backup posters; repair classroom supply kits; label recycling bins; prepare welcome cards; make reusable event signs; run peer practice stations; organize lost-property shelves with permission; map litter hotspots on campus. Choose three. For each, name one reason it could work and one permission to check.",
+      "aria": "Star three of these ten ideas",
+      "kind": "activity",
+      "field": "shortlist",
+      "fieldLabel": "My three ideas and reasons"
+    },
+    {
+      "key": "s14",
+      "title": "Practice check",
+      "body": "Test your understanding of a brief, a first list and a useful follow-up. Check all three answers after the third question.",
+      "aria": "Practice check",
+      "kind": "midIntro"
+    },
+    {
+      "key": "s15",
+      "title": "What goes in the brief?",
+      "body": "Think about what someone who missed your meeting would need to know before suggesting ideas.",
+      "aria": "What goes in the brief?",
+      "kind": "midQuestion",
+      "midIndex": 0
+    },
+    {
+      "key": "s16",
+      "title": "What is a first list good for?",
+      "body": "Decide which parts of the list have actually been checked by your group.",
+      "aria": "What is a first list good for?",
+      "kind": "midQuestion",
+      "midIndex": 1
+    },
+    {
+      "key": "s17",
+      "title": "How would you narrow the list?",
+      "body": "Choose a request that helps you compare ideas against your real limits.",
+      "aria": "How would you narrow the list?",
+      "kind": "midQuestion",
+      "midIndex": 2
+    },
+    {
+      "key": "s18",
+      "title": "Judge feasibility, permission and kindness",
+      "body": "Can we finish with these people and supplies? Are we allowed to do it? Would the people we hope to serve welcome it? Can I explain who benefits? Cross out any option that fails a hard limit.",
+      "aria": "Judge feasibility, permission and kindness",
+      "kind": "lesson",
+      "promptIds": [
+        3
+      ]
+    },
+    {
+      "key": "s19",
+      "title": "Make a real limit do work",
+      "body": "Add “indoors if it rains,” “no purchases,” or “must finish in two hours.” A cleanup with a clear rain alternative now has a reason to survive. An idea needing a rented bus does not fit.",
+      "aria": "Make a real limit do work",
+      "kind": "lesson"
+    },
+    {
+      "key": "s20",
+      "title": "Check the rules on schoolwork",
+      "body": "A teacher might allow brainstorming questions and require you to write the essay yourself. Ask if you’re unsure. Disclose help when required. Follow contest or work rules too.",
+      "aria": "Check the rules on schoolwork",
+      "kind": "lesson"
+    },
+    {
+      "key": "s21",
+      "title": "Use roles and fictional details",
+      "body": "A brief needs “12 volunteers and one advisor,” not names or a roster. Leave out passwords, codes, IDs, financial and medical details, home addresses and other people’s private information. Read the tool’s current account rules and involve a guardian when required.",
+      "aria": "Use roles and fictional details",
+      "kind": "lesson"
+    },
+    {
+      "key": "s22",
+      "title": "From messy notes to a plan",
+      "body": "Sample notes: “Park or tutoring or a food thing? Last year we ran out of time, only about five came, it rained and nobody knew who brought supplies.” Possible themes: park cleanup with rain backup; peer tutoring with signup; food drive with drop-off. A learner chooses the first and writes: “Saturday, 9 to 12, we’ll clean the park next to campus. I’ll send a supplies list by Wednesday. If it rains, we’ll ask to use the classroom to make posters for a rescheduled cleanup. We’ll confirm the room and date before announcing either.”",
+      "aria": "From messy notes to a plan",
+      "kind": "lesson",
+      "promptIds": [
+        6
+      ]
+    },
+    {
+      "key": "s23",
+      "title": "Make a table with honest blanks",
+      "body": "Choose criteria before comparing. A table might show cleanup needs dry weather and tutoring needs a room. In the approval column, write “not enough information” until you have permission.",
+      "aria": "Make a table with honest blanks",
+      "kind": "lesson",
+      "promptIds": [
+        5
+      ]
+    },
+    {
+      "key": "s24",
+      "title": "Give the runner-up a fair hearing",
+      "body": "To steel-man an idea is to make the strongest honest case for it. Indoor sorting could work in rain. It still needs suitable items and permission to use the room. A fair case includes both.",
+      "aria": "Give the runner-up a fair hearing",
+      "kind": "lesson",
+      "promptIds": [
+        4
+      ]
+    },
+    {
+      "key": "s25",
+      "title": "Brief, 12 ideas, one paragraph",
+      "body": "Write a brief for an allowed project. Use the structured brainstorm or generate ideas on paper. Star three. Critique or compare them. Choose one, write your paragraph and name one detail you must verify or get approved.",
+      "aria": "Brief, 12 ideas, one paragraph",
+      "kind": "activity",
+      "field": "brief",
+      "fieldLabel": "My brief"
+    },
+    {
+      "key": "s26",
+      "title": "Write what you can stand behind",
+      "body": "In your own words, say who will do what, where and when, and how you’ll handle a known obstacle. Read it aloud. Mark undecided details as questions. A suggested paragraph is scaffolding for your own version.",
+      "aria": "Write what you can stand behind",
+      "kind": "activity",
+      "field": "plan",
+      "fieldLabel": "My plan in my own words",
+      "promptIds": [
+        7
+      ]
+    },
+    {
+      "key": "s27",
+      "title": "Your brainstorming cheat sheet",
+      "body": "Take your brief, three options, chosen plan and verification note with you. The download also contains all seven reusable prompts.",
+      "aria": "Your brainstorming cheat sheet",
+      "kind": "worksheet"
+    },
+    {
+      "key": "s28",
+      "title": "Optional completion record",
+      "body": "After you pass, you may keep a completion record if you want to describe the planning you practiced. The plan you can use this week is the main takeaway.",
+      "aria": "Optional completion record",
+      "kind": "resume"
+    },
+    {
+      "key": "s29",
+      "title": "Final knowledge check",
+      "body": "Answer five questions about making a decision responsibly. Four correct answers complete the class. Review and retry whenever you like.",
+      "aria": "Final knowledge check",
+      "kind": "lesson"
+    },
+    {
+      "key": "s30",
+      "title": "What goes into a useful brief?",
+      "body": "Consider which details would change the suggestions.",
+      "aria": "What goes into a useful brief?",
+      "kind": "final"
+    },
+    {
+      "key": "s31",
+      "title": "What comes after 12 ideas?",
+      "body": "Think about whose judgment the decision needs.",
+      "aria": "What comes after 12 ideas?",
+      "kind": "final"
+    },
+    {
+      "key": "s32",
+      "title": "Is a suggested partner committed?",
+      "body": "Check what the group actually knows about permission and participation.",
+      "aria": "Is a suggested partner committed?",
+      "kind": "final"
+    },
+    {
+      "key": "s33",
+      "title": "What did the teacher allow?",
+      "body": "Apply the instructions for this assignment.",
+      "aria": "What did the teacher allow?",
+      "kind": "final"
+    },
+    {
+      "key": "s34",
+      "title": "How do you improve a generic list?",
+      "body": "Choose a follow-up that changes the substance of the options.",
+      "aria": "How do you improve a generic list?",
+      "kind": "final"
+    },
+    {
+      "key": "s35",
+      "title": "The decision belongs to you",
+      "body": "Write the brief first. Generate, group, critique and choose. Check feasibility, privacy and rules. Write the plan in your own words and mark what still needs approval.",
+      "aria": "The decision belongs to you",
+      "kind": "review"
+    },
+    {
+      "key": "s36",
+      "title": "What comes next",
+      "body": "Leveraging Multiple AIs uses a decision list to write a clear brief for a second tool. The same approach works in a fresh pass with one allowed tool.",
+      "aria": "What comes next",
+      "kind": "lesson"
+    },
+    {
+      "key": "s37",
+      "title": "From a vague ask to a brief you can use",
+      "body": "Read the walkthrough and follow the service-day example from the first request to a paragraph the learner owns.",
+      "aria": "From a vague ask to a brief you can use",
+      "kind": "video"
+    },
+    {
+      "key": "s38",
+      "title": "Walkthrough: expand and group",
+      "body": "Start with park cleanup and supply sorting. Ask for eight different options that need no purchases or driving. A useful grouping might be outdoor care, indoor organizing and communication. Remove duplicates.",
+      "aria": "Walkthrough: expand and group",
+      "kind": "lesson",
+      "promptIds": [
+        9
+      ]
+    },
+    {
+      "key": "s39",
+      "title": "Walkthrough: critique the shortlist",
+      "body": "Compare cleanup, sorting and posters. Cleanup needs a rain backup. Sorting needs materials and a room. Posters need a confirmed use. Ask which dependency you can check today.",
+      "aria": "Walkthrough: critique the shortlist",
+      "kind": "lesson",
+      "promptIds": [
+        10
+      ]
+    },
+    {
+      "key": "s40",
+      "title": "Walkthrough: compare without handing over the choice",
+      "body": "Example table in words: cleanup — supplies at home, rain risk, permission pending. Sorting — materials unknown, indoors, room pending. Posters — paper available, indoors, use unconfirmed. The learner favors cleanup and asks the advisor about the rain plan.",
+      "aria": "Walkthrough: compare without handing over the choice",
+      "kind": "lesson",
+      "promptIds": [
+        11
+      ]
+    },
+    {
+      "key": "s41",
+      "title": "Paper works today",
+      "body": "Write the brief at the top of a page. List possibilities, group them, then circle three. Use only tools whose current terms allow you to participate. Under 18, involve a parent or guardian when required.",
+      "aria": "Paper works today",
+      "kind": "lesson"
+    },
+    {
+      "key": "s42",
+      "title": "Take one decision into the week",
+      "body": "Download the cheat sheet again below. Verify the most important open detail before you invite people or announce the plan. Quiz retries are unlimited. Completion records a class, not a certification.",
+      "aria": "Take one decision into the week",
+      "kind": "close"
+    }
+  ],
+  "materials": {
+    "prompts": [
+      {
+        "id": 1,
+        "title": "Structured brainstorm",
+        "use": "Start from a goal and ask for a wide list.",
+        "text": "Brainstorm ideas for the goal below. Use only the constraints I provide. Do not invent budget, tools, permissions, or partners. Flag any idea that would need something I did not mention.\n\nGoal: [GOAL]\nAudience: [WHO IT IS FOR]\nConstraints: [TIME, MATERIALS, RULES, LOCATION LIMITS]\nWhat “good” looks like: [CRITERIA]\nAlready tried or rejected: [OPTIONAL]\n\nReturn:\n1) 10–12 numbered ideas in one line each\n2) The ideas grouped into 3 themes\n3) A short “risky or needs approval” list\nDo not pick a winner for me.",
+        "worksheet": true
+      },
+      {
+        "id": 2,
+        "title": "Expand and group",
+        "use": "Get variety beyond the ideas already on your list.",
+        "text": "Here are my current ideas:\n[LIST]\n\nGive me 8 additional ideas that are meaningfully different, not reworded duplicates. Then group the full set (old + new) into themes. Drop or mark any idea that breaks these constraints: [CONSTRAINTS]. Do not invent resources. I will choose later.",
+        "worksheet": true
+      },
+      {
+        "id": 3,
+        "title": "What’s missing / critique",
+        "use": "Test the weak points of a shortlist.",
+        "text": "Critique this shortlist against my goal and constraints. For each idea, tell me: what could go wrong, what is missing, and what would have to be true for it to work. Do not flatter me. Do not invent facts. If you lack information, ask up to 4 questions.\n\nGoal: [GOAL]\nConstraints: [CONSTRAINTS]\nShortlist:\n[IDEAS]",
+        "worksheet": true
+      },
+      {
+        "id": 4,
+        "title": "Steel-man the other option",
+        "use": "Check whether you dismissed another option too quickly.",
+        "text": "I am leaning toward Idea A and I was about to drop Idea B. Make the strongest honest case for Idea B, using only the facts I have given. Then list the genuine weaknesses of Idea A. Do not invent advantages. End with 3 questions that would help me decide — do not decide for me.\n\nIdea A: [A]\nIdea B: [B]\nFacts and constraints: [FACTS]",
+        "worksheet": true
+      },
+      {
+        "id": 5,
+        "title": "Compare, don’t decide",
+        "use": "Use a table to narrow your options.",
+        "text": "Compare these ideas only on the criteria I list. Do not choose a winner. If a cell cannot be judged from what I provided, write “not enough information.”\n\nIdeas: [LIST]\nCriteria: [LIST]\nFormat: a table, then 3 pieces of information that would most change the decision.",
+        "worksheet": true
+      },
+      {
+        "id": 6,
+        "title": "From messy notes to themes",
+        "use": "Turn a brain dump into a list you can inspect.",
+        "text": "Turn these messy notes into: (1) 3–5 themes, (2) a cleaned list of ideas under those themes, (3) questions I still need to answer. Do not add ideas I did not hint at unless you label them “new suggestion.” Do not invent commitments I did not make.\n\nNOTES:\n[PASTE]",
+        "worksheet": true
+      },
+      {
+        "id": 7,
+        "title": "A one-paragraph plan I will rewrite",
+        "use": "You chose an idea and want a draft structure.",
+        "text": "Based only on the decision and facts below, draft a one-paragraph plan I can edit. Use plain language. Do not add permissions, partners, dates, or resources I did not state. After the paragraph, list any assumptions you made in bullet points so I can delete the ones that are not true. I will rewrite the final plan in my own words.\n\nDecision: [CHOSEN IDEA]\nFacts: [WHAT IS ALREADY TRUE]\nConstraints: [CONSTRAINTS]",
+        "worksheet": true
+      },
+      {
+        "id": 8,
+        "title": "Service-day brief",
+        "use": "Use a concrete brief to see how limits change the ideas.",
+        "text": "Help me brainstorm a 3-hour Saturday community service day for a high school volunteer club.\nAudience: 12 members plus 1 advisor. Neighbors of the school, families welcome if the idea allows it.\nConstraints: No budget beyond what members already have at home (gloves, trash bags, water bottles). Must have a rain plan. Must be doable without driving (on or within a short walk of campus, or already-planned family drop-off only if I say so). Do not invent school permissions or partnerships. Flag any idea that would need extra approval.\nWhat “good” looks like: every member has a clear job; we leave the place better than we found it; we can explain the plan in one paragraph.\nPlease: (1) give 12 ideas in a numbered list, (2) group them into 3 themes, (3) mark any idea that breaks a constraint, (4) do not pick a winner for me.",
+        "worksheet": false
+      },
+      {
+        "id": 9,
+        "title": "Expand the service-day list",
+        "use": "A filled example of the second prompt.",
+        "text": "Here are my current ideas: park cleanup and classroom supply sorting. Give me 8 meaningfully different ideas. Group all ten into themes. Mark anything needing purchases, driving, unconfirmed permission or a rain backup. Do not invent resources. I will choose later.",
+        "worksheet": false
+      },
+      {
+        "id": 10,
+        "title": "Critique three service-day ideas",
+        "use": "A filled example of the critique prompt.",
+        "text": "Our goal is a useful three-hour service day for 12 volunteers without driving or purchases. Critique park cleanup, sorting supplies and making posters. For each, name one failure point, one missing fact and one approval to check. Do not invent an advisor’s permission.",
+        "worksheet": false
+      },
+      {
+        "id": 11,
+        "title": "Compare the service-day shortlist",
+        "use": "Make missing information visible.",
+        "text": "Compare cleanup, sorting supplies and making posters for 12 volunteers on Saturday. Use only these criteria: supplies already available, rain backup, permission confirmed. Say “not enough information” where needed. Return a table and three questions. Leave the choice to me.",
+        "worksheet": false
+      }
+    ],
+    "fields": [
+      {
+        "key": "brief",
+        "label": "My brief"
+      },
+      {
+        "key": "shortlist",
+        "label": "My shortlist of three"
+      },
+      {
+        "key": "plan",
+        "label": "My plan in my own words"
+      },
+      {
+        "key": "check",
+        "label": "What I still need to verify or get approved"
+      }
+    ],
+    "reminders": [
+      "Diverge first to generate options. Converge second to group, critique and choose.",
+      "Brief: goal, audience, real constraints, definition of good, ideas already tried or rejected.",
+      "Judge each idea: feasible, allowed, kind, safe, useful and something you can explain.",
+      "Never invent partners, budgets or approvals. Keep rosters and private details out. Follow school rules and rewrite the chosen plan yourself.",
+      "AI can be wrong. Verify before announcing. Use only tools permitted under their current terms."
+    ]
+  },
+  "mid": [
+    {
+      "prompt": "What belongs in a brainstorming brief?",
+      "options": [
+        "A goal, audience, limits and what good looks like.",
+        "A topic word only.",
+        "Everyone’s full schedule."
+      ],
+      "answer": 0,
+      "why": "Real constraints let you judge whether ideas could work."
+    },
+    {
+      "prompt": "Why revisit a first list?",
+      "options": [
+        "The first idea always costs the most.",
+        "First lists may be generic and unchecked.",
+        "You need at least 50 ideas."
+      ],
+      "answer": 1,
+      "why": "A first pass generates possibilities. It cannot verify your resources or approvals."
+    },
+    {
+      "prompt": "What should follow a long list?",
+      "options": [
+        "Make every idea sound impressive.",
+        "Use the first one.",
+        "Group ideas, flag broken constraints and ask what’s missing."
+      ],
+      "answer": 2,
+      "why": "Grouping and critique help you decide what survives."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "What should a brainstorming brief include before you ask for a long list of ideas?",
+      "options": [
+        "Only a topic word, so the AI can be more creative.",
+        "A goal, the audience, real constraints, and what good looks like.",
+        "Your classmates’ full names and schedules.",
+        "A request to make it impressive."
+      ],
+      "answer": 1,
+      "why": "Specific briefs produce more usable ideas and reduce invented resources."
+    },
+    {
+      "prompt": "You got 12 ideas back. What is the best next step?",
+      "options": [
+        "Turn in the list as your assignment.",
+        "Pick the first idea because the AI listed it first.",
+        "Group and critique the ideas against your constraints, then choose, and write the plan in your own words.",
+        "Ask the AI to pick the winner and also write the final report."
+      ],
+      "answer": 2,
+      "why": "You still judge, choose, and own the plan. First on the list is not a ranking you can trust."
+    },
+    {
+      "prompt": "An idea depends on a partnership with a local business you have not actually contacted. What should you do?",
+      "options": [
+        "Leave it in the plan as if the partnership exists.",
+        "Treat it as a possibility that needs approval or outreach, or drop it for now.",
+        "Name a fake business so the plan looks complete.",
+        "Assume the AI already arranged it."
+      ],
+      "answer": 1,
+      "why": "Do not invent permissions or partners. Flag what is not yet true."
+    },
+    {
+      "prompt": "Your teacher allows AI for brainstorming questions but not for writing the graded essay. What is honest?",
+      "options": [
+        "Use AI to list possible essay angles, then write the essay yourself, and follow any disclosure rules.",
+        "Have the AI write the essay and change the first sentence.",
+        "Brainstorm and write with AI, but only if you hide it.",
+        "Any use of AI is automatically banned in every class."
+      ],
+      "answer": 0,
+      "why": "Follow the actual rule. Brainstorming help and submitting AI-written work are different. If the teacher bans all AI, do not use it."
+    },
+    {
+      "prompt": "Which follow-up prompt is most useful when a list feels generic?",
+      "options": [
+        "Make these sound more professional.",
+        "Add tighter real constraints and ask what’s missing or likely to fail.",
+        "Give me the same ideas in a nicer font.",
+        "Delete anything that isn’t fun."
+      ],
+      "answer": 1,
+      "why": "Real constraints and critique push past generic lists. “More professional” often adds fluff."
+    }
+  ],
+  "walkthrough": {
+    "minutes": "2–3",
+    "steps": [
+      [
+        "Start",
+        "Read the vague volunteer-event request."
+      ],
+      [
+        "Add the brief",
+        "Identify the time, people, limits and rain backup."
+      ],
+      [
+        "Narrow",
+        "Star three options and check which need permission."
+      ],
+      [
+        "Choose",
+        "Write a paragraph you can explain to the club."
+      ]
+    ],
+    "narration": [
+      "If I type ‘Give me ideas for a volunteer event,’ I get a generic list. That’s not because AI can’t help. It’s because I didn’t give it a brief.",
+      "Here’s a better brief: a 3-hour Saturday for 12 club members, almost no budget, a rain plan, no invented partnerships, and a request for 12 ideas grouped into themes — without picking a winner for me.",
+      "Now I have options I can actually judge. I star three, I ask what’s missing, and I check what would need an advisor’s okay.",
+      "The last step is easy to skip and it’s the most important: I write the plan in my own words. If I can’t explain it, I’m not ready to run it.",
+      "That’s brainstorming with AI: more options, then a better choice, with you still deciding."
+    ]
+  }
+}

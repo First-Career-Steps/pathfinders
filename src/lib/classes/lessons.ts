@@ -1,4 +1,5 @@
 import type { Walkthrough } from "./media";
+import { series } from "./series";
 import lead from "./content/lead-yourself.json";
 import ai from "./content/ai-honestly.json";
 export type Slide = {
@@ -8,6 +9,9 @@ export type Slide = {
   aria: string;
   kind: string;
   field?: string;
+  fieldLabel?: string;
+  midIndex?: number;
+  promptIds?: number[];
   examples?: { label: string; detail: string; text: string }[];
 };
 export type Question = {
@@ -23,6 +27,7 @@ export type Progress = {
   worksheet_completed_at: string | null;
 };
 export const slidesFor = (slug: string): Slide[] => {
+  if (series[slug]) return series[slug].slides;
   const source =
     slug === "lead-yourself" ? lead : slug === "ai-honestly" ? ai : [];
   // Editorial notes and unpublished excerpts stay out of the student's page payload.
@@ -217,7 +222,13 @@ const honest = {
   ],
 };
 export const quizzesFor = (slug: string) =>
-  slug === "lead-yourself" ? leadership : honest;
+  series[slug]
+    ? { mid: series[slug].mid, final: series[slug].final }
+    : slug === "lead-yourself"
+      ? leadership
+      : slug === "ai-honestly"
+        ? honest
+        : { mid: [], final: [] };
 export function grade(questions: Question[], answers: unknown) {
   if (
     !Array.isArray(answers) ||
@@ -236,6 +247,9 @@ export function grade(questions: Question[], answers: unknown) {
   return { score: review.filter((r) => r.correct).length, review };
 }
 export const walkthroughs: Record<string, Walkthrough> = {
+  ...Object.fromEntries(
+    Object.entries(series).map(([slug, value]) => [slug, value.walkthrough]),
+  ),
   "lead-yourself": {
     minutes: "8–12",
     steps: [

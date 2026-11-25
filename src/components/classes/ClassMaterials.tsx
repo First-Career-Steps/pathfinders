@@ -4,6 +4,7 @@ import {
   type ClassTransfer as Transfer,
 } from "@/lib/classes/transfer";
 import { useState } from "react";
+import { promptSheetFile, type PromptSheet } from "@/lib/classes/prompt-sheet";
 import type { ClassInfo } from "@/lib/classes/catalog";
 import {
   worksheetFile,
@@ -17,18 +18,27 @@ export function Worksheet({
   values,
   edit,
   onDownload,
+  materials,
 }: {
   course: ClassInfo;
   values: Fields;
   edit: (k: string, v: string) => void;
   onDownload: () => void;
+  materials?: PromptSheet;
 }) {
   const grid = course.slug === "lead-yourself";
   function download() {
     const url = URL.createObjectURL(
-      new Blob([worksheetFile(course.slug, course.worksheet, values)], {
-        type: "text/html;charset=utf-8",
-      }),
+      new Blob(
+        [
+          materials
+            ? promptSheetFile(course.worksheet, materials, values)
+            : worksheetFile(course.slug, course.worksheet, values),
+        ],
+        {
+          type: "text/html;charset=utf-8",
+        },
+      ),
     );
     const a = document.createElement("a");
     a.href = url;
@@ -46,7 +56,17 @@ export function Worksheet({
         Your writing stays on this page until you leave. Download a copy to keep
         it, edit it offline or print it as a PDF.
       </p>
-      {worksheetFields[course.slug].map(([k, label]) => (
+      {materials && (
+        <ul>
+          {materials.reminders.map((line) => (
+            <li key={line}>{line}</li>
+          ))}
+        </ul>
+      )}
+      {(materials
+        ? materials.fields.map((f) => [f.key, f.label])
+        : worksheetFields[course.slug]
+      ).map(([k, label]) => (
         <label key={k}>
           {label}
           <textarea
@@ -57,28 +77,30 @@ export function Worksheet({
           />
         </label>
       ))}
-      <fieldset>
-        <legend>
-          {grid ? "Seven-day consistency grid" : "Check your draft"}
-        </legend>
-        {(grid ? week : checklist).map((s, i) => (
-          <label className="sc-checkrow" key={s}>
-            {s}
-            <select
-              value={values["check" + i] || ""}
-              onChange={(e) => edit("check" + i, e.target.value)}
-            >
-              <option value="">Choose</option>
-              {(grid
-                ? ["Held", "Slipped", "No opportunity", "Planned"]
-                : ["Yes", "Needs work", "Not applicable"]
-              ).map((item) => (
-                <option key={item}>{item}</option>
-              ))}
-            </select>
-          </label>
-        ))}
-      </fieldset>
+      {!materials && (
+        <fieldset>
+          <legend>
+            {grid ? "Seven-day consistency grid" : "Check your draft"}
+          </legend>
+          {(grid ? week : checklist).map((s, i) => (
+            <label className="sc-checkrow" key={s}>
+              {s}
+              <select
+                value={values["check" + i] || ""}
+                onChange={(e) => edit("check" + i, e.target.value)}
+              >
+                <option value="">Choose</option>
+                {(grid
+                  ? ["Held", "Slipped", "No opportunity", "Planned"]
+                  : ["Yes", "Needs work", "Not applicable"]
+                ).map((item) => (
+                  <option key={item}>{item}</option>
+                ))}
+              </select>
+            </label>
+          ))}
+        </fieldset>
+      )}
       <button type="button" className="sc-btn" onClick={download}>
         Download my worksheet
       </button>

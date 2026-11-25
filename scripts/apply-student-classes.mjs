@@ -39,9 +39,19 @@ try {
         "utf8",
       ),
     );
-  const series = await db.query("select 1 from pg_constraint where conrelid='public.student_class_progress'::regclass and conname='student_class_progress_course_series_check'");
+  const series = await db.query(
+    "select 1 from pg_constraint where conrelid='public.student_class_progress'::regclass and conname='student_class_progress_course_series_check'",
+  );
   if (!series.rowCount) {
-    await db.query(await readFile(new URL("../supabase/migrations/20261125010000_practical_ai_series.sql", import.meta.url), "utf8"));
+    await db.query(
+      await readFile(
+        new URL(
+          "../supabase/migrations/20261125010000_practical_ai_series.sql",
+          import.meta.url,
+        ),
+        "utf8",
+      ),
+    );
   }
   const result = await db.query(`select c.relrowsecurity as rls,
  exists(select 1 from pg_constraint where conrelid=c.oid and confrelid='auth.users'::regclass and confdeltype='c') as cascade,

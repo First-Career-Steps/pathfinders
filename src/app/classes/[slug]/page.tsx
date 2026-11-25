@@ -1,7 +1,9 @@
+import ArchivedClass from "@/components/classes/ArchivedClass";
 import ClassConfirmation from "@/components/classes/ClassConfirmation";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
+  retiredTitle,
   classBySlug,
   classOpen,
   paidClassesEnabled,
@@ -13,13 +15,16 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }: Context) {
   return {
     title:
-      (classBySlug((await params).slug)?.title || "Class") +
-      " | First Career Steps",
+      (classBySlug((await params).slug)?.title ||
+        retiredTitle((await params).slug) ||
+        "Class") + " | First Career Steps",
   };
 }
 export default async function Landing({ params }: Context) {
   const { slug } = await params;
   const c = classBySlug(slug);
+  const archive = retiredTitle(slug);
+  if (archive) return <ArchivedClass slug={slug} title={archive} />;
   if (!c) notFound();
   const { db, user } = await studentSession();
   let progress: Progress | null = null,
@@ -92,7 +97,9 @@ export default async function Landing({ params }: Context) {
             </div>
             <div>
               <dt>Time</dt>
-              <dd>About {c.minutes} minutes</dd>
+              <dd>
+                About {c.slug === "ai-building" ? "50–55" : c.minutes} minutes
+              </dd>
             </div>
             <div>
               <dt>Quizzes</dt>

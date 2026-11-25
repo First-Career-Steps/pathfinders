@@ -1,6 +1,8 @@
 # Student classes
 
-The public catalog is at `/classes`. Launch content lives in `src/lib/classes/content`. Edit titles, slide keys, teaching copy, notes and alt text there. Published slides keep stable keys so existing learners can resume. The launch courses use `lead-yourself` and `ai-honestly`. The other seven files are editorial outlines. Their landing pages describe planned contents and cannot open a player.
+The public catalog is at `/classes`. The Leadership track uses the original slide files and chapter notes. Basics of AI (44 slides) and Brainstorming with AI (42) are published. Leveraging Multiple AIs (46) and Building with AI (48) have full player content staged as Coming soon. Each practical AI JSON file in `src/lib/classes/content` contains slides, quiz questions, copyable prompts, an offline prompt sheet and the narration script. Both advanced classes resolve the same two full texts from `requirements-prompts.json`. Stable slide keys restore progress.
+
+The four retired AI slugs have public replacement notices. Existing learners see their original status in the dashboard archive. An owner with progress can read the old lesson text wherever it exists. Archive reads never start or complete a class. The practical-AI migration widens the course constraint on the existing progress table; the owner policy and deletion cascade still apply.
 
 The mapping and excerpt placeholders are private speaker notes. Brenen supplies the chapter map, approved excerpts and personal stories before the relevant paid release. Restaurant illustrations are labeled as such. The recording fallback scripts and annotated walkthroughs live in `media.ts` and `lessons.ts`. Supply a video URL, English WebVTT captions and a transcript together in the recording field, and update the landing-page availability. Use the actual learner flow when recording.
 

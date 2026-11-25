@@ -651,3 +651,8 @@
     margin-bottom: 5px;
   }
 }
+
+.sc-prompt{border:1px solid var(--line);border-radius:8px;padding:4px 14px;background:#f3f7f8;margin:14px 0}
+.sc-slidebody .sc-prompt summary{display:list-item;font-weight:650;text-decoration:none;cursor:pointer}
+.sc-prompt p{font-size:.95rem}.sc-prompt pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;padding:12px;margin:8px 0;background:white;color:#17344a;border:1px solid #c2d4dc;border-radius:5px;font:0.94rem/1.5 ui-monospace,monospace}
+.sc-prompt button{margin:5px 12px 10px 0}.sc-prompt pre:focus-visible{outline:3px solid #195e7d}.sc-work ul{list-style:disc;padding-left:1.25rem}
