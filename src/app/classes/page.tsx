@@ -32,6 +32,7 @@ export default function Library() {
         <section
           className="sc-track"
           key={track}
+          id={track.toLowerCase()}
           aria-label={track + " classes"}
         >
           <div className="sc-track-head">
@@ -41,6 +42,7 @@ export default function Library() {
                 ? "Start with Basics, then practice brainstorming, handing off ideas and planning a small build."
                 : "From The Little Black Book on Leadership by Brenen Morse"}
             </p>
+            {track === "AI" && <Link className="sc-tool-link" href="/classes/prompts">AI prompt library</Link>}
           </div>
           <div className="sc-grid">
             {classes

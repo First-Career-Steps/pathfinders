@@ -9,12 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/learn',
     ...Object.keys(courseFiles)
-      .filter(course => !course.endsWith('/fieldbook'))
+      .filter(course => course.startsWith('leadership') && !course.endsWith('/fieldbook'))
       .map(course => '/learn/' + course),
     '/resume-builder',
     '/for-educators',
     WORKSHOP,
     '/classes',
+    '/classes/prompts',
     ...classes.map(course => '/classes/' + course.slug),
     '/privacy',
     '/terms',

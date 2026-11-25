@@ -34,7 +34,7 @@ export default function PromptBlock({
       <pre tabIndex={0} ref={ref}>
         {prompt.text}
       </pre>
-      <button type="button" onClick={copy}>
+      <button className="sc-btn" type="button" onClick={copy}>
         Copy prompt
       </button>
       <span role="status">{status}</span>

@@ -137,6 +137,7 @@ test("the sitemap contains every public class landing and both policies", () => 
   const urls = sitemap().map((entry) => entry.url);
   const expected = [
     "/classes",
+    "/classes/prompts",
     "/privacy",
     "/terms",
     WORKSHOP,
@@ -145,6 +146,24 @@ test("the sitemap contains every public class landing and both policies", () => 
   for (const path of expected) assert.ok(urls.includes(base + path), path);
   assert.equal(urls.length, new Set(urls).size);
   assert.ok(!urls.some((url) => /\/classes\/[^/]+\/learn(?:\/|$)/.test(url)));
+});
+
+test("short AI workshop bookmarks redirect permanently and only their destinations are indexed", async () => {
+  const redirects = await config.redirects!();
+  const paths = new Set(sitemap().map((entry) => new URL(entry.url).pathname));
+  for (const [source, destination] of [
+    ["/learn/ai", "/classes"],
+    ["/learn/ai/basics", "/classes/ai-basics"],
+    ["/learn/ai/prompting", "/classes/ai-basics"],
+    ["/learn/ai/brainstorming", "/classes/ai-brainstorming"],
+    ["/learn/ai/multiple-ais", "/classes/ai-multiple"],
+    ["/learn/ai/building", "/classes/ai-building"],
+    ["/learn/ai/prompts", "/classes/prompts"],
+  ]) {
+    assert.ok(redirects.some((r) => r.source === source && r.destination === destination && r.permanent), source);
+    assert.ok(!paths.has(source) && paths.has(destination), destination);
+  }
+  assert.ok(paths.has("/learn/leadership/team-training"));
 });
 
 test("the workspace workshop address forwards to the existing one-time product", async () => {

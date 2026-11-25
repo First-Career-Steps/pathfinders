@@ -6,7 +6,7 @@ import { courseFiles, fileFor, learnerCourse } from '../src/lib/education/catalo
 import { changeSession, educationCookies, learnerApi } from '../src/lib/education/session';
 
 test('public course documents and their scripts, styles and route links resolve', () => {
-    const routes = new Set([...Object.keys(courseFiles).map(course=>'/learn/'+course), '/learn', '/', '/resume-builder','/learn/signin','/dashboard']);
+    const routes = new Set([...Object.keys(courseFiles).map(course=>'/learn/'+course), '/learn', '/', '/classes', '/resume-builder','/learn/signin','/dashboard']);
     for (const course of Object.keys(courseFiles) as (keyof typeof courseFiles)[]) {
         for (const signed of [true,false]) {
             const template = readFileSync('education/'+fileFor(course,signed)+'.html','utf8');

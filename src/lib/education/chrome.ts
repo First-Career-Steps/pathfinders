@@ -1,6 +1,7 @@
 import type { Course } from './catalog';
 
 export const products = [
+    { href: '/classes', title: 'Student classes' },
     { href: '/learn', title: 'Courses & assessments' },
     { href: '/resume-builder', title: 'Resume Builder' },
 ];
