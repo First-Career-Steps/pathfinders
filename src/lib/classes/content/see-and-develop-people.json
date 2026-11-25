@@ -1,322 +1,527 @@
-[
-  {
-    "key": "s01",
-    "title": "See and Develop People",
-    "body": "Notice one skill a teammate wants to develop.",
-    "notes": "Open with a new club volunteer learning setup.",
-    "aria": "See and Develop People. Notice one skill a teammate wants to develop.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s02",
-    "title": "Who you can help",
-    "body": "A teammate or new coworker can benefit from a small offer of help.",
-    "notes": "Use peer relationships as well as formal roles.",
-    "aria": "Who you can help. A teammate or new coworker can benefit from a small offer of help.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s03",
-    "title": "Your People",
-    "body": "Part II draws here on Chapters 10, 11 and 12.",
-    "notes": "Identify these as confirmed references.",
-    "aria": "Your People. Part II draws here on Chapters 10, 11 and 12.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s04",
-    "title": "Why notice growth?",
-    "body": "Someone who is only assigned chores may never get to try a new task.",
-    "notes": "Compare two ways to staff a project table.",
-    "aria": "Why notice growth?. Someone who is only assigned chores may never get to try a new task.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s05",
-    "title": "Activity: choose a person or role",
-    "body": "Use initials or a fictional newcomer for your private plan.",
-    "notes": "Avoid storing another person's details.",
-    "aria": "Activity: choose a person or role. Use initials or a fictional newcomer for your private plan.",
-    "kind": "activity"
-  },
-  {
-    "key": "s06",
-    "title": "Can They Change?",
-    "body": "Chapter 10 looks at humility, effort and coachability.",
-    "notes": "Assess behaviors across opportunities. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "Can They Change?. Chapter 10 looks at humility, effort and coachability.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s07",
-    "title": "Humility",
-    "body": "A teammate can acknowledge a miss and hear a specific correction.",
-    "notes": "Distinguish a nervous reaction from a pattern.",
-    "aria": "Humility. A teammate can acknowledge a miss and hear a specific correction.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s08",
-    "title": "Effort",
-    "body": "Check what the person tries across several practices.",
-    "notes": "Ask what resources and opportunities they had.",
-    "aria": "Effort. Check what the person tries across several practices.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s09",
-    "title": "Coachability",
-    "body": "Look for a change in the next attempt after feedback.",
-    "notes": "Compare agreeing with applying a suggestion.",
-    "aria": "Coachability. Look for a change in the next attempt after feedback.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s10",
-    "title": "Fair observation",
-    "body": "One rough afternoon is too little evidence for a label.",
-    "notes": "Discuss missing context privately.",
-    "aria": "Fair observation. One rough afternoon is too little evidence for a label.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s11",
-    "title": "Activity: compare two teammates",
-    "body": "One asks for help and retries. One agrees politely but repeats a step unchanged.",
-    "notes": "List observations and possible questions for each.",
-    "aria": "Activity: compare two teammates. One asks for help and retries.",
-    "kind": "activity"
-  },
-  {
-    "key": "s12",
-    "title": "Where help goes next",
-    "body": "Match the time you can offer to the person's willingness to practice.",
-    "notes": "Avoid turning a present choice into a permanent judgment. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Where help goes next. Match the time you can offer to the person's willingness to practice.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s13",
-    "title": "What do they want to become?",
-    "body": "Chapter 11 asks you to learn the person's goal directly.",
-    "notes": "One student might want to teach while another wants to build. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "What do they want to become?. Chapter 11 asks you to learn the person's goal directly.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s14",
-    "title": "Questions that open the conversation",
-    "body": "Ask which task they want to try and what would help them practice.",
-    "notes": "Compare this with guessing their career or probing family circumstances.",
-    "aria": "Questions that open the conversation. Ask which task they want to try and what would help them practice.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s15",
-    "title": "Activity: prepare three questions",
-    "body": "Write one about a goal, one about prior practice and one about support.",
-    "notes": "Read them aloud as a peer.",
-    "aria": "Activity: prepare three questions. Write one about a goal, one about prior practice and one about support.",
-    "kind": "activity"
-  },
-  {
-    "key": "s16",
-    "title": "Four possible motives",
-    "body": "Chapter 12 names money, growth, belonging and stability.",
-    "notes": "Ask which matters now rather than assigning a type. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "Four possible motives. Chapter 12 names money, growth, belonging and stability.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s17",
-    "title": "Motives in student life",
-    "body": "A steady schedule can matter more than an extra responsibility.",
-    "notes": "Compare predictable hours with a chance to learn a skill.",
-    "aria": "Motives in student life. A steady schedule can matter more than an extra responsibility.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s18",
-    "title": "Mid-quiz: three decisions",
-    "body": "Identify a Chapter 10 behavior, choose a goal question and interpret a stated motive.",
-    "notes": "Use three separate scenarios.",
-    "aria": "Mid-quiz: three decisions. Identify a Chapter 10 behavior, choose a goal question and interpret a stated motive.",
-    "kind": "mid"
-  },
-  {
-    "key": "s19",
-    "title": "Direct feedback with care",
-    "body": "Describe a behavior while leaving room to hear the person's explanation.",
-    "notes": "A private invitation makes feedback easier to use. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Direct feedback with care. Describe a behavior while leaving room to hear the person's explanation.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s20",
-    "title": "Facts, impact and request",
-    "body": "State what happened, what it affected and what you are asking for. Invite a reply.",
-    "notes": "Write an opening sentence together.",
-    "aria": "Facts, impact and request. State what happened, what it affected and what you are asking for.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s21",
-    "title": "A club discussion",
-    "body": "A member cuts in twice. Ask them privately to let each speaker finish.",
-    "notes": "Contrast with a sarcastic group message.",
-    "aria": "A club discussion. A member cuts in twice.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s22",
-    "title": "Screen recording: a check-in",
-    "body": "Plan an 8–12 minute role-play with an annotated five-minute conversation.",
-    "notes": "Script the opening, goal question, observation and agreed practice.",
-    "aria": "Screen recording: a check-in. Plan an 8–12 minute role-play with an annotated five-minute conversation.",
-    "kind": "video"
-  },
-  {
-    "key": "s23",
-    "title": "A student development tracker",
-    "body": "Record observations, the person's stated goal and your own next action.",
-    "notes": "Adapt the official tool without importing its HR scoring. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "A student development tracker. Record observations, the person's stated goal and your own next action.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s24",
-    "title": "Activity: fill the tracker",
-    "body": "Use a fictional teammate to check humility, effort and coachability.",
-    "notes": "Include the Chapter 11 question and your own commitment.",
-    "aria": "Activity: fill the tracker. Use a fictional teammate to check humility, effort and coachability.",
-    "kind": "activity"
-  },
-  {
-    "key": "s25",
-    "title": "If practice is declined",
-    "body": "Keep the standard and leave a respectful way back into practice.",
-    "notes": "Separate declining help from someone's worth.",
-    "aria": "If practice is declined. Keep the standard and leave a respectful way back into practice.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s26",
-    "title": "Keep the plan private",
-    "body": "Use roles and your own actions on a local worksheet.",
-    "notes": "Never circulate notes about a classmate.",
-    "aria": "Keep the plan private. Use roles and your own actions on a local worksheet.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s27",
-    "title": "A true training bullet",
-    "body": "Name the task you actually showed someone and an observed result.",
-    "notes": "Remove unsupported claims about a teammate's performance.",
-    "aria": "A true training bullet. Name the task you actually showed someone and an observed result.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s28",
-    "title": "Worksheet: One Person I Will Help This Month",
-    "body": "Take three questions, a motive and one next step into your next check-in.",
-    "notes": "Use a local one-page tracker.",
-    "aria": "Worksheet: One Person I Will Help This Month. Take three questions, a motive and one next step into your next check-in.",
-    "kind": "worksheet"
-  },
-  {
-    "key": "s29",
-    "title": "Common traps",
-    "body": "Notice favorites, gossip and vague reassurance.",
-    "notes": "Rewrite one example as a question or factual observation.",
-    "aria": "Common traps. Notice favorites, gossip and vague reassurance.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s30",
-    "title": "What the three chapters contribute",
-    "body": "Observe behavior, ask about goals and listen for motives.",
-    "notes": "Have learners explain the order in their words.",
-    "aria": "What the three chapters contribute. Observe behavior, ask about goals and listen for motives.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s31",
-    "title": "Next: the shared environment",
-    "body": "Shift attention from one person to what a newcomer sees in a room.",
-    "notes": "Introduce the coming Set the Stage class.",
-    "aria": "Next: the shared environment. Shift attention from one person to what a newcomer sees in a room.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s32",
-    "title": "Optional completion line",
-    "body": "Preview the completion record or a practiced skill.",
-    "notes": "Do not imply that a fictional teammate was trained.",
-    "aria": "Optional completion line. Preview the completion record or a practiced skill.",
-    "kind": "resume"
-  },
-  {
-    "key": "s33",
-    "title": "End question: humility or coachability?",
-    "body": "Compare acknowledging a mistake with using feedback on the next try.",
-    "notes": "Ask which behavior the evidence supports.",
-    "aria": "End question: humility or coachability?. Compare acknowledging a mistake with using feedback on the next try.",
-    "kind": "final"
-  },
-  {
-    "key": "s34",
-    "title": "End question: feedback in action",
-    "body": "Find the second attempt that shows a change.",
-    "notes": "Do not give credit for a nod alone.",
-    "aria": "End question: feedback in action. Find the second attempt that shows a change.",
-    "kind": "final"
-  },
-  {
-    "key": "s35",
-    "title": "End question: a respectful goal question",
-    "body": "Select a private question that invites a real preference.",
-    "notes": "Explain why guessing is weaker.",
-    "aria": "End question: a respectful goal question. Select a private question that invites a real preference.",
-    "kind": "final"
-  },
-  {
-    "key": "s36",
-    "title": "End question: which motive?",
-    "body": "A student asks for predictable shifts. Identify the motive suggested.",
-    "notes": "Check the interpretation with the student.",
-    "aria": "End question: which motive?. A student asks for predictable shifts.",
-    "kind": "final"
-  },
-  {
-    "key": "s37",
-    "title": "End question: useful feedback",
-    "body": "Pick a factual line with a clear request and room to respond.",
-    "notes": "Use a club interruption example.",
-    "aria": "End question: useful feedback. Pick a factual line with a clear request and room to respond.",
-    "kind": "final"
-  },
-  {
-    "key": "s38",
-    "title": "Answer review",
-    "body": "Explain all five choices and allow retry.",
-    "notes": "Four correct completes the future class.",
-    "aria": "Answer review. Explain all five choices and allow retry.",
-    "kind": "review"
-  },
-  {
-    "key": "s39",
-    "title": "Schedule one conversation",
-    "body": "Write a role, a time and one opening question.",
-    "notes": "Keep it private and realistic.",
-    "aria": "Schedule one conversation. Write a role, a time and one opening question.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s40",
-    "title": "One next action",
-    "body": "After the conversation, record the one thing you agreed to do.",
-    "notes": "Return to the worksheet in a month.",
-    "aria": "One next action. After the conversation, record the one thing you agreed to do.",
-    "kind": "lesson"
-  }
-]
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "See and Develop People",
+      "body": "Choose one person you work alongside. By the end of class you will have three questions to ask them and one useful thing you can do to help them grow this month.",
+      "aria": "See and Develop People",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s02",
+      "title": "Part II — Your People",
+      "body": "Allow about 45 minutes. In his hospitality handbook, The Little Black Book on Leadership, Brenen Morse writes about helping people grow during real shifts. Chapters 10–12 also give you a way to support a new club member, a project partner or a teammate. Anyone who works alongside another person can practice this.",
+      "aria": "Part II — Your People",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s03",
+      "title": "Pick a practice partner",
+      "body": "Think of someone you could help this month. A role such as new volunteer is enough. You can use the fictional teammate in this class for every exercise.",
+      "aria": "Pick a practice partner",
+      "kind": "activity",
+      "field": "role",
+      "fieldLabel": "Write a role or initials and one skill you could practice together. Leave out contact details, full names and private circumstances.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s04",
+      "title": "Chapter 10: Can They Change?",
+      "body": "Willingness is something to look for over time. A beginner who still needs help may be doing exactly the work it takes to learn. The three clues in this chapter are humility, effort and coachability.",
+      "aria": "Chapter 10: Can They Change?",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "quote": "People can change. That is true. But not all of them will. And the difference is never about intelligence or potential. It is about willingness.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s05",
+      "title": "Humility shows up in the conversation",
+      "body": "Suppose your project partner left a source off a slide. When you point to the missing source, they look at it with you and ask where the citation belongs. You saw them make room for feedback. That is evidence for humility on this occasion.",
+      "aria": "Humility shows up in the conversation",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "quote": "The first is humility. A humble person can hear something hard without shutting down.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s06",
+      "title": "Effort shows up between attempts",
+      "body": "A volunteer gets the sign-in steps in the wrong order. The next day they bring a three-step reminder and try again. Notice the return to practice. Before deciding that someone has stopped trying, check whether they had the instructions, tools and time to make another attempt.",
+      "aria": "Effort shows up between attempts",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "quote": "There is a difference between someone who makes mistakes while trying and someone who makes mistakes because they have stopped caring.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s07",
+      "title": "Coachability shows up on the next try",
+      "body": "You show a new club secretary how to finish the minutes with an action and an owner. At the next meeting they record who agreed to check the room reservation. That change gives you evidence that the feedback landed.",
+      "aria": "Coachability shows up on the next try",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "quote": "A humble person can hear feedback. A coachable person can apply it. They do not just nod - they move.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s08",
+      "title": "Put the three observations together",
+      "body": "Picture a teammate who listens when you point out a missed cue, stays for another run and uses the cue the next time. You saw all three traits. A harder practice task could be a useful next step. When you have only seen one part, arrange another fair chance to practice.",
+      "aria": "Put the three observations together",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "quote": "When someone carries all three of these qualities - humility, effort, and coachability - transformation is not just possible. It is likely.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s09",
+      "title": "Check the pattern before drawing a conclusion",
+      "body": "One quiet afternoon tells you little. Ask what you actually saw, whether the person understood the standard and whether they had a chance to try again. Keep those observations between the people involved. A team chat is a poor place to discuss somebody’s development.",
+      "aria": "Check the pattern before drawing a conclusion",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s10",
+      "title": "Chapter 10 field story · Make room for nerves",
+      "body": "The Manager Rule below comes from Brenen’s Chapter 10 field story. Restaurant example for practice: a new coworker can enter orders on the register when it is quiet but freezes during a rush. Try one practice order beside them before the next rush. Then see what they do with the same cues.",
+      "aria": "Chapter 10 field story · Make room for nerves",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "quote": "Do not confuse fear with unwillingness. Some people need encouragement. Some need patience. And some need someone to see through the excuse and push them toward who they could become.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s11",
+      "title": "Read two fictional teammate profiles",
+      "body": "A club helper hears a correction about labeling supply bins, practices on two bins and labels the next delivery correctly. A project partner listens to feedback about naming files and asks a question. You have not worked with them since.",
+      "aria": "Read two fictional teammate profiles",
+      "kind": "activity",
+      "field": "bios",
+      "fieldLabel": "For each profile, mark humility, effort and coachability as seen or still unknown. Cite one action for each mark. For the second person, what would you need to see on the next project day?",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s12",
+      "title": "Check your reading of willingness",
+      "body": "Answer the three practice questions. Use an action you could observe to support each choice. You can come back to the examples and try again.",
+      "aria": "Check your reading of willingness",
+      "kind": "mid",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s13",
+      "title": "Chapter 11: What Do They Want to Become?",
+      "body": "Start with a small, private invitation. A new club member might want to try leading warm-ups, or might still be figuring out what they enjoy. Give them room to say they do not know.",
+      "aria": "Chapter 11: What Do They Want to Become?",
+      "kind": "lesson",
+      "chapter": "Chapter 11: What Do They Want to Become?",
+      "quote": "Most people have no idea what they want to become. That is not a failure. It is just where they are.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 11: What Do They Want to Become?",
+      "notes": "Allow an undecided answer. Follow the question with time to think."
+    },
+    {
+      "key": "s14",
+      "title": "Three questions worth asking",
+      "body": "The first question uncovers an interest. The second makes room for a boundary. The third lets someone imagine a next skill or role. Ask one, wait for a real answer and follow what they say.",
+      "aria": "Three questions worth asking",
+      "kind": "lesson",
+      "chapter": "Chapter 11: What Do They Want to Become?",
+      "quote": "Inside every employee, there are three questions sitting just beneath the surface, even if they never say them out loud. What do I want? What do I not want? What could I become?",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 11: What Do They Want to Become?",
+      "notes": "Allow an undecided answer. Follow the question with time to think."
+    },
+    {
+      "key": "s15",
+      "title": "A first role can be a place to explore",
+      "body": "A freshman who joined the stage crew to carry props might like to learn lighting. The person who already sets up chairs might prefer to welcome newcomers. Offer one small chance to try a skill, then let them tell you whether they want another.",
+      "aria": "A first role can be a place to explore",
+      "kind": "lesson",
+      "chapter": "Chapter 11: What Do They Want to Become?",
+      "quote": "Every person on your team is in the middle of becoming someone. The only question is whether the environment they are in will shape that process for the better - or be something they have to recover from.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 11: What Do They Want to Become?",
+      "notes": "Allow an undecided answer. Follow the question with time to think."
+    },
+    {
+      "key": "s16",
+      "title": "Write three questions in your own voice",
+      "body": "Try asking what someone enjoyed doing last time, what part they would rather skip, and what they would like to learn next. Pick a moment when other people cannot overhear. It is fine for the person to pass.",
+      "aria": "Write three questions in your own voice",
+      "kind": "activity",
+      "field": "questions",
+      "fieldLabel": "Write a version of each question you could say naturally. Read them back and remove anything that pries into money, family life or another private matter.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s17",
+      "title": "Chapter 12: What Motivates Them?",
+      "body": "Chapter 12 introduces the four drives in separate passages. Read these four opening sentences individually. Then think about which questions you could ask before deciding what matters to a teammate.",
+      "aria": "Chapter 12: What Motivates Them?",
+      "kind": "lesson",
+      "chapter": "Chapter 12: What Motivates Them?",
+      "quote": "“Some people are driven by money.”\n\n“Some people are driven by growth.”\n\n“Some people are driven by belonging.”\n\n“And some people are driven by stability.”",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 12: What Motivates Them?",
+      "notes": "Have the learner check a possible motive with a respectful question."
+    },
+    {
+      "key": "s18",
+      "title": "Listen for what matters in this setting",
+      "body": "At a first job, one coworker asks about a paid shift and another asks to learn the register. At a club, one volunteer wants a familiar partner and another wants the dates a month ahead. Money, growth, belonging and stability can all be reasonable priorities. A person may care about several at once.",
+      "aria": "Listen for what matters in this setting",
+      "kind": "lesson",
+      "chapter": "Chapter 12: What Motivates Them?",
+      "quote": "People are not blank slates waiting to be motivated. They are already motivated. The question is whether anyone has taken the time to understand what that motivation actually is.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 12: What Motivates Them?",
+      "notes": "Have the learner check a possible motive with a respectful question."
+    },
+    {
+      "key": "s19",
+      "title": "Ask before you offer help",
+      "body": "If a teammate usually works with friends, you might guess that belonging matters most. Ask privately what made the last project a good fit. They might tell you that knowing the timetable was what helped. Use their answer to choose what to offer.",
+      "aria": "Ask before you offer help",
+      "kind": "lesson",
+      "chapter": "Chapter 12: What Motivates Them?",
+      "quote": "People do not want to be managed. They want to be known.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 12: What Motivates Them?",
+      "notes": "Have the learner check a possible motive with a respectful question."
+    },
+    {
+      "key": "s20",
+      "title": "Match the clue to a possible drive",
+      "body": "Four fictional examples. A coworker wants an extra paid hour. A club member asks for a new skill to practice. A volunteer asks to join a small team. A project partner asks for the same meeting time each week.",
+      "aria": "Match the clue to a possible drive",
+      "kind": "activity",
+      "field": "match",
+      "fieldLabel": "Match each example to money, growth, belonging or stability. Choose one and write a question that lets the person correct your guess. In order, the clues suggest money, growth, belonging and stability.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s21",
+      "title": "Give feedback someone can use",
+      "body": "Start with one action you saw. Describe its effect, ask for one specific change, then listen. In a private check-in, a club organizer could explain that two people spoke at once and a volunteer’s idea was missed. Ask whether leaving a pause after each speaker would help. Then hear the organizer’s view.",
+      "aria": "Give feedback someone can use",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s22",
+      "title": "Walkthrough: a five-minute development check-in",
+      "body": "Follow the two roles in the practice dialogue. Pause after each question to try your own wording. In the debrief, look for what you saw, what the learner actually wanted and what the helper agreed to do.",
+      "aria": "Walkthrough: a five-minute development check-in",
+      "kind": "video",
+      "walkthroughIndex": 0,
+      "notes": "Follow the annotated demonstration and narration script. Pause where the learner is asked to try a step."
+    },
+    {
+      "key": "s23",
+      "title": "A development tracker you can use",
+      "body": "On your local worksheet, separate an observation from a guess. Record a short action you saw, one goal the person shared, a possible drive to check with them and one promise you can keep. Use a fictional person or just a role.",
+      "aria": "A development tracker you can use",
+      "kind": "lesson",
+      "chapter": "Chapter 11: What Do They Want to Become?",
+      "notes": "Allow an undecided answer. Follow the question with time to think."
+    },
+    {
+      "key": "s24",
+      "title": "Practice on a fictional volunteer",
+      "body": "A new volunteer stayed after setup to practice directing arrivals. At the next event they used the greeting you practiced. They say they would like to welcome families at the next event and would enjoy working alongside an experienced volunteer.",
+      "aria": "Practice on a fictional volunteer",
+      "kind": "activity",
+      "field": "practice-tracker",
+      "fieldLabel": "Write one observation, one question about what they want to become, one possible drive and one thing you will do. For example, offering to model the first welcome is within your control.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s25",
+      "title": "When someone declines help",
+      "body": "You offer another practice run and your partner declines. Keep the shared expectation clear, ask whether a different time or explanation would help, and respect their answer. Put your time where someone is willing to work with you. Ask the actual lead for help if a shared responsibility keeps slipping.",
+      "aria": "When someone declines help",
+      "kind": "lesson",
+      "chapter": "Chapter 10: Can They Change?",
+      "notes": "Compare observations across two opportunities before drawing a conclusion."
+    },
+    {
+      "key": "s26",
+      "title": "Keep another person’s development private",
+      "body": "Use your own copy of the worksheet. Initials, a role or a fictional label are enough. Write what you will try and when you will follow up. Leave out sensitive details, grades, contact information and judgments about a person’s character. Keep the notes out of group chats.",
+      "aria": "Keep another person’s development private",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s27",
+      "title": "Describe help you actually gave",
+      "body": "Example for a learner who did this work: Practiced the sign-in routine with a new volunteer, who then checked in guests independently at the next meeting. Use the result only if you actually observed it.",
+      "aria": "Describe help you actually gave",
+      "kind": "activity",
+      "field": "bullet",
+      "fieldLabel": "Draft one line about a real action you took and its real result. If you have only planned the conversation, leave the bullet blank and come back after you have done it.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s28",
+      "title": "Worksheet: One Person I Will Help This Month",
+      "body": "Download the one-page tracker. Separate what you saw from what you still need to ask. Mark a possible motive as a guess until the person confirms it. Finish by writing one action you can take this month, then keep your copy on your device.",
+      "aria": "Worksheet: One Person I Will Help This Month",
+      "kind": "worksheet",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s29",
+      "title": "An optional reminder to notice people",
+      "body": "Leadership Rhythm is a free iPhone and iPad app (App Store, rated 4+) that uses timed intervals to prompt you to notice and recognize people during a shift or practice. Brenen built it to go with Chapter 20 of the book. You do not need it to finish this class. It requires iOS or iPadOS 16.4 or later.",
+      "aria": "An optional reminder to notice people",
+      "kind": "lesson",
+      "app": true,
+      "notes": "A clock, a timer or a paper reminder also works. Always offer the no-app path."
+    },
+    {
+      "key": "s30",
+      "title": "Three chapters, one conversation",
+      "body": "Chapter 10 asks what you have seen someone do with feedback. Chapter 11 asks where they would like to go. Chapter 12 asks what already gives this work meaning for them. Bring those three ideas together in one next step you agree on.",
+      "aria": "Three chapters, one conversation",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s31",
+      "title": "Next class: Set the Stage",
+      "body": "Someone can be willing to learn and still struggle in a rushed or confusing room. In Set the Stage: The Environment You Create, Chapters 13–16 help you look at stress, language, sound and physical details.",
+      "aria": "Next class: Set the Stage",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s32",
+      "title": "An optional completion record",
+      "body": "After you pass the final quiz, you can preview a completion line for your resume. Choose it only if you want it there. A course completion records the class you took. To claim that you trained someone, first do the training and be ready to describe it.",
+      "aria": "An optional completion record",
+      "kind": "resume",
+      "notes": "The student chooses whether to preview and confirm an addition."
+    },
+    {
+      "key": "s33",
+      "title": "Final question 1 · Willingness",
+      "body": "Think about which part of learning a person can show you over several attempts.",
+      "aria": "Final question 1 · Willingness",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s34",
+      "title": "Final question 2 · Coachability",
+      "body": "Picture the moment after someone receives feedback and then tries again.",
+      "aria": "Final question 2 · Coachability",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s35",
+      "title": "Final question 3 · Becoming",
+      "body": "Choose the questions that make space for the other person’s own direction.",
+      "aria": "Final question 3 · Becoming",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s36",
+      "title": "Final question 4 · Motivation",
+      "body": "Recall the four drives discussed in Chapter 12.",
+      "aria": "Final question 4 · Motivation",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s37",
+      "title": "Final question 5 · Knowing a person",
+      "body": "Choose the action you would take in an actual check-in.",
+      "aria": "Final question 5 · Knowing a person",
+      "kind": "final",
+      "chapter": "Chapter 12: What Motivates Them?",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s38",
+      "title": "Review your answers",
+      "body": "A score of four out of five completes this class. Read the explanation for each answer. You can revisit any slide and take the final quiz again as often as you need.",
+      "aria": "Review your answers",
+      "kind": "review",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s39",
+      "title": "Make room for the conversation",
+      "body": "Ask whether five minutes after practice or before a meeting would work. Choose somewhere private enough to answer honestly. If they are busy or would rather pass, leave the invitation open. You can practice the same conversation with a willing partner.",
+      "aria": "Make room for the conversation",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s40",
+      "title": "Do one thing you promised",
+      "body": "Write down the next thing you will do and when you will check back. If someone wants to lead a welcome, agree on when you will show them the routine and when they can try it. Next month, ask what helped and what they would change.",
+      "aria": "Do one thing you promised",
+      "kind": "close",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    }
+  ],
+  "mid": [
+    {
+      "prompt": "Which three observations belong in the Chapter 10 check?",
+      "options": [
+        "Humility, effort and coachability.",
+        "Speed, popularity and confidence.",
+        "Seniority, job title and talent."
+      ],
+      "answer": 0,
+      "why": "Watch whether a person can take in feedback, keep trying and apply what they heard."
+    },
+    {
+      "prompt": "A beginner returns for practice and uses a correction on their next try. What does that tell you?",
+      "options": [
+        "They have mastered the skill already.",
+        "They are showing willingness to learn.",
+        "They should be given every difficult task."
+      ],
+      "answer": 1,
+      "why": "The learner’s actions show willingness. You still need to observe whether they can perform the skill reliably."
+    },
+    {
+      "prompt": "A new coworker can do an order in practice but freezes in the rush. What is a fair next step?",
+      "options": [
+        "Tell the team they are unwilling to learn.",
+        "Take away every chance to work the register.",
+        "Offer a supported try in a calmer moment, then observe what changes."
+      ],
+      "answer": 2,
+      "why": "Fear can interrupt a skill someone is willing to practice. Give them a fair opportunity before drawing a conclusion."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "Chapter 10 says the difference between people who grow and people who stay the same is primarily:",
+      "options": [
+        "Intelligence.",
+        "Years of experience.",
+        "Willingness — shown in humility, effort, and coachability.",
+        "Who has the official title."
+      ],
+      "answer": 2,
+      "why": "Willingness becomes visible in the way someone listens, keeps trying and uses feedback. A title or an early sign of talent tells you much less."
+    },
+    {
+      "prompt": "In Chapter 10, coachability means:",
+      "options": [
+        "Being nice when corrected.",
+        "Hearing feedback and applying it, not just nodding.",
+        "Never making mistakes.",
+        "Agreeing with every suggestion instantly."
+      ],
+      "answer": 1,
+      "why": "Look at the next attempt. A change in the work shows that the person used the feedback."
+    },
+    {
+      "prompt": "The three questions in Chapter 11 are:",
+      "options": [
+        "What’s my title, pay, and schedule?",
+        "What do I want, what do I not want, and what could I become?",
+        "Who is at fault, who is late, and who is new?",
+        "What did AI say I should be?"
+      ],
+      "answer": 1,
+      "why": "These questions give the person space to name an interest, a boundary and a possible direction."
+    },
+    {
+      "prompt": "Chapter 12’s four drives are:",
+      "options": [
+        "Fame, power, comfort, and luck.",
+        "Money, growth, belonging, and stability.",
+        "Grades, sports, clubs, and jobs.",
+        "Speed, quality, cost, and style."
+      ],
+      "answer": 1,
+      "why": "Someone might value extra earnings, learning a skill, being part of the team, a predictable routine or several of these together."
+    },
+    {
+      "prompt": "“People do not want to be managed. They want to be known.” Best next action:",
+      "options": [
+        "Ignore performance and only be friendly.",
+        "Give the same speech to everyone.",
+        "Pay attention to the person, not only the role, and ask what already motivates them.",
+        "Guess their goals and surprise them publicly."
+      ],
+      "answer": 2,
+      "why": "Ask a question in private and listen to the answer. Knowing what matters lets you offer help that fits while keeping a clear standard."
+    }
+  ],
+  "walkthroughs": [
+    {
+      "title": "A five-minute check-in",
+      "minutes": "8–12",
+      "steps": [
+        [
+          "Before you begin · 1 minute",
+          "The practice scene is a club welcome table. The helper and volunteer are fictional. On paper, separate observations from guesses."
+        ],
+        [
+          "Open privately · first minute of the conversation",
+          "Ask whether this is a good time. Name the specific action you saw without diagnosing anyone’s attitude."
+        ],
+        [
+          "Ask and listen · minutes 2–3",
+          "Ask what the person wants to try and what they would rather avoid for now. Leave space for uncertainty."
+        ],
+        [
+          "Offer a small experiment · minutes 4–5",
+          "Agree on one chance to practice. Decide who will help and when both people will check back."
+        ],
+        [
+          "Pause, rehearse and debrief · 2–5 minutes",
+          "Read both roles again or rehearse with a partner. Circle the moment when a guess about motivation became a question. Underline the helper’s own promise."
+        ]
+      ],
+      "narration": [
+        "Practice dialogue written for this class. The speakers are a club helper and a new volunteer.",
+        "Helper: Do you have five minutes to talk about the welcome table, or would another time work better?\nVolunteer: Now works.\nHelper: At setup I showed you where to point new arrivals. At the next event I saw you use the same directions and walk one guest to the right room. What part of that job did you enjoy?\nVolunteer: I liked greeting people. I froze when three groups arrived at once, though.\nHelper: What would you like to get comfortable doing next?\nVolunteer: Giving the welcome on my own. For now I would rather have someone nearby when it gets crowded.\nHelper: Would it help more to practice the directions again or to have a partner take the line while you welcome the next group?\nVolunteer: A partner for the line. I know the directions now.\nHelper: I can take the line for the first few minutes next time. You give the welcome. Afterward, could we take two minutes to see how it went?\nVolunteer: Yes. Then I can tell you which part I want to try next.",
+        "Pause the scene. The helper saw an action change after feedback. That is evidence of coachability. The volunteer named a goal and a boundary. Wanting a partner might suggest belonging, but the volunteer also described a practical crowd problem. Ask which kind of support helps. For the tracker, the helper can simply write: I will take the line at the next event and check in afterward."
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "key": "role",
+      "label": "Practice person",
+      "hint": "Use a role, initials or a fictional label."
+    },
+    {
+      "key": "traits",
+      "label": "Chapter 10 · Observations",
+      "hint": "Humility: what did they hear? Effort: what did they try? Coachability: what did they apply? Mark unknowns."
+    },
+    {
+      "key": "questions",
+      "label": "Chapter 11 · Three questions I will ask",
+      "hint": "In your own words, ask what they want, what they do not want and what they could become."
+    },
+    {
+      "key": "drive",
+      "label": "Chapter 12 · Possible drive",
+      "hint": "Money, growth, belonging or stability? Mark this as a guess until you ask."
+    },
+    {
+      "key": "next",
+      "label": "My action this month and follow-up",
+      "hint": "What help will I offer, when will I do it and when will we check back?"
+    }
+  ]
+}

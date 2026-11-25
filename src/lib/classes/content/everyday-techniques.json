@@ -1,354 +1,651 @@
-[
-  {
-    "key": "s01",
-    "title": "Everyday Leadership Techniques",
-    "body": "Run a short huddle and follow up on one standard.",
-    "notes": "Open with a club event about to start.",
-    "aria": "Everyday Leadership Techniques. Run a short huddle and follow up on one standard.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s02",
-    "title": "Techniques",
-    "body": "Part IV uses Chapters 18, 19 and 20 and the official huddle and conversation tools.",
-    "notes": "Keep tool names separate from chapter titles.",
-    "aria": "Techniques. Part IV uses Chapters 18, 19 and 20 and the official huddle and conversation tools.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s03",
-    "title": "From huddle to follow-up",
-    "body": "Trace one standard through a week.",
-    "notes": "Use the same event throughout the worked example.",
-    "aria": "From huddle to follow-up. Trace one standard through a week.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s04",
-    "title": "Four parts of a huddle",
-    "body": "Set the tone, name one priority, recognize an action and invite input within five minutes.",
-    "notes": "Allow time to respond after the brief opening. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Four parts of a huddle. Set the tone, name one priority, recognize an action and invite input within five minutes.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s05",
-    "title": "Why one priority?",
-    "body": "A list of five priorities leaves a new volunteer unsure where to start.",
-    "notes": "Reduce a five-item speech to one decision.",
-    "aria": "Why one priority?. A list of five priorities leaves a new volunteer unsure where to start.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s06",
-    "title": "Recognition a person can repeat",
-    "body": "Name who did what and why it mattered.",
-    "notes": "Use recent work that actually happened.",
-    "aria": "Recognition a person can repeat. Name who did what and why it mattered.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s07",
-    "title": "Activity: write four huddle lines",
-    "body": "Draft tone, priority, recognition and an invitation.",
-    "notes": "Practice saying the four lines aloud.",
-    "aria": "Activity: write four huddle lines. Draft tone, priority, recognition and an invitation.",
-    "kind": "activity"
-  },
-  {
-    "key": "s08",
-    "title": "Screen recording: run the huddle",
-    "body": "Plan a 5–7 minute contrast between a focused huddle and a scattered one.",
-    "notes": "Supply two scripts and mark the change. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Screen recording: run the huddle. Plan a 5–7 minute contrast between a focused huddle and a scattered one.",
-    "kind": "video"
-  },
-  {
-    "key": "s09",
-    "title": "The affirmation rhythm",
-    "body": "Chapter 20 describes roughly 80% affirmation and 20% correction.",
-    "notes": "Keep praise earned rather than counting empty compliments. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "The affirmation rhythm. Chapter 20 describes roughly 80% affirmation and 20% correction.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s10",
-    "title": "Why notice good work?",
-    "body": "Specific recognition helps people see what to repeat.",
-    "notes": "Contrast with only speaking up after a mistake.",
-    "aria": "Why notice good work?. Specific recognition helps people see what to repeat.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s11",
-    "title": "Activity: three affirmations",
-    "body": "List three observed actions and one issue to discuss privately.",
-    "notes": "Use roles on the local worksheet.",
-    "aria": "Activity: three affirmations. List three observed actions and one issue to discuss privately.",
-    "kind": "activity"
-  },
-  {
-    "key": "s12",
-    "title": "Look up every eight to ten minutes",
-    "body": "Check for work worth noticing during the shift or meeting.",
-    "notes": "Adapt the Leadership Rhythm toolkit. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Look up every eight to ten minutes. Check for work worth noticing during the shift or meeting.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s13",
-    "title": "Activity: choose a cue",
-    "body": "Set a personal reminder appropriate for your setting.",
-    "notes": "No tracking feature is needed.",
-    "aria": "Activity: choose a cue. Set a personal reminder appropriate for your setting.",
-    "kind": "activity"
-  },
-  {
-    "key": "s14",
-    "title": "Private one-on-ones",
-    "body": "Chapter 18 places an individual correction away from an audience.",
-    "notes": "Choose a safe, appropriate place. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "Private one-on-ones. Chapter 18 places an individual correction away from an audience.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s15",
-    "title": "Ten minutes with a teammate",
-    "body": "Open with an observation, listen and agree on a next action.",
-    "notes": "Make it appropriate for peers.",
-    "aria": "Ten minutes with a teammate. Open with an observation, listen and agree on a next action.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s16",
-    "title": "Write down what matters",
-    "body": "Chapter 19 emphasizes factual documentation of an important correction.",
-    "notes": "Preserve what was asked and agreed. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "Write down what matters. Chapter 19 emphasizes factual documentation of an important correction.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s17",
-    "title": "A useful note",
-    "body": "Write the date, fact, expectation and agreement under the applicable process.",
-    "notes": "Do not build a public record of someone else's mistakes.",
-    "aria": "A useful note. Write the date, fact, expectation and agreement under the applicable process.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s18",
-    "title": "Following up",
-    "body": "Choose when you will check the agreed standard again.",
-    "notes": "Show what happens when nobody checks. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Following up. Choose when you will check the agreed standard again.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s19",
-    "title": "Mid-quiz: three decisions",
-    "body": "Check the one priority, the meaning of 80/20 and a private conversation.",
-    "notes": "Explain the tradeoff in each scene.",
-    "aria": "Mid-quiz: three decisions. Check the one priority, the meaning of 80/20 and a private conversation.",
-    "kind": "mid"
-  },
-  {
-    "key": "s20",
-    "title": "When a conversation is needed",
-    "body": "A repeated missed handoff deserves a factual, private discussion.",
-    "notes": "Use the official five-step guide as the source. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "When a conversation is needed. A repeated missed handoff deserves a factual, private discussion.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s21",
-    "title": "Choose the setting",
-    "body": "Find a calm, appropriate private time.",
-    "notes": "Students should involve a trusted adult for harassment, discrimination, violence or safety issues. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Choose the setting. Find a calm, appropriate private time.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s22",
-    "title": "Lead with facts",
-    "body": "Describe the last two missed start times and the effect on setup.",
-    "notes": "Remove guesses about attitude. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Lead with facts. Describe the last two missed start times and the effect on setup.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s23",
-    "title": "State the expectation",
-    "body": "Say what needs to happen, when and how the person can respond.",
-    "notes": "Use a commitment within the student's role. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "State the expectation. Say what needs to happen, when and how the person can respond.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s24",
-    "title": "Listen for an obstacle",
-    "body": "Ask what is getting in the way, then listen before proposing a fix.",
-    "notes": "Use a scheduling conflict as an example. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Listen for an obstacle. Ask what is getting in the way, then listen before proposing a fix.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s25",
-    "title": "Explain the real consequence",
-    "body": "Describe the next step you actually control, such as involving the advisor.",
-    "notes": "Avoid threats or pretending a club officer can fire classmates. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Explain the real consequence. Describe the next step you actually control, such as involving the advisor.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s26",
-    "title": "Check your purpose",
-    "body": "Aim to help, describe behavior, use facts and offer a path forward.",
-    "notes": "Review the tone of the first sentence. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Check your purpose. Aim to help, describe behavior, use facts and offer a path forward.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s27",
-    "title": "Two versions of the conversation",
-    "body": "Compare a private factual opening with a shaming group message.",
-    "notes": "Annotate the changes one sentence at a time.",
-    "aria": "Two versions of the conversation. Compare a private factual opening with a shaming group message.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s28",
-    "title": "Activity: draft a five-step script",
-    "body": "Choose a late setup volunteer or a missed project handoff.",
-    "notes": "Include the other person's reply.",
-    "aria": "Activity: draft a five-step script. Choose a late setup volunteer or a missed project handoff.",
-    "kind": "activity"
-  },
-  {
-    "key": "s29",
-    "title": "Screen recording: difficult conversation",
-    "body": "Plan an 8–12 minute role-play and a one-minute debrief.",
-    "notes": "Required before paid release. Use a written dialogue first. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Screen recording: difficult conversation. Plan an 8–12 minute role-play and a one-minute debrief.",
-    "kind": "video"
-  },
-  {
-    "key": "s30",
-    "title": "Hold the important details",
-    "body": "Keep the handoff check on a short-staffed day.",
-    "notes": "Distinguish quality from personal taste. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Hold the important details. Keep the handoff check on a short-staffed day.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s31",
-    "title": "A weekly sequence",
-    "body": "Huddle, observe, affirm, address a miss privately, write the agreement and follow up.",
-    "notes": "Have the learner put the steps in order.",
-    "aria": "A weekly sequence. Huddle, observe, affirm, address a miss privately, write the agreement and follow up.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s32",
-    "title": "A truthful huddle bullet",
-    "body": "Describe the huddle you actually ran and what the group did next.",
-    "notes": "Skip the claim if the student only practiced.",
-    "aria": "A truthful huddle bullet. Describe the huddle you actually ran and what the group did next.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s33",
-    "title": "Worksheet: My Techniques Card",
-    "body": "Include the four-part script, observation log, conversation draft and follow-up.",
-    "notes": "Keep notes about peers off the server.",
-    "aria": "Worksheet: My Techniques Card. Include the four-part script, observation log, conversation draft and follow-up.",
-    "kind": "worksheet"
-  },
-  {
-    "key": "s34",
-    "title": "Common traps",
-    "body": "Spot vague praise, public correction, revenge notes and the speech disguised as a huddle.",
-    "notes": "Rewrite one line.",
-    "aria": "Common traps. Spot vague praise, public correction, revenge notes and the speech disguised as a huddle.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s35",
-    "title": "What the techniques have in common",
-    "body": "Review Chapters 18–20 alongside the one-priority huddle.",
-    "notes": "Tie each technique to a concrete action.",
-    "aria": "What the techniques have in common. Review Chapters 18–20 alongside the one-priority huddle.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s36",
-    "title": "Next: a team that has drifted",
-    "body": "Introduce the longer process of rebuilding a routine.",
-    "notes": "Point to L5.",
-    "aria": "Next: a team that has drifted. Introduce the longer process of rebuilding a routine.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s37",
-    "title": "Optional completion line",
-    "body": "Preview a record or a skill actually practiced.",
-    "notes": "Keep a mock conversation off the experience list.",
-    "aria": "Optional completion line. Preview a record or a skill actually practiced.",
-    "kind": "resume"
-  },
-  {
-    "key": "s38",
-    "title": "End question: 80/20",
-    "body": "Select a pattern of genuine affirmation and targeted correction.",
-    "notes": "Reject a rigid praise quota.",
-    "aria": "End question: 80/20. Select a pattern of genuine affirmation and targeted correction.",
-    "kind": "final"
-  },
-  {
-    "key": "s39",
-    "title": "End question: a private correction",
-    "body": "Choose a setting consistent with Chapter 18.",
-    "notes": "Address safety and standing.",
-    "aria": "End question: a private correction. Choose a setting consistent with Chapter 18.",
-    "kind": "final"
-  },
-  {
-    "key": "s40",
-    "title": "End question: a factual opening",
-    "body": "Find the sentence with an observation and an impact.",
-    "notes": "Avoid labels about personality.",
-    "aria": "End question: a factual opening. Find the sentence with an observation and an impact.",
-    "kind": "final"
-  },
-  {
-    "key": "s41",
-    "title": "End question: a written record",
-    "body": "Choose a short factual follow-up note using Chapter 19.",
-    "notes": "Leave out gossip.",
-    "aria": "End question: a written record. Choose a short factual follow-up note using Chapter 19.",
-    "kind": "final"
-  },
-  {
-    "key": "s42",
-    "title": "End question: a useful huddle",
-    "body": "Choose a single priority that helps people decide what comes first.",
-    "notes": "Give a reason for the best choice.",
-    "aria": "End question: a useful huddle. Choose a single priority that helps people decide what comes first.",
-    "kind": "final"
-  },
-  {
-    "key": "s43",
-    "title": "Answer review",
-    "body": "Explain choices and invite another attempt.",
-    "notes": "Four of five completes the future class.",
-    "aria": "Answer review. Explain choices and invite another attempt.",
-    "kind": "review"
-  },
-  {
-    "key": "s44",
-    "title": "Use the card this week",
-    "body": "Run one huddle and offer one private affirmation or correction within your role.",
-    "notes": "Record when you will check back.",
-    "aria": "Use the card this week. Run one huddle and offer one private affirmation or correction within your role.",
-    "kind": "lesson"
-  }
-]
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "Everyday Leadership Techniques",
+      "body": "At your next practice, meeting or shift, try a five-minute huddle, notice one action worth repeating and follow up on one standard. You can practice all three without a management title.",
+      "aria": "Everyday Leadership Techniques",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s02",
+      "title": "Four chapters, one week of practice",
+      "body": "Part IV, Techniques of Leadership, covers Chapter 17, Constant Pressure; Chapter 18, One-on-One Leadership; Chapter 19, Document the Truth; and Chapter 20, 80% Affirmation / 20% Correction. Allow about 50 minutes. The huddle and difficult-conversation guides come from the book’s resources.",
+      "aria": "Four chapters, one week of practice",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s03",
+      "title": "What happens after the announcement?",
+      "body": "Suppose your club agrees to put unused materials back on the supply table. At the end of the meeting, walk back to the table. Check whether people knew where supplies belonged and whether they had time to put them away. That return visit is part of setting the standard.",
+      "aria": "What happens after the announcement?",
+      "kind": "lesson",
+      "chapter": "Chapter 17: Constant Pressure",
+      "quote": "Standards are not announced. They are maintained.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 17: Constant Pressure",
+      "notes": "Add a person responsible for the next check and a time to do it."
+    },
+    {
+      "key": "s04",
+      "title": "The busy day tests the standard",
+      "body": "Restaurant example (illustrative). On a short-handed shift, the lead still checks that the next station has its supplies. They ask which items are missing and help arrange a refill. In a club, the equivalent is checking that the next volunteer has the materials for their job. A calm, repeatable check makes the expectation dependable.",
+      "aria": "The busy day tests the standard",
+      "kind": "lesson",
+      "chapter": "Chapter 17: Constant Pressure",
+      "quote": "Constant pressure does not mean yelling. It does not mean intensity. It does not mean making people uncomfortable. It means consistency. It means that the standard is the same today as it was yesterday.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 17: Constant Pressure",
+      "notes": "Add a person responsible for the next check and a time to do it."
+    },
+    {
+      "key": "s05",
+      "title": "Choose a standard you can revisit",
+      "body": "Think of something you asked a group to do. When did you last check whether it happened? Follow-up can be as small as asking at the next practice whether every ball made it back into the bag.",
+      "aria": "Choose a standard you can revisit",
+      "kind": "activity",
+      "chapter": "Chapter 17: Constant Pressure",
+      "quote": "Issuing the order is only about five percent. The other ninety-five percent is ensuring it is carried out.",
+      "source": "George S. Patton, quoted in Brenen Morse, The Little Black Book on Leadership, Chapter 17: Constant Pressure.",
+      "field": "activity-5",
+      "fieldLabel": "Write the standard in one sentence. Add when you’ll check it, what you’ll look for and what you can do if the group hits an obstacle.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s06",
+      "title": "Open with a five-minute huddle",
+      "body": "The book’s Pre-Shift Huddle Template has four parts. Set the tone. Name one priority. Recognize a specific person for a recent action. Invite input. For a volunteer table, the priority might be that every arriving helper knows their first job. Use spare time to answer an obstacle or confirm the handoff.",
+      "aria": "Open with a five-minute huddle",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s07",
+      "title": "Write this week’s huddle",
+      "body": "Pick a shift, a pre-game gathering or a project meeting. Imagine everyone has only five minutes before they start. A useful opening ends with someone else getting to speak.",
+      "aria": "Write this week’s huddle",
+      "kind": "activity",
+      "worksheetKeys": [
+        "tone",
+        "priority",
+        "recognition",
+        "input"
+      ],
+      "fieldLabel": "Fill four boxes on paper or in your draft: (1) one opening sentence, (2) the one thing the group should keep in mind, (3) a real action you can recognize, (4) one question that could surface a missing tool or unclear job. Read the huddle aloud.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s08",
+      "title": "Walkthrough A · Run the huddle",
+      "body": "Use the two practice scripts below. Listen for the moment a volunteer learns what to do first. Try delivering the four-part huddle yourself, then shorten any line that makes the priority hard to remember.",
+      "aria": "Walkthrough A · Run the huddle",
+      "kind": "video",
+      "walkthroughIndex": 0,
+      "notes": "Follow the annotated demonstration and narration script. Pause where the learner is asked to try a step."
+    },
+    {
+      "key": "s09",
+      "title": "Let people see what right looks like",
+      "body": "Affirmation means telling someone what they did well. Correction means helping someone adjust an action. The rough 80/20 rhythm reminds you to notice good work that often passes quietly. If something needs prompt correction, address it privately as soon as appropriate.",
+      "aria": "Let people see what right looks like",
+      "kind": "lesson",
+      "chapter": "Chapter 20: 80% Affirmation / 20% Correction",
+      "quote": "Eighty percent affirmation. Twenty percent correction. Not because correction is unimportant. But because people need to know what right looks like. Not just what wrong looks like.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 20: 80% Affirmation / 20% Correction",
+      "notes": "Ask which action the person would know to repeat."
+    },
+    {
+      "key": "s10",
+      "title": "Describe the action worth repeating",
+      "body": "Compare two sample messages to a student volunteer. “Great job” shows appreciation. “When you showed the new helper where the spare bags were, they could restart the table on their own” also tells them what helped. Use what you actually saw.",
+      "aria": "Describe the action worth repeating",
+      "kind": "lesson",
+      "chapter": "Chapter 20: 80% Affirmation / 20% Correction",
+      "quote": "People repeat what gets recognized.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 20: 80% Affirmation / 20% Correction",
+      "notes": "Ask which action the person would know to repeat."
+    },
+    {
+      "key": "s11",
+      "title": "Practice three affirmations and one correction",
+      "body": "Look back at a practice or club meeting. One person may have made space for a quiet teammate to ask a question. Somebody else may have checked that a new member understood the task. Notice contributions that are easy to miss.",
+      "aria": "Practice three affirmations and one correction",
+      "kind": "activity",
+      "chapter": "Chapter 20: 80% Affirmation / 20% Correction",
+      "quote": "This works because it aligns with reality. In a typical shift, correction will happen naturally. Problems will surface automatically. You do not need a reminder to fix things. You need a reminder to build people.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 20: 80% Affirmation / 20% Correction",
+      "field": "affirm",
+      "fieldLabel": "Draft three specific, earned affirmations. For each, name the action and whom it helped. Then describe one behavior you would address privately and one expectation you would explain. Use roles or fictional examples.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s12",
+      "title": "Look up every eight to ten minutes",
+      "body": "During a practice or shift, pause when the next interval comes around. Look across the room, find an action that helped and name it while the person remembers it. The book’s practice is every 8–10 minutes. The optional app lets users set intervals of 8–15 minutes. A clock or ordinary timer works for the exercise.",
+      "aria": "Look up every eight to ten minutes",
+      "kind": "lesson",
+      "chapter": "Chapter 20: 80% Affirmation / 20% Correction",
+      "quote": "Every eight to ten minutes, a leader should look up, observe the team, identify something done right, and say it out loud.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 20: 80% Affirmation / 20% Correction",
+      "notes": "Ask which action the person would know to repeat."
+    },
+    {
+      "key": "s13",
+      "title": "Optional next step · Leadership Rhythm",
+      "body": "Leadership Rhythm is a free iPhone and iPad app (App Store, rated 4+) that uses timed intervals to prompt you to notice and recognize people during a shift or practice. Brenen built it to go with Chapter 20 of the book. You do not need it to finish this class. If you use an iPhone or iPad with iOS or iPadOS 16.4 or later and you want a reminder to look up and notice what someone is doing right, you can find it on the App Store.",
+      "aria": "Optional next step · Leadership Rhythm",
+      "kind": "lesson",
+      "app": true,
+      "notes": "A clock, a timer or a paper reminder also works. Always offer the no-app path."
+    },
+    {
+      "key": "s14",
+      "title": "Catch the small moment",
+      "body": "A group announcement is useful when everyone needs the same information. If one teammate is missing a handoff, ask for a short conversation after practice. Describe the specific handoff while you both remember it. Give them time to explain what happened.",
+      "aria": "Catch the small moment",
+      "kind": "lesson",
+      "chapter": "Chapter 18: One-on-One Leadership",
+      "quote": "Real leadership does not happen in meetings. It happens in moments. One-on-one. Face to face. In the middle of the work.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 18: One-on-One Leadership",
+      "notes": "Keep a routine correction private. Take serious harm to the responsible adult."
+    },
+    {
+      "key": "s15",
+      "title": "Correct with dignity",
+      "body": "Ask to speak out of earshot in a suitable setting, following your school or workplace rules. Someone can hear a direct request more easily when their teammates are not an audience. If your own words slipped in the group chat, acknowledge that and take the individual conversation private.",
+      "aria": "Correct with dignity",
+      "kind": "lesson",
+      "chapter": "Chapter 18: One-on-One Leadership",
+      "quote": "Coaching is correction with dignity.",
+      "source": "Danny Meyer, quoted in Brenen Morse, The Little Black Book on Leadership, Chapter 18: One-on-One Leadership.",
+      "notes": "Keep a routine correction private. Take serious harm to the responsible adult."
+    },
+    {
+      "key": "s16",
+      "title": "The Marcus field story · Speak early",
+      "body": "The lesson from the Marcus field story is to make expectations clear while the other person still has a chance to act on them. For a student project, that means speaking up when the first agreed handoff is missed and making time to hear why.",
+      "aria": "The Marcus field story · Speak early",
+      "kind": "lesson",
+      "chapter": "Chapter 18: One-on-One Leadership",
+      "quote": "Never let someone fail in silence. If expectations are not spoken clearly, they are not being led.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 18: One-on-One Leadership, field-story Manager Rule.",
+      "notes": "Keep a routine correction private. Take serious harm to the responsible adult."
+    },
+    {
+      "key": "s17",
+      "title": "Five steps for a difficult conversation",
+      "body": "Use the book’s Difficult Conversation Guide. 1. Choose a calm, private setting. 2. State the facts and the effect on the work. 3. Name a specific expectation and ask for a commitment. 4. Listen for an obstacle. 5. Explain the real, appropriate next step if the issue continues. Stay within your role. A student can ask the advisor to help reassign a task. A student cannot fire a classmate.",
+      "aria": "Five steps for a difficult conversation",
+      "kind": "lesson",
+      "chapter": "Chapter 18: One-on-One Leadership",
+      "quote": "When it is time to address a performance or behavior issue, follow this structure. Have the conversation in private, never in front of the team.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Difficult Conversation Guide (resource for Chapter 18: One-on-One Leadership).",
+      "notes": "Keep a routine correction private. Take serious harm to the responsible adult."
+    },
+    {
+      "key": "s18",
+      "title": "Check your posture before you speak",
+      "body": "Before a routine feedback conversation, answer each question below. If any answer is unclear, take another minute to prepare. For harassment, discrimination, violence or a safety issue, get help from a trusted adult, advisor or manager. Students should never have to resolve those situations alone.",
+      "aria": "Check your posture before you speak",
+      "kind": "lesson",
+      "chapter": "Chapter 18: One-on-One Leadership",
+      "quote": "Am I seeking to help, or seeking to be right?\nAm I addressing the behavior, not attacking the person?\nHave I prepared specific facts, not just feelings?\nAm I giving a clear path forward, not just pointing out the problem?",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Difficult Conversation Guide (resource for Chapter 18: One-on-One Leadership).",
+      "notes": "Keep a routine correction private. Take serious harm to the responsible adult."
+    },
+    {
+      "key": "s19",
+      "title": "Draft a private conversation",
+      "body": "Choose one fictional situation. A club supply kit reached the check-in table ten minutes after opening. Or a teammate handed over their section after the group’s agreed editing deadline. Pick only the facts you know. Leave room for an explanation.",
+      "aria": "Draft a private conversation",
+      "kind": "activity",
+      "chapter": "Chapter 18: One-on-One Leadership",
+      "quote": "That is the standard. Correction should clarify, guide, and improve. Not diminish. Not embarrass. Not shut someone down.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 18: One-on-One Leadership",
+      "field": "conversation",
+      "fieldLabel": "Write five short lines: where you’ll speak; what you observed and its impact; what you’re asking for; one question you’ll ask and then wait to hear answered; what you can actually do if the issue continues. Read it once through the other person’s ears.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s20",
+      "title": "Walkthrough B · A private handoff conversation",
+      "body": "Follow the sample dialogue from the first factual sentence to the follow-up agreement. Pause before reading the teammate’s answer. Try asking a question that would help you find out what made the handoff difficult.",
+      "aria": "Walkthrough B · A private handoff conversation",
+      "kind": "video",
+      "walkthroughIndex": 1,
+      "notes": "Follow the annotated demonstration and narration script. Pause where the learner is asked to try a step."
+    },
+    {
+      "key": "s21",
+      "title": "Mid-class check",
+      "body": "Answer three practice questions about a huddle, earned affirmation and private correction. Read the explanation for each response, then return to any technique you want to rehearse.",
+      "aria": "Mid-class check",
+      "kind": "mid",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s22",
+      "title": "Give both people a clear record",
+      "body": "After a conversation, write a short record of the agreement if it is appropriate for your role. You might send your project partner a shared task reminder that both of you can correct. At work, follow the manager’s official process for any record.",
+      "aria": "Give both people a clear record",
+      "kind": "lesson",
+      "chapter": "Chapter 19: Document the Truth",
+      "quote": "Documentation is not about building a case against someone. It is not about being corporate or cold. It is about clarity to both the manager and the employee.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 19: Document the Truth",
+      "notes": "Separate a dated observation from an opinion about character."
+    },
+    {
+      "key": "s23",
+      "title": "Write what you could verify together",
+      "body": "A useful project note might read: Thursday’s kit reached the table at 4:10. For Saturday, we agreed to put the kit beside the printed signs by 8:45. I’ll check at 8:40 whether the storage room is open. Include dates, observed facts and the agreement. Keep personal judgments, private details and classmates’ names out of practice notes. Never build secret files on peers or post corrections in a group chat.",
+      "aria": "Write what you could verify together",
+      "kind": "lesson",
+      "chapter": "Chapter 19: Document the Truth",
+      "quote": "A conversation that is not documented can disappear.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 19: Document the Truth",
+      "notes": "Separate a dated observation from an opinion about character."
+    },
+    {
+      "key": "s24",
+      "title": "Put the techniques in working order",
+      "body": "Before the meeting, run the huddle. During the work, look up and affirm a specific action. If a standard slips, speak privately when appropriate. Afterward, record the agreement through the right channel. At the next meeting, check whether it worked. That last visit closes the loop.",
+      "aria": "Put the techniques in working order",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s25",
+      "title": "Describe something you actually did",
+      "body": "If it happened, a resume bullet could read: Opened each volunteer shift with a five-minute huddle so new helpers knew their first job. Use a result you observed. If you have only practiced a script, keep the draft for later and come back after trying it.",
+      "aria": "Describe something you actually did",
+      "kind": "activity",
+      "field": "bullet",
+      "fieldLabel": "Draft an action and its real result. What did you do? Who used it? What changed that you could explain in an interview? Leave out any title, figure or result you cannot support.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s26",
+      "title": "Worksheet · My Techniques Card",
+      "body": "Download the card and keep it on your own device. It holds a four-part huddle, an affirmation log, a private conversation and a follow-up note. Use roles or fictional examples. The final line about trying a timer or the app is optional.",
+      "aria": "Worksheet · My Techniques Card",
+      "kind": "worksheet",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s27",
+      "title": "Spot four ways a good intention can go wrong",
+      "body": "A long speech can bury the one priority. Vague praise can leave someone unsure what to repeat. A correction posted to the group can embarrass one person. A note written in anger can turn into accusations. Choose one of these and rewrite it as something you would be willing to say to the person involved.",
+      "aria": "Spot four ways a good intention can go wrong",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s28",
+      "title": "Four chapters to carry into your next meeting",
+      "body": "Chapter 17, Constant Pressure: check the same standard again. Chapter 18, One-on-One Leadership: keep individual correction private. Chapter 19, Document the Truth: record facts and agreements. Chapter 20, 80% Affirmation / 20% Correction: name good work people can repeat.",
+      "aria": "Four chapters to carry into your next meeting",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s29",
+      "title": "When the whole group starts slipping",
+      "body": "A private check-in can help with an individual handoff. If every handoff is messy, examine the routine the whole group uses. The next class, When the Team Is Off Track, follows Chapters 21–23 through diagnosis, who leads each shift and how to repeat a written standard.",
+      "aria": "When the whole group starts slipping",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s30",
+      "title": "Optional completion record",
+      "body": "After passing the final, you can preview the completion line Everyday Leadership Techniques — completed on FirstCareerSteps. Choose whether it belongs on your resume. A completion record describes a class you took. It does not establish that you have supervised a team.",
+      "aria": "Optional completion record",
+      "kind": "resume",
+      "notes": "The student chooses whether to preview and confirm an addition."
+    },
+    {
+      "key": "s31",
+      "title": "Practice case 1 · The unchanged supply table",
+      "body": "Ungraded rehearsal. A club has announced twice that the supply table should be reset after meetings. The same items are still left loose each week. Find the missing follow-up.",
+      "aria": "Practice case 1 · The unchanged supply table",
+      "kind": "activity",
+      "field": "activity-31",
+      "fieldLabel": "Write the one action you will check, a time to check it and how you will ask whether the reset can be done with the available time and supplies.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s32",
+      "title": "Practice case 2 · A message to the whole team",
+      "body": "Ungraded rehearsal. A group-chat draft says that people who keep missing the handoff need to take the project seriously. You know the latest issue involved just one handoff. Decide who actually needs which information.",
+      "aria": "Practice case 2 · A message to the whole team",
+      "kind": "activity",
+      "chapter": "Chapter 18: One-on-One Leadership",
+      "quote": "Not public correction. Not general announcements. Not passive-aggressive hints. Direct, honest, individual conversation.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 18: One-on-One Leadership",
+      "field": "activity-32",
+      "fieldLabel": "Draft a neutral reminder for everyone only if they need it. Then write the opening to a separate private conversation about the specific handoff.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s33",
+      "title": "Practice case 3 · A note both people can use",
+      "body": "Ungraded rehearsal. After a check-in, a draft note reads: The helper obviously does not care. You saw the supplies arrive ten minutes after opening, and you both agreed to meet at the storage room before the next event.",
+      "aria": "Practice case 3 · A note both people can use",
+      "kind": "activity",
+      "chapter": "Chapter 19: Document the Truth",
+      "quote": "If something matters enough to correct, it usually matters enough to write down.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Quick Reference for Chapter 19: Document the Truth.",
+      "field": "activity-33",
+      "fieldLabel": "Rewrite the note using the observed timing, your agreement and when you will check back. Remove the guess about the helper’s attitude.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s34",
+      "title": "Practice case 4 · Name a contribution",
+      "body": "Ungraded rehearsal. At practice, one teammate quietly set out the cones in the order the new players needed them. The coach saw a drill start without the usual search for equipment. Praise like “you’re amazing” leaves the useful action out.",
+      "aria": "Practice case 4 · Name a contribution",
+      "kind": "activity",
+      "field": "activity-34",
+      "fieldLabel": "Write one earned affirmation. Mention what the teammate did and how it helped. Say it as you would on the field.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s35",
+      "title": "Practice case 5 · A reminder goes off",
+      "body": "Ungraded rehearsal. It is ten minutes into a busy event. Your reminder sounds just as someone asks for help carrying a box. Help with the immediate need, then look up and notice the room.",
+      "aria": "Practice case 5 · A reminder goes off",
+      "kind": "activity",
+      "field": "activity-35",
+      "fieldLabel": "What might you genuinely observe once the box is down? Write a conditional example. If you have not seen the action, wait until you have something real to recognize.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s36",
+      "title": "Rehearsal debrief",
+      "body": "Compare your five responses. Can another person tell what happened, what they can do and when you will follow up? Could the person whose work you described read your note and recognize the facts? The next five slides form one final quiz. Four correct answers complete the class, and you can retry.",
+      "aria": "Rehearsal debrief",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s37",
+      "title": "Final 1 · Maintain a standard",
+      "body": "Choose the answer that follows the chapter’s practice.",
+      "aria": "Final 1 · Maintain a standard",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s38",
+      "title": "Final 2 · Correct privately",
+      "body": "Choose the answer that follows the chapter’s practice.",
+      "aria": "Final 2 · Correct privately",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s39",
+      "title": "Final 3 · Document the truth",
+      "body": "Choose the answer that follows the chapter’s practice.",
+      "aria": "Final 3 · Document the truth",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s40",
+      "title": "Final 4 · Recognize good work",
+      "body": "Choose the answer that follows the chapter’s practice.",
+      "aria": "Final 4 · Recognize good work",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s41",
+      "title": "Final 5 · Look up and notice",
+      "body": "Choose the answer that follows the chapter’s practice.",
+      "aria": "Final 5 · Look up and notice",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s42",
+      "title": "Review your final answers",
+      "body": "Read the reason for each response. You can return to any chapter and retry the five questions as often as you need. A score of four out of five completes the class.",
+      "aria": "Review your final answers",
+      "kind": "review",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s43",
+      "title": "Put your Techniques Card where you’ll use it",
+      "body": "Take your downloaded card to the next club meeting, practice or shift. Circle the one priority for the huddle and write down when you’ll follow up. If the card contains personal reflections, keep it private.",
+      "aria": "Put your Techniques Card where you’ll use it",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s44",
+      "title": "Try the technique this week",
+      "body": "Run one short huddle. Follow it with one individual conversation: name an action someone should repeat or address one missed standard privately. Afterward, write the next date you’ll check the agreement.",
+      "aria": "Try the technique this week",
+      "kind": "close",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    }
+  ],
+  "mid": [
+    {
+      "prompt": "You have five minutes before a club event. Which huddle gives the team the clearest start?",
+      "options": [
+        "Name one shared priority, recognize a recent action and invite one obstacle.",
+        "List every possible job and tell people to remember all of them.",
+        "Spend the whole five minutes reminding everyone to stay positive."
+      ],
+      "answer": 0,
+      "why": "A single priority helps people make the same decision when things get busy. Recognition and a question make the huddle useful in both directions."
+    },
+    {
+      "prompt": "During practice, you have mostly spoken up about mistakes. What would Chapter 20 have you do?",
+      "options": [
+        "Give general praise each time you correct someone.",
+        "Look for specific actions worth repeating and describe them while they are fresh.",
+        "Let every mistake pass until you have counted four compliments."
+      ],
+      "answer": 1,
+      "why": "The 80/20 rhythm asks you to look deliberately for good work. Earned affirmation shows others exactly what to repeat. Handle a needed correction when it arises."
+    },
+    {
+      "prompt": "A teammate keeps missing an agreed handoff. Why speak with them privately?",
+      "options": [
+        "So nobody will know the standard exists.",
+        "So you can list everything they have ever done wrong.",
+        "So you can name the behavior, hear their side and agree on a change with dignity."
+      ],
+      "answer": 2,
+      "why": "One-on-one feedback gives the teammate room to answer. You can explain the shared standard to the whole group without identifying or embarrassing anyone."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "“Standards are not announced. They are maintained.” means:",
+      "options": [
+        "You only need to say the rule once.",
+        "Follow-up and consistency are the work, not the speech.",
+        "Yelling maintains the standard.",
+        "Standards should change with your mood."
+      ],
+      "answer": 1,
+      "why": "Chapter 17 puts the work in what happens after you speak. Check that the expectation is understood and return to it the next time it matters."
+    },
+    {
+      "prompt": "Chapter 18 says correction should happen:",
+      "options": [
+        "In the group chat so everyone learns.",
+        "Through hints until they figure it out.",
+        "One-on-one, in private, with dignity.",
+        "Only after a formal meeting."
+      ],
+      "answer": 2,
+      "why": "A private exchange lets you describe one action, hear the other person and make a useful agreement."
+    },
+    {
+      "prompt": "Chapter 19 treats writing things down as:",
+      "options": [
+        "Building a case against someone.",
+        "Clarity and fairness for both people, so no one is shocked later.",
+        "Optional if you have a good memory.",
+        "Something to post publicly."
+      ],
+      "answer": 1,
+      "why": "A short factual record helps both people remember what was asked, what they agreed and when they will check back."
+    },
+    {
+      "prompt": "The 80/20 rhythm in Chapter 20 is:",
+      "options": [
+        "80% correction, 20% praise.",
+        "80% affirmation, 20% correction, so people also see what right looks like.",
+        "80% meetings, 20% work.",
+        "Ignoring mistakes."
+      ],
+      "answer": 1,
+      "why": "Specific recognition makes good work visible. Targeted correction still has a place."
+    },
+    {
+      "prompt": "The 8–10 minute practice is:",
+      "options": [
+        "A required use of a paid app.",
+        "Looking up, noticing something done right, and saying it out loud.",
+        "Checking your phone.",
+        "A substitute for ever correcting anyone."
+      ],
+      "answer": 1,
+      "why": "Chapter 20 describes observing and naming a real action. A clock, a simple timer or the optional Leadership Rhythm app can remind you."
+    }
+  ],
+  "walkthroughs": [
+    {
+      "title": "Run a huddle people can use",
+      "minutes": "5–7 minutes",
+      "steps": [
+        [
+          "Set up the rehearsal",
+          "Use the fictional volunteer check-in table in the script. Give yourself five minutes, a blank piece of paper and four headings: tone, priority, recognition, input. The huddle must end before the first helpers arrive."
+        ],
+        [
+          "Try the crowded opening",
+          "Read the first opening in the script aloud. Cover it and try to say what to do first. The speaker has given people a list without deciding what matters most."
+        ],
+        [
+          "Choose one job for the team",
+          "Put one priority on the page: every arriving volunteer should know their first assignment. A tidy table supports the goal, but arranging pens is not a second priority."
+        ],
+        [
+          "Deliver the four-part version",
+          "Read the revised huddle aloud. Pause after inviting input as you would in the room. Let the volunteer raise the missing assignment list, then decide who can check it before opening."
+        ],
+        [
+          "Practice, then listen back",
+          "Use two minutes to adapt the four headings to your own setting and one minute to deliver them. Ask a partner to repeat the priority or write it from memory yourself. If two priorities come back, shorten the opening."
+        ]
+      ],
+      "narration": [
+        "Practice script for a fictional club event.",
+        "Narrator: The first volunteers arrive in five minutes. Listen to this opening, then see whether you could tell a new helper what matters most.",
+        "Lead, first version: “We need the pens in order, a tidy entrance, everyone smiling, people signed in and bags put away. Let’s all do everything better than last time. Okay, let’s go.”",
+        "Narrator: Look away from the script. What should you choose if a new volunteer is waiting while the pens are scattered? The lead never made that decision clear. Cross out the list and write one priority: every arriving volunteer knows their first job.",
+        "Lead, revised version: “Thanks for coming early. We have five minutes together before we open. Our priority today is that every volunteer leaves this table knowing their first assignment. At our practice setup, the supplies helper put a picture of each kit beside the bins. That helped the new helpers pick one up without waiting for me. What could get in our way when the first people arrive?”",
+        "Volunteer: “The first-job list is still in the classroom. I have the pictures but I don’t know which kit goes with which job.”",
+        "Lead: “Thanks for catching that. I’ll ask the advisor for the list now. Could you keep the job cards beside their matching kits? When I get back, we’ll walk through the first arrival together.”",
+        "Narrator: Circle the moment the volunteer told us something the lead didn’t know. The pause matters. A huddle that never leaves time for an answer loses a chance to fix a problem before the rush. Read the revised opening once more, leaving a real pause.",
+        "Your rehearsal: Write four short lines of your own. Use a real example of good work, or label a practice example as imaginary. Give yourself two minutes to prepare, then a minute to say it aloud. End by asking for one obstacle and waiting. Can a new helper repeat the priority in one sentence?"
+      ]
+    },
+    {
+      "title": "A private conversation about a late handoff",
+      "minutes": "8–12 minutes",
+      "steps": [
+        [
+          "Set the boundary",
+          "This fictional case is about a missing supply kit. Both students agreed to a handoff time. Use an appropriate private setting. Violence, harassment, discrimination or safety concerns belong with a trusted adult, advisor or manager."
+        ],
+        [
+          "Practice an opening",
+          "Read only the opening exchange. Write down the two observable facts and the effect on the welcome table. Cross out any guesses about motives. Try it once with a partner or read both parts yourself."
+        ],
+        [
+          "Ask and listen",
+          "Pause after asking what happened. Allow the teammate’s explanation to change the plan. Read the exchange and underline the new information about the storage room."
+        ],
+        [
+          "Make a realistic agreement",
+          "Compare the expectation before and after listening. Name what each person can actually do, when to ask the advisor for help and when to check back. A student peer has no authority to impose a school penalty."
+        ],
+        [
+          "Write a brief follow-up",
+          "Draft two sentences the teammate could read and correct. Include the fact, the next action and the follow-up time. Use no real names or private details."
+        ],
+        [
+          "Debrief your posture",
+          "Spend a minute asking whether your opening helped, described behavior, used facts and gave a path forward. Then spend two or three minutes swapping roles or repeating the exchange with a different obstacle."
+        ]
+      ],
+      "narration": [
+        "Practice dialogue. These are fictional club members working on a supply-table handoff.",
+        "Narrator: The club agreed the check-in kit would be ready by four. On two occasions the first helpers reached the table before the kit did. The person running the table asks the kit helper to talk after the event, away from the group. Read each exchange slowly, then rehearse it in your own words.",
+        "Table lead: “Is now a good time for a two-minute check-in about the supply kit? We can talk by the empty end of the table.”",
+        "Kit helper: “Yes.”",
+        "Table lead: “On Tuesday and Thursday the kit got to the check-in table at 4:10. We agreed to have it there at four. The first helpers waited while I found blank paper. Next time, I’d like the kit at the table before opening. What got in the way?”",
+        "Kit helper: “The storage room was locked. I waited for the advisor. I figured the table had spare paper until I got there.”",
+        "Narrator: Pause. Which part of the issue can the helper change? Which part needs someone with a key? Try answering the helper without guessing how much they care.",
+        "Table lead: “Thanks. I didn’t know the room was locked. For Saturday, can you meet me at the storage room at 8:40? I’ll check with the advisor ahead of time about access. If the door is locked, please tell me right away so we can ask the advisor for the kit together.”",
+        "Kit helper: “I can do 8:40. Can we keep a few blank sheets at the table in case we have to wait again?”",
+        "Table lead: “Yes. I’ll put them in the welcome folder. If we still can’t get the kit there by opening, we’ll ask the advisor to help change the handoff. I’ll check with you right after the first helpers arrive on Saturday. Does that sound right?”",
+        "Kit helper: “Yes. I’ll meet you at the storage room and let you know right away if it’s still closed.”",
+        "Narrator: Use a minute to write a note both people could recognize. A sample: “The kit arrived at 4:10 Tuesday and Thursday. For Saturday we agreed to meet at 8:40 at the storage room. I’ll confirm access with the advisor and bring spare sheets. We’ll check back after the first arrivals.” In a real job, use the approved workplace process. Do not create a file on a classmate.",
+        "One-minute posture debrief: First, were you trying to help? The lead took responsibility for arranging access. Second, was the conversation about behavior? It stayed with the arrival of the kit. Third, did you use facts? The two dates and the agreed time could be checked. Fourth, was there a path forward? Both people left with a job, a time and someone to ask if access failed.",
+        "Rehearse again: Swap roles or speak the other side yourself. Imagine the kit was complete but waiting at the wrong table. Take two or three minutes to listen and agree on one visible change. Keep any consequence within your role."
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "key": "tone",
+      "label": "Huddle · Set the tone",
+      "hint": "How will you open the meeting?"
+    },
+    {
+      "key": "priority",
+      "label": "Huddle · One priority",
+      "hint": "What comes first today?"
+    },
+    {
+      "key": "recognition",
+      "label": "Huddle · Specific recognition",
+      "hint": "Name the action and why it mattered. Use a role."
+    },
+    {
+      "key": "input",
+      "label": "Huddle · Invite input",
+      "hint": "What obstacle or question should the team raise?"
+    },
+    {
+      "key": "affirm",
+      "label": "My 80/20 practice log",
+      "hint": "Three earned affirmations: action and effect. One correction to discuss privately."
+    },
+    {
+      "key": "conversation",
+      "label": "My five-step conversation",
+      "hint": "Private setting • observed facts and impact • expectation • question and listening • appropriate next step"
+    },
+    {
+      "key": "follow",
+      "label": "My factual follow-up note",
+      "hint": "Date • observed action • what we agreed • when I will check back"
+    },
+    {
+      "key": "app",
+      "label": "Optional reminder choice",
+      "hint": "I will / will not try Leadership Rhythm. If a reminder would help, a clock or timer works too."
+    }
+  ]
+}

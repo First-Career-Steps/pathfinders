@@ -9,6 +9,7 @@ export interface ClassInfo {
   outcome: string;
   audience: string;
   preparation?: string;
+  bookPart?: string;
   worksheet: string;
   worksheetFields: string[];
   skills: string[];
@@ -18,12 +19,13 @@ export const classes: ClassInfo[] = [
     slug: "lead-yourself",
     title: "Lead Yourself First",
     track: "Leadership",
+    bookPart: "Part I · You · Chapters 1–9",
     published: true,
-    minutes: 45,
-    count: 42,
+    minutes: 50,
+    count: 50,
     promise: "Set a standard people can count on, even on a busy day.",
     outcome:
-      "Write two or three standards, practice owning a mistake and make a seven-day consistency plan.",
+      "Write two or three standards, practice owning a mistake and plan a consistent week and help someone else learn a skill.",
     audience:
       "Students in clubs, sports, group projects, volunteering or a first job. No leadership title needed.",
     worksheet: "My Standards and First Week Plan",
@@ -31,19 +33,20 @@ export const classes: ClassInfo[] = [
       "Two or three standards",
       "Ownership rewrite",
       "Seven-day consistency grid",
-      "Five-part after-action",
+      "Three-question after-action and one way I’ll help a teammate",
     ],
     skills: [
       "Planning and follow-through",
       "After-action review",
-      "Setting team standards",
+      "Teaching a teammate a skill",
     ],
   },
   {
     slug: "see-and-develop-people",
     title: "See and Develop People",
     track: "Leadership",
-    published: false,
+    bookPart: "Part II · Your People · Chapters 10–12",
+    published: true,
     minutes: 45,
     count: 40,
     promise: "Help a teammate practice a skill they want to learn.",
@@ -57,13 +60,14 @@ export const classes: ClassInfo[] = [
       "Stated motive",
       "My next action",
     ],
-    skills: [],
+    skills: ["Giving specific feedback", "Planning a development check-in"],
   },
   {
     slug: "set-the-stage",
     title: "Set the Stage: The Environment You Create",
     track: "Leadership",
-    published: false,
+    bookPart: "Part III · Environment · Chapters 13–16",
+    published: true,
     minutes: 40,
     count: 38,
     promise: "See the cues a newcomer picks up in a room, shift or group chat.",
@@ -77,13 +81,18 @@ export const classes: ClassInfo[] = [
       "Tolerated behavior",
       "Language habit",
     ],
-    skills: [],
+    skills: [
+      "Auditing a shared workspace",
+      "Giving clear directions under pressure",
+      "Planning and reviewing a process change",
+    ],
   },
   {
     slug: "everyday-techniques",
     title: "Everyday Leadership Techniques",
     track: "Leadership",
-    published: false,
+    bookPart: "Part IV · Techniques of Leadership · Chapters 17–20",
+    published: true,
     minutes: 50,
     count: 44,
     promise: "Run a huddle and follow up privately when a standard slips.",
@@ -99,13 +108,18 @@ export const classes: ClassInfo[] = [
       "Five-step conversation",
       "Follow-up note",
     ],
-    skills: [],
+    skills: [
+      "Planning a team huddle",
+      "Giving specific feedback",
+      "Following up on agreements",
+    ],
   },
   {
     slug: "culture-overhaul",
     title: "When the Team Is Off Track",
     track: "Leadership",
-    published: false,
+    bookPart: "Part V · Culture Overhaul · Chapters 21–23",
+    published: true,
     minutes: 50,
     count: 40,
     promise:
@@ -122,7 +136,11 @@ export const classes: ClassInfo[] = [
       "Four-week repetition plan",
       "When to involve an adult or manager",
     ],
-    skills: [],
+    skills: [
+      "Diagnosing a team process",
+      "Planning a team handoff",
+      "Writing a 30-day follow-up plan",
+    ],
   },
   {
     slug: "ai-basics",

@@ -55,6 +55,12 @@ export default async function Landing({ params }: Context) {
           </p>
           <h1>{c.title}</h1>
           <p>{c.promise}</p>
+          {c.bookPart && (
+            <p className="sc-bookpart">
+              {c.bookPart} of <cite>The Little Black Book on Leadership</cite>{" "}
+              by Brenen Morse.
+            </p>
+          )}
           {c.published &&
             (unavailable ? (
               <p role="alert">

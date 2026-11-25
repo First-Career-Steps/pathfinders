@@ -656,3 +656,11 @@
 .sc-slidebody .sc-prompt summary{display:list-item;font-weight:650;text-decoration:none;cursor:pointer}
 .sc-prompt p{font-size:.95rem}.sc-prompt pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;padding:12px;margin:8px 0;background:white;color:#17344a;border:1px solid #c2d4dc;border-radius:5px;font:0.94rem/1.5 ui-monospace,monospace}
 .sc-prompt button{margin:5px 12px 10px 0}.sc-prompt pre:focus-visible{outline:3px solid #195e7d}.sc-work ul{list-style:disc;padding-left:1.25rem}
+
+.sc-slidebody .sc-chapter {font-size:.94rem;font-weight:650;color:#275469;margin:0 0 .6rem}
+.sc-book-excerpt {border-inline-start:3px solid #47716d;background:#f4f8f7;margin:1.15rem 0;padding:1rem 1.2rem}
+.sc-book-excerpt blockquote {font-family:Georgia,serif;line-height:1.5;font-size:1.18rem;white-space:pre-line;color:#203d40;margin:0}
+.sc-book-excerpt figcaption {font-size:.9rem;color:#3b565a;margin-top:.65rem}
+.sc-slidebody .sc-store-link {display:inline-block;text-decoration:underline;margin:.5rem 0;font-weight:600}
+.sc-field small {display:block}
+.sc-slidebody .sc-teaching,.sc-script p,.sc-work details p {white-space:pre-line}

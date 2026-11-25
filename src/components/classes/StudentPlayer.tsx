@@ -6,8 +6,13 @@ import type { Progress, Slide } from "@/lib/classes/lessons";
 import { narration, type Walkthrough } from "@/lib/classes/media";
 import PromptBlock from "./PromptBlock";
 import type { PromptSheet } from "@/lib/classes/prompt-sheet";
-import { ResumeOffer, Worksheet } from "./ClassMaterials";
-import type { Fields } from "@/lib/classes/worksheets";
+import {
+  ResponseFields,
+  ResumeOffer,
+  WeekGrid,
+  Worksheet,
+} from "./ClassMaterials";
+import type { Fields, WorksheetField } from "@/lib/classes/worksheets";
 
 type Question = { prompt: string; options: string[] };
 type Result = {
@@ -22,7 +27,8 @@ type Props = {
   userId: string;
   mid: Question[];
   final: Question[];
-  walkthrough: Walkthrough;
+  walkthroughs: Walkthrough[];
+  worksheetFields?: WorksheetField[];
   materials?: PromptSheet;
 };
 const kindNames: Record<string, string> = {
@@ -126,7 +132,8 @@ export default function StudentPlayer({
   userId,
   mid,
   final,
-  walkthrough,
+  walkthroughs,
+  worksheetFields,
   materials,
 }: Props) {
   const first = Math.max(
@@ -155,6 +162,7 @@ export default function StudentPlayer({
     finalStart = slides.findIndex((s) => s.kind === "final"),
     reviewIndex = slides.findIndex((s) => s.kind === "review"),
     fi = index - finalStart;
+  const walkthrough = walkthroughs[slide.walkthroughIndex ?? 0];
   const passed = !!progress?.completed_at;
   const endpoint = "/api/classes/" + course.slug;
   function send(body: Record<string, unknown>) {
@@ -236,7 +244,12 @@ export default function StudentPlayer({
     setError("");
     retry.current = null;
     try {
-      const r = await send({ event: "quiz", check, answers: answers[check] });
+      const r = await send({
+        event: "quiz",
+        check,
+        answers: answers[check],
+        ...(course.slug === "lead-yourself" ? { edition: "book" } : {}),
+      });
       setResults((prev) => ({
         ...prev,
         [check]: { score: r.score!, review: r.review! },
@@ -310,10 +323,44 @@ export default function StudentPlayer({
               max={total}
             />
             <div className="sc-slidebody">
+              {slide.chapter && slide.chapter !== slide.title && (
+                <p className="sc-chapter">{slide.chapter}</p>
+              )}
               <h2 ref={heading} tabIndex={-1}>
                 {slide.title}
               </h2>
               <p className="sc-teaching">{slide.body}</p>
+              {slide.quote && (
+                <figure className="sc-book-excerpt">
+                  <blockquote>{slide.quote}</blockquote>
+                  <figcaption>{slide.source}</figcaption>
+                </figure>
+              )}
+              {slide.app && (
+                <a
+                  className="sc-store-link"
+                  href="https://apps.apple.com/app/id6762418274"
+                >
+                  View Leadership Rhythm on the App Store
+                </a>
+              )}
+              {slide.weekGrid && (
+                <>
+                  <WeekGrid values={values} edit={edit} past />
+                </>
+              )}
+              {slide.worksheetKeys && worksheetFields && (
+                <>
+                  <p>{slide.fieldLabel}</p>
+                  <ResponseFields
+                    fields={worksheetFields.filter((f) =>
+                      slide.worksheetKeys!.includes(f.key),
+                    )}
+                    values={values}
+                    edit={edit}
+                  />
+                </>
+              )}
               {slide.examples && (
                 <dl className="sc-examples">
                   {slide.examples.map((part) => (
@@ -433,7 +480,9 @@ export default function StudentPlayer({
                   </ol>
                   <details
                     open={
-                      materials && !walkthrough.recording ? true : undefined
+                      (materials || worksheetFields) && !walkthrough.recording
+                        ? true
+                        : undefined
                     }
                   >
                     <summary>Read the narration script</summary>
@@ -451,6 +500,7 @@ export default function StudentPlayer({
                   values={values}
                   edit={edit}
                   materials={materials}
+                  bookFields={worksheetFields}
                   onDownload={() => persist({ event: "worksheet" })}
                 />
               )}

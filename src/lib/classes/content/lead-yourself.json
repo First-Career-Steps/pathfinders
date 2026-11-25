@@ -1,418 +1,651 @@
-[
-  {
-    "key": "s01",
-    "title": "Lead Yourself First",
-    "body": "Pick a standard you can keep on a difficult day. Over the next week, you’ll test it, own a missed promise and give someone else specific credit.",
-    "notes": "Ask learners to have a recent meeting, practice or work shift in mind. A fictional club also works.",
-    "aria": "Lead Yourself First — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s02",
-    "title": "Where you already lead",
-    "body": "Allow about 45 minutes today, including time to write. Then try your plan on three days this week. You can lead by checking a handoff at a first job or making sure a quiet teammate gets a turn.",
-    "notes": "A student who has never supervised anyone can use an ordinary group project throughout.",
-    "aria": "Where you already lead — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s03",
-    "title": "Where these ideas come from",
-    "body": "Brenen Morse wrote The Little Black Book on Leadership from his experience in restaurant operations. This class draws on Part I, You. Chapter 3 informs our ownership practice and Chapter 6 informs our consistency plan.",
-    "notes": "The student scenes are teaching examples. Additional Part I themes await the author's chapter map.",
-    "aria": "Where these ideas come from — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s04",
-    "title": "A standard anyone can set",
-    "body": "The publisher introduces the book with “Leadership is not a title you are given. It is a standard you set.” In a group project, anyone can say which draft is due, post it where everyone can find it, and keep that promise.",
-    "notes": "Attribute this one line to the published book description. Ask who could take that action without an officer title.",
-    "aria": "A standard anyone can set — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s05",
-    "title": "Where do people count on you?",
-    "body": "Picture the last time a group waited for something you could do. Maybe you brought practice cones or opened the sign-in table. Write the setting and the action someone could see. Use roles instead of names.",
-    "notes": "Allow two minutes. An observable answer is “I text the meeting location before practice.”",
-    "aria": "Where do people count on you — practice activity",
-    "kind": "activity",
-    "field": "setting"
-  },
-  {
-    "key": "s06",
-    "title": "What counts as a standard?",
-    "body": "A standard tells you what acceptable work looks like. “Be responsible” leaves people guessing. “I check the supply bin before we promise materials” gives someone a way to see whether you did it.",
-    "notes": "Test a proposed standard by asking whether a teammate could observe it.",
-    "aria": "What counts as a standard — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s07",
-    "title": "When a value costs something",
-    "body": "Honesty might cost five awkward minutes correcting a timesheet. Respect might mean speaking up when a friend mocks a new player. A value becomes a standard when you can name the action you will take despite the cost.",
-    "notes": "Keep the examples hypothetical. Do not request a personal disclosure. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "When a value costs something — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s08",
-    "title": "Choose your standards",
-    "body": "Write three values. Choose two or three you will keep when it is inconvenient. For each, finish “You can count on me to…” with something visible. For example, “I’ll check my hours before I submit them.”",
-    "notes": "Allow three minutes. The worksheet has room for the values and the standards they become.",
-    "aria": "Choose your standards — practice activity",
-    "kind": "activity",
-    "field": "standards"
-  },
-  {
-    "key": "s09",
-    "title": "A pause you can use under pressure",
-    "body": "A tense group chat or a rush can make your first reply sharper than you intend. Choose a cue. When three messages arrive at once, pause, restate the shared goal and send one clear request.",
-    "notes": "Model the request: “We need the current file. Can someone confirm which link opens it?” [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "A pause you can use under pressure — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s10",
-    "title": "The part you can change",
-    "body": "Chapter 3 connects ownership to what happens next. If a slide goes missing, identify one decision you controlled. Tell the team what happened, the repair you will make and when they can check back.",
-    "notes": "Use a small repair the student can carry out. A repair and a deadline make the apology usable. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "The part you can change — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s11",
-    "title": "Four chances to take ownership",
-    "body": "Pick a scene. Which response gives your teammate something they can act on?",
-    "notes": "In each case, contrast naming someone else's mistake with stating your own next move.",
-    "aria": "Four chances to take ownership — lesson slide",
-    "kind": "lesson",
-    "examples": [
-      {
-        "label": "Late group slide",
-        "detail": "“Nobody told me when it was due.”",
-        "text": "“I missed the handoff. I’ll post my draft at lunch and confirm you can open it.”"
-      },
-      {
-        "label": "Wrong pickup order",
-        "detail": "“Somebody packed it wrong.”",
-        "text": "“I can compare the bag with the ticket and ask the lead how to fix it.”"
-      },
-      {
-        "label": "Missed practice",
-        "detail": "“The time kept changing.”",
-        "text": "“I missed the update. I’ll check the schedule before practice and ask how to make up the drill.”"
-      },
-      {
-        "label": "Messy closing station",
-        "detail": "“The other shift left it like that.”",
-        "text": "“I signed off too soon. I’ll check the station with the closer before I leave.”"
-      }
-    ]
-  },
-  {
-    "key": "s12",
-    "title": "Rewrite the first reply",
-    "body": "The group says the poster file is late. Your first reply is “Nobody told me when it was due.” Rewrite it with one fact, your part and a specific repair. A teammate should know when to look for the file.",
-    "notes": "Example: “I missed the time in the chat. I’ll post the draft by 4 and ask for tomorrow’s deadline before we leave.”",
-    "aria": "Rewrite the first reply — practice activity",
-    "kind": "activity",
-    "field": "ownership"
-  },
-  {
-    "key": "s13",
-    "title": "Where ownership stops",
-    "body": "You can ask for help, report an unsafe situation or leave an unsafe space. Harassment, discrimination and abuse are the responsibility of the person causing harm. A trusted adult, manager or school process can help. You never have to handle that alone.",
-    "notes": "Do not ask for personal examples. A student may use the late-poster scenario instead. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Where ownership stops — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s14",
-    "title": "Give credit where it belongs",
-    "body": "After a successful fundraiser, name the person who checked the totals and the action that helped. If you skipped a check, own that separately. Giving credit and keeping the standard can happen in the same conversation.",
-    "notes": "Practice a sentence that names the contribution without claiming the team’s result. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Give credit where it belongs — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s15",
-    "title": "Who did the research?",
-    "body": "A teammate found the sources for your presentation. You presented them. When the teacher praises the evidence, try “My teammate compared the reports and found that table. I explained how we used it.” Both contributions stay visible.",
-    "notes": "Ask which verb belongs to each person. Let the learner try a different accurate answer.",
-    "aria": "Who did the research — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s16",
-    "title": "Check your judgment",
-    "body": "Try three short decisions about standards, ownership and safety. Read the reason after each choice. You can go back to a slide whenever you need it.",
-    "notes": "Pause for discussion about the boundary between a repair and taking responsibility for harm.",
-    "aria": "Check your judgment — practice quiz",
-    "kind": "mid"
-  },
-  {
-    "key": "s17",
-    "title": "A promise you can repeat",
-    "body": "Chapter 6 emphasizes consistency. Pick a small action that fits into ordinary days. Posting the next meeting time after each meeting gives the team more to rely on than a huge plan you only carry out once.",
-    "notes": "Ask what cue makes the action repeatable when the learner is tired. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "A promise you can repeat — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s18",
-    "title": "Compare two weeks of effort",
-    "body": "Which routine gives the team time to spot a missing source? Explain your choice.",
-    "notes": "The draft history gives the team repeated opportunities to correct course.",
-    "aria": "Compare two weeks of effort — lesson slide",
-    "kind": "lesson",
-    "examples": [
-      {
-        "label": "One long session",
-        "detail": "Sunday night",
-        "text": "Sam rewrites the whole project, then misses two check-ins. Nobody sees the new draft until it is due."
-      },
-      {
-        "label": "Three small sessions",
-        "detail": "After class on Monday, Wednesday and Friday",
-        "text": "Alex spends 25 minutes on one section and posts it after each session. Teammates can respond while there is time to make a change."
-      }
-    ]
-  },
-  {
-    "key": "s19",
-    "title": "The Friday test",
-    "body": "If you check deliveries on Monday but skip the check on a busy Friday, the team learns when the rule disappears. Decide how to keep the essential check even when you shorten the rest of the routine.",
-    "notes": "Illustrative restaurant example: match the printed order to the bag during a rush. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "The Friday test — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s20",
-    "title": "Look back seven days",
-    "body": "Choose one standard. For each of the last seven days, mark held, slipped, or no opportunity. Add one sentence about when it was hardest. A day with no meeting tells you nothing about meeting behavior.",
-    "notes": "Track observations and avoid inventing chances to meet the standard.",
-    "aria": "Look back seven days — practice activity",
-    "kind": "activity",
-    "field": "past"
-  },
-  {
-    "key": "s21",
-    "title": "A five-minute review",
-    "body": "After the work, ask five things. Who did what well? Where did the process break down? What one change will we try next time? Whose work should we recognize? How did the space, pace or tone affect the work?",
-    "notes": "Student adaptation of the official Post-Shift After-Action Review. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "A five-minute review — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s22",
-    "title": "A club meeting, reviewed",
-    "body": "Work through this fictional club meeting. Each line gives the next meeting a specific starting point.",
-    "notes": "Read each sentence against one of the five review prompts.",
-    "aria": "A club meeting, reviewed — lesson slide",
-    "kind": "lesson",
-    "examples": [
-      {
-        "label": "What worked?",
-        "detail": "",
-        "text": "The recorder posted decisions before everyone left."
-      },
-      {
-        "label": "What broke?",
-        "detail": "",
-        "text": "Two volunteers edited different sign-up sheets."
-      },
-      {
-        "label": "What will change?",
-        "detail": "",
-        "text": "Pin one sign-up link before the meeting."
-      },
-      {
-        "label": "Who deserves credit?",
-        "detail": "",
-        "text": "Thank the recorder for capturing the decisions while the group was together."
-      },
-      {
-        "label": "What did the room teach us?",
-        "detail": "",
-        "text": "The entrance table was noisy. Move sign-in beside the bulletin board."
-      }
-    ]
-  },
-  {
-    "key": "s23",
-    "title": "Try your own after-action",
-    "body": "Choose a recent meeting, shift or practice, or use the club example. Write one short answer to each of the five prompts. Describe a step that broke down in enough detail that someone could try a change tomorrow.",
-    "notes": "Allow four minutes. For a fictional case, label it practice and keep it off a resume.",
-    "aria": "Try your own after-action — practice activity",
-    "kind": "activity",
-    "field": "review"
-  },
-  {
-    "key": "s24",
-    "title": "What would a teammate notice?",
-    "body": "Imagine a teammate describing what it’s like to work with you. “They tell us early when a deadline is slipping” is something you can practice. What small habit would give someone reason to say that about you?",
-    "notes": "A learner can answer privately or on paper. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "What would a teammate notice — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s25",
-    "title": "Walk through a missed handoff",
-    "body": "Follow the annotated walkthrough below. Watch how a fictional club lead goes from a late room notice to a repair, a five-part review and a calendar cue for next week.",
-    "notes": "Recording brief: Brenen may replace the fictional walkthrough with one approved ownership example and one consistency miss. Do not supply a story on his behalf.",
-    "aria": "Walk through a missed handoff — annotated walkthrough",
-    "kind": "video"
-  },
-  {
-    "key": "s26",
-    "title": "Five traps you can spot",
-    "body": "A title without follow-through leaves teammates waiting. A dramatic promise can be hard to repeat. Blaming everyone stalls a repair. Taking responsibility for someone’s mistreatment is unfair. Giving a friend a special exception makes the standard unpredictable.",
-    "notes": "Ask the learner to choose the trap closest to the fictional case and name a visible alternative.",
-    "aria": "Five traps you can spot — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s27",
-    "title": "Restaurant example: a busy pickup counter",
-    "body": "In this hypothetical shift, two similar bags sit beside the register. The cashier compares the name on the receipt with the bag before handing it over, even while a line forms. The standard fits into one repeatable movement.",
-    "notes": "Illustration only. Replace with an approved restaurant excerpt if Brenen provides one. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "Restaurant example: a busy pickup counter — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s28",
-    "title": "From behavior to a resume line",
-    "body": "Check the wording against what the student actually did. This example assumes the recaps and the switch to one sign-up sheet really happened.",
-    "notes": "If the learner has only planned the activity, use a completion line or wait until the work happens.",
-    "aria": "From behavior to a resume line — lesson slide",
-    "kind": "lesson",
-    "examples": [
-      {
-        "label": "Too vague",
-        "detail": "",
-        "text": "“Visionary leader who transformed operations.”"
-      },
-      {
-        "label": "An action and an observed result",
-        "detail": "",
-        "text": "“Ran a recap after each weekly club meeting and helped the group switch to a single sign-up sheet.”"
-      }
-    ]
-  },
-  {
-    "key": "s29",
-    "title": "Draft a bullet you could explain",
-    "body": "Write what you did, what changed and how you know. Leave out any number you did not record. If the example is fictional, keep it for practice. Only your own past work belongs in the builder.",
-    "notes": "Example when true: “Posted the agreed sign-up link after club meetings so volunteers could find their assignments.”",
-    "aria": "Draft a bullet you could explain — practice activity",
-    "kind": "activity",
-    "field": "bullet"
-  },
-  {
-    "key": "s30",
-    "title": "Plan three opportunities",
-    "body": "Choose one standard, a cue to notice a miss and a five-minute review. Pick at least three practice days out of the next seven. Choose a time you can keep on a busy day as well as a quiet one.",
-    "notes": "For a weekly club, one opportunity can be preparing the handoff or checking back afterward.",
-    "aria": "Plan three opportunities — practice activity",
-    "kind": "activity",
-    "field": "plan"
-  },
-  {
-    "key": "s31",
-    "title": "My Standards and First Week Plan",
-    "body": "Open your worksheet. It brings your standards, ownership rewrite, seven-day grid and after-action into one place. Fill it here or download a copy for your device.",
-    "notes": "Give students two minutes to transfer any paper notes and check the dates they chose.",
-    "aria": "My Standards and First Week Plan — takeaway worksheet",
-    "kind": "worksheet"
-  },
-  {
-    "key": "s32",
-    "title": "What a finished plan looks like",
-    "body": "A workable plan names an action, a cue and a review time. “After practice on Monday, Wednesday and Friday, I’ll post our next setup job before I leave. Friday evening I’ll check which posts I actually made.”",
-    "notes": "Encourage a smaller action if the plan depends on a perfect week.",
-    "aria": "What a finished plan looks like — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s33",
-    "title": "What to take with you",
-    "body": "Set a standard others can see. Own a repair you can make. Repeat one small commitment. Give people credit for identifiable work and check the process after the shift or meeting.",
-    "notes": "Ask learners to explain the difference between Chapter 3 and Chapter 6 using one example.",
-    "aria": "What to take with you — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s34",
-    "title": "From leading yourself to helping others",
-    "body": "The next leadership class looks at how a teammate learns, what they want to become and what motivates them. Before then, practice noticing a contribution you would otherwise overlook.",
-    "notes": "See and Develop People is an upcoming class.",
-    "aria": "From leading yourself to helping others — lesson slide",
-    "kind": "lesson"
-  },
-  {
-    "key": "s35",
-    "title": "How a completion can appear",
-    "body": "After you pass, you can preview a completion line or a skill you practiced. You decide whether to carry it into the builder. A real experience bullet can wait until you have done the work it describes.",
-    "notes": "The completion record describes finishing this FirstCareerSteps class.",
-    "aria": "How a completion can appear — lesson slide",
-    "kind": "resume"
-  },
-  {
-    "key": "s36",
-    "title": "Which action sets a standard?",
-    "body": "Read the club scenario and choose the action another person could see and repeat.",
-    "notes": "End check 1. Use an observable behavior as the deciding test.",
-    "aria": "Which action sets a standard — final quiz question",
-    "kind": "final"
-  },
-  {
-    "key": "s37",
-    "title": "Who owns the next move?",
-    "body": "Choose the reply that names the speaker’s part and gives the group a repair it can check.",
-    "notes": "End check 2. Distinguish a repair from an excuse.",
-    "aria": "Who owns the next move — final quiz question",
-    "kind": "final"
-  },
-  {
-    "key": "s38",
-    "title": "Which habit will last?",
-    "body": "Look for a routine that the student can repeat under ordinary conditions and verify after each meeting.",
-    "notes": "End check 3. Focus on the cue and the observable follow-through.",
-    "aria": "Which habit will last — final quiz question",
-    "kind": "final"
-  },
-  {
-    "key": "s39",
-    "title": "Which review changes the process?",
-    "body": "A useful review leaves someone able to change the way the work gets done. Choose a question that helps the group do that.",
-    "notes": "End check 4. Ask about the handoff rather than the character of a teammate.",
-    "aria": "Which review changes the process — final quiz question",
-    "kind": "final"
-  },
-  {
-    "key": "s40",
-    "title": "Which line belongs on a resume?",
-    "body": "Match the claim to the work the student actually did and the result the student can explain.",
-    "notes": "End check 5. Separate plans from completed actions.",
-    "aria": "Which line belongs on a resume — final quiz question",
-    "kind": "final"
-  },
-  {
-    "key": "s41",
-    "title": "Review your five decisions",
-    "body": "Check the reason behind each answer. Four correct answers complete the class. You can revisit any slide and try the check again as often as you like.",
-    "notes": "Review the missed concept and invite a fresh attempt without a penalty.",
-    "aria": "Review your five decisions — lesson slide",
-    "kind": "review"
-  },
-  {
-    "key": "s42",
-    "title": "Put your plan to work",
-    "body": "Take the worksheet with you. At your first chosen time, try the action once and mark what happened. After the third opportunity, decide what to keep or change. If you passed, you can also preview an addition to your resume below.",
-    "notes": "Close by naming the next real opportunity. Leave resume additions optional.",
-    "aria": "Put your plan to work — lesson slide",
-    "kind": "close"
-  }
-]
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "Lead Yourself First",
+      "body": "Before you lead a club, a shift, or a group project, you lead yourself. Choose a standard this week and practice keeping it when someone is counting on you.",
+      "aria": "Lead Yourself First",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s51",
+      "title": "Bring one ordinary responsibility",
+      "body": "Set aside about 50 minutes, then try your plan over seven days. Think of a practice, club meeting, volunteer shift, class project, or first job where your choices affect someone else. A title is optional. The lessons come from Part I of Brenen Morse’s hospitality field guide, The Little Black Book on Leadership.",
+      "aria": "Bring one ordinary responsibility",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s52",
+      "title": "Part I · You",
+      "body": "The book moves through five parts: You, Your People, Environment, Techniques of Leadership, and Culture Overhaul. Chapters 1–9 begin with the person making the next choice. By the end you’ll have two or three standards, an ownership rewrite, a seven-day plan, and a skill you can help someone practice.",
+      "aria": "Part I · You",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s53",
+      "title": "Restaurant story · The Heritage Honey night",
+      "body": "In the Preface, Brenen describes running the kitchen the night a Heritage Honey post sent the store sideways. The staff and systems were there. In his account, the missing piece was leadership that could get the team back on course. Think of a group that already knew its material and still needed someone to call the next step.",
+      "aria": "Restaurant story · The Heritage Honey night",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s54",
+      "title": "Conviction shows up in a choice",
+      "body": "A standard is something another person can watch you do. If you care about accurate work, your standard might be checking the source of a statistic before the group puts it on a slide. Someone watching can see whether you kept that promise.",
+      "aria": "Conviction shows up in a choice",
+      "kind": "lesson",
+      "chapter": "Chapter 1: Who You Are",
+      "quote": "Leadership does not begin with strategy, systems, or growth. It begins with conviction - with knowing who you are, what you believe, and what you are willing to protect, even when it costs you.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 1: Who You Are",
+      "notes": "Ask for a visible choice another person could notice."
+    },
+    {
+      "key": "s55",
+      "title": "Start with your own work",
+      "body": "Picture asking a teammate to arrive prepared. What would they find if they looked at your notes or watched you set up? Pick one behavior you could demonstrate before asking someone else to try it.",
+      "aria": "Start with your own work",
+      "kind": "lesson",
+      "chapter": "Chapter 1: Who You Are",
+      "quote": "But before you can lead anyone else well, you must first lead yourself.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 1: Who You Are",
+      "notes": "Ask for a visible choice another person could notice."
+    },
+    {
+      "key": "s56",
+      "title": "Find somewhere you already lead",
+      "body": "A volunteer who puts the supplies where everyone can find them changes how the next person starts. A project partner who sends an early warning about a missing source gives the group time to adjust.",
+      "aria": "Find somewhere you already lead",
+      "kind": "activity",
+      "field": "activity-7",
+      "fieldLabel": "Name one place where someone relies on what you do. Finish this sentence with an action: When I ___, it helps the next person ___.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s57",
+      "title": "What is an ethos?",
+      "body": "Ethos is the set of beliefs that guides your choices under pressure. You might prefer early meetings, value fairness, and live by a rule that you give everyone credit for the work they did. Notice which of those you would protect even in a room full of friends.",
+      "aria": "What is an ethos?",
+      "kind": "lesson",
+      "chapter": "Chapter 2: The Hills You Die On",
+      "quote": "A preference is something you hold when it is convenient. A value is something you say matters. But your ethos is deeper than both.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 2: The Hills You Die On",
+      "notes": "Give a work example about keeping a promise. Leave personal beliefs private."
+    },
+    {
+      "key": "s58",
+      "title": "Name what a standard might cost you",
+      "body": "Recording the hours you actually worked might mean a smaller paycheck. Telling the group that your slide is late might cost you a comfortable afternoon. For each choice, you can point to the action and the cost.",
+      "aria": "Name what a standard might cost you",
+      "kind": "lesson",
+      "chapter": "Chapter 2: The Hills You Die On",
+      "quote": "If your values have never cost you anything, it is worth asking whether they are truly values at all. Because the real test of what you believe is not what you say in a calm room. It is what you protect when it becomes expensive — when it costs you time, comfort, a relationship, popularity, or even results.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 2: The Hills You Die On",
+      "notes": "Give a work example about keeping a promise. Leave personal beliefs private."
+    },
+    {
+      "key": "s59",
+      "title": "A center you can return to",
+      "body": "Brenen names his Christian faith as his own center. For your practice, choose a standard you would protect even if it cost you something. You can keep your personal beliefs private.",
+      "aria": "A center you can return to",
+      "kind": "lesson",
+      "chapter": "Chapter 2: The Hills You Die On",
+      "quote": "Your immovable rock may look different than mine. It might be an unyielding code of service, a deep-seated respect for human dignity, or a family legacy you are determined to honor. The operational argument here is not that you must share my specific center; it is that you must have one—named, decided, and unshakable—before the heat of a crisis forces a compromised choice upon you.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 2: The Hills You Die On",
+      "notes": "Give a work example about keeping a promise. Leave personal beliefs private."
+    },
+    {
+      "key": "s60",
+      "title": "Pick the standards you will keep",
+      "body": "A broad word like respect becomes easier to keep when you give it a behavior: speak up when a teammate is mocked, even if a friend started the joke.",
+      "aria": "Pick the standards you will keep",
+      "kind": "activity",
+      "chapter": "Chapter 2: The Hills You Die On",
+      "quote": "Every leader talks about values. Very few can tell you what those values have cost them.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 2: The Hills You Die On",
+      "field": "standards",
+      "fieldLabel": "Write three values on paper. Circle two you would protect when it is inconvenient. Beside each, write one action someone could see and what it might cost you. Use those actions for the standards box on your plan.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s61",
+      "title": "Find the part you can change",
+      "body": "Late group slide? Check whether you agreed on a deadline. Missed the start of a shift? Check where you looked for the schedule. Messy close? Check whether you handed off an unfinished task. A useful reply names your part and a repair you can make.",
+      "aria": "Find the part you can change",
+      "kind": "lesson",
+      "chapter": "Chapter 3: Own the Change",
+      "quote": "When leaders blame their team, they give up their power to change the outcome.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 3: Own the Change",
+      "notes": "Separate the part the student controls from the repair they can make next."
+    },
+    {
+      "key": "s62",
+      "title": "Rewrite a blame sentence",
+      "body": "In a group project, “They didn’t tell me” leaves you waiting. “I didn’t confirm the deadline. I’ll ask today, then add it to our shared calendar” gives the group a next step. Your part can be small and still be real.",
+      "aria": "Rewrite a blame sentence",
+      "kind": "activity",
+      "chapter": "Chapter 3: Own the Change",
+      "quote": "This is not about guilt. It is about power. Owning the change gives you the power to change things. Blame takes that away. When you are tempted to point outward, point inward first.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 3: Own the Change",
+      "field": "ownership",
+      "fieldLabel": "Pick a small mix-up. Write the first blame sentence that comes to mind. Under it, write what you controlled, the repair you will make, and when. Leave other people’s private information out.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s63",
+      "title": "The three after-action questions",
+      "body": "An after-action review is a short look back while you still remember what happened. For a practice, meeting, or shift, put your own choices in every answer. For tomorrow’s change, pick something you can actually do.",
+      "aria": "The three after-action questions",
+      "kind": "lesson",
+      "chapter": "Chapter 3: Own the Change",
+      "quote": "What went well? What did not go well? And what will I do differently tomorrow? These questions should all be directed at you, the leader - not the team.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 3: Own the Change",
+      "notes": "Separate the part the student controls from the repair they can make next."
+    },
+    {
+      "key": "s64",
+      "title": "Run a five-minute review",
+      "body": "Suppose your study group finished the practice problems, then left before deciding who would bring the answers next time. You could keep the part that worked and use the last minute of the next session for a handoff.",
+      "aria": "Run a five-minute review",
+      "kind": "activity",
+      "field": "after-action",
+      "fieldLabel": "Think of one event from the past week. Take one minute to write what you did that helped, one to identify a miss, and three to choose a change for next time. State it as an action you control.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s65",
+      "title": "Practice check · Leading yourself",
+      "body": "Try all three questions about acting without a title, keeping a standard when it costs something, and owning a mistake. Check your answers and use the explanations to revisit an idea.",
+      "aria": "Practice check · Leading yourself",
+      "kind": "mid",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s66",
+      "title": "The weight of responsibility",
+      "body": "A captain can feel rattled after a loss and still give the next player a clear instruction. A shift lead can feel overwhelmed and ask the manager to cover a station. Steadiness can sound like calmly telling someone exactly what help you need.",
+      "aria": "The weight of responsibility",
+      "kind": "lesson",
+      "chapter": "Chapter 4: The Weight of Responsibility",
+      "quote": "You do not get to have a bad day in public. Not because your feelings do not matter. But because the team’s stability depends on your steadiness.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 4: The Weight of Responsibility",
+      "notes": "Let the learner choose a support role without naming anyone."
+    },
+    {
+      "key": "s67",
+      "title": "Choose someone you can be honest with",
+      "body": "Having feelings is part of being human. If a hard day is spilling onto teammates, ask for a pause or support. A trusted adult, mentor, coach, or friend can help you talk it through. If someone is hurting you or you feel unsafe, reach a trusted adult or manager now.",
+      "aria": "Choose someone you can be honest with",
+      "kind": "lesson",
+      "chapter": "Chapter 4: The Weight of Responsibility",
+      "quote": "But you also cannot carry the weight alone forever. Every leader needs someone they can be honest with.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 4: The Weight of Responsibility",
+      "notes": "Let the learner choose a support role without naming anyone."
+    },
+    {
+      "key": "s68",
+      "title": "Your expectations shape how you teach",
+      "body": "First-job example: a new coworker pauses at the register. If you grab the screen every time, they lose the next attempt. Point to the next step, let them try when it is appropriate, and stay nearby for the question.",
+      "aria": "Your expectations shape how you teach",
+      "kind": "lesson",
+      "chapter": "Chapter 5: What You Believe",
+      "quote": "Every leader carries a belief about people. Most never say it out loud. But it shows up in everything they do.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 5: What You Believe",
+      "notes": "Ask what a teacher or helper would do differently at the next attempt."
+    },
+    {
+      "key": "s69",
+      "title": "Make belief practical",
+      "body": "Give a beginner an accurate example, time to practice, and clear feedback. If an entry on a sample order is wrong, name the exact line and ask them to try that part again. The same accuracy standard can stand while someone learns.",
+      "aria": "Make belief practical",
+      "kind": "lesson",
+      "chapter": "Chapter 5: What You Believe",
+      "quote": "This is not naïve optimism. It is disciplined belief.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 5: What You Believe",
+      "notes": "Ask what a teacher or helper would do differently at the next attempt."
+    },
+    {
+      "key": "s70",
+      "title": "Pair one expectation with one kind of help",
+      "body": "Expecting someone to learn a play is more useful when you also draw the route, walk it with them, and let them try it once.",
+      "aria": "Pair one expectation with one kind of help",
+      "kind": "activity",
+      "chapter": "Chapter 5: What You Believe",
+      "quote": "And over time, you will be proven right - because people rarely rise above the level of expectation placed on them.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 5: What You Believe",
+      "field": "help",
+      "fieldLabel": "Choose a skill in a club, a class project, or a first job. Write one observable expectation and one thing you will do to help someone reach it. Use a role such as new volunteer.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s71",
+      "title": "Show up the same way",
+      "body": "Notice which promise disappears when the week gets busy. If you check the equipment before Monday practice, what will remind you to give Friday’s team the same check? Attach the action to a cue that already happens.",
+      "aria": "Show up the same way",
+      "kind": "lesson",
+      "chapter": "Chapter 6: Consistency Over Intensity",
+      "quote": "Intensity is easy for leaders. Consistency is difficult.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 6: Consistency Over Intensity",
+      "notes": "Return to the Friday example. Would a classmate see the same routine?"
+    },
+    {
+      "key": "s72",
+      "title": "Compare two weeks of effort",
+      "body": "An all-nighter might finish one assignment. A 25-minute block most afternoons gives you time to notice gaps before the deadline. At practice, teammates can plan around a warm-up that starts on time after a win and after a loss.",
+      "aria": "Compare two weeks of effort",
+      "kind": "lesson",
+      "chapter": "Chapter 6: Consistency Over Intensity",
+      "quote": "Your team does not need a single inspiring speech. They need a leader who shows up the same way every day. They need someone who enforces the same standard on Monday and on Friday.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 6: Consistency Over Intensity",
+      "notes": "Return to the Friday example. Would a classmate see the same routine?"
+    },
+    {
+      "key": "s73",
+      "title": "Look back at seven days",
+      "body": "To check a habit like arriving with the supplies ready, count only the days you actually had the chance. One missed day is information about where the routine broke.",
+      "aria": "Look back at seven days",
+      "kind": "activity",
+      "weekGrid": true,
+      "fieldLabel": "After marking the grid, write one cue that could help next time.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional.",
+      "field": "next-cue"
+    },
+    {
+      "key": "s74",
+      "title": "Give someone else the next turn",
+      "body": "You can finish a signup sheet fastest by making every change yourself. You can also show a new club member how to add a row, let them add the next one, and check it together. The second choice leaves someone else able to do the work.",
+      "aria": "Give someone else the next turn",
+      "kind": "lesson",
+      "chapter": "Chapter 7: Your Job is Their Success",
+      "quote": "The real job of a leader is to make other people successful. That is the shift.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 7: Your Job is Their Success",
+      "notes": "Let the learner practice explaining one step and handing the task back."
+    },
+    {
+      "key": "s75",
+      "title": "Field story · Catching the ball",
+      "body": "Brenen uses his Little League story to make a point about helping another person succeed. Think about the player receiving a throw: their part matters to the teammate who threw it. In a group project, the equivalent might be checking that the next presenter can open your file and knows where to start.",
+      "aria": "Field story · Catching the ball",
+      "kind": "lesson",
+      "chapter": "Chapter 7: Your Job is Their Success",
+      "notes": "Let the learner practice explaining one step and handing the task back."
+    },
+    {
+      "key": "s76",
+      "title": "Plan a teaching turn",
+      "body": "Pick something you could demonstrate in a few minutes. Describe the action, give the learner a turn, and ask them to show you which step they would repeat next time.",
+      "aria": "Plan a teaching turn",
+      "kind": "activity",
+      "chapter": "Chapter 7: Your Job is Their Success",
+      "quote": "Not ‘How do I get this done?’ but ‘How do I help them become someone who can get this done well?’",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 7: Your Job is Their Success",
+      "field": "teaching-plan",
+      "fieldLabel": "Name one skill you will teach this week. Write when you’ll show it, what the other person will do themselves, and one sign they are ready to try again.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s77",
+      "title": "Connect the person you want to be to today",
+      "body": "If you want people to describe you as dependable, choose the action for your next work block. An early update about a delay tells teammates more than an ambition written at the top of a notebook.",
+      "aria": "Connect the person you want to be to today",
+      "kind": "lesson",
+      "chapter": "Chapter 8: What You Want to Be",
+      "quote": "So the question is not just what do you want to be. The question is what are you doing today - right now, this shift - to move closer to that?",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 8: What You Want to Be",
+      "notes": "Ask for an action small enough to try today."
+    },
+    {
+      "key": "s78",
+      "title": "What is it like to work with you?",
+      "body": "Imagine a volunteer finishing their first hour beside you. What could they honestly say? “I knew where to put the supplies because we walked through it together” gives you a habit to repeat. Write a modest description that you could make true today.",
+      "aria": "What is it like to work with you?",
+      "kind": "lesson",
+      "chapter": "Chapter 8: What You Want to Be",
+      "notes": "Ask for an action small enough to try today."
+    },
+    {
+      "key": "s79",
+      "title": "Give the credit and keep the standard",
+      "body": "Humility might mean admitting you mixed up the assignment. Conviction might mean rechecking the draft before the team submits it, even when a friend wants to skip that step. Both can happen in the same conversation.",
+      "aria": "Give the credit and keep the standard",
+      "kind": "lesson",
+      "chapter": "Chapter 9: Humility and Conviction",
+      "quote": "The best leaders are not the loudest or the most charismatic. They are often the quietest. What sets them apart is a rare combination: deep personal humility paired with fierce professional conviction.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 9: Humility and Conviction",
+      "notes": "Name the contribution and who actually made it."
+    },
+    {
+      "key": "s80",
+      "title": "Mini case · Credit the quiet researcher",
+      "body": "A teammate found the sources that carried your presentation. When the group gets thanked, give a specific account: our researcher found the original studies and checked the dates. If a source is still missing, own your part in getting it checked before submission.",
+      "aria": "Mini case · Credit the quiet researcher",
+      "kind": "lesson",
+      "chapter": "Chapter 9: Humility and Conviction",
+      "quote": "Humility is not weakness. It is the discipline to put the team above your ego. And conviction is not aggression. It is the refusal to lower the standard, even when it would be easier to look the other way.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 9: Humility and Conviction",
+      "notes": "Name the contribution and who actually made it."
+    },
+    {
+      "key": "s81",
+      "title": "Six traps to recognize",
+      "body": "Waiting for a title leaves an ordinary task undone. A big speech can hide a missed daily habit. Blaming everyone blocks a repair. Owning harm done to you puts responsibility in the wrong place. Making an exception for a friend makes the standard hard to trust. Keeping every worry to yourself makes it harder to ask for help. Pick the trap most likely to affect your next meeting. Bring harassment, discrimination, violence, or a safety issue to a trusted adult, advisor, or manager.",
+      "aria": "Six traps to recognize",
+      "kind": "lesson",
+      "chapter": "Chapter 4: The Weight of Responsibility",
+      "quote": "There is a loneliness to leadership that no one warns you about.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 4: The Weight of Responsibility",
+      "notes": "Let the learner choose a support role without naming anyone."
+    },
+    {
+      "key": "s82",
+      "title": "Walkthrough · Review a missed handoff",
+      "body": "Work through a sample club meeting on paper. Pause to answer the three after-action questions, choose a repeatable cue, and decide how to restart after a missed day. The written script and annotations are ready to use now.",
+      "aria": "Walkthrough · Review a missed handoff",
+      "kind": "video",
+      "walkthroughIndex": 0,
+      "notes": "Follow the annotated demonstration and narration script. Pause where the learner is asked to try a step."
+    },
+    {
+      "key": "s83",
+      "title": "A resume bullet needs an action you took",
+      "body": "Suppose you actually ran weekly recaps and changed where everyone found the supply list. “Ran a five-minute recap after club meetings and moved the supply list into our shared agenda” tells a reader what changed. “Visionary leader” leaves them guessing. Use an example only when it matches your own experience.",
+      "aria": "A resume bullet needs an action you took",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s84",
+      "title": "Draft a line you can explain",
+      "body": "Start with an action you took in a club, class, shift, practice, or volunteer role. Add a result you personally observed. If you are still planning the action, keep a practice note and come back after you’ve tried it.",
+      "aria": "Draft a line you can explain",
+      "kind": "activity",
+      "field": "bullet",
+      "fieldLabel": "Finish the draft with facts you can explain: I did ___; as a result ___. Omit any unmeasured number. You can decide later whether to include the draft on your resume.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s85",
+      "title": "Plan the next seven days",
+      "body": "Choose one standard, one way you will own a miss, and a five-minute after-action you can repeat. Pick at least three days in the next seven with a real opportunity to practice. Put a cue beside each day, such as when I close my notebook after practice.",
+      "aria": "Plan the next seven days",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s86",
+      "title": "My Standards and First Week Plan",
+      "body": "Download the sheet and fill it on your own device or on paper. Keep two or three standards, one ownership rewrite, one after-action, a seven-day grid, and one skill you will help someone practice. You may also jot down a trusted person’s role for yourself.",
+      "aria": "My Standards and First Week Plan",
+      "kind": "worksheet",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s87",
+      "title": "Optional next step · Leadership Rhythm",
+      "body": "Leadership Rhythm is a free iPhone and iPad app (App Store, rated 4+) that uses timed intervals to prompt you to notice and recognize people during a shift or practice. Brenen built it to go with Chapter 20 of the book. You do not need it to finish this class. If you use an iPhone or iPad with iOS or iPadOS 16.4 or later and you want a reminder to look up and notice what someone is doing right, you can find it on the App Store.",
+      "aria": "Optional next step · Leadership Rhythm",
+      "kind": "lesson",
+      "app": true,
+      "notes": "A clock, a timer or a paper reminder also works. Always offer the no-app path."
+    },
+    {
+      "key": "s88",
+      "title": "Part I in one pass",
+      "body": "Chapters 1–3 ask you to name who you are, decide what you will protect, and own a repair. Chapters 4–6 ask you to seek support, give people room to grow, and keep small promises. Chapters 7–9 bring it back to your team: teach someone, act today like the person you want to become, and give away credit while keeping the standard.",
+      "aria": "Part I in one pass",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s89",
+      "title": "From the book’s Final Word",
+      "body": "Think of the next ordinary moment when somebody will count on you. Which part of your plan could they see you carry out then?",
+      "aria": "From the book’s Final Word",
+      "kind": "lesson",
+      "quote": "The goal is not to become the loudest leader in the room. The goal is to become the steadiest. That is leadership.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Final Word.",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s90",
+      "title": "Next · See and Develop People",
+      "body": "Part II takes the next step in Chapters 10–12. You will look for humility, effort, and coachability, ask what someone wants to become, and learn what already motivates them. You can use this week’s teaching turn as a starting point.",
+      "aria": "Next · See and Develop People",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s91",
+      "title": "Your optional completion record",
+      "body": "Once you pass the final quiz, you can preview “Lead Yourself First — completed on FirstCareerSteps” or choose a skill you actually practiced. Completion records describe a class you took. They do not award school credit or an accredited certificate. Any addition to your resume needs your confirmation.",
+      "aria": "Your optional completion record",
+      "kind": "resume",
+      "notes": "The student chooses whether to preview and confirm an addition."
+    },
+    {
+      "key": "s92",
+      "title": "Final question 1 · Where leadership begins",
+      "body": "Think back to how conviction showed up in a choice someone could see.",
+      "aria": "Final question 1 · Where leadership begins",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s93",
+      "title": "Final question 2 · Own the change",
+      "body": "Look for the response that gives the leader something they can repair.",
+      "aria": "Final question 2 · Own the change",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s94",
+      "title": "Final question 3 · The standard on Friday",
+      "body": "Imagine the same team on a calm morning and on its busiest afternoon.",
+      "aria": "Final question 3 · The standard on Friday",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s95",
+      "title": "Final question 4 · Helping someone succeed",
+      "body": "Recall the chapter about giving another person the next turn at a skill.",
+      "aria": "Final question 4 · Helping someone succeed",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s96",
+      "title": "Final question 5 · An earned resume bullet",
+      "body": "Assume the learner did the action described and can explain the outcome. Choose the line that gives a reader specific evidence.",
+      "aria": "Final question 5 · An earned resume bullet",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s97",
+      "title": "Review your five answers",
+      "body": "A score of 4/5 completes the class. Read the reason beside each answer. You can revisit any slide and retake the quiz as often as you need.",
+      "aria": "Review your five answers",
+      "kind": "review",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s98",
+      "title": "Put the first day on your calendar",
+      "body": "Open your seven-day plan and choose the first real opportunity to use it. If a meeting is canceled, mark no opportunity and pick the next one. After the third practice day, look for one thing you can keep and one thing you would change.",
+      "aria": "Put the first day on your calendar",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s99",
+      "title": "Start with the next promise",
+      "body": "Carry one line from your plan into the next shift, meeting, practice, or project. Show the standard, let someone else try a skill, and take five minutes afterward to review your own part.",
+      "aria": "Start with the next promise",
+      "kind": "close",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    }
+  ],
+  "mid": [
+    {
+      "prompt": "A group project has no official leader. Which action applies Chapter 1?",
+      "options": [
+        "Wait until the class votes on a title.",
+        "Name the standard you will keep and check your own work against it.",
+        "Tell everyone else which values they should have."
+      ],
+      "answer": 1,
+      "why": "Conviction shows up in a choice you can make yourself. A student can act on a standard before anyone assigns them a role."
+    },
+    {
+      "prompt": "Which action shows an ethos at work, even when keeping it costs you something?",
+      "options": [
+        "Choose an early meeting because it suits your schedule.",
+        "Say honesty matters when everyone already agrees.",
+        "Correct an overstated timesheet even though it means a smaller paycheck."
+      ],
+      "answer": 2,
+      "why": "A preference can depend on convenience. Giving up a benefit to keep an honest record shows what you will protect under pressure."
+    },
+    {
+      "prompt": "The group misses a slide deadline. Which reply shows ownership?",
+      "options": [
+        "I didn’t check the due time. I’ll confirm it today and update our shared calendar.",
+        "They should have reminded me.",
+        "Everything anyone else does is my fault."
+      ],
+      "answer": 0,
+      "why": "The first reply identifies the part the speaker controlled and a specific repair. Taking responsibility for another person’s harmful conduct is never the assignment."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "In Chapter 1, where does leadership begin?",
+      "options": [
+        "With a title or formal plan.",
+        "With knowing who you are, what you believe, and what you will protect.",
+        "With being the most intense person in the room.",
+        "With having the best systems first."
+      ],
+      "answer": 1,
+      "why": "In Chapter 1, Who You Are, Brenen describes conviction as knowing what you believe and what you will protect even when it costs you."
+    },
+    {
+      "prompt": "Which line best matches Chapter 3?",
+      "options": [
+        "If the team failed, the leader is powerless.",
+        "After-action questions should mostly blame the crew.",
+        "Owning the change gives you the power to change things; blame takes that away.",
+        "A good leader never reviews their own shift."
+      ],
+      "answer": 2,
+      "why": "In Chapter 3, Own the Change, examining your own actions reveals a next step you can take without waiting for someone else to change."
+    },
+    {
+      "prompt": "Chapter 6 prefers:",
+      "options": [
+        "Occasional intense speeches.",
+        "Changing the standard on hard days.",
+        "A leader who shows up the same way, Monday and Friday.",
+        "Setting big goals and skipping daily systems."
+      ],
+      "answer": 2,
+      "why": "Chapter 6, Consistency Over Intensity, asks you to uphold a standard on ordinary days and on busy ones. That repeated action is what teammates can count on."
+    },
+    {
+      "prompt": "“The real job of a leader is to make other people successful” is the core of:",
+      "options": [
+        "Chapter 2.",
+        "Chapter 4.",
+        "Chapter 7.",
+        "Chapter 16."
+      ],
+      "answer": 2,
+      "why": "Brenen Morse, The Little Black Book on Leadership, Chapter 7: Your Job is Their Success. One way to practice it is to teach a skill and let the other person try it."
+    },
+    {
+      "prompt": "Which resume bullet is truthful and specific?",
+      "options": [
+        "“Visionary leader who transformed team culture.”",
+        "“Ran a 5-minute recap after each weekly meeting and fixed one process issue the next week.”",
+        "“Natural born leader.”",
+        "“Managed dozens of people with no issues.”"
+      ],
+      "answer": 1,
+      "why": "The recap line gives an action, a frequency, and an observable result. Use a line like it only if the events happened and you can explain which process changed."
+    }
+  ],
+  "walkthroughs": [
+    {
+      "title": "Review a missed handoff and plan the next seven days",
+      "minutes": "8–12",
+      "steps": [
+        [
+          "1 · Draw three boxes on paper",
+          "Label the boxes with the three Chapter 3 questions. Set down one event you can describe without a name."
+        ],
+        [
+          "2 · Separate observation from blame",
+          "In this fictional club example, the meeting ended without a supplies handoff. Note one helpful action and one action the facilitator missed."
+        ],
+        [
+          "3 · Write a repair you control",
+          "Change the last minute of the next meeting: ask who will take each remaining job and read back the agreed handoff."
+        ],
+        [
+          "4 · Build a one-week grid",
+          "Mark three real opportunities. Write the cue in advance. Use held, slipped, or no opportunity when you review each day."
+        ],
+        [
+          "5 · Restart after a miss",
+          "Look at what the slip reveals about the cue. Choose the next small repair and set a time to check it."
+        ]
+      ],
+      "narration": [
+        "This is a fictional club meeting you can work through with me. Fold a sheet into three columns. Put the three after-action questions from Chapter 3 across the top. Pause for a minute and pick a meeting, practice, or work block you remember. If you prefer, stay with our club example for the whole walkthrough.",
+        "In this example I’m facilitating a supply meeting. We decided what to bring to the park cleanup. I read the list aloud and someone noticed the missing trash bags. I ended the meeting as soon as the list was complete. At the next check-in, the bags were still on the list and nobody had agreed to bring them. We know what happened. We don’t know what anyone was thinking.",
+        "In box one I write that I read back the list and gave people time to catch a missing item. I want to keep that. In box two I write that I closed the meeting before I confirmed who would bring each item. I could write that people forgot. But that would leave me guessing and wouldn’t tell me what to change. Pause for two minutes. Put a concrete action of your own in each of the first two boxes.",
+        "Here’s my third answer. At the next meeting I’ll reserve the last minute for the handoff. I’ll ask who can take each open job and read our agreements back. If no one takes a job, I’ll mark it open and ask the advisor what we can do. I can do that even if the team changes its mind about which supplies it needs. Take another minute to choose your own repair. Say it once out loud. Could someone watching tell whether you did it?",
+        "Now draw seven boxes for the week ahead. In this example I can rehearse the handoff after Monday’s project huddle, Wednesday’s volunteer planning session, and Friday’s club meeting. Beside each one I write my cue: when I reach the last agenda item, I leave one minute for the handoff. Pause for two minutes to choose three real opportunities of your own. Your days can be different.",
+        "Imagine Monday goes well. I mark held. Wednesday runs late, I shut my notebook, and I forget to check. I mark slipped. I don’t fix Wednesday by making a bigger promise. I move the reminder from the bottom of the agenda to the last item’s heading, where I will actually see it on Friday. A day with no meeting gets no opportunity. That is different from a missed promise.",
+        "Look at the three boxes and the grid together. Keep one thing that helped, own one missed action, and put the next cue where you will see it. On your third practice day, spend five minutes checking what changed and what you want to try next."
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "key": "standards",
+      "label": "My two or three non-negotiable standards",
+      "hint": "Write an action for each one and what keeping it might cost. Keep personal beliefs private."
+    },
+    {
+      "key": "ownership",
+      "label": "My ownership rewrite",
+      "hint": "First blame sentence → my part → one repair I can make and when."
+    },
+    {
+      "key": "after-action",
+      "label": "My after-action review",
+      "hint": "What went well? What did not go well? And what will I do differently tomorrow? Answer about your own choices."
+    },
+    {
+      "key": "plan",
+      "label": "My practice plan",
+      "hint": "Choose one standard, a cue to take ownership and three days for a short after-action. Mark the seven-day grid below."
+    },
+    {
+      "key": "help",
+      "label": "One way I will help someone get better",
+      "hint": "What I’ll show, when they’ll practice, and how we’ll check it together."
+    },
+    {
+      "key": "support",
+      "label": "Optional · A trusted person I can talk to",
+      "hint": "A role, such as coach or advisor, is enough. You can leave this blank."
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import {
   grade,
   walkthroughs,
 } from "../src/lib/classes/lessons";
+import { bookClasses, currentSlideKey } from "../src/lib/classes/leadership";
 import { series } from "../src/lib/classes/series";
 import { promptSheetFile } from "../src/lib/classes/prompt-sheet";
 import sitemap from "../src/app/sitemap";
@@ -22,7 +23,7 @@ import { worksheetFile } from "../src/lib/classes/worksheets";
 
 test("all nine authored outlines have numbered, accessible slides and a complete quiz plan", () => {
   assert.equal(classes.length, 9);
-  assert.equal(classes.filter((c) => c.published).length, 3);
+  assert.equal(classes.filter((c) => c.published).length, 7);
   for (const course of classes) {
     const raw = JSON.parse(
       readFileSync("src/lib/classes/content/" + course.slug + ".json", "utf8"),
@@ -46,7 +47,13 @@ test("all nine authored outlines have numbered, accessible slides and a complete
         outline.some((s) => s.kind === "video"),
     );
     outline.forEach((s, i) => {
-      assert.equal(s.key, "s" + String(i + 1).padStart(2, "0"));
+      assert.equal(
+        s.key,
+        "s" +
+          String(
+            course.slug === "lead-yourself" && i > 0 ? i + 50 : i + 1,
+          ).padStart(2, "0"),
+      );
       assert.ok(s.aria && s.body && s.title);
       const { notes, ...studentFields } = s;
       if (course.track === "Leadership") assert.ok(notes);
@@ -109,11 +116,16 @@ test("free enrollment is the default and existing learners retain access under t
 });
 test("offline worksheet escapes learner text and contains no network destination", () => {
   for (const slug of ["lead-yourself", "ai-honestly"]) {
-    const html = worksheetFile(slug, "Worksheet", {
-      standards: "<script>oops</script>",
-      bullet: "<script>oops</script>",
-      check0: slug === "lead-yourself" ? "Held" : "Yes",
-    });
+    const html = worksheetFile(
+      slug,
+      "Worksheet",
+      {
+        standards: "<script>oops</script>",
+        bullet: "<script>oops</script>",
+        check0: slug === "lead-yourself" ? "Held" : "Yes",
+      },
+      bookClasses[slug]?.fields,
+    );
     assert.ok(html.includes("&lt;script&gt;"));
     assert.doesNotMatch(html, /<script>oops|https?:\/\/|fetch\(/);
     assert.match(html, /option selected/);
@@ -221,4 +233,64 @@ test("the four practical courses carry full materials and retired classes cannot
       for (const text of Object.values(canonical))
         assert.ok(materials.prompts.some((p) => p.text === text));
   });
+});
+
+test("leadership release maps every chapter and grades one final per book part", () => {
+  const expected = [
+    ["lead-yourself", 1, 9, [1, 2, 2, 2, 1]],
+    ["see-and-develop-people", 10, 12, [2, 1, 1, 1, 2]],
+    ["set-the-stage", 13, 16, [1, 2, 1, 1, 1]],
+    ["everyday-techniques", 17, 20, [1, 2, 1, 1, 1]],
+    ["culture-overhaul", 21, 23, [1, 2, 1, 2, 2]],
+  ] as const;
+  for (const [slug, lo, hi, answers] of expected) {
+    const course = bookClasses[slug];
+    const chapters = course.slides.flatMap((s) =>
+      s.quote && s.chapter
+        ? [Number(s.chapter.match(/^Chapter (\d+): /)?.[1])]
+        : [],
+    );
+    for (let n = lo; n <= hi; n++)
+      assert.ok(chapters.includes(n), slug + " lacks a cited excerpt for " + n);
+    assert.deepEqual(
+      course.final.map((q) => q.answer),
+      [...answers],
+    );
+    assert.equal(course.slides.filter((s) => s.kind === "final").length, 5);
+    assert.equal(course.slides.filter((s) => s.app).length, 1);
+    const videos = course.slides.filter((s) => s.kind === "video");
+    assert.equal(videos.length, slug === "everyday-techniques" ? 2 : 1);
+    for (const s of videos)
+      assert.ok(
+        course.walkthroughs[s.walkthroughIndex ?? 0].narration?.join(" ")
+          .length,
+      );
+    assert.ok(course.slides.some((s) => s.field === "bullet"));
+    assert.doesNotMatch(
+      readFileSync("src/lib/classes/content/" + slug + ".json", "utf8"),
+      /\[BRENEN (?:MAP|EXCERPT)/,
+    );
+    const html = worksheetFile(
+      slug,
+      slug,
+      { [course.fields[0].key]: "<private>" },
+      course.fields,
+    );
+    assert.ok(html.includes("&lt;private&gt;"));
+    assert.doesNotMatch(html, /fetch\(|https?:\/\//);
+  }
+  assert.match(
+    bookClasses["lead-yourself"].slides[9].quote!,
+    /Your immovable rock may look different than mine/,
+  );
+  for (const [old, ordinal] of [
+    ["s12", 13],
+    ["s31", 37],
+    ["s41", 48],
+    ["s42", 50],
+  ] as const) {
+    const key = bookClasses["lead-yourself"].slides[ordinal - 1].key;
+    assert.equal(currentSlideKey("lead-yourself", old), key);
+    assert.equal(currentSlideKey("lead-yourself", key), key);
+  }
 });

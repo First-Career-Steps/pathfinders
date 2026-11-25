@@ -12,19 +12,79 @@ import {
   week,
   checklist,
   type Fields,
+  type WorksheetField,
 } from "@/lib/classes/worksheets";
+type Editable = { values: Fields; edit: (key: string, value: string) => void };
+export function ResponseFields({
+  fields,
+  values,
+  edit,
+}: Editable & { fields: WorksheetField[] }) {
+  return (
+    <>
+      {fields.map(({ key, label, hint }) => (
+        <label className="sc-field" key={key}>
+          {label}
+          {hint && <small>{hint}</small>}
+          <textarea
+            rows={2}
+            maxLength={2400}
+            value={values[key] || ""}
+            onChange={(e) => edit(key, e.target.value)}
+          />
+        </label>
+      ))}
+    </>
+  );
+}
+export function WeekGrid({
+  values,
+  edit,
+  past = false,
+}: Editable & { past?: boolean }) {
+  return (
+    <fieldset>
+      <legend>
+        {past
+          ? "Look back at the past seven days"
+          : "Seven-day consistency grid"}
+      </legend>
+      {week.map((day, i) => (
+        <label className="sc-checkrow" key={day}>
+          {day}
+          <select
+            value={values[(past ? "past" : "check") + i] || ""}
+            onChange={(e) =>
+              edit((past ? "past" : "check") + i, e.target.value)
+            }
+          >
+            <option value="">Choose</option>
+            {(past
+              ? ["Held", "Slipped", "No opportunity"]
+              : ["Held", "Slipped", "No opportunity", "Planned"]
+            ).map((o) => (
+              <option key={o}>{o}</option>
+            ))}
+          </select>
+        </label>
+      ))}
+    </fieldset>
+  );
+}
 export function Worksheet({
   course,
   values,
   edit,
   onDownload,
   materials,
+  bookFields,
 }: {
   course: ClassInfo;
   values: Fields;
   edit: (k: string, v: string) => void;
   onDownload: () => void;
   materials?: PromptSheet;
+  bookFields?: WorksheetField[];
 }) {
   const grid = course.slug === "lead-yourself";
   function download() {
@@ -33,7 +93,7 @@ export function Worksheet({
         [
           materials
             ? promptSheetFile(course.worksheet, materials, values)
-            : worksheetFile(course.slug, course.worksheet, values),
+            : worksheetFile(course.slug, course.worksheet, values, bookFields),
         ],
         {
           type: "text/html;charset=utf-8",
@@ -63,26 +123,20 @@ export function Worksheet({
           ))}
         </ul>
       )}
-      {(materials
-        ? materials.fields.map((f) => [f.key, f.label])
-        : worksheetFields[course.slug]
-      ).map(([k, label]) => (
-        <label key={k}>
-          {label}
-          <textarea
-            rows={2}
-            maxLength={2400}
-            value={values[k] || ""}
-            onChange={(e) => edit(k, e.target.value)}
-          />
-        </label>
-      ))}
-      {!materials && (
+      <ResponseFields
+        fields={
+          bookFields ??
+          materials?.fields ??
+          worksheetFields[course.slug].map(([key, label]) => ({ key, label }))
+        }
+        values={values}
+        edit={edit}
+      />
+      {grid && <WeekGrid values={values} edit={edit} />}
+      {course.slug === "ai-honestly" && (
         <fieldset>
-          <legend>
-            {grid ? "Seven-day consistency grid" : "Check your draft"}
-          </legend>
-          {(grid ? week : checklist).map((s, i) => (
+          <legend>Check your draft</legend>
+          {checklist.map((s, i) => (
             <label className="sc-checkrow" key={s}>
               {s}
               <select
@@ -90,10 +144,7 @@ export function Worksheet({
                 onChange={(e) => edit("check" + i, e.target.value)}
               >
                 <option value="">Choose</option>
-                {(grid
-                  ? ["Held", "Slipped", "No opportunity", "Planned"]
-                  : ["Yes", "Needs work", "Not applicable"]
-                ).map((item) => (
+                {["Yes", "Needs work", "Not applicable"].map((item) => (
                   <option key={item}>{item}</option>
                 ))}
               </select>

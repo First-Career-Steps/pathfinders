@@ -1,322 +1,542 @@
-[
-  {
-    "key": "s01",
-    "title": "When the Team Is Off Track",
-    "body": "Find the real problem and rebuild one routine over 30 days.",
-    "notes": "Use a real group or one of two fictional cases.",
-    "aria": "When the Team Is Off Track. Find the real problem and rebuild one routine over 30 days.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s02",
-    "title": "Culture Overhaul",
-    "body": "Part V includes the confirmed Chapter 23 theme of culture spreading through people.",
-    "notes": "Recommend L1–L4 first.",
-    "aria": "Culture Overhaul. Part V includes the confirmed Chapter 23 theme of culture spreading through people.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s03",
-    "title": "When nobody is watching",
-    "body": "Culture shows up in repeated behavior when the official lead is absent.",
-    "notes": "Use an unattended sign-in table.",
-    "aria": "When nobody is watching. Culture shows up in repeated behavior when the official lead is absent.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s04",
-    "title": "Three decisions",
-    "body": "Find the real problem, identify who leads in your absence and run the change.",
-    "notes": "Outline one month of repetition. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Three decisions. Find the real problem, identify who leads in your absence and run the change.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s05",
-    "title": "Activity: describe the slip",
-    "body": "Record one observable change without naming peers.",
-    "notes": "Separate a late start from a guess about effort.",
-    "aria": "Activity: describe the slip. Record one observable change without naming peers.",
-    "kind": "activity"
-  },
-  {
-    "key": "s06",
-    "title": "Look at your system first",
-    "body": "Check how your own instructions, routines and follow-up contribute.",
-    "notes": "Ask what someone new is told. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Look at your system first. Check how your own instructions, routines and follow-up contribute.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s07",
-    "title": "A diagnostic question",
-    "body": "Test for an unclear standard, missing follow-up, a skills gap, a schedule problem or a leader ignoring a standard.",
-    "notes": "Seek evidence before choosing.",
-    "aria": "A diagnostic question. Test for an unclear standard, missing follow-up, a skills gap, a schedule problem or a leader ignoring a standard.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s08",
-    "title": "Case A: the late club",
-    "body": "A fictional club starts 15 minutes late and laughs it off.",
-    "notes": "Check who has the key and when the agenda appears.",
-    "aria": "Case A: the late club. A fictional club starts 15 minutes late and laughs it off.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s09",
-    "title": "Case B: the busy close",
-    "body": "In a hypothetical restaurant, the closing station is messy after busy shifts.",
-    "notes": "Inspect the handoff and available time.",
-    "aria": "Case B: the busy close. In a hypothetical restaurant, the closing station is messy after busy shifts.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s10",
-    "title": "Activity: name the system problem",
-    "body": "Describe the gap in one sentence someone could test.",
-    "notes": "Use roles rather than names.",
-    "aria": "Activity: name the system problem. Describe the gap in one sentence someone could test.",
-    "kind": "activity"
-  },
-  {
-    "key": "s11",
-    "title": "Mid-quiz: three decisions",
-    "body": "Check the first place to look, behavior without supervision and a system-first explanation.",
-    "notes": "Avoid diagnosing the group.",
-    "aria": "Mid-quiz: three decisions. Check the first place to look, behavior without supervision and a system-first explanation.",
-    "kind": "mid"
-  },
-  {
-    "key": "s12",
-    "title": "Find out respectfully",
-    "body": "Ask about a handoff, observe it with permission or review the outcome.",
-    "notes": "No spying or secret recordings. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Find out respectfully. Ask about a handoff, observe it with permission or review the outcome.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s13",
-    "title": "Culture Carriers",
-    "body": "Chapter 23 describes a person who lives the standard so others can learn it.",
-    "notes": "Use behavior as the evidence. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "Culture Carriers. Chapter 23 describes a person who lives the standard so others can learn it.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s14",
-    "title": "Who models the routine?",
-    "body": "Look for someone who consistently closes the loop when nobody prompts them.",
-    "notes": "Distinguish this from popularity.",
-    "aria": "Who models the routine?. Look for someone who consistently closes the loop when nobody prompts them.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s15",
-    "title": "Invite a Culture Carrier",
-    "body": "Ask them to model one opening, closing or pairing task.",
-    "notes": "Keep the work bounded and voluntary. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Invite a Culture Carrier. Ask them to model one opening, closing or pairing task.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s16",
-    "title": "When the lead is part of the problem",
-    "body": "Use a private factual conversation or involve the actual advisor or manager.",
-    "notes": "Stay within your authority. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "When the lead is part of the problem. Use a private factual conversation or involve the actual advisor or manager.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s17",
-    "title": "Activity: identify roles",
-    "body": "Describe who models the standard and who has the authority to follow up.",
-    "notes": "No full names in stored notes.",
-    "aria": "Activity: identify roles. Describe who models the standard and who has the authority to follow up.",
-    "kind": "activity"
-  },
-  {
-    "key": "s18",
-    "title": "One visible reset",
-    "body": "Write one standard, choose a huddle or review, and schedule follow-up.",
-    "notes": "Make the routine visible to a newcomer. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "One visible reset. Write one standard, choose a huddle or review, and schedule follow-up.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s19",
-    "title": "Repeat the repair",
-    "body": "A one-off reward cannot make a late agenda appear on time.",
-    "notes": "Build a cue for repetition. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Repeat the repair. A one-off reward cannot make a late agenda appear on time.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s20",
-    "title": "A four-week calendar",
-    "body": "Reset in week one, repeat in weeks two and three, and review in week four.",
-    "notes": "Name a person and time for each step.",
-    "aria": "A four-week calendar. Reset in week one, repeat in weeks two and three, and review in week four.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s21",
-    "title": "Activity: fill the 30-day plan",
-    "body": "Apply each week to the club or closing example.",
-    "notes": "Add an observable measure.",
-    "aria": "Activity: fill the 30-day plan. Apply each week to the club or closing example.",
-    "kind": "activity"
-  },
-  {
-    "key": "s22",
-    "title": "Screen recording: a culture slip",
-    "body": "Plan a 10–12 minute walkthrough of a restaurant case and paper plan.",
-    "notes": "Use a clearly fictional narrated case pending Brenen's approved story. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Screen recording: a culture slip. Plan a 10–12 minute walkthrough of a restaurant case and paper plan.",
-    "kind": "video"
-  },
-  {
-    "key": "s23",
-    "title": "Shortcuts to avoid",
-    "body": "Changing a slogan, shaming a group or adding twelve rules can hide the actual problem.",
-    "notes": "Compare with one testable routine.",
-    "aria": "Shortcuts to avoid. Changing a slogan, shaming a group or adding twelve rules can hide the actual problem.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s24",
-    "title": "When to get help",
-    "body": "For harassment, discrimination, violence or safety issues, go to a trusted adult, manager or school process.",
-    "notes": "A student does not have to investigate or resolve harm alone.",
-    "aria": "When to get help. For harassment, discrimination, violence or safety issues, go to a trusted adult, manager or school process.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s25",
-    "title": "A resume result you can support",
-    "body": "Describe what happened across real meetings only if observed.",
-    "notes": "Worked example must identify the actual dates or count.",
-    "aria": "A resume result you can support. Describe what happened across real meetings only if observed.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s26",
-    "title": "Worksheet: 30-Day Overhaul Plan",
-    "body": "Record the system problem, Culture Carrier role, weekly plan and escalation contact role.",
-    "notes": "Use a role without personal contact details.",
-    "aria": "Worksheet: 30-Day Overhaul Plan. Record the system problem, Culture Carrier role, weekly plan and escalation contact role.",
-    "kind": "worksheet"
-  },
-  {
-    "key": "s27",
-    "title": "Common traps",
-    "body": "Avoid generational blame, playing hero or giving up after one week.",
-    "notes": "Ask which part of your routine is missing.",
-    "aria": "Common traps. Avoid generational blame, playing hero or giving up after one week.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s28",
-    "title": "What will last?",
-    "body": "Connect the system check, Chapter 23 and repetition.",
-    "notes": "Show the link in one case.",
-    "aria": "What will last?. Connect the system check, Chapter 23 and repetition.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s29",
-    "title": "The two tracks",
-    "body": "Students can continue into the AI classes after leadership.",
-    "notes": "Do not assume everyone completed prior classes.",
-    "aria": "The two tracks. Students can continue into the AI classes after leadership.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s30",
-    "title": "Optional completion line",
-    "body": "Preview a record describing this class.",
-    "notes": "It carries no school or licensing credit.",
-    "aria": "Optional completion line. Preview a record describing this class.",
-    "kind": "resume"
-  },
-  {
-    "key": "s31",
-    "title": "End question: where to start",
-    "body": "Choose the first evidence to examine in a drifting team.",
-    "notes": "Return to the leader's routine.",
-    "aria": "End question: where to start. Choose the first evidence to examine in a drifting team.",
-    "kind": "final"
-  },
-  {
-    "key": "s32",
-    "title": "End question: Culture Carrier",
-    "body": "Identify a modeled behavior from Chapter 23.",
-    "notes": "Separate popularity from evidence.",
-    "aria": "End question: Culture Carrier. Identify a modeled behavior from Chapter 23.",
-    "kind": "final"
-  },
-  {
-    "key": "s33",
-    "title": "End question: repetition",
-    "body": "Compare a month of follow-up with a single pep talk.",
-    "notes": "Choose the measurable plan.",
-    "aria": "End question: repetition. Compare a month of follow-up with a single pep talk.",
-    "kind": "final"
-  },
-  {
-    "key": "s34",
-    "title": "End question: adult involvement",
-    "body": "Identify a scenario needing a trusted adult or formal process.",
-    "notes": "Never make a student handle danger alone.",
-    "aria": "End question: adult involvement. Identify a scenario needing a trusted adult or formal process.",
-    "kind": "final"
-  },
-  {
-    "key": "s35",
-    "title": "End question: a truthful result",
-    "body": "Choose a bullet supported by the observed meeting record.",
-    "notes": "Remove claims without evidence.",
-    "aria": "End question: a truthful result. Choose a bullet supported by the observed meeting record.",
-    "kind": "final"
-  },
-  {
-    "key": "s36",
-    "title": "Answer review",
-    "body": "Explain the five decisions and allow a retry.",
-    "notes": "Four correct completes the class.",
-    "aria": "Answer review. Explain the five decisions and allow a retry.",
-    "kind": "review"
-  },
-  {
-    "key": "s37",
-    "title": "Track recap: ownership",
-    "body": "Link one small repair to a standard you held.",
-    "notes": "Only claim practiced behavior.",
-    "aria": "Track recap: ownership. Link one small repair to a standard you held.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s38",
-    "title": "Track recap: people and stage",
-    "body": "Identify an actual training conversation or environment change.",
-    "notes": "Make it specific enough to describe aloud.",
-    "aria": "Track recap: people and stage. Identify an actual training conversation or environment change.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s39",
-    "title": "Track recap: techniques",
-    "body": "Choose a huddle or follow-up skill only if you used it.",
-    "notes": "Offer a modest resume wording.",
-    "aria": "Track recap: techniques. Choose a huddle or follow-up skill only if you used it.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s40",
-    "title": "Close the month",
-    "body": "Set the date for the fourth-week review.",
-    "notes": "Keep the plan and record what actually happened.",
-    "aria": "Close the month. Set the date for the fourth-week review.",
-    "kind": "close"
-  }
-]
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "When the Team Is Off Track",
+      "body": "Find the cause of one slipping standard, check your own part in it, and build a routine the team can keep when you are away.",
+      "aria": "When the Team Is Off Track",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s02",
+      "title": "Part V · Culture Overhaul",
+      "body": "Allow about 50 minutes. Chapters 21–23 of Brenen Morse’s hospitality field guide follow a team from diagnosis to a lasting routine. Bring a situation from a club, practice, project or first job. The two cases in this class also work if you have never led a group.",
+      "aria": "Part V · Culture Overhaul",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s03",
+      "title": "What happens while you’re away?",
+      "body": "Picture two meetings. The officer starts the first one on time. When the officer misses the second, everyone waits for someone to begin. The difference tells you something about the group’s habits. In this class, culture means the behavior people have learned to expect and repeat.",
+      "aria": "What happens while you’re away?",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s04",
+      "title": "Describe one slip",
+      "body": "A useful observation describes something a person could see or hear. A guess about someone’s character gives the group little to work on. Use a role such as opener, member or shift lead.",
+      "aria": "Describe one slip",
+      "kind": "activity",
+      "field": "slip",
+      "fieldLabel": "Write one sentence about a missed standard. Include the expected action, the action you saw and when it happened. Leave out names. For practice, use a club whose posted 3:15 meeting began at 3:30.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s05",
+      "title": "Chapter 21: Identify the Real Problem",
+      "body": "Fifteen late minutes are easy to see. The missing room key, the unclear opening job or the leader who keeps delaying the start can be harder to spot. Identify two possible explanations before picking a fix.",
+      "aria": "Chapter 21: Identify the Real Problem",
+      "kind": "lesson",
+      "chapter": "Chapter 21: Identify the Real Problem",
+      "quote": "Before you can fix a culture, you have to be honest about what broke it.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 21: Identify the Real Problem",
+      "notes": "Trace one weak system before guessing at anyone’s intent."
+    },
+    {
+      "key": "s06",
+      "title": "First, check the system",
+      "body": "A system is the way the work is set up. Walk the job from beginning to end as a newcomer would. Where would you find the agenda, the supplies and the name of the role that opens the meeting? If the starter never has the key, an earlier reminder will solve very little.",
+      "aria": "First, check the system",
+      "kind": "lesson",
+      "chapter": "Chapter 21: Identify the Real Problem",
+      "quote": "A broken system will break good people. Fix the system before you blame the person.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 21: Identify the Real Problem",
+      "notes": "Trace one weak system before guessing at anyone’s intent."
+    },
+    {
+      "key": "s07",
+      "title": "Second, check the leader",
+      "body": "Compare what the leader asked for with what the leader actually did. If I asked everyone to arrive at 3:15 and spent the first ten minutes finding the agenda, I taught people to wait. My first change could be posting the agenda before lunch and starting the first item myself.",
+      "aria": "Second, check the leader",
+      "kind": "lesson",
+      "chapter": "Chapter 21: Identify the Real Problem",
+      "notes": "Trace one weak system before guessing at anyone’s intent."
+    },
+    {
+      "key": "s08",
+      "title": "Third, check the people",
+      "body": "Once the tools, training and example are in place, look for the specific behavior that still needs attention. Ask privately whether the person understands the expectation and can meet it. If you’re a peer, take a repeated issue to the person responsible for the group.",
+      "aria": "Third, check the people",
+      "kind": "lesson",
+      "chapter": "Chapter 21: Identify the Real Problem",
+      "notes": "Trace one weak system before guessing at anyone’s intent."
+    },
+    {
+      "key": "s09",
+      "title": "Club case · The missing first fifteen minutes",
+      "body": "In this fictional club, the posted start is 3:15. At 3:30 the officer finally opens the agenda. Members joke about the delay. One member was ready at 3:15 but had no first task to begin. Before addressing attendance, check who opens the room, posts the agenda and starts item one.",
+      "aria": "Club case · The missing first fifteen minutes",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s10",
+      "title": "Restaurant illustration · The closing station",
+      "body": "Imagine a restaurant where the next opener keeps finding utensils in the drying rack. The busy-night list says to wash utensils. The opening plan assumes they are dry and back in the labeled bins. Both people could follow their instructions and still get a poor handoff. The shift lead can clarify who does the final check.",
+      "aria": "Restaurant illustration · The closing station",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s11",
+      "title": "Write a cause you can test",
+      "body": "Use the club case, the restaurant illustration or a situation of your own. You’re looking for an explanation that could turn out to be wrong.",
+      "aria": "Write a cause you can test",
+      "kind": "activity",
+      "field": "diagnosis",
+      "fieldLabel": "Finish both lines on paper: “One possible system or leadership cause is ___.” “I could check it by ___.” For the club, try comparing the agenda time with the actual start time before changing attendance rules.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s12",
+      "title": "Mid-class check",
+      "body": "Use three short situations to practice choosing where to look first. Read the explanation for each answer before you move on.",
+      "aria": "Mid-class check",
+      "kind": "mid",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s13",
+      "title": "Chapter 22: Who Is Leading the Shift?",
+      "body": "Find out who actually starts the routine on each day. On Tuesday an officer might have the key. On Friday a volunteer might open the room with no agenda. The same team can get different results under those two arrangements.",
+      "aria": "Chapter 22: Who Is Leading the Shift?",
+      "kind": "lesson",
+      "chapter": "Chapter 22: Who Is Leading the Shift?",
+      "quote": "Culture does not stay the same across every hour of every day. It changes based on who is in charge.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 22: Who Is Leading the Shift?",
+      "notes": "Compare two handoffs using observations shared with permission."
+    },
+    {
+      "key": "s14",
+      "title": "Learn what happens at the handoff",
+      "body": "Ask the person who opens, “What was ready when you arrived? What did you have to find?” With their agreement, walk through one handoff together. Check an ordinary work result, such as whether the supplies were out by the start. Give people room to explain. Keep private messages and personal schedules out of this check.",
+      "aria": "Learn what happens at the handoff",
+      "kind": "lesson",
+      "chapter": "Chapter 22: Who Is Leading the Shift?",
+      "notes": "Compare two handoffs using observations shared with permission."
+    },
+    {
+      "key": "s15",
+      "title": "What you can do as a peer",
+      "body": "At a quiet moment, tell the advisor what you saw on the days you attended and how it affected the group. For example, explain that members waited outside twice because the opener had no key. Ask who can coordinate access. Avoid a group-chat vote about who should lose a role.",
+      "aria": "What you can do as a peer",
+      "kind": "lesson",
+      "chapter": "Chapter 22: Who Is Leading the Shift?",
+      "notes": "Compare two handoffs using observations shared with permission."
+    },
+    {
+      "key": "s16",
+      "title": "Chapter 23: How to Overhaul a Culture",
+      "body": "Choose one written standard, name who can model it, then repeat a routine that makes it visible. For the club, post one opening job before the meeting. Show a second person how to run it. Use it each week and check whether the meeting actually starts.",
+      "aria": "Chapter 23: How to Overhaul a Culture",
+      "kind": "lesson",
+      "chapter": "Chapter 23: How to Overhaul a Culture",
+      "quote": "An overhaul is a demolition followed by a rebuild. And it takes longer than you want it to. But it works - if you commit to the process and refuse to shortcut it.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 23: How to Overhaul a Culture",
+      "notes": "Ask how to check whether the routine holds during the leader’s absence."
+    },
+    {
+      "key": "s17",
+      "title": "Find a Culture Carrier",
+      "body": "A Culture Carrier is the person who already does what the group is trying to get right. A new member who quietly lays out the agenda may be a better example than a popular officer. Ask whether that member will show a newcomer how to set up once. The officer still owns the room key, the assignments and the follow-up.",
+      "aria": "Find a Culture Carrier",
+      "kind": "lesson",
+      "chapter": "Chapter 23: How to Overhaul a Culture",
+      "quote": "Culture does not spread through posters. It spreads through people.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 23: How to Overhaul a Culture",
+      "notes": "Ask how to check whether the routine holds during the leader’s absence."
+    },
+    {
+      "key": "s18",
+      "title": "Choose a role and a fair ask",
+      "body": "Keep the focus on observable work. A student who already lives the standard deserves a say in what they take on.",
+      "aria": "Choose a role and a fair ask",
+      "kind": "activity",
+      "field": "roles",
+      "fieldLabel": "Use roles only. Identify who currently models the standard, what you have seen them do, and one small job you could ask them to demonstrate. Then name the lead responsible for follow-up and one action that lead can take.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s19",
+      "title": "Put thirty days on one page",
+      "body": "Week 1: write one visible standard and show how to meet it. Week 2: repeat the opening or closing routine and check the result. Week 3: observe a different person running it and follow up privately on any gap. Week 4: review the results together. On day 30, decide what will continue.",
+      "aria": "Put thirty days on one page",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s20",
+      "title": "Build the plan for your case",
+      "body": "For a club, the standard might be that a named opener begins the first agenda item at the posted time. For a restaurant station, the opening team might need the clean utensils back in the labeled bins.",
+      "aria": "Build the plan for your case",
+      "kind": "activity",
+      "fieldLabel": "Write the standard in a single sentence. Choose one action and an owner role for each of the four weeks. Add one result you can check on day 30 and what you will do if the routine still slips.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional.",
+      "worksheetKeys": [
+        "standard",
+        "week1",
+        "week2",
+        "week3",
+        "week4"
+      ]
+    },
+    {
+      "key": "s21",
+      "title": "Walkthrough · Rebuild a closing routine",
+      "body": "Follow a fictional restaurant handoff from the first observation to the day-30 review. Use a piece of paper and pause at the writing cues. The same steps work for a club meeting.",
+      "aria": "Walkthrough · Rebuild a closing routine",
+      "kind": "video",
+      "walkthroughIndex": 0,
+      "notes": "Follow the annotated demonstration and narration script. Pause where the learner is asked to try a step."
+    },
+    {
+      "key": "s22",
+      "title": "Three shortcuts that wear off",
+      "body": "A slogan gives a newcomer no opening job. Public shaming can make people hide a problem. Changing twelve rules at once makes it hard to tell what helped. Return to the one standard, one person responsible for follow-up and one routine you can repeat this week.",
+      "aria": "Three shortcuts that wear off",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s23",
+      "title": "When to involve a trusted adult",
+      "body": "Harassment, discrimination, violence or a safety problem needs help from a trusted adult, advisor, manager or your school’s reporting process. Get to a safe place if needed. A student does not have to investigate, confront someone alone or complete a 30-day plan first. Ask a responsible adult for help now.",
+      "aria": "When to involve a trusted adult",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s24",
+      "title": "Write a truthful resume bullet",
+      "body": "Use an action you took and a result you actually saw. A possible example, only if true: “Posted a five-minute opening agenda and started four weekly club meetings on time.” A practice case or a plan that you have only drafted does not support that claim.",
+      "aria": "Write a truthful resume bullet",
+      "kind": "activity",
+      "field": "bullet",
+      "fieldLabel": "Write one sentence from your own experience. Underline the action and circle the result you could explain in an interview. If your plan is still on paper, keep a note of what you will check and come back after you do it.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s25",
+      "title": "30-Day Overhaul Plan",
+      "body": "Download the one-page plan. Use role names throughout. Fill in the slip, the three diagnostic questions, who leads in your absence, a Culture Carrier’s role, your standard and four weekly actions. Keep your working copy on your own device or on paper.",
+      "aria": "30-Day Overhaul Plan",
+      "kind": "worksheet",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s26",
+      "title": "An optional reminder to notice people",
+      "body": "Leadership Rhythm is a free iPhone and iPad app (App Store, rated 4+) that uses timed intervals to prompt you to notice and recognize people during a shift or practice. Brenen built it to go with Chapter 20 of the book. You do not need it to finish this class. If you use an iPhone or iPad with iOS or iPadOS 16.4 or later and you want a reminder to look up and notice what someone is doing right, you can find it on the App Store.",
+      "aria": "An optional reminder to notice people",
+      "kind": "lesson",
+      "app": true,
+      "notes": "A clock, a timer or a paper reminder also works. Always offer the no-app path."
+    },
+    {
+      "key": "s27",
+      "title": "When the rebuild starts to drift",
+      "body": "If blame turns to someone’s age, ask for a specific missed step. If you keep doing all the work yourself, choose a job someone else can learn. If your first week goes smoothly, run the same routine next week when a different person is leading.",
+      "aria": "When the rebuild starts to drift",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s28",
+      "title": "One question from each chapter",
+      "body": "Chapter 21: Is it the system, the leader or the people, in that order? Chapter 22: Who actually leads during the hours I miss? Chapter 23: Which standard will we teach, who already models it, and how will the team repeat it?",
+      "aria": "One question from each chapter",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s29",
+      "title": "Final Word · The steadiest leader",
+      "body": "Think of one action the group can depend on next week, even if nobody makes a speech about it. Check whether the person opening in your absence knows how to carry it forward.",
+      "aria": "Final Word · The steadiest leader",
+      "kind": "lesson",
+      "quote": "The goal is not to become the loudest leader in the room. The goal is to become the steadiest. That is leadership.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Final Word.",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s30",
+      "title": "At the end of the Leadership track",
+      "body": "This is the fifth class. The final check covers diagnosis, the shift leader, Culture Carriers, safety and evidence of change. Four correct answers earn a class completion record. You may also explore the practical AI classes in the catalog. Completion carries no school credit or accreditation.",
+      "aria": "At the end of the Leadership track",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s31",
+      "title": "Final check · Where to look first",
+      "body": "Return to the meeting that keeps starting late. Choose the order that gives you a fair chance to find the cause.",
+      "aria": "Final check · Where to look first",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s32",
+      "title": "Final check · The person leading",
+      "body": "Think of the difference between the meeting the officer leads and the one a volunteer opens alone.",
+      "aria": "Final check · The person leading",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s33",
+      "title": "Final check · How the standard spreads",
+      "body": "A new member watches someone else open the room and learns how it works. Which answer explains how this happens?",
+      "aria": "Final check · How the standard spreads",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s34",
+      "title": "Final check · When to get help",
+      "body": "Decide which situation a student should take to a responsible adult or manager.",
+      "aria": "Final check · When to get help",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s35",
+      "title": "Final check · Evidence of change",
+      "body": "Imagine returning after missing a meeting. Which observation would tell you the routine has taken hold?",
+      "aria": "Final check · Evidence of change",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s36",
+      "title": "Review your answers",
+      "body": "Use the explanations to revisit any question you missed. Four out of five completes the class. You can review the slides and retry as often as you want.",
+      "aria": "Review your answers",
+      "kind": "review",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s37",
+      "title": "Bring the five parts together",
+      "body": "First you set your own standard. Then you learn what other people need, notice what the room teaches, and practice huddles and private feedback. When those habits slip across a group, you can now trace the cause and plan a month of follow-through.",
+      "aria": "Bring the five parts together",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s38",
+      "title": "What did you actually practice?",
+      "body": "Look at your plan. Did you describe a process clearly, check your own role, or plan a handoff? Choose a skill you can demonstrate. Training a teammate or running a huddle belongs on a resume once you have actually done it.",
+      "aria": "What did you actually practice?",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s39",
+      "title": "An optional completion record",
+      "body": "If you want a record on your resume, preview the course line or an earned skill and confirm your choice. You can finish here without adding anything to your resume.",
+      "aria": "An optional completion record",
+      "kind": "resume",
+      "notes": "The student chooses whether to preview and confirm an addition."
+    },
+    {
+      "key": "s40",
+      "title": "Choose your first check-in",
+      "body": "Write when you will show someone the standard, who can help check it in your absence, and when you will return to the worksheet. On day 30, ask the person doing the work what is easier to get right and what still gets in the way.",
+      "aria": "Choose your first check-in",
+      "kind": "close",
+      "chapter": "Chapter 23: How to Overhaul a Culture",
+      "quote": "That is how you know the overhaul worked. Not when you are holding the standard. When they are.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 23: How to Overhaul a Culture",
+      "notes": "Ask how to check whether the routine holds during the leader’s absence."
+    }
+  ],
+  "mid": [
+    {
+      "prompt": "At three meetings the opener could not find the key. What would you check first?",
+      "options": [
+        "Who controls the key and how it reaches the opener.",
+        "Which member is least motivated.",
+        "What slogan to print on the door."
+      ],
+      "answer": 0,
+      "why": "A key handoff is part of the system. Trace it before drawing conclusions about the people waiting outside."
+    },
+    {
+      "prompt": "Which observation tells you most about a team’s culture while the officer is away?",
+      "options": [
+        "Everyone liked the officer’s last speech.",
+        "The acting opener starts the first item at the posted time without a reminder.",
+        "The agenda has a colorful new heading."
+      ],
+      "answer": 1,
+      "why": "This is behavior the group repeats on its own. Compare it across meetings instead of guessing from how a speech went."
+    },
+    {
+      "prompt": "A station is left messy on busy nights. Which first response is a fair diagnosis?",
+      "options": [
+        "Announce that nobody on that shift cares.",
+        "Ask the crew to call out whoever left last.",
+        "Walk through the closing steps with the lead and check what time and supplies the job requires."
+      ],
+      "answer": 2,
+      "why": "Following the work can show a missing step, a training gap or a signal from the leader. You have evidence for the next conversation."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "Chapter 21 says you should examine possible sources in this order:",
+      "options": [
+        "People, then posters, then parties.",
+        "System and leader first; people last.",
+        "People first, because culture is always about hiring.",
+        "Only the owner’s mood."
+      ],
+      "answer": 1,
+      "why": "Look at how the work is set up, then at how it is led. Only then consider whether a person is unwilling to meet a clear, supported standard."
+    },
+    {
+      "prompt": "“If the wrong person is leading a shift, none of it will hold” is the core of:",
+      "options": [
+        "Chapter 14.",
+        "Chapter 16.",
+        "Chapter 22.",
+        "Chapter 6."
+      ],
+      "answer": 2,
+      "why": "Chapter 22, Who Is Leading the Shift?, asks who maintains the standard during each part of the day, including when you are away."
+    },
+    {
+      "prompt": "Chapter 23 says culture spreads through:",
+      "options": [
+        "New posters and a kickoff speech.",
+        "People, especially Culture Carriers, plus standards and repetition.",
+        "A single emotional meeting.",
+        "Firing everyone on day one."
+      ],
+      "answer": 1,
+      "why": "A newcomer learns the routine by seeing a person practice it. Repeated examples make the written standard credible."
+    },
+    {
+      "prompt": "A student should take which issue to a trusted adult or manager rather than “fixing it” alone?",
+      "options": [
+        "A messy supply table.",
+        "Meetings starting late.",
+        "Harassment, discrimination, violence, or a safety problem.",
+        "A teammate who forgets a hat."
+      ],
+      "answer": 2,
+      "why": "Tell a trusted adult, advisor or manager, or use your school’s process. A student can ask for help right away."
+    },
+    {
+      "prompt": "You know an overhaul is working when:",
+      "options": [
+        "You have announced a new slogan.",
+        "You are the only one holding the standard.",
+        "They are holding the standard when you are not standing over them.",
+        "The problem is gone after one weekend."
+      ],
+      "answer": 2,
+      "why": "Chapter 23 asks whether the people doing the work maintain the standard themselves. Observe what happens under another lead or in your absence."
+    }
+  ],
+  "walkthroughs": [
+    {
+      "title": "A restaurant handoff on paper",
+      "minutes": "10–12",
+      "steps": [
+        [
+          "0:00–1:15 · Write the observation",
+          "Make two columns headed Expected and Observed. In Expected write that the opener finds clean utensils in the labeled bins. In Observed write that the opener finds clean utensils on the drying rack after busy nights. Cover the name of any person in your own example."
+        ],
+        [
+          "1:15–3:00 · Trace the system",
+          "Sketch three boxes for wash, dry and put away. The fictional closing list covers the first box. The opener relies on the third. Draw a circle around the unclear handoff. Pause and write one question you would ask the closer."
+        ],
+        [
+          "3:00–4:30 · Look at the lead",
+          "Add two lines, Busy close and Quiet close. Ask who makes the final check, whether that person has time and whether another lead gives the same instruction. Leave an unknown blank."
+        ],
+        [
+          "4:30–6:00 · Choose the standard and the people",
+          "Write this worked standard: at handoff the closer and shift lead check the labeled bins and tell the opener where to find any remaining items. Identify a crew trainer who already models a clear handoff. Ask for one demonstration. The shift lead keeps responsibility for checking."
+        ],
+        [
+          "6:00–9:30 · Fill four weekly boxes",
+          "Week 1: agree on the handoff and demonstrate it. Week 2: use the same two-minute check on busy and quiet nights. Week 3: ask another lead to run the check, then ask the opener what was ready. Week 4: review the observations with both roles. Pause to write equivalent actions for a club, job or group project."
+        ],
+        [
+          "9:30–11:00 · Decide what counts as evidence",
+          "At day 30 compare what the next opener actually found across different leads. On the example page write: Keep the routine if it works with another lead; revise the handoff if the same gap recurs. Try that sentence with the person and the work in your own plan."
+        ]
+      ],
+      "narration": [
+        "This is a fictional restaurant example. Let’s do the same work you can do after a meeting. Fold a page in half. On the left, write what the opening crew was supposed to find. On the right, write what they actually found. We have a rack of clean utensils and empty bins. We can see the gap. We still have to find the cause.",
+        "Trace one utensil from washing to the opening station. Read the closing instruction from the closer’s point of view. Would someone following it know who checks where the utensils end up? Pause and write the question you would ask. Then do the same with your own club or job. Where does one person’s work become the next person’s starting point?",
+        "Now examine the leader’s part. Who showed the closer what a ready station looks like? Who handled the last check on a busy night? Leave unanswered questions on the page. Ask the people who do the handoff and listen to their account before drawing conclusions. Once the steps are clear and people have the tools and training, a repeated missed step may need a private conversation with the person responsible.",
+        "For our practice plan, the shift lead agrees to a short handoff check. A crew trainer who already does it well agrees to demonstrate it once. The trainer helps someone learn; the shift lead still handles the follow-up. Write the same two roles on your own page. If you are a club member, the person with authority to change the routine might be your advisor.",
+        "Use four boxes for the next month. In the first, write the standard and who demonstrates it. In the second, practice it under both busy and quiet conditions. In the third, let a different lead run the handoff. In the fourth, listen to the openers and compare what they found. Pause after each box to write one action that fits your setting.",
+        "On day 30, the evidence is what happened for the next person. If the utensil bins were ready only when the original lead was there, ask the other lead what got in the way. If the routine worked across leads, keep it. Write the date of your first check-in. That gives your own plan a place to start."
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "key": "slip",
+      "label": "What slipped?",
+      "hint": "Expected action / observed action. Use role names only."
+    },
+    {
+      "key": "diagnosis",
+      "label": "Three checks, in order",
+      "hint": "System: ____  Leader: ____  People: ____. Write one short observation or question for each."
+    },
+    {
+      "key": "roles",
+      "label": "Who leads in my absence? Who already models the standard?",
+      "hint": "Give the acting lead’s role, the Culture Carrier’s role and one fair ask."
+    },
+    {
+      "key": "standard",
+      "label": "Our written standard",
+      "hint": "What should the next person be able to see or do?"
+    },
+    {
+      "key": "week1",
+      "label": "Week 1 · Teach the standard",
+      "hint": "Who will demonstrate it, and when?"
+    },
+    {
+      "key": "week2",
+      "label": "Week 2 · Repeat the routine",
+      "hint": "Who will run the check at each handoff?"
+    },
+    {
+      "key": "week3",
+      "label": "Week 3 · Follow up privately",
+      "hint": "Who will check for obstacles and help with practice?"
+    },
+    {
+      "key": "week4",
+      "label": "Week 4 · Review the result",
+      "hint": "What will you look for on day 30? What will you adjust?"
+    },
+    {
+      "key": "escalate",
+      "label": "When to involve an adult or manager",
+      "hint": "Name the issue and the responsible role or school process. Leave out personal details."
+    }
+  ]
+}
