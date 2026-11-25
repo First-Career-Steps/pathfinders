@@ -40,13 +40,27 @@ try {
       ),
     );
   const series = await db.query(
-    "select 1 from pg_constraint where conrelid='public.student_class_progress'::regclass and conname='student_class_progress_course_series_check'",
+    "select 1 from pg_constraint where conrelid='public.student_class_progress'::regclass and conname in ('student_class_progress_course_series_check','student_class_progress_catalog_check')",
   );
   if (!series.rowCount) {
     await db.query(
       await readFile(
         new URL(
           "../supabase/migrations/20261125010000_practical_ai_series.sql",
+          import.meta.url,
+        ),
+        "utf8",
+      ),
+    );
+  }
+  const leadership = await db.query(
+    "select 1 from pg_constraint where conrelid='public.student_class_progress'::regclass and conname='student_class_progress_catalog_check'",
+  );
+  if (!leadership.rowCount) {
+    await db.query(
+      await readFile(
+        new URL(
+          "../supabase/migrations/20261125020000_book_leadership_classes.sql",
           import.meta.url,
         ),
         "utf8",
@@ -67,7 +81,7 @@ try {
     throw new Error("Progress schema verification failed.");
   await db.query("commit");
   console.log(
-    "Verified practical AI course IDs, existing progress, owner policy, server grading and account deletion cascade.",
+    "Verified the full course catalog constraint, owner policy, server grading and account deletion cascade.",
   );
 } catch (err) {
   await db.query("rollback").catch(() => {});

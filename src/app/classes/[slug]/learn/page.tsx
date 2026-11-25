@@ -1,5 +1,6 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
+import { bookClasses, currentSlideKey } from "@/lib/classes/leadership";
 import { series } from "@/lib/classes/series";
 import StudentPlayer from "@/components/classes/StudentPlayer";
 import { classBySlug, classOpen, retiredTitle } from "@/lib/classes/catalog";
@@ -51,12 +52,18 @@ export default async function Learn({
       key={user.id + "-" + slug}
       course={course}
       slides={slidesFor(slug)}
-      initial={progress}
+      initial={
+        progress && {
+          ...progress,
+          last_slide_key: currentSlideKey(slug, progress.last_slide_key),
+        }
+      }
       userId={user.id}
       mid={tests.mid.map(show)}
       final={tests.final.map(show)}
       materials={series[slug]?.materials}
-      walkthrough={walkthroughs[slug]}
+      walkthroughs={bookClasses[slug]?.walkthroughs ?? [walkthroughs[slug]]}
+      worksheetFields={bookClasses[slug]?.fields}
     />
   );
 }

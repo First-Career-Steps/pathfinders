@@ -1,6 +1,6 @@
 import type { Walkthrough } from "./media";
 import { series } from "./series";
-import lead from "./content/lead-yourself.json";
+import { bookClasses } from "./leadership";
 import ai from "./content/ai-honestly.json";
 export type Slide = {
   key: string;
@@ -11,6 +11,13 @@ export type Slide = {
   field?: string;
   fieldLabel?: string;
   midIndex?: number;
+  chapter?: string;
+  quote?: string;
+  source?: string;
+  app?: boolean;
+  weekGrid?: boolean;
+  worksheetKeys?: string[];
+  walkthroughIndex?: number;
   promptIds?: number[];
   examples?: { label: string; detail: string; text: string }[];
 };
@@ -28,8 +35,8 @@ export type Progress = {
 };
 export const slidesFor = (slug: string): Slide[] => {
   if (series[slug]) return series[slug].slides;
-  const source =
-    slug === "lead-yourself" ? lead : slug === "ai-honestly" ? ai : [];
+  if (bookClasses[slug]) return bookClasses[slug].slides;
+  const source = slug === "ai-honestly" ? ai : [];
   // Editorial notes and unpublished excerpts stay out of the student's page payload.
   return source.map(({ key, title, body, aria, kind, ...more }) => ({
     key,
@@ -49,92 +56,6 @@ function q(
 ): Question {
   return { prompt, options, answer, why };
 }
-const leadership = {
-  mid: [
-    q(
-      "No one has been named project lead. Who is setting a useful standard?",
-      [
-        "The student who asks for the title.",
-        "The student who posts and checks the agreed file after each meeting.",
-        "The student who says the group must try harder.",
-      ],
-      1,
-      "Posting and checking the file is a commitment the group can observe.",
-    ),
-    q(
-      "You promised the sign-up sheet and missed the deadline. What can the group act on?",
-      [
-        "I missed the deadline. I’ll post it before lunch and confirm the link.",
-        "The chat was confusing.",
-        "Somebody should remind us next time.",
-      ],
-      0,
-      "The reply names your part, a repair and when to expect it.",
-    ),
-    q(
-      "A teammate repeatedly harasses a new member. Which response fits your responsibility?",
-      [
-        "Take the blame yourself.",
-        "Handle it alone so nobody finds out.",
-        "Seek help from a trusted adult or the person responsible for safety.",
-      ],
-      2,
-      "The person causing harm is responsible for it. Asking for help is appropriate.",
-    ),
-  ],
-  final: [
-    q(
-      "The club has no official secretary. Which action sets a standard?",
-      [
-        "Post the agreed decisions after every meeting.",
-        "Tell everyone you are organized.",
-        "Wait for a title before taking any action.",
-      ],
-      0,
-      "A repeated, visible action gives teammates something they can rely on.",
-    ),
-    q(
-      "You forgot to reserve the room. Which reply takes ownership?",
-      [
-        "They should have reminded me.",
-        "I missed the booking. I’ll check the backup room now and update you at noon.",
-        "I accept all blame for everything that goes wrong.",
-      ],
-      1,
-      "The speaker identifies the missed task, owns the repair and offers a check-in time.",
-    ),
-    q(
-      "How can a busy volunteer make preparation more consistent?",
-      [
-        "Buy supplies once and hope the list lasts.",
-        "Wait until an event goes badly and hold a long meeting.",
-        "Check the supply bin after each Thursday meeting and post what is missing.",
-      ],
-      2,
-      "A small check tied to a recurring event can be repeated and verified.",
-    ),
-    q(
-      "Two volunteers used different rosters. Which review question helps improve the system?",
-      [
-        "Who is the least careful volunteer?",
-        "Where could we keep one current roster so both shifts see it?",
-        "Why can’t people just pay attention?",
-      ],
-      1,
-      "One source for the current roster addresses the handoff that broke down.",
-    ),
-    q(
-      "You posted the agenda after three meetings. You never tracked attendance. Which bullet can you defend?",
-      [
-        "Doubled attendance through innovative leadership.",
-        "Directed all club operations.",
-        "Posted agendas after three club meetings so members could find the agreed next steps.",
-      ],
-      2,
-      "The bullet names the observed action and its purpose. It adds no unmeasured attendance claim.",
-    ),
-  ],
-};
 const honest = {
   mid: [
     q(
@@ -224,8 +145,8 @@ const honest = {
 export const quizzesFor = (slug: string) =>
   series[slug]
     ? { mid: series[slug].mid, final: series[slug].final }
-    : slug === "lead-yourself"
-      ? leadership
+    : bookClasses[slug]
+      ? { mid: bookClasses[slug].mid, final: bookClasses[slug].final }
       : slug === "ai-honestly"
         ? honest
         : { mid: [], final: [] };
@@ -250,31 +171,12 @@ export const walkthroughs: Record<string, Walkthrough> = {
   ...Object.fromEntries(
     Object.entries(series).map(([slug, value]) => [slug, value.walkthrough]),
   ),
-  "lead-yourself": {
-    minutes: "8–12",
-    steps: [
-      [
-        "Replay the miss",
-        "Fictional club example. We told volunteers the meeting moved, but the old room was still on the agenda. Two volunteers went there first. I updated the chat and forgot to update the agenda.",
-      ],
-      [
-        "Separate the repair from the excuse",
-        "I can edit the original agenda, pin it, and ask the person at the old room to redirect arrivals. I’ll check the link with one volunteer before lunch.",
-      ],
-      [
-        "Fill the after-action on paper",
-        "What worked? The greeter redirected both volunteers. What broke? Two versions of the location. Tomorrow’s change? Update one master agenda. Recognition? Thank the greeter for checking. Environment? Move the sign to the entrance.",
-      ],
-      [
-        "Check the pattern",
-        "Last week I checked the link on Monday but skipped it on Thursday. For the next seven days I’ll check the master agenda before each reminder. I’ll mark held, slipped or no opportunity.",
-      ],
-      [
-        "Pause and try it",
-        "Take two minutes to circle the repair the lead controls. Then write one check you can repeat three times this week. Compare it with the cue in the example.",
-      ],
-    ],
-  },
+  ...Object.fromEntries(
+    Object.entries(bookClasses).map(([slug, course]) => [
+      slug,
+      course.walkthroughs[0],
+    ]),
+  ),
   "ai-honestly": {
     minutes: "10–12",
     steps: [

@@ -1,306 +1,504 @@
-[
-  {
-    "key": "s01",
-    "title": "Set the Stage",
-    "body": "Change one cue that teaches people how to use a shared space.",
-    "notes": "Draw on the published idea of culture surviving without a poster.",
-    "aria": "Set the Stage. Change one cue that teaches people how to use a shared space.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s02",
-    "title": "Environment",
-    "body": "Part III uses Chapters 14 and 16.",
-    "notes": "Define the language and stage themes.",
-    "aria": "Environment. Part III uses Chapters 14 and 16.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s03",
-    "title": "What the room teaches",
-    "body": "Look at language, pace, stress and physical setup.",
-    "notes": "Include a group chat as a shared space.",
-    "aria": "What the room teaches. Look at language, pace, stress and physical setup.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s04",
-    "title": "Activity: choose an environment",
-    "body": "Pick a meeting, team table or first-job station to audit.",
-    "notes": "A fictional setting works.",
-    "aria": "Activity: choose an environment. Pick a meeting, team table or first-job station to audit.",
-    "kind": "activity"
-  },
-  {
-    "key": "s05",
-    "title": "What you tolerate",
-    "body": "Chapter 16 connects the environment with behavior people repeatedly allow.",
-    "notes": "Use a repeated joke or missing tool. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "What you tolerate. Chapter 16 connects the environment with behavior people repeatedly allow.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s06",
-    "title": "The Stage",
-    "body": "Compare a restaurant pickup station and a club sign-in table.",
-    "notes": "Use a clearly labeled hypothetical restaurant example.",
-    "aria": "The Stage. Compare a restaurant pickup station and a club sign-in table.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s07",
-    "title": "Activity: a newcomer's first ten minutes",
-    "body": "List five observable features without taking pictures.",
-    "notes": "Record what someone sees, hears or has to ask.",
-    "aria": "Activity: a newcomer's first ten minutes. List five observable features without taking pictures.",
-    "kind": "activity"
-  },
-  {
-    "key": "s08",
-    "title": "What has been sliding?",
-    "body": "Describe one tolerated behavior without assigning motives.",
-    "notes": "Ask who has standing to change it.",
-    "aria": "What has been sliding?. Describe one tolerated behavior without assigning motives.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s09",
-    "title": "Language sets the culture",
-    "body": "Chapter 14 makes repeated language part of leadership practice.",
-    "notes": "Compare a clear request with a cutting remark. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
-    "aria": "Language sets the culture. Chapter 14 makes repeated language part of leadership practice.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s10",
-    "title": "A controlled response",
-    "body": "Use a calm factual instruction during a rush.",
-    "notes": "Distinguish composure from pretending everything is fine.",
-    "aria": "A controlled response. Use a calm factual instruction during a rush.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s11",
-    "title": "The words that travel",
-    "body": "Sarcasm about absent teammates and panic in a chat affect newcomers.",
-    "notes": "Choose one phrase worth changing.",
-    "aria": "The words that travel. Sarcasm about absent teammates and panic in a chat affect newcomers.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s12",
-    "title": "Activity: rewrite two lines",
-    "body": "Replace two put-downs with specific requests.",
-    "notes": "Keep the same operational problem.",
-    "aria": "Activity: rewrite two lines. Replace two put-downs with specific requests.",
-    "kind": "activity"
-  },
-  {
-    "key": "s13",
-    "title": "Read rising stress",
-    "body": "Stress can point to missing tools, unclear roles or a bottleneck.",
-    "notes": "Avoid diagnosing a person. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Read rising stress. Stress can point to missing tools, unclear roles or a bottleneck.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s14",
-    "title": "What to check first",
-    "body": "A line at the supply table may reflect one shared pair of scissors.",
-    "notes": "Look for a change that tests the explanation.",
-    "aria": "What to check first. A line at the supply table may reflect one shared pair of scissors.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s15",
-    "title": "Mid-quiz: three decisions",
-    "body": "Check tolerated behavior, language and a diagnostic response to stress.",
-    "notes": "Explain answers with observable facts.",
-    "aria": "Mid-quiz: three decisions. Check tolerated behavior, language and a diagnostic response to stress.",
-    "kind": "mid"
-  },
-  {
-    "key": "s16",
-    "title": "Pace, music and energy",
-    "body": "Examine what helps people hear instructions and stay on task.",
-    "notes": "Use a car wash, group chat or club meeting. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Pace, music and energy. Examine what helps people hear instructions and stay on task.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s17",
-    "title": "A lever you control",
-    "body": "Change one part of the environment you can influence.",
-    "notes": "Ask permission before moving shared equipment. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "A lever you control. Change one part of the environment you can influence.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s18",
-    "title": "Four review questions",
-    "body": "Check tone, setup, energy and your own composure.",
-    "notes": "Adapt the official after-action template. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Four review questions. Check tone, setup, energy and your own composure.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s19",
-    "title": "Activity: score four checks",
-    "body": "Give each check a rating from one to five and one observation.",
-    "notes": "A number without an example is hard to interpret.",
-    "aria": "Activity: score four checks. Give each check a rating from one to five and one observation.",
-    "kind": "activity"
-  },
-  {
-    "key": "s20",
-    "title": "Screen recording: a ten-minute reset",
-    "body": "Plan a 6–10 minute walk of a table or station.",
-    "notes": "Use annotated images of objects with no student faces until recorded.",
-    "aria": "Screen recording: a ten-minute reset. Plan a 6–10 minute walk of a table or station.",
-    "kind": "video"
-  },
-  {
-    "key": "s21",
-    "title": "A one-week experiment",
-    "body": "Choose a tolerated behavior and a language habit to change.",
-    "notes": "Specify when and how to observe both.",
-    "aria": "A one-week experiment. Choose a tolerated behavior and a language habit to change.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s22",
-    "title": "Raise a standard privately",
-    "body": "Correct a person's behavior away from the group under Chapter 18.",
-    "notes": "Preview L4 without asking a peer to discipline others.",
-    "aria": "Raise a standard privately. Correct a person's behavior away from the group under Chapter 18.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s23",
-    "title": "The group chat is a room",
-    "body": "A pinned current link and a clear request can reduce repeated questions.",
-    "notes": "Compare with a stream of sarcastic replies.",
-    "aria": "The group chat is a room. A pinned current link and a clear request can reduce repeated questions.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s24",
-    "title": "A truthful process bullet",
-    "body": "Describe the space you changed and the difference you observed.",
-    "notes": "Use an actual prep station or club example only if true.",
-    "aria": "A truthful process bullet. Describe the space you changed and the difference you observed.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s25",
-    "title": "Worksheet: Environment Audit and One-Week Change",
-    "body": "Combine a newcomer list, four scores and two changes.",
-    "notes": "Reserve space for the follow-up date.",
-    "aria": "Worksheet: Environment Audit and One-Week Change. Combine a newcomer list, four scores and two changes.",
-    "kind": "worksheet"
-  },
-  {
-    "key": "s26",
-    "title": "Common traps",
-    "body": "Decorating the room may leave an unclear handoff untouched.",
-    "notes": "Separate a preference from a standard.",
-    "aria": "Common traps. Decorating the room may leave an unclear handoff untouched.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s27",
-    "title": "What changed in the room?",
-    "body": "Summarize the tolerated behavior, the language and the next check.",
-    "notes": "Return to Chapters 14 and 16.",
-    "aria": "What changed in the room?. Summarize the tolerated behavior, the language and the next check.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s28",
-    "title": "Next: everyday techniques",
-    "body": "Introduce the huddle and private one-on-one.",
-    "notes": "They are practiced in L4.",
-    "aria": "Next: everyday techniques. Introduce the huddle and private one-on-one.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s29",
-    "title": "Optional completion record",
-    "body": "Choose whether to transfer a true skill or completion line.",
-    "notes": "Preview all text first.",
-    "aria": "Optional completion record. Choose whether to transfer a true skill or completion line.",
-    "kind": "resume"
-  },
-  {
-    "key": "s30",
-    "title": "End question: the actual standard",
-    "body": "Identify which behavior people tolerate in the scene.",
-    "notes": "Explain how a newcomer would infer it.",
-    "aria": "End question: the actual standard. Identify which behavior people tolerate in the scene.",
-    "kind": "final"
-  },
-  {
-    "key": "s31",
-    "title": "End question: language under pressure",
-    "body": "Choose a request that names the next useful action.",
-    "notes": "Tie it to Chapter 14.",
-    "aria": "End question: language under pressure. Choose a request that names the next useful action.",
-    "kind": "final"
-  },
-  {
-    "key": "s32",
-    "title": "End question: stress as information",
-    "body": "Look for a process that can be checked before blaming a peer.",
-    "notes": "Use a sign-in queue.",
-    "aria": "End question: stress as information. Look for a process that can be checked before blaming a peer.",
-    "kind": "final"
-  },
-  {
-    "key": "s33",
-    "title": "End question: ten minutes to reset",
-    "body": "Choose one fix within the student's role and time.",
-    "notes": "Explain why reorganizing everything would obscure the test.",
-    "aria": "End question: ten minutes to reset. Choose one fix within the student's role and time.",
-    "kind": "final"
-  },
-  {
-    "key": "s34",
-    "title": "End question: a defensible resume claim",
-    "body": "Compare a true station change with an inflated culture claim.",
-    "notes": "Ask what evidence supports the result.",
-    "aria": "End question: a defensible resume claim. Compare a true station change with an inflated culture claim.",
-    "kind": "final"
-  },
-  {
-    "key": "s35",
-    "title": "Answer review",
-    "body": "Show why each choice fits the facts.",
-    "notes": "Allow unlimited retries.",
-    "aria": "Answer review. Show why each choice fits the facts.",
-    "kind": "review"
-  },
-  {
-    "key": "s36",
-    "title": "Try one change this week",
-    "body": "Choose when to return and observe the difference.",
-    "notes": "Bring the worksheet.",
-    "aria": "Try one change this week. Choose when to return and observe the difference.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s37",
-    "title": "Optional huddle template",
-    "body": "Show how one priority can reinforce the change.",
-    "notes": "Link to official resources without requiring a download. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Optional huddle template. Show how one priority can reinforce the change.",
-    "kind": "lesson"
-  },
-  {
-    "key": "s38",
-    "title": "Optional after-action template",
-    "body": "Revisit language, stage, energy and composure after the change.",
-    "notes": "Include the questions within the class. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
-    "aria": "Optional after-action template. Revisit language, stage, energy and composure after the change.",
-    "kind": "lesson"
-  }
-]
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "Set the Stage: The Environment You Create",
+      "body": "A newcomer learns how a team works by watching what happens in the room. Walk through a space you share, spot the cues people actually get, and choose two things you can change this week.",
+      "aria": "Set the Stage: The Environment You Create",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s02",
+      "title": "Four ways to read a room",
+      "body": "Part III, Environment, of Brenen Morse’s The Little Black Book on Leadership comes from hospitality. In about 40 minutes, you’ll use Chapters 13–16 to study one place through its stress points, language, sound and physical details. You can do this without being in charge.",
+      "aria": "Four ways to read a room",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s03",
+      "title": "Pick a place you can revisit",
+      "body": "Choose a practice closet, a project table, a club meeting, a work station or a group chat. Pick a moment you can observe again, such as the first ten minutes of practice. A description of the setting is enough.",
+      "aria": "Pick a place you can revisit",
+      "kind": "activity",
+      "field": "environment",
+      "fieldLabel": "Where and when will you look? Use a role or a type of room. Leave out addresses, names and private messages.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s04",
+      "title": "Chapter 13: Identify Stress",
+      "body": "When three people reach for the same tool during a rush, watch where they get stuck. A missing tool, an unclear role and a gap in training call for different fixes. What could you check before you decide which one it is?",
+      "aria": "Chapter 13: Identify Stress",
+      "kind": "lesson",
+      "chapter": "Chapter 13: Identify Stress",
+      "quote": "Stress does not build culture. It destroys it. And it exposes leadership flaws even faster.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 13: Identify Stress",
+      "notes": "Ask which part of the handoff can be observed and changed."
+    },
+    {
+      "key": "s05",
+      "title": "When the room speeds up",
+      "body": "Imagine two volunteers each trying to direct the same line. A third person shouting directions makes it harder to hear either one. If you take over both jobs, the next group inherits the same problem.",
+      "aria": "When the room speeds up",
+      "kind": "lesson",
+      "chapter": "Chapter 13: Identify Stress",
+      "quote": "Most leaders react to stress by trying to push through it. They speed up. They raise their voice. They start doing everyone’s job.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 13: Identify Stress",
+      "notes": "Ask which part of the handoff can be observed and changed."
+    },
+    {
+      "key": "s06",
+      "title": "Watch one handoff",
+      "body": "Restaurant example (fictional). During a rush, two people pack the same order and another order sits untouched. Watch where a ticket goes after it is packed. If there is no clear place for finished tickets, ask the shift lead to agree on one. Watch the next two orders to see whether that change helped.",
+      "aria": "Watch one handoff",
+      "kind": "lesson",
+      "chapter": "Chapter 13: Identify Stress",
+      "notes": "Ask which part of the handoff can be observed and changed."
+    },
+    {
+      "key": "s07",
+      "title": "Look back at one stressful minute",
+      "body": "Maybe everyone talked at once about who was opening the gym, or a whole table waited for one charger. Separate what you observed from your best explanation. A good explanation gives you something to check.",
+      "aria": "Look back at one stressful minute",
+      "kind": "activity",
+      "chapter": "Chapter 13: Identify Stress",
+      "field": "stress",
+      "fieldLabel": "Write one observation, one possible cause and one check. For example, three people asked for a key. Was there a handoff plan? Ask who had been assigned to bring it.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s08",
+      "title": "Chapter 14: Language Sets the Culture",
+      "body": "A new member is listening when someone laughs at a basic question. They may stop asking for help. They also notice when a teammate answers the question and points out where to find that information next time.",
+      "aria": "Chapter 14: Language Sets the Culture",
+      "kind": "lesson",
+      "chapter": "Chapter 14: Language Sets the Culture",
+      "quote": "But language is never neutral. It shapes the room. It shapes the tone. And over time, it shapes the culture.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 14: Language Sets the Culture",
+      "notes": "Read each example aloud and listen for a direction someone can act on."
+    },
+    {
+      "key": "s09",
+      "title": "Give one direction people can use",
+      "body": "A group chat is filling up minutes before a presentation. An all-caps complaint gives five people one more message to read. Try a short, usable direction: “Please put your final slide in the shared deck by 2:30. I’ll check the order.” Say which action belongs to whom.",
+      "aria": "Give one direction people can use",
+      "kind": "lesson",
+      "chapter": "Chapter 14: Language Sets the Culture",
+      "notes": "Read each example aloud and listen for a direction someone can act on."
+    },
+    {
+      "key": "s10",
+      "title": "Rewrite two lines under pressure",
+      "body": "Try these lines from fictional teams: “Does anybody here know how to put stuff away?” and “Great, we’re all going to fail because of you.” Picture yourself on the receiving end. What would help you act on the next message?",
+      "aria": "Rewrite two lines under pressure",
+      "kind": "activity",
+      "chapter": "Chapter 14: Language Sets the Culture",
+      "field": "language",
+      "fieldLabel": "Rewrite both lines. In the first, name where one item belongs. In the second, name the next action and who can help. Read them aloud and take out anything that would embarrass someone.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s11",
+      "title": "Chapter 15: The Sound of the Store",
+      "body": "At an event check-in table, can a newcomer hear the first instruction over the music? At practice, can players hear a change of drill before the whistle? Notice how the sound and pace fit the job people are trying to do.",
+      "aria": "Chapter 15: The Sound of the Store",
+      "kind": "lesson",
+      "chapter": "Chapter 15: The Sound of the Store",
+      "quote": "Environment is not just what you can see. It is what you feel. And hear.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 15: The Sound of the Store",
+      "notes": "Try giving a short direction at two different volumes."
+    },
+    {
+      "key": "s12",
+      "title": "Listen from the newcomer’s spot",
+      "body": "Stand where a participant would stand. At a car wash, try listening to directions from the end of the line. In a group chat, look for the one message that gives the meeting time. If it is hard to hear or find, ask about turning down the speaker or pinning that message. Check again.",
+      "aria": "Listen from the newcomer’s spot",
+      "kind": "lesson",
+      "chapter": "Chapter 15: The Sound of the Store",
+      "notes": "Try giving a short direction at two different volumes."
+    },
+    {
+      "key": "s13",
+      "title": "Chapter 16: The Stage",
+      "body": "“The stage” is the space people actually enter and use. Your club wants visitors to feel welcome. A visitor who steps inside meets a row of bags blocking the sign-in table. Clearing a path makes that intention visible.",
+      "aria": "Chapter 16: The Stage",
+      "kind": "lesson",
+      "chapter": "Chapter 16: The Stage",
+      "quote": "People do not experience your intentions. They experience your details.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 16: The Stage",
+      "notes": "Invite learners to describe what a newcomer can actually see."
+    },
+    {
+      "key": "s14",
+      "title": "When the room is ready",
+      "body": "In a practice closet, a new player can find a ball but cannot tell where to return it. Put one sample ball in its bin and label the spot with permission. At the next practice, see whether a newcomer can put it back without asking.",
+      "aria": "When the room is ready",
+      "kind": "lesson",
+      "chapter": "Chapter 16: The Stage",
+      "quote": "You cannot ask people to care about quality if the space they work in does not reflect it.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 16: The Stage",
+      "notes": "Invite learners to describe what a newcomer can actually see."
+    },
+    {
+      "key": "s15",
+      "title": "What gets a pass here?",
+      "body": "A group has a rule about putting supplies away. Its members leave the last pile for whoever arrives tomorrow, and nobody follows up. Ask which part of the cleanup has an owner. Offer to take one piece yourself before inviting someone else to help.",
+      "aria": "What gets a pass here?",
+      "kind": "lesson",
+      "chapter": "Chapter 16: The Stage",
+      "quote": "The environment tells your team what you tolerate.",
+      "source": "Brenen Morse, The Little Black Book on Leadership, Chapter 16: The Stage",
+      "notes": "Invite learners to describe what a newcomer can actually see."
+    },
+    {
+      "key": "s16",
+      "title": "Check your reading of the room",
+      "body": "Try three scenarios about stress, language and the physical stage. Read the explanation for each choice, then revisit the chapter that fits the situation you found hardest.",
+      "aria": "Check your reading of the room",
+      "kind": "mid",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s17",
+      "title": "The ten-minute newcomer list",
+      "body": "Walk through your chosen place, or reconstruct the first ten minutes from memory. Look for cues about where to go, who speaks first, what you can hear, what is easy to find and what gets left for someone else. You can do this without photos.",
+      "aria": "The ten-minute newcomer list",
+      "kind": "activity",
+      "field": "newcomer",
+      "fieldLabel": "Write five things a newcomer could see or hear, in arrival order. Replace judgments such as “chaotic” with observations such as “three people gave different start times.”",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s18",
+      "title": "Four checks after the meeting",
+      "body": "The book’s after-action resource asks you to notice language and tone, whether the physical stage was ready, whether the energy fit the work, and whether you kept your composure. Composure means keeping enough control over your own response to help someone take the next step.",
+      "aria": "Four checks after the meeting",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s19",
+      "title": "Score the evidence you have",
+      "body": "Give each area a score from 1 to 5. Use 1 for something that repeatedly got in the way, 3 for something that worked some of the time, and 5 for something that reliably helped. If you missed an area, write “not observed” and look next time.",
+      "aria": "Score the evidence you have",
+      "kind": "activity",
+      "field": "scores",
+      "fieldLabel": "Record four scores: language, stage, energy and your composure. Next to the score you most want to change, write one thing you actually saw or heard that explains it.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s20",
+      "title": "Walkthrough: audit a project table",
+      "body": "Follow a fictional club setup from the door to the sign-in table. Compare what the organizer intended with what a newcomer could see and hear, then try two small changes. Allow 6–10 minutes, including time to write your own observations.",
+      "aria": "Walkthrough: audit a project table",
+      "kind": "video",
+      "walkthroughIndex": 0,
+      "notes": "Follow the annotated demonstration and narration script. Pause where the learner is asked to try a step."
+    },
+    {
+      "key": "s21",
+      "title": "Choose your one-week change",
+      "body": "Pick one behavior that usually slides and one language habit you control. For a group-project table, try returning the shared charger to its marked spot before leaving. When people need it, say where it belongs instead of making a joke about who lost it. Set a day to check both changes.",
+      "aria": "Choose your one-week change",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s22",
+      "title": "Correct privately and stay within your role",
+      "body": "If a teammate leaves materials on the floor, ask privately whether you can agree on a return spot. Chapter 18 covers that conversation in more detail. If equipment could hurt someone, get an adult, advisor or manager right away. You can ask for help with a repeated problem.",
+      "aria": "Correct privately and stay within your role",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s23",
+      "title": "Write a bullet you could explain",
+      "body": "If you made a change and observed the result, those are the two parts of a useful resume bullet. Example, only if true: “Reorganized the prep station so the team could find tools during rush.” A plan you have written today can become a bullet after you have tried it and checked the outcome.",
+      "aria": "Write a bullet you could explain",
+      "kind": "activity",
+      "field": "bullet",
+      "fieldLabel": "Draft one line with an action you actually took and a result you saw. If your change is still a plan, write what you will check this week and come back to the bullet later.",
+      "notes": "Give the learner time to try the prompt on paper or in the open tab. Examples may be fictional."
+    },
+    {
+      "key": "s24",
+      "title": "Environment Audit and One-Week Change",
+      "body": "Download your worksheet. Carry your five observations and four scores into it, then write the two changes you want to try and a date to check them. Use the fictional club table if you do not want to describe a place you know.",
+      "aria": "Environment Audit and One-Week Change",
+      "kind": "worksheet",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s25",
+      "title": "An optional reminder to look up",
+      "body": "Leadership Rhythm is a free iPhone and iPad app (App Store, rated 4+) that uses timed intervals to prompt you to notice and recognize people during a shift or practice. Brenen built it to go with Chapter 20 of the book. You do not need it to finish this class. It requires iOS or iPadOS 16.4 or later.",
+      "aria": "An optional reminder to look up",
+      "kind": "lesson",
+      "app": true,
+      "notes": "A clock, a timer or a paper reminder also works. Always offer the no-app path."
+    },
+    {
+      "key": "s26",
+      "title": "Four ways an audit can go off track",
+      "body": "You spot twelve things you want to fix. Circle one you can change this week. A nicer poster won’t clear a blocked walkway. A lecture to your peers won’t lower your own voice. If the fix calls for changing someone else’s job or moving equipment, take the observation to the person in charge.",
+      "aria": "Four ways an audit can go off track",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s27",
+      "title": "Put the four chapters together",
+      "body": "Chapter 13: Identify Stress asks where the work jams up. Chapter 14: Language Sets the Culture asks what your words do under pressure. Chapter 15: The Sound of the Store asks whether people can hear and move at the pace the work needs. Chapter 16: The Stage asks which details actually greet a newcomer.",
+      "aria": "Put the four chapters together",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s28",
+      "title": "Next: Everyday Leadership Techniques",
+      "body": "The next class puts these observations to work during a huddle, in specific recognition and in a private conversation. Take one observation from this audit with you. Something small enough to describe in one sentence is a good starting point.",
+      "aria": "Next: Everyday Leadership Techniques",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s29",
+      "title": "Optional completion record",
+      "body": "After you pass the final quiz, you can preview a completion line for this class and decide whether to add it to your resume. A line about something you changed belongs there once you can describe what you did. This class records completion and carries no academic credit.",
+      "aria": "Optional completion record",
+      "kind": "resume",
+      "notes": "The student chooses whether to preview and confirm an addition."
+    },
+    {
+      "key": "s30",
+      "title": "Final 1 of 5 · A stressful rush",
+      "body": "Think about what the rush reveals when something breaks down. Select the explanation Chapter 13 supports.",
+      "aria": "Final 1 of 5 · A stressful rush",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s31",
+      "title": "Final 2 of 5 · Words under pressure",
+      "body": "Picture a tense minute at a meeting or on a shift. Choose the direction Chapter 14 gives you.",
+      "aria": "Final 2 of 5 · Words under pressure",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s32",
+      "title": "Final 3 of 5 · Details",
+      "body": "Connect the statement about details to the chapter that describes the stage.",
+      "aria": "Final 3 of 5 · Details",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s33",
+      "title": "Final 4 of 5 · What a team tolerates",
+      "body": "Think about what a newcomer learns from repeated behavior and the response it gets.",
+      "aria": "Final 4 of 5 · What a team tolerates",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s34",
+      "title": "Final 5 of 5 · An earned resume line",
+      "body": "Look for an action someone could describe and a specific result they could check. The person using the line must actually have done the work.",
+      "aria": "Final 5 of 5 · An earned resume line",
+      "kind": "final",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s35",
+      "title": "Review your answers",
+      "body": "Four correct answers out of five complete the class. Read the explanations and review any chapter you want to practice. You can retry as often as you need.",
+      "aria": "Review your answers",
+      "kind": "review",
+      "notes": "After an attempt, discuss the explanation and invite the learner to revisit the example."
+    },
+    {
+      "key": "s36",
+      "title": "Set up the next check",
+      "body": "Write when and where you will try your two changes. “During Thursday’s setup, I’ll label the return tray and give one clear direction” gives you something a teammate could observe. Pick a time to see how it went before the week is over.",
+      "aria": "Set up the next check",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s37",
+      "title": "Ask what the next person noticed",
+      "body": "After trying the change, stand in the same spot as before. Could you hear the instructions? Did the supplies go back in place? Ask one simple question, such as “Was there anything you still couldn’t find?” Jot the answer in your own words without recording anyone’s name.",
+      "aria": "Ask what the next person noticed",
+      "kind": "lesson",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    },
+    {
+      "key": "s38",
+      "title": "Close the loop this week",
+      "body": "Return to the same table, room or chat. Compare what you notice with the first five observations on your worksheet. Keep the change that helped. If it missed, write one adjustment for the next meeting.",
+      "aria": "Close the loop this week",
+      "kind": "close",
+      "notes": "Use the student example on this slide and allow a quiet moment to apply it to school, a club or work."
+    }
+  ],
+  "mid": [
+    {
+      "prompt": "The supply line stalls when arrivals bunch up. What would help you read the stress?",
+      "options": [
+        "Say that people move too slowly.",
+        "Watch one handoff and check whether both people know where supplies go.",
+        "Pack every item yourself until the line disappears."
+      ],
+      "answer": 1,
+      "why": "Following one handoff gives you evidence about a system, a missing tool or unclear training."
+    },
+    {
+      "prompt": "Two people share conflicting start times in the group chat. Which response gives the group a clear next step?",
+      "options": [
+        "“Who even reads these messages?”",
+        "“Hurry up!”",
+        "“The advisor confirmed 4:00. I’ll pin that time for everyone.”"
+      ],
+      "answer": 2,
+      "why": "A calm, specific message helps people act and keeps a disagreement from becoming a public put-down."
+    },
+    {
+      "prompt": "A club calls its meetings welcoming. Which observation gives you evidence about what a newcomer experiences?",
+      "options": [
+        "The door sign points to the right table and the greeter makes space for the newcomer.",
+        "The club planned to write a welcome speech someday.",
+        "The room has an inspirational poster."
+      ],
+      "answer": 0,
+      "why": "You can check whether someone finds the table and gets a place. Those details show how the intention plays out."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "Chapter 13 treats a stressful rush mainly as:",
+      "options": [
+        "Proof the team is lazy.",
+        "A mirror of systems, training, and leadership clarity.",
+        "A reason to yell.",
+        "Something a leader should just absorb forever."
+      ],
+      "answer": 1,
+      "why": "A rush can show exactly where people lack a tool, training or clear direction. Check the handoff that is breaking down."
+    },
+    {
+      "prompt": "Chapter 14 says that under pressure you should:",
+      "options": [
+        "Relax language standards because stress is an excuse.",
+        "Let sarcasm blow off steam.",
+        "Keep more control of language, not less.",
+        "Only worry about language in customer areas."
+      ],
+      "answer": 2,
+      "why": "Pressure makes it harder to hear the next step. A calm, specific direction still helps the team act."
+    },
+    {
+      "prompt": "“People do not experience your intentions. They experience your details.” is from:",
+      "options": [
+        "Chapter 10.",
+        "Chapter 16.",
+        "Chapter 20.",
+        "Chapter 1."
+      ],
+      "answer": 1,
+      "why": "Brenen Morse, The Little Black Book on Leadership, Chapter 16: The Stage. The room people actually enter is what they experience."
+    },
+    {
+      "prompt": "“The environment tells your team what you tolerate” means:",
+      "options": [
+        "Posters define the culture.",
+        "If mess, lateness, or cruelty get no follow-up, that is the real standard.",
+        "Only managers can see the room.",
+        "Decorations matter more than behavior."
+      ],
+      "answer": 1,
+      "why": "Brenen Morse, The Little Black Book on Leadership, Chapter 16: The Stage. People learn what is expected by seeing which details get consistent follow-up."
+    },
+    {
+      "prompt": "Which is a truthful resume line?",
+      "options": [
+        "“Created a world-class culture.”",
+        "“Reorganized the prep station so the team could find tools during rush.”",
+        "“Always maintained a positive vibe.”",
+        "“Fixed culture in one meeting.”"
+      ],
+      "answer": 1,
+      "why": "The second line names work that someone could describe and an effect they could observe. It is truthful for the person who did it and saw that result."
+    }
+  ],
+  "walkthroughs": [
+    {
+      "title": "Audit a project table",
+      "minutes": "6–10",
+      "steps": [
+        [
+          "Start at the door",
+          "Fictional club setup. A sign-in sheet sits behind a pile of bags. Two people call out different instructions while music plays near the entrance. Record only what a newcomer can observe."
+        ],
+        [
+          "Follow one handoff",
+          "A newcomer steps around a bag, reaches the sheet and asks where the pen goes. Nobody has named a return spot. Mark the missing return spot as a possible system problem."
+        ],
+        [
+          "Score what you observed",
+          "For this example: language 2/5, stage 2/5, energy 2/5. For your own composure, mark “not observed” if you were watching someone else. These scores are a starting comparison, not ratings of people."
+        ],
+        [
+          "Try two changes",
+          "With permission, move the bags and put the pen in a marked tray by the sign-in sheet. Replace the shouted directions with one calm instruction from the greeter."
+        ],
+        [
+          "Repeat the walk",
+          "Pretend you just walked in. Check whether you can see where to sign, hear the first instruction and find the pen’s return spot. Revisit the same checks at the next meeting."
+        ]
+      ],
+      "narration": [
+        "Imagine arriving at a volunteer club for the first time. Pause at the door. I can see a sheet behind a pile of bags. I hear two sets of directions, and there is music close to the greeter. Take one minute to write what you noticed. If you wrote “the room is a mess,” replace that with one thing a visitor could point to.",
+        "Now follow the pen. Our fictional visitor signs in and then asks where to put it. I could tell everyone to pay more attention. First I want to check whether the pen actually has a place to go. Pause and sketch the arrangement, then mark one spot that is hard to find.",
+        "On my audit I give the stage a two because the path and the return spot both got in the way. My language and energy scores are also twos: two sets of directions and the music competed for the visitor’s attention. I cannot score somebody else’s composure as my own. Try a score for your own space and write down the evidence you used.",
+        "Now I’ll ask permission to clear the walkway and put a marked tray beside the sheet. Our greeter tries one instruction: “Sign here, then leave the pen in this tray.” Listen to it from the doorway. Can you hear it? Can you see where the pen goes? Spend two minutes drafting one change to a tolerated behavior and one change to the way you speak.",
+        "To finish, put a date on the worksheet. The next time this table is in use, look again before you claim the change worked."
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "key": "environment",
+      "label": "The environment and moment I chose",
+      "hint": "Example: the club sign-in table during setup. Leave out names and addresses."
+    },
+    {
+      "key": "newcomer",
+      "label": "Five things a newcomer could see or hear in ten minutes",
+      "hint": "List five observations in arrival order. Describe what happened."
+    },
+    {
+      "key": "scores",
+      "label": "Four scores and the evidence behind one",
+      "hint": "Language/tone __/5 · Physical stage __/5 · Energy __/5 · My composure __/5. Use “not observed” when needed."
+    },
+    {
+      "key": "stress",
+      "label": "What stress might be revealing",
+      "hint": "What was the bottleneck? How could I check a possible cause?"
+    },
+    {
+      "key": "behavior",
+      "label": "One tolerated behavior I will change this week",
+      "hint": "State what I can do, when I will do it and how I will check it."
+    },
+    {
+      "key": "language",
+      "label": "One language habit I will change this week",
+      "hint": "Write a line I can actually use under pressure. Set a day to check both changes."
+    }
+  ]
+}

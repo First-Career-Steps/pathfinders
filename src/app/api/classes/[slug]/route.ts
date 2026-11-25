@@ -1,5 +1,6 @@
 import { sameOriginWrite } from "@/lib/student-privacy";
 import { classBySlug, classOpen } from "@/lib/classes/catalog";
+import { currentSlideKey } from "@/lib/classes/leadership";
 import { grade, quizzesFor, slidesFor } from "@/lib/classes/lessons";
 import {
   readProgress,
@@ -36,12 +37,25 @@ export async function POST(request: Request, { params }: Context) {
       return reply({ progress: await saveEvent(user.id, slug, "worksheet") });
     if (
       body.event === "slide" &&
-      slidesFor(slug).some((s) => s.key === body.key)
+      typeof body.key === "string" &&
+      slidesFor(slug).some((s) => s.key === currentSlideKey(slug, body.key))
     )
       return reply({
-        progress: await saveEvent(user.id, slug, "slide", body.key),
+        progress: await saveEvent(
+          user.id,
+          slug,
+          "slide",
+          currentSlideKey(slug, body.key),
+        ),
       });
     if (body.event === "quiz" && ["mid", "final"].includes(body.check)) {
+      if (slug === "lead-yourself" && body.edition !== "book")
+        return reply(
+          {
+            error: "This class was updated. Refresh to take the current quiz.",
+          },
+          409,
+        );
       const result = grade(
         quizzesFor(slug)[body.check as "mid" | "final"],
         body.answers,
