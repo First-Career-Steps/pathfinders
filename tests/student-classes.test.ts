@@ -23,7 +23,7 @@ import { worksheetFile } from "../src/lib/classes/worksheets";
 
 test("all nine authored outlines have numbered, accessible slides and a complete quiz plan", () => {
   assert.equal(classes.length, 9);
-  assert.equal(classes.filter((c) => c.published).length, 7);
+  assert.equal(classes.filter((c) => c.published).length, 9);
   for (const course of classes) {
     const raw = JSON.parse(
       readFileSync("src/lib/classes/content/" + course.slug + ".json", "utf8"),
@@ -85,17 +85,17 @@ test("all nine authored outlines have numbered, accessible slides and a complete
   }
 });
 test("only known published class paths are accepted for an account return", () => {
-  assert.equal(
-    classDestination("/classes/ai-basics/learn"),
-    "/classes/ai-basics/learn",
-  );
+  for (const course of classes.filter((c) => c.published)) {
+    const path = "/classes/" + course.slug + "/learn";
+    assert.equal(classDestination(path), path);
+  }
   for (const path of [
     null,
     "https://example.com",
     "//example.com",
     "/classes/ai-spot-errors/learn",
     "/classes/ai-honestly/learn",
-    "/classes/ai-building/learn",
+    "/classes/unknown/learn",
     "/classes/../admin/learn",
     "/classes/ai-honestly/learn?redirect=//example.com",
   ])
@@ -181,7 +181,9 @@ test("the workspace workshop address forwards to the existing one-time product",
 test("coming-soon lessons always resolve to the public class overview before progress or checkout", async () => {
   const { middleware } = await import("../src/middleware");
   const { NextRequest } = await import("next/server");
-  for (const course of classes.filter((c) => !c.published)) {
+  const course = { ...classes[0], slug: "test-upcoming-course", published: false };
+  classes.push(course);
+  try {
     const landing = "https://www.firstcareersteps.com/classes/" + course.slug;
     for (const headers of [
       new Headers(),
@@ -193,6 +195,8 @@ test("coming-soon lessons always resolve to the public class overview before pro
       assert.equal(response.status, 307);
       assert.equal(response.headers.get("location"), landing);
     }
+  } finally {
+    classes.splice(classes.indexOf(course), 1);
   }
 });
 
@@ -203,8 +207,8 @@ test("the four practical courses carry full materials and retired classes cannot
     [
       ["ai-basics", true, 44],
       ["ai-brainstorming", true, 42],
-      ["ai-multiple", false, 46],
-      ["ai-building", false, 48],
+      ["ai-multiple", true, 46],
+      ["ai-building", true, 48],
     ],
   );
   for (const name of Object.keys(retiredClasses)) {

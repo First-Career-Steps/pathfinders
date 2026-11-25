@@ -189,7 +189,7 @@ export const classes: ClassInfo[] = [
     slug: "ai-multiple",
     title: "Leveraging Multiple AIs",
     track: "AI",
-    published: false,
+    published: true,
     minutes: 50,
     count: 46,
     promise:
@@ -212,7 +212,7 @@ export const classes: ClassInfo[] = [
     slug: "ai-building",
     title: "Building with AI",
     track: "AI",
-    published: false,
+    published: true,
     minutes: 55,
     count: 48,
     promise: "Write a spec first, then build in small steps.",

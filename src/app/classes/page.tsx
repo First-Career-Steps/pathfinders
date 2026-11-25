@@ -8,10 +8,11 @@ export const metadata = {
 export const dynamic = "force-dynamic";
 export default function Library() {
   const paid = paidClassesEnabled();
+  const published = classes.filter((c) => c.published);
   return (
     <div className="sc-wrap">
       <header className="sc-intro">
-        <p className="sc-label">Student classes</p>
+        <p className="sc-label">{published.length} published classes</p>
         <h1>Skills for your first job.</h1>
         <p>
           Practice what to say, what to check and how to follow through. Start
@@ -19,13 +20,11 @@ export default function Library() {
           or work.
         </p>
         <nav className="sc-start" aria-label="Available classes">
-          {classes
-            .filter((c) => c.published)
-            .map((c) => (
-              <Link key={c.slug} href={"/classes/" + c.slug}>
-                {c.title}
-              </Link>
-            ))}
+          {published.map((c) => (
+            <Link key={c.slug} href={"/classes/" + c.slug}>
+              {c.title}
+            </Link>
+          ))}
         </nav>
       </header>
       {(["Leadership", "AI"] as const).map((track) => (
@@ -62,7 +61,7 @@ export default function Library() {
                       {c.published
                         ? paid
                           ? "Enrolled learners"
-                          : "Free"
+                          : "Published · Free"
                         : "Coming soon"}
                     </span>
                   </div>
