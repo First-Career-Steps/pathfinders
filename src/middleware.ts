@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { logger } from '@/lib/logger';
 
-import {classDestination} from '@/lib/classes/catalog';
+import {classBySlug, classDestination} from '@/lib/classes/catalog';
 
 // Routes that require authentication
 const protectedRoutes = ['/workshops/resume-bullet/learn', '/dashboard', '/resume', '/career-roadmap', '/builder', '/success'];
@@ -14,7 +14,11 @@ const authRoutes = ['/login', '/signup'];
 export async function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
-    const classLesson = /^\/classes\/[^/]+\/learn\/?$/.test(pathname);
+    const classLesson = /^\/classes\/([^/]+)\/learn\/?$/.exec(pathname);
+    const course = classLesson && classBySlug(classLesson[1]);
+    if (course && !course.published) {
+        return NextResponse.redirect(new URL('/classes/' + course.slug, request.url));
+    }
 
     try {
         // Create a response object

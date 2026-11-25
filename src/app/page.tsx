@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { WORKSHOP, WORKSHOP_PRODUCT_NOTE, WORKSHOP_AI_NOTICE } from '@/lib/workshop';
 import styles from './home.module.css';
 
 const paths = [
@@ -36,8 +37,11 @@ export default function HomePage() {
                             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                             <a href="/learn/leadership/restaurant#case">Try the shift decision</a></div>
                     </article>
-                    <article className={styles.student}><p className={styles.kicker}>Resume &amp; interview practice</p><h3>Write a resume bullet you can defend.</h3><p>Compare what you did with what AI wrote. The full student workshop is $4.99.</p>
-                        <Link href="/workshops/resume-bullet#free-example">Try the resume exercise</Link></article>
+                    <article className={styles.student}>
+                        <p className={styles.kicker}>Resume bullet workshop</p><h3>Write a resume bullet you can defend.</h3>
+                        <p>{WORKSHOP_PRODUCT_NOTE}</p><p>{WORKSHOP_AI_NOTICE}</p>
+                        <Link href={WORKSHOP + '#free-example'}>Try the free workshop exercise</Link>
+                    </article>
                 </div>
             </section>
         </div>

@@ -113,7 +113,7 @@ export default function ResumeBuilderPage() {
                             Ready to Get Started?
                         </h2>
                         <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-                            Join thousands of students building their professional future. It only takes 10 minutes to create your resume.
+                            Start with a school project, a job, or a volunteer experience you want to include.
                         </p>
                         <Link
                             href="/builder/step-1"

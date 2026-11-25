@@ -6,10 +6,10 @@ import Footer from '@/components/Footer';
 import FreeBulletLesson from '@/components/workshop/FreeBulletLesson';
 import { createServerClient } from '@/lib/supabase-server';
 import { offerState } from '@/lib/workshop-commerce';
-import { hasWorkshop, WORKSHOP, WORKSHOP_NAME, workshopLogin, workshopSignup } from '@/lib/workshop';
+import { hasWorkshop, WORKSHOP, WORKSHOP_NAME, WORKSHOP_PRODUCT_NOTE, WORKSHOP_AI_NOTICE, workshopLogin, workshopSignup } from '@/lib/workshop';
 
 export const dynamic = 'force-dynamic';
-export const metadata: Metadata = { title: WORKSHOP_NAME + ' | First Career Steps', description: 'Try a free resume exercise. In the $4.99 student workshop, draft a bullet from your own experience and practice explaining it in an interview.' };
+export const metadata: Metadata = { title: WORKSHOP_NAME + ' | First Career Steps', description: 'Try the free resume exercise or explore the standalone $4.99 resume bullet workshop. Practice explaining your experience in an interview.' };
 
 export default async function WorkshopPage({ searchParams }: { searchParams: Promise<{ enrollment?:string }> }) {
     const client = await createServerClient();
@@ -18,9 +18,11 @@ export default async function WorkshopPage({ searchParams }: { searchParams: Pro
     const state = enrolled ? 'enrolled' : await offerState();
     return <><Header/><LearningTrail current="Resume workshop"/><main className="fcs-workshop">
         <section className="workshop-hero border-b border-slate-200"><div className="max-w-5xl mx-auto px-5 py-8 sm:py-11">
-            <p className="fcs-label mb-3">Student workshop · About 20 minutes</p>
+            <p className="fcs-label mb-3">Resume bullet workshop · About 20 minutes</p>
             <h1 className="text-4xl sm:text-5xl font-bold max-w-3xl">{WORKSHOP_NAME}</h1>
             <p className="mt-4 max-w-2xl text-lg">Use AI to turn one thing you did at school, at work, or as a volunteer into a resume bullet. Leave with an answer to “What did you personally do?”</p>
+            <p className="mt-3 max-w-2xl font-semibold">{WORKSHOP_PRODUCT_NOTE}</p>
+            <p className="mt-2 max-w-2xl">{WORKSHOP_AI_NOTICE}</p>
             <div className="mt-6 flex gap-5 flex-wrap items-center"><a href="#free-example" className="btn-primary">Try the free example</a>
             <a href={enrolled ? WORKSHOP+'/learn' : '#enroll'} className="font-semibold text-career-blue-dark underline">{enrolled?'Open my workshop':'See the full workshop'}</a></div>
         </div></section>

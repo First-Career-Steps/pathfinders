@@ -12,6 +12,9 @@ import {
   grade,
   walkthroughs,
 } from "../src/lib/classes/lessons";
+import sitemap from "../src/app/sitemap";
+import config from "../next.config";
+import { WORKSHOP } from "../src/lib/workshop";
 import { worksheetFile } from "../src/lib/classes/worksheets";
 
 test("all nine authored outlines have numbered, accessible slides and a complete quiz plan", () => {
@@ -37,7 +40,13 @@ test("all nine authored outlines have numbered, accessible slides and a complete
     );
     outline.forEach((s, i) => {
       assert.equal(s.key, "s" + String(i + 1).padStart(2, "0"));
-      assert.ok(s.notes && s.aria && s.body && s.title);
+      assert.ok(s.aria && s.body && s.title);
+      const { notes, ...studentFields } = s;
+      assert.ok(notes);
+      assert.doesNotMatch(
+        JSON.stringify(studentFields),
+        /\[BRENEN (?:MAP|EXCERPT)\b/i,
+      );
     });
     if (!course.published) {
       assert.equal(slidesFor(course.slug).length, 0);
@@ -99,5 +108,32 @@ test("offline worksheet escapes learner text and contains no network destination
     assert.ok(html.includes("&lt;script&gt;"));
     assert.doesNotMatch(html, /<script>oops|https?:\/\/|fetch\(/);
     assert.match(html, /option selected/);
+  }
+});
+
+test("the sitemap contains every public class landing and both policies", () => {
+  const base = "https://www.firstcareersteps.com";
+  const urls = sitemap().map(entry => entry.url);
+  const expected = ["/classes", "/privacy", "/terms", WORKSHOP, ...classes.map(c => "/classes/" + c.slug)];
+  for (const path of expected) assert.ok(urls.includes(base + path), path);
+  assert.equal(urls.length, new Set(urls).size);
+  assert.ok(!urls.some(url => /\/classes\/[^/]+\/learn(?:\/|$)/.test(url)));
+});
+
+test("the workspace workshop address forwards to the existing one-time product", async () => {
+  const redirects = await config.redirects!();
+  assert.ok(redirects.some(r => r.source === "/workspace/resume-bullet" && r.destination === WORKSHOP && r.permanent));
+});
+
+test("coming-soon lessons always resolve to the public class overview before progress or checkout", async () => {
+  const { middleware } = await import("../src/middleware");
+  const { NextRequest } = await import("next/server");
+  for (const course of classes.filter(c => !c.published)) {
+    const landing = "https://www.firstcareersteps.com/classes/" + course.slug;
+    for (const headers of [new Headers(), new Headers({cookie: "session=test"})]) {
+      const response = await middleware(new NextRequest(landing + "/learn", {headers}));
+      assert.equal(response.status, 307);
+      assert.equal(response.headers.get("location"), landing);
+    }
   }
 });
