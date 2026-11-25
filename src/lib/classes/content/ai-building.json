@@ -1,0 +1,594 @@
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "Building with AI",
+      "body": "Spec first, then build in small steps. You’ll finish with a reviewed description of a small tool and a way to test its first useful action.",
+      "aria": "Building with AI",
+      "kind": "lesson"
+    },
+    {
+      "key": "s02",
+      "title": "Bring a small idea",
+      "body": "Allow 50–55 minutes. Leveraging Multiple AIs is strongly recommended; Basics is useful background. ChatGPT explores and shapes the prompt, then Grok drafts the requirements. A fresh pass in one allowed tool works too.",
+      "aria": "Bring a small idea",
+      "kind": "lesson"
+    },
+    {
+      "key": "s03",
+      "title": "What you’ll practice",
+      "body": "Write a brief, use two different prompts, read a testable story, cut inventions from a spec and plan a few small steps. Practice reporting a problem clearly enough that someone can help you check it.",
+      "aria": "What you’ll practice",
+      "kind": "lesson"
+    },
+    {
+      "key": "s04",
+      "title": "What counts as building?",
+      "body": "A shared checklist, a practice log, a shift sign-up or a group task board can be small enough to test. Name the one job it should do for one group. You can practice the entire class before writing code.",
+      "aria": "What counts as building?",
+      "kind": "lesson"
+    },
+    {
+      "key": "s05",
+      "title": "Who does which job?",
+      "body": "A tool can draft instructions, explain a piece or suggest why a test failed. You decide what belongs, check the result and explain it. Your school or contest may ask you to disclose exactly where AI helped.",
+      "aria": "Who does which job?",
+      "kind": "lesson"
+    },
+    {
+      "key": "s06",
+      "title": "The fuzzy request",
+      "body": "“Write me the full app” leaves users, behavior and limits undecided. A draft might invent payments, a login provider and a public roster. Write down what someone should be able to do before asking for an implementation.",
+      "aria": "The fuzzy request",
+      "kind": "lesson"
+    },
+    {
+      "key": "s07",
+      "title": "A build loop you can repeat",
+      "body": "Start with a small idea. Write a brief, turn it into requirements, choose one step, build that step, test the result and revise. Stop and settle a missing decision if it blocks the next test.",
+      "aria": "A build loop you can repeat",
+      "kind": "lesson"
+    },
+    {
+      "key": "s08",
+      "title": "Aim the handoff at a document",
+      "body": "Explore in ChatGPT, freeze the decisions, then ask ChatGPT for a tight prompt for Grok. Run the reviewed prompt in Grok and check the document against the freeze. With one allowed tool, start a fresh pass at the handoff.",
+      "aria": "Aim the handoff at a document",
+      "kind": "lesson"
+    },
+    {
+      "key": "s09",
+      "title": "What goes in a product brief?",
+      "body": "Name the user, the job, essential actions, excluded work, known limits and open decisions. A “stack” means the technologies used to build it. If nobody chose the stack, record the question.",
+      "aria": "What goes in a product brief?",
+      "kind": "lesson"
+    },
+    {
+      "key": "s10",
+      "title": "One club, one sign-up job",
+      "body": "A club officer posts shifts with dates, times and spots. Members view openings, claim a spot or cancel. The officer can close a shift. The group excludes payments, grades, GPS and public contact lists.",
+      "aria": "One club, one sign-up job",
+      "kind": "lesson"
+    },
+    {
+      "key": "s11",
+      "title": "Explore the two roles",
+      "body": "Ask what an officer needs to publish and what a member needs to see before committing. For this exercise a chosen display name is enough. Do not expand a simple form into a permanent student record.",
+      "aria": "Explore the two roles",
+      "kind": "lesson"
+    },
+    {
+      "key": "s12",
+      "title": "Freeze decisions before generating requirements",
+      "body": "Write “hosting undecided” and “sign-in undecided” under Open Questions. Write “collect minimal personal data” under Constraints. A guessed vendor does not become a constraint because a draft repeats it.",
+      "aria": "Freeze decisions before generating requirements",
+      "kind": "lesson"
+    },
+    {
+      "key": "s13",
+      "title": "Generate a requirements prompt",
+      "body": "This meta-prompt writes the prompt. It does not yet produce the requirements document. Use it in ChatGPT with your idea and only the constraints you actually know.",
+      "aria": "Generate a requirements prompt",
+      "kind": "lesson",
+      "promptIds": [
+        1
+      ]
+    },
+    {
+      "key": "s14",
+      "title": "Fill the last block",
+      "body": "Try: “One club. Officer posts shifts; members claim or cancel. No payments, grades or GPS. Use a display name. Hosting and sign-in are open.” Read the generated instructions. Cut any newly chosen stack or feature.",
+      "aria": "Fill the last block",
+      "kind": "lesson"
+    },
+    {
+      "key": "s15",
+      "title": "Write the requirements document",
+      "body": "Copy the complete prompt. Replace [PRODUCT IDEA] with your reviewed idea and use it in Grok or a fresh allowed chat. Keep the seven headings and the instructions about facts, assumptions and open questions intact.",
+      "aria": "Write the requirements document",
+      "kind": "lesson",
+      "promptIds": [
+        2
+      ]
+    },
+    {
+      "key": "s16",
+      "title": "Read the seven sections",
+      "body": "Executive Summary explains the purpose. User Personas describe the roles. Functional Requirements name observable actions and tests. Non-Functional Requirements cover qualities such as accessibility. Technical Constraints and Assumptions separates limits from guesses. Out of Scope sets boundaries. Open Questions records decisions still needed.",
+      "aria": "Read the seven sections",
+      "kind": "lesson"
+    },
+    {
+      "key": "s17",
+      "title": "Fill [PRODUCT IDEA] for the shift sign-up",
+      "body": "Compare the paragraph below with the frozen list. It identifies the two roles, their actions and what data is enough. Before using your own version, check that every positive claim came from a decision.",
+      "aria": "Fill [PRODUCT IDEA] for the shift sign-up",
+      "kind": "lesson",
+      "promptIds": [
+        3,
+        9
+      ]
+    },
+    {
+      "key": "s18",
+      "title": "A concrete Executive Summary",
+      "body": "Fluffy: “An innovative all-in-one platform that revolutionizes volunteering nationwide.” Better: “One officer posts shifts. Members claim or cancel spots. The first version serves one club and uses a display name. Hosting and sign-in are open. The first test is whether an officer can see a member’s claim and the remaining capacity.” Which sentence gives you a test?",
+      "aria": "A concrete Executive Summary",
+      "kind": "lesson"
+    },
+    {
+      "key": "s19",
+      "title": "Write a story you can test",
+      "body": "Story: As a member, I want to claim a shift so I know when to show up. Given one open spot, when I confirm Claim, then my display name appears and the count falls by one. Given I already claimed it, when I try again, then I see an already-signed-up message and the count stays the same.",
+      "aria": "Write a story you can test",
+      "kind": "lesson"
+    },
+    {
+      "key": "s20",
+      "title": "Name what a gap blocks",
+      "body": "Write “[AMBIGUITY: Who may view a claimed shift?]” beside the story, then list it under Open Questions. This blocks the decision about what the officer and a member can each see. It is more useful than silently making all names public.",
+      "aria": "Name what a gap blocks",
+      "kind": "lesson"
+    },
+    {
+      "key": "s21",
+      "title": "Keep the first version finishable",
+      "body": "Move member messaging, Apple Pay, a district attendance export, GPS and an app-store release out of scope. Each would add work or data the group never agreed to. Reopen a decision only when the group chooses to do so.",
+      "aria": "Keep the first version finishable",
+      "kind": "lesson"
+    },
+    {
+      "key": "s22",
+      "title": "Practice check",
+      "body": "Answer the next three questions and check your reasoning on the last one. You can revisit the worked story at any time.",
+      "aria": "Practice check",
+      "kind": "midIntro"
+    },
+    {
+      "key": "s23",
+      "title": "What is missing from “write the app”?",
+      "body": "Think about what you would be able to test.",
+      "aria": "What is missing from “write the app”?",
+      "kind": "midQuestion",
+      "midIndex": 0
+    },
+    {
+      "key": "s24",
+      "title": "Which prompt does which job?",
+      "body": "Trace the two instructions and the document they produce.",
+      "aria": "Which prompt does which job?",
+      "kind": "midQuestion",
+      "midIndex": 1
+    },
+    {
+      "key": "s25",
+      "title": "How do you treat an invented feature?",
+      "body": "Use your Out of Scope and Open Questions sections.",
+      "aria": "How do you treat an invented feature?",
+      "kind": "midQuestion",
+      "midIndex": 2
+    },
+    {
+      "key": "s26",
+      "title": "Ask for small steps",
+      "body": "Request only the next three to five testable steps from the reviewed requirements. For every step ask how you would tell it worked. Do not accept dates, team size or hosting the group never supplied.",
+      "aria": "Ask for small steps",
+      "kind": "lesson",
+      "promptIds": [
+        4
+      ]
+    },
+    {
+      "key": "s27",
+      "title": "First three steps for our example",
+      "body": "1. Show three fictional shifts and remaining spots on one page or sheet. 2. Claim a spot and see the count drop. 3. Cancel that claim and see the count return. Hosting, sign-in and email notices can wait while testing a sample.",
+      "aria": "First three steps for our example",
+      "kind": "lesson"
+    },
+    {
+      "key": "s28",
+      "title": "Implement only step N",
+      "body": "For step one, give the model just the requirement for displaying shifts. Ask for three fictional rows. If it also implements payment or emails, remove those changes before testing the display.",
+      "aria": "Implement only step N",
+      "kind": "lesson",
+      "promptIds": [
+        5
+      ]
+    },
+    {
+      "key": "s29",
+      "title": "Walk the test yourself",
+      "body": "Set a sample shift to one open spot. Confirm Claim once and observe the count. Try the same claim again. Cancel it and check that one spot is available. A written promise that these cases work needs a test.",
+      "aria": "Walk the test yourself",
+      "kind": "lesson"
+    },
+    {
+      "key": "s30",
+      "title": "Report a problem someone can reproduce",
+      "body": "Example: “I expected canceling to restore one spot. It still shows zero. I claimed once and canceled once on the sample shift. Reloading did not change the count.” Include only the relevant step and fake data; omit account keys or private records.",
+      "aria": "Report a problem someone can reproduce",
+      "kind": "lesson",
+      "promptIds": [
+        6
+      ]
+    },
+    {
+      "key": "s31",
+      "title": "Explain before you share",
+      "body": "Ask for a plain-language explanation and a one-question-at-a-time quiz about your own plan. Explain why a duplicate claim leaves the count unchanged. If you cannot, review the story and test before sharing the work.",
+      "aria": "Explain before you share",
+      "kind": "lesson",
+      "promptIds": [
+        7
+      ]
+    },
+    {
+      "key": "s32",
+      "title": "Be honest about help",
+      "body": "Follow school, contest and portfolio rules. Disclose AI assistance where required. Claim work you could explain and test. Rewrite the summary in your own words. If AI use is banned for the assignment, practice on a separate allowed example.",
+      "aria": "Be honest about help",
+      "kind": "lesson"
+    },
+    {
+      "key": "s33",
+      "title": "Choose projects people can safely use",
+      "body": "Keep cheating, harassment, impersonation and hidden collection of people’s data outside this exercise. Ask who sees each field and why it is needed. Remove a field if the core job works without it.",
+      "aria": "Choose projects people can safely use",
+      "kind": "lesson"
+    },
+    {
+      "key": "s34",
+      "title": "Use fictional records in prompts",
+      "body": "Never enter real rosters, emails, phone numbers, passwords, codes, IDs, bank or medical details, home addresses or other people’s private information. Check each tool’s policies and age terms, involving a guardian when required.",
+      "aria": "Use fictional records in prompts",
+      "kind": "lesson"
+    },
+    {
+      "key": "s35",
+      "title": "A requirements draft you can explain",
+      "body": "Choose a small allowed idea and freeze the facts. Run the meta-prompt or use the canonical requirements prompt directly. Fill [PRODUCT IDEA]. Generate a draft or annotate the sample by hand. Cut inventions, label assumptions, list the decisions gaps block and rewrite the summary. Optional: plan and test the first step.",
+      "aria": "A requirements draft you can explain",
+      "kind": "activity",
+      "field": "idea",
+      "fieldLabel": "My [PRODUCT IDEA] paragraph",
+      "promptIds": [
+        10
+      ]
+    },
+    {
+      "key": "s36",
+      "title": "Your building cheat sheet",
+      "body": "Keep both full prompts, the seven headings and your own product paragraph. Use the review checklist before changing a requirement into a build step.",
+      "aria": "Your building cheat sheet",
+      "kind": "worksheet"
+    },
+    {
+      "key": "s37",
+      "title": "Optional record of practice",
+      "body": "After passing, add a completion line only if it represents practice you did. Completing this exercise confers no technical credential.",
+      "aria": "Optional record of practice",
+      "kind": "resume"
+    },
+    {
+      "key": "s38",
+      "title": "Final knowledge check",
+      "body": "Five questions cover scope, the two prompts, acceptance checks, unverified costs and honest authorship. Four correct answers complete the class. Review and retry as often as you need.",
+      "aria": "Final knowledge check",
+      "kind": "lesson"
+    },
+    {
+      "key": "s39",
+      "title": "Why specify first?",
+      "body": "Consider the cost of building before agreeing what the tool must do.",
+      "aria": "Why specify first?",
+      "kind": "final"
+    },
+    {
+      "key": "s40",
+      "title": "What do the two prompts produce?",
+      "body": "Think about what you copy from the first chat to the second.",
+      "aria": "What do the two prompts produce?",
+      "kind": "final"
+    },
+    {
+      "key": "s41",
+      "title": "Can someone run the test?",
+      "body": "Look for a starting condition, an action and an observable result.",
+      "aria": "Can someone run the test?",
+      "kind": "final"
+    },
+    {
+      "key": "s42",
+      "title": "What if an unknown price appears?",
+      "body": "Compare the vendor and release plan with what the group actually chose.",
+      "aria": "What if an unknown price appears?",
+      "kind": "final"
+    },
+    {
+      "key": "s43",
+      "title": "What can you claim about your work?",
+      "body": "Apply the project’s disclosure and understanding requirements.",
+      "aria": "What can you claim about your work?",
+      "kind": "final"
+    },
+    {
+      "key": "s44",
+      "title": "Spec, review, test",
+      "body": "Freeze the real idea. Shape the prompt in ChatGPT, use Grok or a fresh pass for requirements, remove inventions, choose a small step and test it. Keep your own words wherever you need to explain the project.",
+      "aria": "Spec, review, test",
+      "kind": "review"
+    },
+    {
+      "key": "s45",
+      "title": "Filling [PRODUCT IDEA] and reading the requirements that come back",
+      "body": "Follow the filled shift-signup example and compare a loose sentence with a testable user story. Read the written script while the recording is being prepared.",
+      "aria": "Filling [PRODUCT IDEA] and reading the requirements that come back",
+      "kind": "video"
+    },
+    {
+      "key": "s46",
+      "title": "Work within a time box",
+      "body": "If the only time you have is a weekend, keep the central job and move extras out of scope. A paper or spreadsheet test of claim and cancel may answer more than a half-finished site. Say so if the real work needs more time.",
+      "aria": "Work within a time box",
+      "kind": "activity",
+      "field": "steps",
+      "fieldLabel": "Three steps within my time box",
+      "promptIds": [
+        8
+      ]
+    },
+    {
+      "key": "s47",
+      "title": "Treat unknowns honestly",
+      "body": "A draft alone does not establish that a tool is finished, secure or ready for real data. Mark unresearched vendors or prices [UNVERIFIED]. Check current tool terms before use and test what you actually build.",
+      "aria": "Treat unknowns honestly",
+      "kind": "lesson"
+    },
+    {
+      "key": "s48",
+      "title": "Choose one next test",
+      "body": "Take the worksheet and write what the next person should be able to do, how you’ll check it and what remains undecided. Retry the quiz below if needed. The class records learning; it grants no certification.",
+      "aria": "Choose one next test",
+      "kind": "close"
+    }
+  ],
+  "materials": {
+    "prompts": [
+      {
+        "id": 1,
+        "title": "Software-requirements meta-prompt",
+        "use": "Use in ChatGPT to write the prompt. This is not yet the requirements document.",
+        "worksheet": true,
+        "canonical": "meta"
+      },
+      {
+        "id": 2,
+        "title": "Software-requirements prompt",
+        "use": "Fill [PRODUCT IDEA] and paste into Grok or a fresh allowed chat.",
+        "worksheet": true,
+        "canonical": "requirements"
+      },
+      {
+        "id": 3,
+        "title": "Fill [PRODUCT IDEA] without inventing scope",
+        "use": "Turn a frozen list into a paragraph you can edit.",
+        "text": "Turn my frozen decisions into a single [PRODUCT IDEA] paragraph I can paste into a software-requirements prompt. Use only what I provided. Do not add features, users, vendors, or a tech stack I did not decide. End with a short list of open questions, separately, so I can keep them out of the paragraph or clearly marked. Return the paragraph in a code block.\n\nFROZEN DECISIONS:\n[PASTE]",
+        "worksheet": true,
+        "compact": "Turn [FROZEN DECISIONS] into a [PRODUCT IDEA] paragraph. Include only accepted facts and constraints. List open questions separately."
+      },
+      {
+        "id": 4,
+        "title": "Turn requirements into a small-step build plan",
+        "use": "Plan the next few concrete steps.",
+        "text": "Using only the requirements below, propose the next 5 build steps. Each step should be small enough to test on its own and should name what “done” looks like. Do not add features that are in Out of Scope. If a step depends on an Open Question, say so and offer a way to proceed without pretending it is decided. Do not invent a calendar or a team I do not have.\n\nREQUIREMENTS:\n[PASTE THE REVIEWED DOC, OR A SHORT VERSION YOU HAVE EDITED]",
+        "worksheet": true,
+        "compact": "From [REQUIREMENTS], propose five small testable steps. State done for each. Flag open decisions. Add no features, team or timeline."
+      },
+      {
+        "id": 5,
+        "title": "Implement only step N",
+        "use": "Keep a small implementation within the agreed requirements.",
+        "text": "Help me implement only Step [N] below. Do not start other steps. Follow the requirements and constraints I provide. If you need a decision I have not made, stop and ask. Do not invent data about real people; use clearly fake placeholder names. After the work, tell me exactly how to test this step, and list anything you assumed.\n\nStep [N]: [DESCRIPTION]\nRelevant requirements:\n[PASTE ONLY WHAT APPLIES]\nConstraints:\n[PASTE]",
+        "worksheet": true,
+        "compact": "Implement only step [N] using [REQUIREMENTS] and [CONSTRAINTS]. Use fictional data. Ask before assuming. Explain how I can test it."
+      },
+      {
+        "id": 6,
+        "title": "Structured debug",
+        "use": "Describe one unexpected result.",
+        "text": "I need help debugging this. Do not rewrite unrelated parts. Ask me a question if a needed fact is missing.\n\nWhat I expected: [EXPECTED]\nWhat actually happened: [SYMPTOMS]\nThe step I was on: [STEP]\nWhat I tried already: [TRIES]\nRelevant snippet or description:\n[PASTE ONLY WHAT IS NEEDED — NO SECRETS, NO REAL ROSTERS]",
+        "worksheet": true,
+        "compact": "Debug only [STEP]. Expected: [X]. Observed: [Y]. Tried: [Z]. Relevant excerpt: [SAFE SNIPPET]. Ask for missing facts."
+      },
+      {
+        "id": 7,
+        "title": "Explain this and quiz me",
+        "use": "Check your own understanding before sharing work.",
+        "text": "Explain the following in plain language to a first-time builder. Then quiz me with 5 short questions, one at a time, and wait for my answers. If I am wrong, explain why. Do not invent behavior that is not in the material.\n\nMATERIAL:\n[PASTE THE PLAN, STORY, OR SNIPPET]",
+        "worksheet": true,
+        "compact": "Explain [MATERIAL] in plain language. Quiz me with five questions, one at a time. Wait and explain mistakes. Invent no behavior."
+      },
+      {
+        "id": 8,
+        "title": "Shrink scope to a finishable v1",
+        "use": "Keep the core job within the time you have.",
+        "text": "Help me cut this to a v1 I could finish in [TIME BOX, for example “one weekend”]. Keep the core job of the product. Move everything else to Out of Scope or a later list. Do not add new ideas. Return: (1) the trimmed v1 in 10 lines or fewer, (2) what moved out of scope, (3) open questions that still block v1.\n\nCURRENT IDEA OR REQUIREMENTS:\n[PASTE]",
+        "worksheet": true,
+        "compact": "Trim [IDEA] to a v1 for [TIME BOX]. Keep the core job. Return the trimmed scope, excluded work and open questions. Add no new ideas."
+      },
+      {
+        "id": 9,
+        "title": "Filled product idea",
+        "use": "Sample paragraph for the placeholder.",
+        "text": "A simple volunteer shift sign-up tool for one high school club. A club officer can post shifts with a date, time, and number of spots, and can close a shift. A member can view open shifts, claim one spot, and cancel their claim. There are no payments, no grades, and no GPS. Collect as little personal data as possible (a first name or chosen display name only, unless an open question decides otherwise). The tool must be understandable to a non-programmer officer and appropriate for members who may be under 18. Stack and hosting are not decided. Do not invent partners, school-wide rollout, native mobile apps, chat, or a public contact list. Flag those as out of scope or as open questions if they come up.",
+        "worksheet": false
+      },
+      {
+        "id": 10,
+        "title": "A small requirements draft to review on paper",
+        "use": "Underline the acceptance checks and circle the open decision that blocks sign-in.",
+        "worksheet": false,
+        "text": "1. Executive Summary: One club needs an officer to post shifts and members to claim or cancel. The first version shows remaining spots. Hosting and sign-in are undecided.\n2. User Personas: Officer — wants to fill shifts without manually recounting. Member — wants to know which shift they committed to.\n3. Functional Requirements: As a member I want to claim an open shift. Given one spot, when I claim it, then my display name appears and spots drop to zero. Given my existing claim, when I claim again, then capacity stays unchanged.\n4. Non-Functional Requirements: A keyboard user must be able to select and confirm Claim. Test the complete action without a mouse. The team still needs to review this proposed requirement.\n5. Technical Constraints and Assumptions: Constraint — one club and minimal data. Assumption to test — a shared sheet might be enough.\n6. Out of Scope: Payments, GPS, chat and a public contact list.\n7. Open Questions: [AMBIGUITY: How do we identify a returning member?] This blocks choosing how to recognize the person who may cancel a claim."
+      }
+    ],
+    "fields": [
+      {
+        "key": "idea",
+        "label": "My [PRODUCT IDEA] paragraph"
+      },
+      {
+        "key": "steps",
+        "label": "Three build steps in my own words"
+      },
+      {
+        "key": "check",
+        "label": "What I still must verify or decide"
+      }
+    ],
+    "reminders": [
+      "Idea → brief → requirements → small steps → test → revise.",
+      "ChatGPT explores → freeze decisions → ChatGPT writes the prompt → Grok drafts requirements → you verify. With one allowed tool, start a fresh pass after freezing.",
+      "Seven sections: Executive Summary; User Personas; Functional Requirements; Non-Functional Requirements; Technical Constraints and Assumptions; Out of Scope; Open Questions.",
+      "Do not invent facts. Mark [AMBIGUITY] and the decision it blocks. Check for invented features, unlabeled assumptions, untestable stories, unverified prices or vendors and privacy problems.",
+      "Use fictional data. Follow school and tool rules. Disclose help when required. Can you explain and test the work yourself?"
+    ]
+  },
+  "mid": [
+    {
+      "prompt": "Why is “just write the app” a weak start?",
+      "options": [
+        "The fuzzy idea leaves scope open to invention.",
+        "Every tool requires seven headings.",
+        "You need a paid plan."
+      ],
+      "answer": 0,
+      "why": "Agree on the job and observable behavior before implementation."
+    },
+    {
+      "prompt": "What comes out of the meta-prompt?",
+      "options": [
+        "A deployed website.",
+        "The lean prompt you use to generate requirements.",
+        "An approved hosting contract."
+      ],
+      "answer": 1,
+      "why": "One prompt writes instructions. Those instructions generate the document."
+    },
+    {
+      "prompt": "A requirements draft adds chat without approval. What now?",
+      "options": [
+        "Build chat first.",
+        "Call it mandatory.",
+        "Remove it or list the unresolved decision."
+      ],
+      "answer": 2,
+      "why": "A generated suggestion cannot expand the scope by itself."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "Why start with a software-requirements prompt instead of “write the whole app”?",
+      "options": [
+        "Because a fuzzy build request often produces invented scope and work you cannot test or explain.",
+        "Because requirements documents are legally required for every school club.",
+        "Because Grok will not answer any other kind of prompt.",
+        "Because a requirements document is a certificate you can put on a resume."
+      ],
+      "answer": 0,
+      "why": "Spec first makes the work smaller, testable, and honest about what is still unknown."
+    },
+    {
+      "prompt": "You use the meta-prompt in ChatGPT and the software-requirements prompt in Grok. What is the difference?",
+      "options": [
+        "They are two names for the same text.",
+        "The meta-prompt asks ChatGPT to write a lean requirements prompt; the software-requirements prompt is what you paste into Grok, with [PRODUCT IDEA] filled in, to generate the document.",
+        "The meta-prompt generates production code; the other generates invoices.",
+        "The software-requirements prompt is only for resume bullets."
+      ],
+      "answer": 1,
+      "why": "One prompt writes the other prompt; the second prompt writes the document."
+    },
+    {
+      "prompt": "Which Given/When/Then acceptance criterion is actually testable?",
+      "options": [
+        "Given the user wants a delightful experience, when they sign up, then they feel inspired.",
+        "Given a shift has at least one open spot, when a member confirms Claim, then remaining spots decrease by one and their display name appears on that shift.",
+        "The system should scale to the world.",
+        "It should probably email people sometimes."
+      ],
+      "answer": 1,
+      "why": "You can set up the situation, take the action, and check the result."
+    },
+    {
+      "prompt": "The document lists a paid app-store release and a real vendor price you never researched. What should you do?",
+      "options": [
+        "Leave it in Functional Requirements so the project looks ambitious.",
+        "Move it out of requirements. Put undecided items in Out of Scope or Open Questions, and treat unverified prices or vendors as unverified instead of presenting them as fact.",
+        "Publish the price on your club’s poster.",
+        "Delete the Open Questions section so the doc looks finished."
+      ],
+      "answer": 1,
+      "why": "Do not invent scope, vendors, or prices. Flag what you have not decided or verified."
+    },
+    {
+      "prompt": "You used AI on a class project whose rules require disclosure and understanding. What is honest?",
+      "options": [
+        "Submit it as entirely unaided if the AI was just helping.",
+        "Follow the rules, disclose what the instructions require, and only claim work you can explain and test.",
+        "Paste a real student roster into the prompt so the demo looks authentic.",
+        "Add a certified AI developer badge because you finished this class."
+      ],
+      "answer": 1,
+      "why": "Honesty, privacy, and understanding are part of building. This class is not a certification."
+    }
+  ],
+  "walkthrough": {
+    "minutes": "3",
+    "steps": [
+      [
+        "Freeze",
+        "Read the club decisions and keep hosting open."
+      ],
+      [
+        "Fill",
+        "Paste only the agreed idea into [PRODUCT IDEA]."
+      ],
+      [
+        "Review",
+        "Read the seven sections and remove the invented payment feature."
+      ],
+      [
+        "Test",
+        "Highlight the claim story. Run both the available-spot and duplicate-claim checks."
+      ]
+    ],
+    "narration": [
+      "Building with AI starts with a spec, not with ‘write the whole app.’",
+      "I already worked this club shift sign-up idea out and froze the decisions. Now I fill the [PRODUCT IDEA] placeholder with only what I actually decided: officers post shifts, members claim or cancel, no payments, no GPS, as little personal data as possible, and hosting still open.",
+      "This software-requirements prompt tells Grok to act as a product manager and technical architect, and to return seven sections only — including user stories with Given/When/Then tests, labeled constraints and assumptions, out of scope, and open questions. It also says: do not invent facts. Flag gaps.",
+      "When the document comes back, I read it like an editor. This fluffy sentence goes. This invented payment feature was never a decision, so it moves to Out of Scope. This user story I can actually test, so it stays.",
+      "If I want to build next, I ask for only the first few steps, and I test them myself. I don’t ship — or turn in — anything I can’t explain.",
+      "You’ll find both prompts on your cheat sheet: the meta-prompt that writes this lean prompt, and the requirements prompt itself."
+    ]
+  }
+}

@@ -1,0 +1,571 @@
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "Leveraging Multiple AIs",
+      "body": "Think in one place, brief another. Turn an exploratory conversation into a prompt a fresh reader can run without inheriting your rejected ideas.",
+      "aria": "Leveraging Multiple AIs",
+      "kind": "lesson"
+    },
+    {
+      "key": "s02",
+      "title": "What to bring",
+      "body": "Allow about 50 minutes. Basics and Brainstorming are helpful. The named path uses ChatGPT to explore and Grok for the clean brief. You can practice on paper or use one allowed tool for both roles.",
+      "aria": "What to bring",
+      "kind": "lesson"
+    },
+    {
+      "key": "s03",
+      "title": "What you’ll practice",
+      "body": "Make a decision list, ask for a handoff prompt, run a fresh pass and verify it. You’ll also practice a specialized prompt for software requirements and learn to compare answers without voting for the more confident one.",
+      "aria": "What you’ll practice",
+      "kind": "lesson"
+    },
+    {
+      "key": "s04",
+      "title": "Why try a second pass?",
+      "body": "After discussing three versions of a club event, a clean brief can reveal that nobody picked a room. A new answer might reveal the gap or invent a room. Your job is to tell which happened.",
+      "aria": "Why try a second pass?",
+      "kind": "lesson"
+    },
+    {
+      "key": "s05",
+      "title": "Check the exact tool before opening it",
+      "body": "Access, features and prices can change. Read each tool’s current terms. If you’re under 18, involve a parent or guardian when required. Use an allowed alternative rather than bypassing a limit.",
+      "aria": "Check the exact tool before opening it",
+      "kind": "lesson"
+    },
+    {
+      "key": "s06",
+      "title": "Four steps to carry forward",
+      "body": "1. Explore the idea in ChatGPT. 2. Freeze only facts and decisions you accepted. 3. Have ChatGPT write one tight prompt for Grok. 4. Run the prompt in Grok, compare the result with the list, then verify and revise.",
+      "aria": "Four steps to carry forward",
+      "kind": "lesson"
+    },
+    {
+      "key": "s07",
+      "title": "Why the whole thread travels badly",
+      "body": "An early “maybe we could sell tickets” can turn into a payment requirement when copied without context. A handoff needs the goal, decisions, limits, open questions and requested format. Delete the brainstorming leftovers.",
+      "aria": "Why the whole thread travels badly",
+      "kind": "lesson"
+    },
+    {
+      "key": "s08",
+      "title": "When one tool is enough",
+      "body": "For a short, checkable task like grouping a public agenda, one pass and a human review may suffice. Use a handoff when a project has enough decisions that a clean restatement helps.",
+      "aria": "When one tool is enough",
+      "kind": "lesson"
+    },
+    {
+      "key": "s09",
+      "title": "Switching tools changes no permissions",
+      "body": "Follow assignment and contest rules in both chats. Disclose help where required and rewrite the final version in your own words. Check facts against a source or a test, even when both tools agree.",
+      "aria": "Switching tools changes no permissions",
+      "kind": "lesson"
+    },
+    {
+      "key": "s10",
+      "title": "Leave secrets in neither window",
+      "body": "No passwords, codes, keys, IDs, bank or medical details, home addresses, real rosters or other people’s private information. A handoff can use “one club officer” and a fictional member. Check each tool’s chat settings.",
+      "aria": "Leave secrets in neither window",
+      "kind": "lesson"
+    },
+    {
+      "key": "s11",
+      "title": "First pass: explore in ChatGPT",
+      "body": "Try asking who needs the club sign-up, what one action matters and what would make a first version too large. Discuss a spreadsheet, a page and a paper process. Discussing an option does not select it.",
+      "aria": "First pass: explore in ChatGPT",
+      "kind": "lesson"
+    },
+    {
+      "key": "s12",
+      "title": "Freeze only what you chose",
+      "body": "Use five headings: Goal, Decisions, Constraints, Non-goals and Open questions. Read each decision and ask when you agreed to it. Move anything still tentative into Open questions.",
+      "aria": "Freeze only what you chose",
+      "kind": "lesson",
+      "promptIds": [
+        2
+      ]
+    },
+    {
+      "key": "s13",
+      "title": "Ask for a prompt, not the answer yet",
+      "body": "A meta-prompt asks the first tool to write the instructions you will give the second one. Say what Grok should deliver, such as a one-page brief. Inspect those instructions before you paste them.",
+      "aria": "Ask for a prompt, not the answer yet",
+      "kind": "lesson"
+    },
+    {
+      "key": "s14",
+      "title": "Run, review, verify",
+      "body": "Paste the approved prompt into Grok or a fresh allowed chat. Read each new requirement beside your frozen list. Fix an unsupported line or request a narrow revision. Check claims with a real source or test.",
+      "aria": "Run, review, verify",
+      "kind": "lesson"
+    },
+    {
+      "key": "s15",
+      "title": "Explore a club shift tool",
+      "body": "In our fictional planning discussion, an officer wants to post shifts and members want to claim or cancel. A school email might be required; nobody knows yet. The group rejects tracking people by GPS. A discussion of maps never became a feature.",
+      "aria": "Explore a club shift tool",
+      "kind": "lesson"
+    },
+    {
+      "key": "s16",
+      "title": "Freeze the club decisions",
+      "body": "Goal: one club can fill volunteer shifts. Officer posts date, time and spots, and can close a shift. Members claim or cancel. Minimize data to a first or display name. Exclude payments, grades, GPS and public contacts. Sign-in, page versus sheet and hosting remain open.",
+      "aria": "Freeze the club decisions",
+      "kind": "lesson"
+    },
+    {
+      "key": "s17",
+      "title": "Read the tight Grok prompt",
+      "body": "Compare the example with the freeze. Notice that it requests acceptance checks and names the unresolved decisions. It does not choose a vendor or treat a school email as mandatory.",
+      "aria": "Read the tight Grok prompt",
+      "kind": "lesson",
+      "promptIds": [
+        9
+      ]
+    },
+    {
+      "key": "s18",
+      "title": "Edit the result that comes back",
+      "body": "Keep “members can cancel a claim.” Cross out “collect a fee” and “require a last name and phone.” The freeze rules them out. If a vendor or price appears, mark it [UNVERIFIED] unless you selected and checked it.",
+      "aria": "Edit the result that comes back",
+      "kind": "lesson",
+      "promptIds": [
+        6
+      ]
+    },
+    {
+      "key": "s19",
+      "title": "If two answers disagree",
+      "body": "Tool A calls a school email mandatory. Tool B proposes a nickname. The freeze says sign-in is open. Keep the decision open and ask the person responsible for club access. Neither answer supplies permission.",
+      "aria": "If two answers disagree",
+      "kind": "lesson",
+      "promptIds": [
+        3,
+        8
+      ]
+    },
+    {
+      "key": "s20",
+      "title": "Practice check",
+      "body": "Choose an answer on each of the next three slides. Check the whole set on the third and review any item you missed.",
+      "aria": "Practice check",
+      "kind": "midIntro"
+    },
+    {
+      "key": "s21",
+      "title": "Put the handoff in order",
+      "body": "Decide when the group’s actual choices become the reference point.",
+      "aria": "Put the handoff in order",
+      "kind": "midQuestion",
+      "midIndex": 0
+    },
+    {
+      "key": "s22",
+      "title": "Choose what belongs in a brief",
+      "body": "Separate accepted facts from rejected ideas and private information.",
+      "aria": "Choose what belongs in a brief",
+      "kind": "midQuestion",
+      "midIndex": 1
+    },
+    {
+      "key": "s23",
+      "title": "Spot an invented feature",
+      "body": "Consider which document has the authority to expand the project.",
+      "aria": "Spot an invented feature",
+      "kind": "midQuestion",
+      "midIndex": 2
+    },
+    {
+      "key": "s24",
+      "title": "Write a general handoff meta-prompt",
+      "body": "Copy the template below. Name the exact output in the first box. Paste only the reviewed decision list in the second. The result should be one standalone prompt, short enough for you to check line by line.",
+      "aria": "Write a general handoff meta-prompt",
+      "kind": "lesson",
+      "promptIds": [
+        1
+      ]
+    },
+    {
+      "key": "s25",
+      "title": "Repair a vague handoff",
+      "body": "“Make a good plan” gives the new reader no job they could finish. Specify the deliverable, the real limits and the output format. Cut repeated background while keeping every constraint.",
+      "aria": "Repair a vague handoff",
+      "kind": "lesson",
+      "promptIds": [
+        7
+      ]
+    },
+    {
+      "key": "s26",
+      "title": "Cut invented requirements",
+      "body": "“Must appear in an app store” is a new decision. If the group never selected an app, strike the sentence or ask whether distribution needs deciding. A confident “must” is no evidence.",
+      "aria": "Cut invented requirements",
+      "kind": "lesson"
+    },
+    {
+      "key": "s27",
+      "title": "A second case: one hour at the club",
+      "body": "Freeze four items for 12 members and an advisor: opening, supplies, rain plan and assignments. Ask Grok for a run-of-show with those items only, no invented budget. A 5 + 20 + 25 + 10 schedule fits 60 minutes. A 65-minute draft needs revision.",
+      "aria": "A second case: one hour at the club",
+      "kind": "lesson"
+    },
+    {
+      "key": "s28",
+      "title": "When you need software requirements",
+      "body": "A product brief explains who needs what. Requirements say which behavior someone could build and test. Ask for the more detailed document only after you know the core job and its limits.",
+      "aria": "When you need software requirements",
+      "kind": "lesson"
+    },
+    {
+      "key": "s29",
+      "title": "Seven sections give the reader a map",
+      "body": "The summary and personas explain the purpose and users. Functional and non-functional requirements explain behaviors and qualities. Labeled constraints and assumptions, Out of Scope and Open Questions keep guesses visible.",
+      "aria": "Seven sections give the reader a map",
+      "kind": "lesson"
+    },
+    {
+      "key": "s30",
+      "title": "The prompt that writes the requirements prompt",
+      "body": "Paste the full meta-prompt into ChatGPT. It asks for a new prompt that tells Grok how to generate the document. Check its seven sections and its instruction to label assumptions before moving it to another chat.",
+      "aria": "The prompt that writes the requirements prompt",
+      "kind": "lesson",
+      "promptIds": [
+        4
+      ]
+    },
+    {
+      "key": "s31",
+      "title": "The requirements prompt itself",
+      "body": "This is the second prompt in full. Fill [PRODUCT IDEA] with real decisions before running it. Look for the seven fixed sections, Given/When/Then checks and the instruction to flag gaps inline. Class 4 works through the full document.",
+      "aria": "The requirements prompt itself",
+      "kind": "lesson",
+      "promptIds": [
+        5
+      ]
+    },
+    {
+      "key": "s32",
+      "title": "Repair a sloppy handoff",
+      "body": "Fictional bad handoff: “Make the best club app, add paid memberships and contact member@example.invalid.” Remove the fictional contact, drop payments and write a concrete task. Example repair: “Draft a one-page brief for an officer to post shifts and a member to claim or cancel. Leave sign-in open.”",
+      "aria": "Repair a sloppy handoff",
+      "kind": "activity",
+      "field": "handoff",
+      "fieldLabel": "My repaired prompt"
+    },
+    {
+      "key": "s33",
+      "title": "One idea, one frozen list, one handoff",
+      "body": "Choose an allowed task. Explore, freeze and run the general meta-prompt. Read and edit the handoff. Use Grok or a fresh allowed chat if available. Write three lines: what you kept, what you cut and what needs checking. On paper, review the sample output on slide 18 instead.",
+      "aria": "One idea, one frozen list, one handoff",
+      "kind": "activity",
+      "field": "review",
+      "fieldLabel": "Kept / cut / still verifying"
+    },
+    {
+      "key": "s34",
+      "title": "Your handoff cheat sheet",
+      "body": "Download the decision-freeze headings, reusable prompts and review boxes. Replace sensitive details with fictional roles before copying anything into another tool.",
+      "aria": "Your handoff cheat sheet",
+      "kind": "worksheet"
+    },
+    {
+      "key": "s35",
+      "title": "An optional completion record",
+      "body": "After passing, you may keep a short record of your practice. The useful artifact is a prompt another reader can understand without seeing your whole conversation.",
+      "aria": "An optional completion record",
+      "kind": "resume"
+    },
+    {
+      "key": "s36",
+      "title": "Final knowledge check",
+      "body": "Answer five handoff decisions. Four correct completes the class. Review explanations and retry without losing access to slides.",
+      "aria": "Final knowledge check",
+      "kind": "lesson"
+    },
+    {
+      "key": "s37",
+      "title": "Which workflow did you practice?",
+      "body": "Follow the idea from a messy discussion through the human review.",
+      "aria": "Which workflow did you practice?",
+      "kind": "final"
+    },
+    {
+      "key": "s38",
+      "title": "What counts as frozen?",
+      "body": "Look for decisions that were actually made.",
+      "aria": "What counts as frozen?",
+      "kind": "final"
+    },
+    {
+      "key": "s39",
+      "title": "When extra scope appears",
+      "body": "Check the generated requirements against the group’s non-goals.",
+      "aria": "When extra scope appears",
+      "kind": "final"
+    },
+    {
+      "key": "s40",
+      "title": "What does a meta-prompt produce?",
+      "body": "Distinguish instructions for a tool from the document the tool writes.",
+      "aria": "What does a meta-prompt produce?",
+      "kind": "final"
+    },
+    {
+      "key": "s41",
+      "title": "If you only have one tool",
+      "body": "Think about how to keep the same roles while following the rules.",
+      "aria": "If you only have one tool",
+      "kind": "final"
+    },
+    {
+      "key": "s42",
+      "title": "Recap the four steps",
+      "body": "Explore the idea. Freeze accepted decisions. Ask for a lean prompt. Run a fresh pass, review it and verify claims. If the second answer changes your goal, return to the freeze.",
+      "aria": "Recap the four steps",
+      "kind": "review"
+    },
+    {
+      "key": "s43",
+      "title": "What’s next: a buildable brief",
+      "body": "Building with AI uses this workflow to write a requirements document. You’ll test one user story, remove invented features and plan the first few build steps.",
+      "aria": "What’s next: a buildable brief",
+      "kind": "lesson"
+    },
+    {
+      "key": "s44",
+      "title": "From a messy ChatGPT thread to a tight Grok prompt",
+      "body": "Follow the club example with the freeze, the handoff and a sample answer. Read the script even if you do not have access to either named tool.",
+      "aria": "From a messy ChatGPT thread to a tight Grok prompt",
+      "kind": "video"
+    },
+    {
+      "key": "s45",
+      "title": "Use two roles with one allowed tool",
+      "body": "Explore in an allowed chat. Freeze the decisions on paper, then start a fresh pass with just the handoff. Other permitted tools can fill either role. If no tool is available, stop at a reviewed prompt and use the worked example for the review.",
+      "aria": "Use two roles with one allowed tool",
+      "kind": "lesson"
+    },
+    {
+      "key": "s46",
+      "title": "Keep your handoff and review",
+      "body": "Reopen the worksheet below. You can retry the quiz, reuse the prompt for a small idea, and check current terms whenever you try a different tool. Completion is not a certification.",
+      "aria": "Keep your handoff and review",
+      "kind": "close"
+    }
+  ],
+  "materials": {
+    "prompts": [
+      {
+        "id": 1,
+        "title": "General handoff meta-prompt",
+        "use": "After exploration, ask ChatGPT for one clean prompt to paste into Grok.",
+        "text": "You are helping me turn the work we just did into a single, tight prompt I will paste into Grok.\n\nRules for the prompt you write:\n- No fluff or preamble. Output only the prompt, in a code block.\n- Start with a clear role and a clear task.\n- Include only the facts, decisions, and constraints we already agreed on. Do not invent new ones.\n- Tell Grok what format to return.\n- Tell Grok to flag anything that is missing or uncertain instead of guessing, using [AMBIGUITY: …] when needed.\n- Keep it as short as it can be while still being complete enough for someone who did not see this chat.\n\nHere is the outcome I want from Grok:\n[WHAT YOU WANT GROK TO PRODUCE]\n\nHere is my frozen decision list (use only this; if something needed is missing, ask me before inventing it):\n[PASTE DECISIONS, CONSTRAINTS, AND OPEN QUESTIONS]",
+        "worksheet": true,
+        "compact": "Write one prompt for Grok. Use only my frozen decisions, provide a role, task and output format, and flag gaps as [AMBIGUITY: …]. Return only the prompt in a code block. Outcome: [GOAL]. Frozen list: [LIST]."
+      },
+      {
+        "id": 2,
+        "title": "Decision freeze",
+        "use": "Extract accepted facts and unresolved questions.",
+        "text": "From this conversation, list only what I have actually decided or provided. Use these headings:\n1) Goal\n2) Decisions (things we chose)\n3) Constraints\n4) Explicit non-goals\n5) Open questions\nDo not upgrade a maybe into a decision. Do not add ideas I did not accept. If something is unclear, put it under Open questions, not Decisions.",
+        "worksheet": true,
+        "compact": "From [NOTES], list Goal, Decisions, Constraints, Non-goals and Open questions. Never turn a maybe into a decision."
+      },
+      {
+        "id": 3,
+        "title": "Compare two outputs",
+        "use": "Check disagreement against your frozen decisions.",
+        "text": "Compare Output A and Output B against my frozen decision list only. For each difference, say: (1) whether it matches a decision, (2) whether it is a new invention, or (3) whether it is an open question. Do not declare a winner. Do not invent a compromise fact. List anything I should verify before using it.\n\nFrozen decisions:\n[LIST]\n\nOutput A:\n[PASTE]\n\nOutput B:\n[PASTE]",
+        "worksheet": true,
+        "compact": "Compare [A] and [B] only with [DECISIONS]. Mark matches, inventions and open questions. List claims to verify. Leave the choice to me."
+      },
+      {
+        "id": 4,
+        "title": "Software-requirements meta-prompt",
+        "use": "Use in ChatGPT to write a lean prompt for Grok.",
+        "worksheet": true,
+        "canonical": "meta"
+      },
+      {
+        "id": 5,
+        "title": "Software-requirements prompt",
+        "use": "Fill [PRODUCT IDEA] and use in Grok or a fresh allowed chat.",
+        "worksheet": true,
+        "canonical": "requirements"
+      },
+      {
+        "id": 6,
+        "title": "Review this Grok output",
+        "use": "Check the second answer for inventions and gaps.",
+        "text": "Review the output below against my frozen decisions. List: (1) requirements or claims that match the decisions, (2) anything that was invented, (3) anything still ambiguous, (4) what I should verify before using it. Suggest a revised outline that removes inventions. Do not add new features.\n\nFrozen decisions:\n[LIST]\n\nOUTPUT:\n[PASTE]",
+        "worksheet": true,
+        "compact": "Review [OUTPUT] against [FROZEN LIST]. Identify matches, inventions, ambiguities and verification. Remove extra features."
+      },
+      {
+        "id": 7,
+        "title": "Shorten the handoff without losing constraints",
+        "use": "Cut repetition before transferring a prompt.",
+        "text": "Shorten the handoff prompt below. Keep every decision, constraint, non-goal, format instruction, and “do not invent facts” rule. Cut fluff, repetition, and leftover chat tone. Return only the revised prompt in a code block.\n\nHANDOFF PROMPT:\n[PASTE]",
+        "worksheet": true,
+        "compact": "Shorten [HANDOFF]. Retain decisions, constraints, non-goals, format and no-invention rule. Return only the prompt."
+      },
+      {
+        "id": 8,
+        "title": "Cross-check a factual claim",
+        "use": "Identify an independent way to test an answer.",
+        "text": "I need to treat the following as unverified until I check it. Tell me: (1) how a person would verify this with a primary source, (2) what would make this claim false, (3) whether the wording overstates certainty. Do not invent a source title or URL. If you are not sure, say so.\n\nCLAIM:\n[PASTE THE CLAIM]",
+        "worksheet": true,
+        "compact": "How could I verify [CLAIM] with a primary source? What would disprove it? Flag overstated certainty. Never invent a source."
+      },
+      {
+        "id": 9,
+        "title": "Sample handoff for a club sign-up",
+        "use": "Read this as if you never saw the original chat.",
+        "text": "You are an expert product manager. Using only the decisions below, write a one-page product brief for a small club volunteer shift sign-up tool. Do not invent features, partners, or data you would collect. If something is missing, list it under Open Questions.\n\nDecisions:\n- Officer posts shifts (date, time, number of spots). Members claim or cancel a shift.\n- No payments, no grades, no GPS, no public contact list.\n- Store as little personal data as possible (first name or a chosen display name).\n\nFormat:\n1) Summary (5 sentences or fewer)\n2) Users and their jobs\n3) Must-have functions, each with a simple acceptance check\n4) Must-not / out of scope\n5) Open questions (include: sign-in method; web page vs. spreadsheet vs. other; hosting)\n\nFlag any extra feature you are tempted to add as [AMBIGUITY], not as a requirement.",
+        "worksheet": false
+      }
+    ],
+    "fields": [
+      {
+        "key": "freeze",
+        "label": "My frozen decision list"
+      },
+      {
+        "key": "handoff",
+        "label": "My tight Grok prompt"
+      },
+      {
+        "key": "review",
+        "label": "Kept / cut / still verifying"
+      }
+    ],
+    "reminders": [
+      "1. Explore in ChatGPT. 2. Freeze accepted decisions. 3. Have ChatGPT write one tight prompt for Grok. 4. Run, review and verify.",
+      "One allowed tool: explore, then use only the freeze in a fresh pass. Paper works for drafting and reviewing.",
+      "Freeze: Goal, Decisions, Constraints, Non-goals, Open questions.",
+      "Review: matches a decision? invented feature? unresolved? what needs verification?",
+      "Avoid secrets and other people’s data in both tools. Check current age terms. Follow school rules and disclose help when required."
+    ]
+  },
+  "mid": [
+    {
+      "prompt": "Which sequence creates a clean handoff?",
+      "options": [
+        "Explore, freeze, write the handoff, run and verify.",
+        "Copy everything, then pick a goal.",
+        "Choose the more confident answer."
+      ],
+      "answer": 0,
+      "why": "Freeze decisions before writing the second prompt."
+    },
+    {
+      "prompt": "What should stay out of a handoff?",
+      "options": [
+        "Confirmed scope.",
+        "Rejected ideas presented as facts and private contact data.",
+        "Questions that remain open."
+      ],
+      "answer": 1,
+      "why": "The handoff carries accepted decisions and safe context."
+    },
+    {
+      "prompt": "The second tool adds a feature you never chose. What now?",
+      "options": [
+        "Build it immediately.",
+        "Assume someone approved it.",
+        "Cut it or label it an open decision."
+      ],
+      "answer": 2,
+      "why": "The second tool cannot authorize new scope."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "What is the taught four-step workflow in this class?",
+      "options": [
+        "Paste the entire ChatGPT thread into Grok and ask it to make it better.",
+        "Explore in ChatGPT, freeze only the decisions you actually made, have ChatGPT write a tight prompt for Grok, then review and verify Grok’s output.",
+        "Ask both tools the same one-line question and average the answers.",
+        "Use Grok first for messy brainstorming, then ChatGPT to invent extra features."
+      ],
+      "answer": 1,
+      "why": "The value is a clean brief after messy thinking, not a dump of the whole chat."
+    },
+    {
+      "prompt": "What belongs on the frozen decision list?",
+      "options": [
+        "Every idea the first chat mentioned, including rejected ones, written as requirements.",
+        "Only decisions and facts you actually accepted, plus real constraints, non-goals, and open questions.",
+        "Made-up budget numbers so the second tool has something to work with.",
+        "Your classmates’ emails so the tool feels realistic."
+      ],
+      "answer": 1,
+      "why": "Maybes and rejected ideas are not decisions. Private data should not be in the handoff."
+    },
+    {
+      "prompt": "Grok adds in-app payments and live GPS tracking, which you never asked for. What should you do?",
+      "options": [
+        "Keep them; extra features are always an improvement.",
+        "Treat them as invented: cut them or move them to Open Questions. They are not requirements until you decide they are.",
+        "Add them silently so the document looks complete.",
+        "Start over and never use a second tool again."
+      ],
+      "answer": 1,
+      "why": "A handoff should not grow new scope by accident."
+    },
+    {
+      "prompt": "What is the software-requirements meta-prompt for?",
+      "options": [
+        "It is the document a developer would build from, already filled in.",
+        "It is a prompt you use, usually in ChatGPT, so that tool writes a lean, structured prompt you can paste into Grok to generate software requirements.",
+        "It is a payment form for a $4.99 class.",
+        "It tells Grok to invent a tech stack without labeling assumptions."
+      ],
+      "answer": 1,
+      "why": "The meta-prompt writes the requirements prompt. The requirements prompt is what Grok uses to write the document."
+    },
+    {
+      "prompt": "You are not allowed to use one of the named tools or only have access to one AI. What is the honest, still-useful move?",
+      "options": [
+        "Borrow someone else’s account, even if you are under the age or terms limit.",
+        "Skip the class; the method only works with those two brand names.",
+        "Use the same roles — explore, freeze, write a tight brief, run a fresh pass, verify — in one allowed tool or two allowed tools and follow their current terms.",
+        "Paste sensitive personal data into several tools so one has context."
+      ],
+      "answer": 2,
+      "why": "The method is bigger than the brand names. Account and privacy rules still apply."
+    }
+  ],
+  "walkthrough": {
+    "minutes": "3",
+    "steps": [
+      [
+        "Explore",
+        "Discuss the club’s small sign-up idea using fictional roles."
+      ],
+      [
+        "Freeze",
+        "Keep posting, claiming and canceling. Set aside hosting and sign-in."
+      ],
+      [
+        "Hand off",
+        "Read the generated prompt before pasting it into Grok."
+      ],
+      [
+        "Review",
+        "Cross out payment collection and compare the remaining outline with the freeze."
+      ]
+    ],
+    "narration": [
+      "The useful part of a long ChatGPT thread is not the thread. It’s the few decisions you actually made.",
+      "Here’s a club shift sign-up idea after a messy exploration. I’m going to freeze the facts: officers post shifts, members claim or cancel, no payments, no GPS, as little personal data as possible, and a few open questions — like how people sign in.",
+      "Next I use a meta-prompt. I don’t ask ChatGPT to ‘tell Grok everything we said.’ I ask it to write one tight prompt: a role, the decisions only, a clear format, and an instruction not to invent facts.",
+      "This is the prompt I will paste into Grok. It’s short enough to read. If it added a feature I never chose, I cut that before I paste.",
+      "When Grok answers, I review it the same way. If it sneaks in payments or a contact roster, that’s not a bonus — that’s extra scope I didn’t ask for. I cut it or I move it to Open Questions.",
+      "Same honesty and privacy rules in both tools. I still verify anything I’d rely on.",
+      "That’s the whole workflow: explore, freeze, hand off a lean prompt, then review."
+    ]
+  }
+}

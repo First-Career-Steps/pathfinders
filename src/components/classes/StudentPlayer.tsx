@@ -4,6 +4,8 @@ import Link from "next/link";
 import type { ClassInfo } from "@/lib/classes/catalog";
 import type { Progress, Slide } from "@/lib/classes/lessons";
 import { narration, type Walkthrough } from "@/lib/classes/media";
+import PromptBlock from "./PromptBlock";
+import type { PromptSheet } from "@/lib/classes/prompt-sheet";
 import { ResumeOffer, Worksheet } from "./ClassMaterials";
 import type { Fields } from "@/lib/classes/worksheets";
 
@@ -21,8 +23,11 @@ type Props = {
   mid: Question[];
   final: Question[];
   walkthrough: Walkthrough;
+  materials?: PromptSheet;
 };
 const kindNames: Record<string, string> = {
+  midIntro: "Practice check",
+  midQuestion: "Practice question",
   lesson: "Lesson",
   activity: "Practice",
   mid: "Mid-class quiz",
@@ -122,6 +127,7 @@ export default function StudentPlayer({
   mid,
   final,
   walkthrough,
+  materials,
 }: Props) {
   const first = Math.max(
     0,
@@ -217,6 +223,12 @@ export default function StudentPlayer({
     const missing = qs.findIndex((_, i) => answers[check][i] === undefined);
     if (missing >= 0) {
       if (check === "final") go(finalStart + missing);
+      else if (materials)
+        go(
+          slides.findIndex(
+            (s) => s.kind === "midQuestion" && s.midIndex === missing,
+          ),
+        );
       setError("Choose an answer for each question before checking your work.");
       return;
     }
@@ -283,7 +295,11 @@ export default function StudentPlayer({
         <div className="sc-maincol">
           <article className="sc-slide" aria-label={slide.aria}>
             <div className="sc-slidebar">
-              <span>{kindNames[slide.kind]}</span>
+              <span>
+                {materials && slide.kind === "resume"
+                  ? "Optional completion record"
+                  : kindNames[slide.kind]}
+              </span>
               <span>
                 Slide {index + 1} of {total}
               </span>
@@ -339,9 +355,19 @@ export default function StudentPlayer({
                   )}
                 </>
               )}
+              {slide.promptIds?.map((id) => {
+                const prompt = materials?.prompts.find((p) => p.id === id);
+                return prompt ? (
+                  <PromptBlock
+                    key={prompt.id + prompt.title}
+                    prompt={prompt}
+                    expanded={(slide.promptIds?.length || 0) <= 2}
+                  />
+                ) : null;
+              })}
               {slide.field && (
                 <label className="sc-field">
-                  {activityLabels[slide.field]}
+                  {slide.fieldLabel || activityLabels[slide.field]}
                   <textarea
                     rows={3}
                     maxLength={2400}
@@ -405,11 +431,17 @@ export default function StudentPlayer({
                       </li>
                     ))}
                   </ol>
-                  <details>
+                  <details
+                    open={
+                      materials && !walkthrough.recording ? true : undefined
+                    }
+                  >
                     <summary>Read the narration script</summary>
-                    {narration[course.slug].map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
+                    {(walkthrough.narration || narration[course.slug]).map(
+                      (paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
+                      ),
+                    )}
                   </details>
                 </section>
               )}
@@ -418,8 +450,44 @@ export default function StudentPlayer({
                   course={course}
                   values={values}
                   edit={edit}
+                  materials={materials}
                   onDownload={() => persist({ event: "worksheet" })}
                 />
+              )}
+              {slide.kind === "midQuestion" && slide.midIndex !== undefined && (
+                <div>
+                  <Choice
+                    item={mid[slide.midIndex]}
+                    name={"mid-" + slide.midIndex}
+                    value={answers.mid[slide.midIndex]}
+                    change={(n) => choose("mid", slide.midIndex!, n)}
+                  />
+                  {results.mid && slide.midIndex < 2 && (
+                    <Feedback result={results.mid.review[slide.midIndex]} />
+                  )}
+                  {slide.midIndex === 2 && (
+                    <>
+                      <button
+                        className="sc-btn"
+                        disabled={working}
+                        onClick={() => submit("mid")}
+                      >
+                        Check practice answers
+                      </button>
+                      {results.mid && (
+                        <section aria-live="polite">
+                          <h3>{results.mid.score} of 3 correct</h3>
+                          {results.mid.review.map((answer, i) => (
+                            <div key={mid[i].prompt}>
+                              <h4>{mid[i].prompt}</h4>
+                              <Feedback result={answer} />
+                            </div>
+                          ))}
+                        </section>
+                      )}
+                    </>
+                  )}
+                </div>
               )}
               {slide.kind === "mid" && (
                 <div>
@@ -511,7 +579,8 @@ export default function StudentPlayer({
               {(slide.kind === "resume" ||
                 slide.kind === "close" ||
                 slide.kind === "review") &&
-                passed && (
+                passed &&
+                (!materials || slide.kind === "resume") && (
                   <ResumeOffer
                     course={course}
                     userId={userId}
@@ -519,6 +588,17 @@ export default function StudentPlayer({
                     completed={progress!.completed_at!}
                   />
                 )}
+              {materials && passed && slide.kind === "review" && (
+                <div className="sc-actions">
+                  <button
+                    onClick={() =>
+                      go(slides.findIndex((s) => s.kind === "resume"))
+                    }
+                  >
+                    View optional completion record
+                  </button>
+                </div>
+              )}
               {slide.kind === "close" && (
                 <div className="sc-actions">
                   <button onClick={nextWorksheet}>Open my worksheet</button>

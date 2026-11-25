@@ -3,7 +3,7 @@ import { classes, paidClassesEnabled } from "@/lib/classes/catalog";
 export const metadata = {
   title: "Student classes | First Career Steps",
   description:
-    "Student leadership and practical AI classes for school, work and a first resume.",
+    "Student leadership and practical AI classes for school, work and personal projects.",
 };
 export const dynamic = "force-dynamic";
 export default function Library() {
@@ -19,8 +19,13 @@ export default function Library() {
           or work.
         </p>
         <nav className="sc-start" aria-label="Available classes">
-          <Link href="/classes/lead-yourself">Lead Yourself First</Link>
-          <Link href="/classes/ai-honestly">Use AI Honestly</Link>
+          {classes
+            .filter((c) => c.published)
+            .map((c) => (
+              <Link key={c.slug} href={"/classes/" + c.slug}>
+                {c.title}
+              </Link>
+            ))}
         </nav>
       </header>
       {(["Leadership", "AI"] as const).map((track) => (
@@ -33,7 +38,7 @@ export default function Library() {
             <h2>{track === "AI" ? "Working with AI" : "Leadership"}</h2>
             <p>
               {track === "AI"
-                ? "Schoolwork, resumes and interviews"
+                ? "Start with Basics, then practice brainstorming, handing off ideas and planning a small build."
                 : "From The Little Black Book on Leadership by Brenen Morse"}
             </p>
           </div>

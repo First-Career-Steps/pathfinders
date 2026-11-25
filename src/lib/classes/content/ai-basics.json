@@ -1,0 +1,534 @@
+{
+  "slides": [
+    {
+      "key": "s01",
+      "title": "Basics of AI",
+      "body": "Know the tool before you lean on it. By the end of this class, you’ll have a prompt you wrote and a record of one claim you checked.",
+      "aria": "Basics of AI",
+      "kind": "lesson"
+    },
+    {
+      "key": "s02",
+      "title": "Start with a question you care about",
+      "body": "Allow about 45 minutes. Think of a club task, a work shift or something you want to learn. A tool you’re already allowed to use is optional. Every exercise also works on paper.",
+      "aria": "Start with a question you care about",
+      "kind": "lesson"
+    },
+    {
+      "key": "s03",
+      "title": "What you’ll practice",
+      "body": "Explain how a chat tool produces text. Write a five-part prompt. Spot three kinds of error and check a claim. Decide what stays private. Use AI in ways your assignment allows.",
+      "aria": "What you’ll practice",
+      "kind": "lesson"
+    },
+    {
+      "key": "s04",
+      "title": "What stays in your hands",
+      "body": "Imagine planning a club meeting. A tool can draft an agenda. You decide the purpose, check the time and ask the advisor about room access. Those are three different jobs.",
+      "aria": "What stays in your hands",
+      "kind": "lesson"
+    },
+    {
+      "key": "s05",
+      "title": "What we mean by AI",
+      "body": "Here, AI means a chat tool that generates a response from instructions. A prompt is the text you give it. The model is the system producing the reply. Some tools also generate images or code.",
+      "aria": "What we mean by AI",
+      "kind": "lesson"
+    },
+    {
+      "key": "s06",
+      "title": "Where its authority ends",
+      "body": "A chat tool is software. It can write in the voice of a teacher without knowing what your teacher assigned. Even a detailed answer needs evidence before you rely on it.",
+      "aria": "Where its authority ends",
+      "kind": "lesson"
+    },
+    {
+      "key": "s07",
+      "title": "How a reply takes shape",
+      "body": "During training, a model learns patterns in examples. When you type a prompt, it uses those patterns and the conversation to predict likely pieces of text, one after another. That can produce a useful explanation.",
+      "aria": "How a reply takes shape",
+      "kind": "lesson"
+    },
+    {
+      "key": "s08",
+      "title": "Why fluent answers can be wrong",
+      "body": "A real source title and a made-up title can both sound like something a textbook would cite. The model can produce a plausible sentence without having checked that the source exists.",
+      "aria": "Why fluent answers can be wrong",
+      "kind": "lesson"
+    },
+    {
+      "key": "s09",
+      "title": "Good tasks for a first try",
+      "body": "Ask for three ways to explain a concept, a quiz on notes you wrote, an order for meeting tasks, or different options to compare. Each gives you something you can inspect or practice.",
+      "aria": "Good tasks for a first try",
+      "kind": "lesson"
+    },
+    {
+      "key": "s10",
+      "title": "Watch for missing information",
+      "body": "A tool may repeat an old deadline, mix up two clubs or guess what a supervisor allows. It cannot infer a private rule you never supplied. Mark the missing detail and find the current source.",
+      "aria": "Watch for missing information",
+      "kind": "lesson"
+    },
+    {
+      "key": "s11",
+      "title": "Whose dress code is it?",
+      "body": "Ask “What is my school’s dress code?” A general reply may sound like policy. Find the current handbook or school website and read the relevant section. Ask school staff if the wording is unclear.",
+      "aria": "Whose dress code is it?",
+      "kind": "lesson"
+    },
+    {
+      "key": "s12",
+      "title": "You are the editor",
+      "body": "Circle a checkable statement in a draft, such as “the library closes at six.” Compare it with the posted hours for that day. Change or remove the statement if you cannot confirm it.",
+      "aria": "You are the editor",
+      "kind": "lesson"
+    },
+    {
+      "key": "s13",
+      "title": "Five parts of a useful prompt",
+      "body": "Task tells the tool what to do. Context supplies the facts. Constraints name the limits. Format describes what to return. Finish by asking it to flag uncertainty. Add a role only if it helps the task.",
+      "aria": "Five parts of a useful prompt",
+      "kind": "lesson"
+    },
+    {
+      "key": "s14",
+      "title": "A club agenda in 20 minutes",
+      "body": "“Write an agenda for my club” might yield welcome, updates and announcements. The stronger prompt below can yield 2 minutes to open, 7 for supplies, 6 for a rain plan and 5 for next steps. Check the sum and confirm who will lead each item.",
+      "aria": "A club agenda in 20 minutes",
+      "kind": "lesson",
+      "promptIds": [
+        7
+      ]
+    },
+    {
+      "key": "s15",
+      "title": "Rewrite a vague project request",
+      "body": "Start with “Help me with my group project.” Give the group a task, a deadline and a limit you know. Ask for an output you could use at your next meeting. Tell the tool how to handle facts it lacks.",
+      "aria": "Rewrite a vague project request",
+      "kind": "activity",
+      "field": "myPrompt",
+      "fieldLabel": "My rewritten project prompt"
+    },
+    {
+      "key": "s16",
+      "title": "Practice check",
+      "body": "The next three questions check your judgment. Choose an answer on each slide and check your answers on the third. You can revisit any slide.",
+      "aria": "Practice check",
+      "kind": "midIntro"
+    },
+    {
+      "key": "s17",
+      "title": "Does a polished answer prove it’s true?",
+      "body": "Think of the difference between a clear explanation and evidence you can inspect.",
+      "aria": "Does a polished answer prove it’s true?",
+      "kind": "midQuestion",
+      "midIndex": 0
+    },
+    {
+      "key": "s18",
+      "title": "Which instructions give useful boundaries?",
+      "body": "Look for the goal, the information the writer knows and the shape of the answer.",
+      "aria": "Which instructions give useful boundaries?",
+      "kind": "midQuestion",
+      "midIndex": 1
+    },
+    {
+      "key": "s19",
+      "title": "Who can confirm a local rule?",
+      "body": "Think about where the rule was published and who can clarify it.",
+      "aria": "Who can confirm a local rule?",
+      "kind": "midQuestion",
+      "midIndex": 2
+    },
+    {
+      "key": "s20",
+      "title": "Four ways a reply can mislead",
+      "body": "It might invent an article, reuse last year’s schedule, confuse two people with similar names, or agree with a mistaken assumption in your question. Ask yourself which kind of check each claim needs.",
+      "aria": "Four ways a reply can mislead",
+      "kind": "lesson"
+    },
+    {
+      "key": "s21",
+      "title": "Verify before you use it",
+      "body": "Open the primary source and find the passage that actually supports the claim. Try a practical step on a sample, or ask the person responsible. Leave anything you cannot verify out of work you share as fact.",
+      "aria": "Verify before you use it",
+      "kind": "lesson"
+    },
+    {
+      "key": "s22",
+      "title": "Catch a planted error",
+      "body": "Fictional AI error: “The U.S. Copyright Office requires every high school volunteer club to register its event flyers before posting them in a hallway.” An official name is no evidence. Look for the actual rule in agency guidance and the relevant school policy. This planted general requirement is unsupported. Discard it.",
+      "aria": "Catch a planted error",
+      "kind": "lesson"
+    },
+    {
+      "key": "s23",
+      "title": "What must stay out of a chat",
+      "body": "Keep passwords, one-time codes, national ID numbers, bank or card details, medical details, home addresses, API keys and login cookies out of prompts. A key or cookie can give someone access to an account.",
+      "aria": "What must stay out of a chat",
+      "kind": "lesson"
+    },
+    {
+      "key": "s24",
+      "title": "Protect other people’s information",
+      "body": "Use a fictional role in place of a roster, a friend’s situation or another student’s unpublished work. Tools may retain chats depending on their settings and policies. Read the current policy before sharing anything.",
+      "aria": "Protect other people’s information",
+      "kind": "lesson"
+    },
+    {
+      "key": "s25",
+      "title": "Remove details the task doesn’t need",
+      "body": "Fictional overshare: “My friend Maya Hernandez, phone 555-0142, is free after 3:15 on Tuesdays at 412 Maple and needs help studying biology chapter 4.” Rewrite it with just the topic, study time and desired practice. Compare yours with the sample below.",
+      "aria": "Remove details the task doesn’t need",
+      "kind": "activity",
+      "field": "safe",
+      "fieldLabel": "My safer study request",
+      "promptIds": [
+        8
+      ]
+    },
+    {
+      "key": "s26",
+      "title": "Check account rules first",
+      "body": "Read the current terms for the exact app. If you’re under 18, use only tools you’re allowed to use and involve a parent or guardian when required. Use paper if needed. Never invent a birthdate or borrow an account to get around a limit.",
+      "aria": "Check account rules first",
+      "kind": "lesson"
+    },
+    {
+      "key": "s27",
+      "title": "When AI can coach you",
+      "body": "If your teacher allows practice questions, answer a new practice question yourself. If a graded essay requires your own work, write it under those rules. Check teacher, professor or contest instructions and disclose AI help when required.",
+      "aria": "When AI can coach you",
+      "kind": "lesson"
+    },
+    {
+      "key": "s28",
+      "title": "When to close the chat",
+      "body": "Set it aside when an assessment bans AI or a task requires private data. Never use it to impersonate or harass someone. For a personal crisis or sensitive counseling need, reach out to a trusted adult or local support.",
+      "aria": "When to close the chat",
+      "kind": "lesson"
+    },
+    {
+      "key": "s29",
+      "title": "Six prompts to keep",
+      "body": "Choose a prompt by the job you need done. Try explanation for learning, revision for your own draft, steps for planning, uncertainty for checking, comparison for decisions and prompt rewriting for a vague request. Remove personal details first.",
+      "aria": "Six prompts to keep",
+      "kind": "lesson",
+      "promptIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "s30",
+      "title": "One prompt, one check",
+      "body": "Pick a non-graded task. Fill in the explain-and-quiz or flag-uncertainty prompt. Run it in an allowed tool or draft it on paper. Select one claim, check it against a source, and record what you found. If you have no answer yet, write the check you’ll run and mark it unverified.",
+      "aria": "One prompt, one check",
+      "kind": "activity",
+      "field": "check",
+      "fieldLabel": "My claim and verification",
+      "promptIds": [
+        1,
+        4
+      ]
+    },
+    {
+      "key": "s31",
+      "title": "Would you use this answer?",
+      "body": "Explain it without reading the draft. Name the evidence for a claim you rely on. Check that you shared only necessary details and followed the rules. If any check fails, revise the draft or set it aside.",
+      "aria": "Would you use this answer?",
+      "kind": "lesson"
+    },
+    {
+      "key": "s32",
+      "title": "Your prompt cheat sheet",
+      "body": "Keep the six prompts and your own practice notes. Try one prompt this week, remove private details and check one factual claim before using the answer.",
+      "aria": "Your prompt cheat sheet",
+      "kind": "worksheet"
+    },
+    {
+      "key": "s33",
+      "title": "An optional completion record",
+      "body": "If you practiced the skill and pass the final quiz, you may keep a completion line. You choose whether it belongs on your profile.",
+      "aria": "An optional completion record",
+      "kind": "resume"
+    },
+    {
+      "key": "s34",
+      "title": "Final knowledge check",
+      "body": "Choose an answer on each of the next five slides. Four correct answers complete the class. After submitting, you can review the reasons and retry as often as you like.",
+      "aria": "Final knowledge check",
+      "kind": "lesson"
+    },
+    {
+      "key": "s35",
+      "title": "What does confidence prove?",
+      "body": "Judge the evidence behind the answer.",
+      "aria": "What does confidence prove?",
+      "kind": "final"
+    },
+    {
+      "key": "s36",
+      "title": "Choose the strongest prompt",
+      "body": "Consider which request gives the tool useful facts, limits and a format.",
+      "aria": "Choose the strongest prompt",
+      "kind": "final"
+    },
+    {
+      "key": "s37",
+      "title": "Which information stays private?",
+      "body": "Consider who owns each detail and whether it could expose an account or a person.",
+      "aria": "Which information stays private?",
+      "kind": "final"
+    },
+    {
+      "key": "s38",
+      "title": "Respect an assignment rule",
+      "body": "The instructions for this particular assignment govern how you may complete it.",
+      "aria": "Respect an assignment rule",
+      "kind": "final"
+    },
+    {
+      "key": "s39",
+      "title": "Before trying a new app",
+      "body": "Think about what you would check before creating an account.",
+      "aria": "Before trying a new app",
+      "kind": "final"
+    },
+    {
+      "key": "s40",
+      "title": "Five rules to take with you",
+      "body": "Fluent writing can be wrong. Give a complete prompt. Verify what you will use. Protect private data. Follow assignment and account rules. Review the reasons for your quiz answers below.",
+      "aria": "Five rules to take with you",
+      "kind": "review"
+    },
+    {
+      "key": "s41",
+      "title": "What comes next",
+      "body": "Brainstorming with AI takes the same prompt pattern into a decision. You’ll ask for more options, narrow them against constraints and choose one yourself.",
+      "aria": "What comes next",
+      "kind": "lesson"
+    },
+    {
+      "key": "s42",
+      "title": "Your first strong prompt",
+      "body": "Follow the agenda walkthrough and check the time and roles yourself. The written script is available now.",
+      "aria": "Your first strong prompt",
+      "kind": "video"
+    },
+    {
+      "key": "s43",
+      "title": "Practice without an account",
+      "body": "Write your prompt on paper. Trade a fictional example with a partner if allowed, or test it against the sample agenda here. Keep the prompt for a time when you have an allowed tool.",
+      "aria": "Practice without an account",
+      "kind": "lesson"
+    },
+    {
+      "key": "s44",
+      "title": "Try one checked prompt this week",
+      "body": "Reopen your worksheet below to download a copy. Revisit the end quiz whenever you like. Completion records practice in this class and carries no school credit or certification.",
+      "aria": "Try one checked prompt this week",
+      "kind": "close"
+    }
+  ],
+  "materials": {
+    "prompts": [
+      {
+        "id": 1,
+        "title": "Explain, then quiz me",
+        "use": "Learn a topic and practice recalling it.",
+        "text": "Explain [TOPIC] to a first-time learner in plain language. Then ask me 5 short questions to check my understanding, one at a time. Wait for my answer before the next question. After each answer, tell me if I am right and why, without revealing the next question early. If you are unsure about a fact, say so and tell me how I could verify it. Do not invent sources.",
+        "worksheet": true
+      },
+      {
+        "id": 2,
+        "title": "Tighten this draft without adding facts",
+        "use": "You wrote a draft and want clearer wording.",
+        "text": "Tighten the draft below. Keep my meaning. Do not add facts, numbers, titles, or claims I did not include. If something is unclear, ask me a question instead of guessing. Return: (1) the revised draft, (2) a short list of wording changes, (3) anything you were tempted to invent but did not.\n\nDRAFT:\n[PASTE YOUR DRAFT]",
+        "worksheet": true
+      },
+      {
+        "id": 3,
+        "title": "Break a task into steps",
+        "use": "A project feels too big or vague.",
+        "text": "Break this task into clear steps I can actually do. Task: [TASK]. Constraints: [TIME, TOOLS, WHAT I CANNOT DO]. Do not assume I have tools, money, or permissions I did not mention. Flag any step that depends on information you do not have. Format: a numbered list with the outcome of each step in one line.",
+        "worksheet": true
+      },
+      {
+        "id": 4,
+        "title": "Flag uncertainty",
+        "use": "Separate what you know from what needs checking.",
+        "text": "Answer the question below. Separate your response into: (1) What you are reasonably confident about, (2) What you are unsure about, (3) What I should verify, and where a primary source might live. Do not invent citations. If you cannot answer, say so.\n\nQUESTION:\n[YOUR QUESTION]",
+        "worksheet": true
+      },
+      {
+        "id": 5,
+        "title": "Compare two options against my criteria",
+        "use": "Compare options and make your own decision.",
+        "text": "Compare Option A and Option B only against the criteria I list. Do not pick a winner unless I ask. Do not invent extra criteria, costs, or facts. If a criterion cannot be judged from what I provided, say “not enough information.”\n\nOption A: [A]\nOption B: [B]\nCriteria: [LIST]\nFormat: a short table, then 3 follow-up questions that would help me decide.",
+        "worksheet": true
+      },
+      {
+        "id": 6,
+        "title": "Rewrite my weak prompt",
+        "use": "Your first request produced a generic answer.",
+        "text": "Rewrite my prompt so it includes a clear task, relevant context, constraints, an output format, and an instruction not to invent facts and to flag uncertainty. Ask me up to 3 questions if you still need information. Then output the improved prompt in a code block I can copy. Do not change my goal.\n\nMY PROMPT:\n[PASTE YOUR WEAK PROMPT]",
+        "worksheet": true
+      },
+      {
+        "id": 7,
+        "title": "A stronger club agenda prompt",
+        "use": "Compare the limits with the weak request.",
+        "text": "Task: Draft a 20-minute agenda for a high school volunteer club meeting this week.\nContext: We have 12 members, one advisor, and one event (a Saturday park cleanup) coming up in 16 days. We still need a supplies list and a rain plan. I will run the meeting.\nConstraints: Do not invent club rules, budget numbers, or people who were not mentioned. Flag anything you are assuming. Keep it realistic for 20 minutes.\nFormat: A timed agenda with 4–6 items, each with a one-line purpose and who leads it (use roles, not made-up names).\nIf you are unsure about something, say so instead of filling the gap.",
+        "worksheet": false
+      },
+      {
+        "id": 8,
+        "title": "Safer study prompt",
+        "use": "Compare after writing your own version.",
+        "text": "Suggest a 30-minute study plan for a high school biology chapter on cells. The student has one weekday afternoon block and wants 10 minutes of practice questions at the end. Do not ask for personal contact details.",
+        "worksheet": false
+      }
+    ],
+    "fields": [
+      {
+        "key": "myPrompt",
+        "label": "My prompt this week"
+      },
+      {
+        "key": "check",
+        "label": "What I verified, where I checked and what remains uncertain"
+      }
+    ],
+    "reminders": [
+      "Task + Context + Constraints + Format + Flag uncertainty.",
+      "Fluent writing can be wrong. Give a complete prompt. Verify before use. Protect private data. Follow school and account rules.",
+      "Never paste passwords, codes, IDs, financial or medical details, home addresses, keys, cookies, rosters or other people’s private information.",
+      "Use AI to explain or quiz when allowed. Do your own required work and disclose help when required.",
+      "Check the exact tool’s current terms. Under 18, involve a parent or guardian when required. Never bypass an age gate."
+    ]
+  },
+  "mid": [
+    {
+      "prompt": "What does a fluent answer fail to prove?",
+      "options": [
+        "The content is true or complete.",
+        "The words form sentences.",
+        "Someone could edit the reply."
+      ],
+      "answer": 0,
+      "why": "Clear sentences can contain unsupported facts."
+    },
+    {
+      "prompt": "Which prompt gives the clearest instructions?",
+      "options": [
+        "Make a great plan.",
+        "Draft a 20-minute club agenda for 12 people. Use four timed items and flag unknowns.",
+        "You are brilliant. Help us."
+      ],
+      "answer": 1,
+      "why": "The goal, group size, limit and format guide the draft."
+    },
+    {
+      "prompt": "Which question needs a local authority?",
+      "options": [
+        "How can I group meeting ideas?",
+        "How could I structure a practice quiz?",
+        "What exact dress code does my school enforce today?"
+      ],
+      "answer": 2,
+      "why": "Consult the current school policy. A model can help read a policy you supply but cannot set it."
+    }
+  ],
+  "final": [
+    {
+      "prompt": "A chat-based AI gives a smooth, confident answer. What does that confidence prove?",
+      "options": [
+        "The facts have been checked against a primary source.",
+        "The answer is up to date.",
+        "Nothing by itself — the writing can sound sure and still be wrong.",
+        "The tool is allowed to be turned in as your schoolwork."
+      ],
+      "answer": 2,
+      "why": "These tools generate fluent language. Tone is not a fact-check."
+    },
+    {
+      "prompt": "Which prompt is the strongest?",
+      "options": [
+        "Tell me everything about leadership.",
+        "Make this impressive.",
+        "Draft a 20-minute volunteer-club agenda for 12 members with a cleanup in 16 days. Do not invent a budget. Use a timed list, and flag assumptions.",
+        "You are an expert. Give me the best answer."
+      ],
+      "answer": 2,
+      "why": "It includes a task, context, a constraint, a format, and a request not to invent facts."
+    },
+    {
+      "prompt": "Which of the following should you never paste into an AI chat?",
+      "options": [
+        "A made-up example about a student in a biology class.",
+        "A password, a one-time login code, or someone else’s phone number.",
+        "A public club event description you already posted on the school website.",
+        "A question about how to format a meeting agenda."
+      ],
+      "answer": 1,
+      "why": "Secrets and other people’s private details do not belong in a prompt. A made-up example or already-public information is different."
+    },
+    {
+      "prompt": "Your teacher has banned AI on a graded essay. What is the honest move?",
+      "options": [
+        "Have AI write the essay and rewrite a few words.",
+        "Follow the rule: do not use AI on that assignment; you may still use allowed study methods.",
+        "Use AI anyway if you do not get caught.",
+        "Use AI only for the citations, because citations are facts."
+      ],
+      "answer": 1,
+      "why": "Honesty means following the rules that apply to that work. AI-written citations can also be wrong."
+    },
+    {
+      "prompt": "You are 16 and want to try a new AI app. What should you do first?",
+      "options": [
+        "Invent a birthdate so you can sign up faster.",
+        "Use a parent’s account without asking.",
+        "Read that app’s current terms and age rules, and only use it if you are allowed — with a parent or guardian if the tool requires it.",
+        "Assume every AI tool has the same age rule as the last one you used."
+      ],
+      "answer": 2,
+      "why": "Age rules differ by tool and can change. Use permitted tools and follow their rules."
+    }
+  ],
+  "walkthrough": {
+    "minutes": "2–3",
+    "steps": [
+      [
+        "Compare",
+        "Read the weak request and the five parts of the stronger agenda prompt."
+      ],
+      [
+        "Check",
+        "Add the draft’s time blocks and confirm the roles with the people involved."
+      ],
+      [
+        "Flag",
+        "Underline any invented permission or budget and remove it."
+      ],
+      [
+        "Keep",
+        "Save the prompt pattern and the check on your worksheet."
+      ]
+    ],
+    "narration": [
+      "A weak prompt sounds like this: ‘Write an agenda for my club.’ You’ll usually get something generic.",
+      "Here’s the same goal, written with a simple pattern: task, context, constraints, format, and a request to flag uncertainty.",
+      "I’m asking for a 20-minute agenda, for a 12-person volunteer club, with a cleanup in 16 days. I’m also saying: don’t invent a budget, and tell me what you’re assuming.",
+      "Watch how much more usable the draft becomes — and notice what I still have to do. I check the times. I confirm the roles. I don’t treat this as official club policy.",
+      "That is the habit this class is after: a clear prompt, then your judgment. If a sentence looks like a fact, you verify it before you use it. And you never paste passwords, IDs, or someone else’s private details just to get a better answer.",
+      "You’ll find this prompt pattern on your cheat sheet."
+    ]
+  }
+}

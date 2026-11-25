@@ -240,7 +240,7 @@ export default function Step4Page() {
           <details className="rounded-xl border border-gray-200 bg-white p-4">
             <summary className="cursor-pointer font-semibold text-career-blue-dark">Try a free example: would you put this AI bullet on your resume?</summary>
             <div className="mt-4"><FreeBulletLesson inBuilder /></div>
-            <Link className="inline-block mt-3 text-sm text-career-blue-dark underline" href="/classes/ai-honestly">Learn how to edit AI suggestions honestly</Link>
+            <Link className="inline-block mt-3 text-sm text-career-blue-dark underline" href="/classes/ai-basics">Practice writing prompts and checking AI answers</Link>
           </details>
           {/* Experience List */}
           {experiences.length > 0 && !showForm && (
