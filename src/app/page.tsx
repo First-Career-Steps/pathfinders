@@ -6,7 +6,7 @@ import { WORKSHOP, WORKSHOP_PRODUCT_NOTE, WORKSHOP_AI_NOTICE } from '@/lib/works
 import styles from './home.module.css';
 
 const paths = [
-    { name: 'AI workshops', type: 'Interactive courses', body: 'Write a better prompt, compare AI tools and take an idea through to a tested feature.', detail: '4 workshops and an AI basics course', href: '/learn/ai', action: 'Explore AI', tone: 'blue' },
+    { name: 'Working with AI', type: 'Student classes', body: 'Write a prompt, check a claim and compare ideas for a project of your own.', detail: 'Start with Basics of AI', href: '/classes/ai-basics', action: 'Explore AI', tone: 'blue' },
     { name: 'Leadership', type: 'Courses & assessments', body: 'Make a tough call on a restaurant shift or inside a finance team. See how your decision plays out.', detail: 'Restaurant and accounting tracks', href: '/learn/leadership', action: 'Explore Leadership', tone: 'green' },
     { name: 'Resume Builder', type: 'Career service', body: 'Turn your school, volunteer and work experience into a resume you can use.', detail: 'Free preview · PDF downloads $1.99/year', href: '/resume-builder', action: 'Build my resume', tone: 'gold' },
 ];
@@ -28,7 +28,7 @@ export default function HomePage() {
                 </article>)}
             </section>
             <section className={styles.practice} aria-labelledby="practice-title">
-                <div className={styles.sectionHead}><h2 id="practice-title">Try a free exercise</h2><Link href="/learn">View all courses</Link></div>
+                <div className={styles.sectionHead}><h2 id="practice-title">Try a free exercise</h2><Link href="/classes">View all student classes</Link></div>
                 <div className={styles.examples}>
                     <article className={styles.feature}>
                         <Image src="/learning-assets/lead-the-shift.webp" alt="A shift lead coaching a teammate at the pizza pass" width={320} height={220}/>

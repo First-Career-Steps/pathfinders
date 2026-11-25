@@ -130,7 +130,10 @@ export default async function Landing({ params }: Context) {
           <h2>What you’ll be able to do</h2>
           <p>{c.outcome}</p>
           {c.track === "AI" && (
-            <p>AI can be wrong. Check its claims before using them.</p>
+            <>
+              <p>AI can be wrong. Check its claims before using them.</p>
+              <Link className="sc-tool-link" href={"/classes/prompts#" + slug}>Open this class’s prompts</Link>
+            </>
           )}
         </section>
         <section>

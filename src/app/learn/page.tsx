@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export const metadata: Metadata = { title:'Courses and assessments | First Career Steps', description:'Find interactive AI workshops, leadership practice cases, assessments and a student resume workshop.' };
+export const metadata: Metadata = { title:'Courses and assessments | First Career Steps', description:'Find student AI and leadership classes, workplace leadership assessments and resume practice.' };
 
 const topics = [
-    {title:'Working with AI', href:'/learn/ai', intro:'Read the slides, answer the end-of-class questions, and use the optional workbook to practice with your own example.', links:[
-        ['AI Basics for Teams','/learn/ai/basics'], ['Basics of AI and Effective Prompting','/learn/ai/prompting'], ['Brainstorming with AI','/learn/ai/brainstorming'], ['Leveraging Multiple AIs','/learn/ai/multiple-ais'], ['Build and test a feature with AI','/learn/ai/building'], ['Prompt library','/learn/ai/prompts']]},
-    {title:'Leadership', href:'/learn/leadership', intro:'Practice decisions from Brenen Morse’s The Little Black Book on Leadership. No CPE Offered.', links:[
+    {title:'Student classes', href:'/classes', intro:'Practice a skill for school or a first job. Choose a class to read the slides, take the quiz and download your worksheet.', links:[
+        ['Working with AI','/classes#ai'], ['Student leadership','/classes#leadership'], ['AI prompt library','/classes/prompts']]},
+    {title:'Workplace leadership', href:'/learn/leadership', intro:'Practice decisions from Brenen Morse’s The Little Black Book on Leadership. No CPE Offered.', links:[
         ['Restaurant Leadership and shift simulations','/learn/leadership/restaurant'], ['Lead the Shift · three manager courses and paperback','/learn/leadership/team-training'], ['Leading the Financial Close','/learn/leadership/cpa/leading-the-close'], ['Coaching Accounting Teams','/learn/leadership/cpa/coaching-accounting-teams'], ['Changing Finance Operations','/learn/leadership/cpa/changing-finance-operations'], ['Leadership assessments','/learn/leadership#assessments']]},
 ];
 

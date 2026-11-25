@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "First Career Steps | Workplace Learning and Resume Builder",
     description:
-      "Explore interactive AI workshops, leadership courses and assessments, and the First Career Steps Resume Builder.",
+      "Explore student AI classes, leadership courses and assessments, and the First Career Steps Resume Builder.",
     type: "website",
     locale: "en_US",
   },
