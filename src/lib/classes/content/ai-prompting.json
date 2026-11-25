@@ -1,0 +1,290 @@
+[
+  {
+    "key": "s01",
+    "title": "Prompting That Gets Useful Answers",
+    "body": "Use five parts to get one truthful, useful draft.",
+    "notes": "Open with a first-job resume bullet.",
+    "aria": "Prompting That Gets Useful Answers. Use five parts to get one truthful, useful draft.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s02",
+    "title": "Why vague prompts drift",
+    "body": "“Make me impressive” invites unsupported detail.",
+    "notes": "Compare outputs from the same raw note.",
+    "aria": "Why vague prompts drift. “Make me impressive” invites unsupported detail.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s03",
+    "title": "Five parts",
+    "body": "Use role, facts, audience, constraints and uncertainty.",
+    "notes": "Explain one purpose for each part.",
+    "aria": "Five parts. Use role, facts, audience, constraints and uncertainty.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s04",
+    "title": "One job, two prompts",
+    "body": "Compare a vague cashier request with a five-part request.",
+    "notes": "Hold the underlying experience constant.",
+    "aria": "One job, two prompts. Compare a vague cashier request with a five-part request.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s05",
+    "title": "Activity: label a prompt",
+    "body": "Identify the five parts in a model note.",
+    "notes": "Reveal one label at a time.",
+    "aria": "Activity: label a prompt. Identify the five parts in a model note.",
+    "kind": "activity"
+  },
+  {
+    "key": "s06",
+    "title": "Facts first",
+    "body": "Supply only what happened and ask for missing details.",
+    "notes": "Model a request to ask rather than guess.",
+    "aria": "Facts first. Supply only what happened and ask for missing details.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s07",
+    "title": "Useful limits",
+    "body": "Specify voice, length, format and no invented metrics.",
+    "notes": "Choose constraints a reader can test.",
+    "aria": "Useful limits. Specify voice, length, format and no invented metrics.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s08",
+    "title": "Activity: write a first prompt",
+    "body": "Use fictional babysitting or cashier notes.",
+    "notes": "Build one line per part.",
+    "aria": "Activity: write a first prompt. Use fictional babysitting or cashier notes.",
+    "kind": "activity"
+  },
+  {
+    "key": "s09",
+    "title": "Mid-quiz: three checks",
+    "body": "Find a missing part, a constraint that prevents invention and the problem with impressive wording.",
+    "notes": "Return to the same source notes.",
+    "aria": "Mid-quiz: three checks. Find a missing part, a constraint that prevents invention and the problem with impressive wording.",
+    "kind": "mid"
+  },
+  {
+    "key": "s10",
+    "title": "A school pattern",
+    "body": "Ask for an explanation, a quiz and feedback on your own answer if the teacher permits it.",
+    "notes": "Keep the assignment rules visible.",
+    "aria": "A school pattern. Ask for an explanation, a quiz and feedback on your own answer if the teacher permits it.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s11",
+    "title": "An interview pattern",
+    "body": "Request one question at a time and feedback after the student answers.",
+    "notes": "Do not memorize an invented story.",
+    "aria": "An interview pattern. Request one question at a time and feedback after the student answers.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s12",
+    "title": "A builder pattern",
+    "body": "Ask for three bullets based only on listed duties and tools.",
+    "notes": "Check every line because AI can be wrong.",
+    "aria": "A builder pattern. Ask for three bullets based only on listed duties and tools.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s13",
+    "title": "Screen recording: compare prompts",
+    "body": "Plan an 8–10 minute demo using the same experience twice.",
+    "notes": "Until recorded, annotate which prompt caused which change.",
+    "aria": "Screen recording: compare prompts. Plan an 8–10 minute demo using the same experience twice.",
+    "kind": "video"
+  },
+  {
+    "key": "s14",
+    "title": "Change one thing",
+    "body": "Add a source fact or tighten one constraint when a draft stays generic.",
+    "notes": "Compare versions with the source.",
+    "aria": "Change one thing. Add a source fact or tighten one constraint when a draft stays generic.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s15",
+    "title": "Activity: two edits",
+    "body": "Revise a failed prompt in two deliberate steps.",
+    "notes": "Explain what each revision tested.",
+    "aria": "Activity: two edits. Revise a failed prompt in two deliberate steps.",
+    "kind": "activity"
+  },
+  {
+    "key": "s16",
+    "title": "What to leave out",
+    "body": "Exclude passwords, identification details and other people's private information.",
+    "notes": "Use general locations and sample data.",
+    "aria": "What to leave out. Exclude passwords, identification details and other people's private information.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s17",
+    "title": "Worksheet: My Prompt Patterns",
+    "body": "Fill in school, resume and interview templates with all five parts.",
+    "notes": "Keep the worksheet local.",
+    "aria": "Worksheet: My Prompt Patterns. Fill in school, resume and interview templates with all five parts.",
+    "kind": "worksheet"
+  },
+  {
+    "key": "s18",
+    "title": "One earned bullet",
+    "body": "Use a builder draft or document to record a claim you can explain.",
+    "notes": "Review before transferring.",
+    "aria": "One earned bullet. Use a builder draft or document to record a claim you can explain.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s19",
+    "title": "Common traps",
+    "body": "Notice artificially adult voice, missing facts and vague praise requests.",
+    "notes": "Rewrite one failed instruction.",
+    "aria": "Common traps. Notice artificially adult voice, missing facts and vague praise requests.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s20",
+    "title": "Recap the five parts",
+    "body": "Name what each part constrains in the answer.",
+    "notes": "Use a prompt with one part removed.",
+    "aria": "Recap the five parts. Name what each part constrains in the answer.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s21",
+    "title": "Next: catching errors",
+    "body": "Even a strong prompt can produce an error.",
+    "notes": "Introduce independent verification.",
+    "aria": "Next: catching errors. Even a strong prompt can produce an error.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s22",
+    "title": "Optional completion line",
+    "body": "Preview a class record or a true practiced skill.",
+    "notes": "No automatic insertion.",
+    "aria": "Optional completion line. Preview a class record or a true practiced skill.",
+    "kind": "resume"
+  },
+  {
+    "key": "s23",
+    "title": "End question: identify the pattern",
+    "body": "Choose the complete five-part request.",
+    "notes": "Explain the uncertainty clause.",
+    "aria": "End question: identify the pattern. Choose the complete five-part request.",
+    "kind": "final"
+  },
+  {
+    "key": "s24",
+    "title": "End question: select a prompt",
+    "body": "Compare two requests from the same student.",
+    "notes": "Prefer the one grounded in real facts.",
+    "aria": "End question: select a prompt. Compare two requests from the same student.",
+    "kind": "final"
+  },
+  {
+    "key": "s25",
+    "title": "End question: invention risk",
+    "body": "Identify the unsupported achievement in a request.",
+    "notes": "Remove it or ask for evidence.",
+    "aria": "End question: invention risk. Identify the unsupported achievement in a request.",
+    "kind": "final"
+  },
+  {
+    "key": "s26",
+    "title": "End question: school rules",
+    "body": "Choose help allowed by a stated assignment policy.",
+    "notes": "Do not let a prompt override it.",
+    "aria": "End question: school rules. Choose help allowed by a stated assignment policy.",
+    "kind": "final"
+  },
+  {
+    "key": "s27",
+    "title": "End question: follow-up",
+    "body": "Choose a revision that asks about missing evidence.",
+    "notes": "Reject a request for a more flattering guess.",
+    "aria": "End question: follow-up. Choose a revision that asks about missing evidence.",
+    "kind": "final"
+  },
+  {
+    "key": "s28",
+    "title": "Answer review",
+    "body": "Explain all five choices and allow another try.",
+    "notes": "Pass at four of five.",
+    "aria": "Answer review. Explain all five choices and allow another try.",
+    "kind": "review"
+  },
+  {
+    "key": "s29",
+    "title": "Practice: messy note card",
+    "body": "Supply an example about sorting supplies after a club event.",
+    "notes": "Keep the notes deliberately informal.",
+    "aria": "Practice: messy note card. Supply an example about sorting supplies after a club event.",
+    "kind": "activity"
+  },
+  {
+    "key": "s30",
+    "title": "Practice: identify the role",
+    "body": "Choose an appropriate editor role.",
+    "notes": "Define its task in one sentence.",
+    "aria": "Practice: identify the role. Choose an appropriate editor role.",
+    "kind": "activity"
+  },
+  {
+    "key": "s31",
+    "title": "Practice: extract the facts",
+    "body": "Separate observed work from guessed results.",
+    "notes": "Mark any unknown.",
+    "aria": "Practice: extract the facts. Separate observed work from guessed results.",
+    "kind": "activity"
+  },
+  {
+    "key": "s32",
+    "title": "Practice: choose the reader",
+    "body": "Specify the job or school audience.",
+    "notes": "Match vocabulary to the reader.",
+    "aria": "Practice: choose the reader. Specify the job or school audience.",
+    "kind": "activity"
+  },
+  {
+    "key": "s33",
+    "title": "Practice: set limits",
+    "body": "Define length, voice and what must not be invented.",
+    "notes": "Try one short draft.",
+    "aria": "Practice: set limits. Define length, voice and what must not be invented.",
+    "kind": "activity"
+  },
+  {
+    "key": "s34",
+    "title": "Practice: uncertainty check",
+    "body": "Ask which details need confirmation, then trim the result.",
+    "notes": "Keep one verified line.",
+    "aria": "Practice: uncertainty check. Ask which details need confirmation, then trim the result.",
+    "kind": "activity"
+  },
+  {
+    "key": "s35",
+    "title": "Close with one draft",
+    "body": "Read the line out loud and check it against the original note.",
+    "notes": "Save the reusable pattern.",
+    "aria": "Close with one draft. Read the line out loud and check it against the original note.",
+    "kind": "close"
+  },
+  {
+    "key": "s36",
+    "title": "Take the facts forward",
+    "body": "Use real notes the next time you start a prompt.",
+    "notes": "Leave an empty fact empty.",
+    "aria": "Take the facts forward. Use real notes the next time you start a prompt.",
+    "kind": "lesson"
+  }
+]

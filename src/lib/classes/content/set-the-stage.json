@@ -1,0 +1,306 @@
+[
+  {
+    "key": "s01",
+    "title": "Set the Stage",
+    "body": "Change one cue that teaches people how to use a shared space.",
+    "notes": "Draw on the published idea of culture surviving without a poster.",
+    "aria": "Set the Stage. Change one cue that teaches people how to use a shared space.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s02",
+    "title": "Environment",
+    "body": "Part III uses Chapters 14 and 16.",
+    "notes": "Define the language and stage themes.",
+    "aria": "Environment. Part III uses Chapters 14 and 16.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s03",
+    "title": "What the room teaches",
+    "body": "Look at language, pace, stress and physical setup.",
+    "notes": "Include a group chat as a shared space.",
+    "aria": "What the room teaches. Look at language, pace, stress and physical setup.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s04",
+    "title": "Activity: choose an environment",
+    "body": "Pick a meeting, team table or first-job station to audit.",
+    "notes": "A fictional setting works.",
+    "aria": "Activity: choose an environment. Pick a meeting, team table or first-job station to audit.",
+    "kind": "activity"
+  },
+  {
+    "key": "s05",
+    "title": "What you tolerate",
+    "body": "Chapter 16 connects the environment with behavior people repeatedly allow.",
+    "notes": "Use a repeated joke or missing tool. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
+    "aria": "What you tolerate. Chapter 16 connects the environment with behavior people repeatedly allow.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s06",
+    "title": "The Stage",
+    "body": "Compare a restaurant pickup station and a club sign-in table.",
+    "notes": "Use a clearly labeled hypothetical restaurant example.",
+    "aria": "The Stage. Compare a restaurant pickup station and a club sign-in table.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s07",
+    "title": "Activity: a newcomer's first ten minutes",
+    "body": "List five observable features without taking pictures.",
+    "notes": "Record what someone sees, hears or has to ask.",
+    "aria": "Activity: a newcomer's first ten minutes. List five observable features without taking pictures.",
+    "kind": "activity"
+  },
+  {
+    "key": "s08",
+    "title": "What has been sliding?",
+    "body": "Describe one tolerated behavior without assigning motives.",
+    "notes": "Ask who has standing to change it.",
+    "aria": "What has been sliding?. Describe one tolerated behavior without assigning motives.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s09",
+    "title": "Language sets the culture",
+    "body": "Chapter 14 makes repeated language part of leadership practice.",
+    "notes": "Compare a clear request with a cutting remark. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
+    "aria": "Language sets the culture. Chapter 14 makes repeated language part of leadership practice.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s10",
+    "title": "A controlled response",
+    "body": "Use a calm factual instruction during a rush.",
+    "notes": "Distinguish composure from pretending everything is fine.",
+    "aria": "A controlled response. Use a calm factual instruction during a rush.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s11",
+    "title": "The words that travel",
+    "body": "Sarcasm about absent teammates and panic in a chat affect newcomers.",
+    "notes": "Choose one phrase worth changing.",
+    "aria": "The words that travel. Sarcasm about absent teammates and panic in a chat affect newcomers.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s12",
+    "title": "Activity: rewrite two lines",
+    "body": "Replace two put-downs with specific requests.",
+    "notes": "Keep the same operational problem.",
+    "aria": "Activity: rewrite two lines. Replace two put-downs with specific requests.",
+    "kind": "activity"
+  },
+  {
+    "key": "s13",
+    "title": "Read rising stress",
+    "body": "Stress can point to missing tools, unclear roles or a bottleneck.",
+    "notes": "Avoid diagnosing a person. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Read rising stress. Stress can point to missing tools, unclear roles or a bottleneck.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s14",
+    "title": "What to check first",
+    "body": "A line at the supply table may reflect one shared pair of scissors.",
+    "notes": "Look for a change that tests the explanation.",
+    "aria": "What to check first. A line at the supply table may reflect one shared pair of scissors.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s15",
+    "title": "Mid-quiz: three decisions",
+    "body": "Check tolerated behavior, language and a diagnostic response to stress.",
+    "notes": "Explain answers with observable facts.",
+    "aria": "Mid-quiz: three decisions. Check tolerated behavior, language and a diagnostic response to stress.",
+    "kind": "mid"
+  },
+  {
+    "key": "s16",
+    "title": "Pace, music and energy",
+    "body": "Examine what helps people hear instructions and stay on task.",
+    "notes": "Use a car wash, group chat or club meeting. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Pace, music and energy. Examine what helps people hear instructions and stay on task.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s17",
+    "title": "A lever you control",
+    "body": "Change one part of the environment you can influence.",
+    "notes": "Ask permission before moving shared equipment. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "A lever you control. Change one part of the environment you can influence.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s18",
+    "title": "Four review questions",
+    "body": "Check tone, setup, energy and your own composure.",
+    "notes": "Adapt the official after-action template. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Four review questions. Check tone, setup, energy and your own composure.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s19",
+    "title": "Activity: score four checks",
+    "body": "Give each check a rating from one to five and one observation.",
+    "notes": "A number without an example is hard to interpret.",
+    "aria": "Activity: score four checks. Give each check a rating from one to five and one observation.",
+    "kind": "activity"
+  },
+  {
+    "key": "s20",
+    "title": "Screen recording: a ten-minute reset",
+    "body": "Plan a 6–10 minute walk of a table or station.",
+    "notes": "Use annotated images of objects with no student faces until recorded.",
+    "aria": "Screen recording: a ten-minute reset. Plan a 6–10 minute walk of a table or station.",
+    "kind": "video"
+  },
+  {
+    "key": "s21",
+    "title": "A one-week experiment",
+    "body": "Choose a tolerated behavior and a language habit to change.",
+    "notes": "Specify when and how to observe both.",
+    "aria": "A one-week experiment. Choose a tolerated behavior and a language habit to change.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s22",
+    "title": "Raise a standard privately",
+    "body": "Correct a person's behavior away from the group under Chapter 18.",
+    "notes": "Preview L4 without asking a peer to discipline others.",
+    "aria": "Raise a standard privately. Correct a person's behavior away from the group under Chapter 18.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s23",
+    "title": "The group chat is a room",
+    "body": "A pinned current link and a clear request can reduce repeated questions.",
+    "notes": "Compare with a stream of sarcastic replies.",
+    "aria": "The group chat is a room. A pinned current link and a clear request can reduce repeated questions.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s24",
+    "title": "A truthful process bullet",
+    "body": "Describe the space you changed and the difference you observed.",
+    "notes": "Use an actual prep station or club example only if true.",
+    "aria": "A truthful process bullet. Describe the space you changed and the difference you observed.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s25",
+    "title": "Worksheet: Environment Audit and One-Week Change",
+    "body": "Combine a newcomer list, four scores and two changes.",
+    "notes": "Reserve space for the follow-up date.",
+    "aria": "Worksheet: Environment Audit and One-Week Change. Combine a newcomer list, four scores and two changes.",
+    "kind": "worksheet"
+  },
+  {
+    "key": "s26",
+    "title": "Common traps",
+    "body": "Decorating the room may leave an unclear handoff untouched.",
+    "notes": "Separate a preference from a standard.",
+    "aria": "Common traps. Decorating the room may leave an unclear handoff untouched.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s27",
+    "title": "What changed in the room?",
+    "body": "Summarize the tolerated behavior, the language and the next check.",
+    "notes": "Return to Chapters 14 and 16.",
+    "aria": "What changed in the room?. Summarize the tolerated behavior, the language and the next check.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s28",
+    "title": "Next: everyday techniques",
+    "body": "Introduce the huddle and private one-on-one.",
+    "notes": "They are practiced in L4.",
+    "aria": "Next: everyday techniques. Introduce the huddle and private one-on-one.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s29",
+    "title": "Optional completion record",
+    "body": "Choose whether to transfer a true skill or completion line.",
+    "notes": "Preview all text first.",
+    "aria": "Optional completion record. Choose whether to transfer a true skill or completion line.",
+    "kind": "resume"
+  },
+  {
+    "key": "s30",
+    "title": "End question: the actual standard",
+    "body": "Identify which behavior people tolerate in the scene.",
+    "notes": "Explain how a newcomer would infer it.",
+    "aria": "End question: the actual standard. Identify which behavior people tolerate in the scene.",
+    "kind": "final"
+  },
+  {
+    "key": "s31",
+    "title": "End question: language under pressure",
+    "body": "Choose a request that names the next useful action.",
+    "notes": "Tie it to Chapter 14.",
+    "aria": "End question: language under pressure. Choose a request that names the next useful action.",
+    "kind": "final"
+  },
+  {
+    "key": "s32",
+    "title": "End question: stress as information",
+    "body": "Look for a process that can be checked before blaming a peer.",
+    "notes": "Use a sign-in queue.",
+    "aria": "End question: stress as information. Look for a process that can be checked before blaming a peer.",
+    "kind": "final"
+  },
+  {
+    "key": "s33",
+    "title": "End question: ten minutes to reset",
+    "body": "Choose one fix within the student's role and time.",
+    "notes": "Explain why reorganizing everything would obscure the test.",
+    "aria": "End question: ten minutes to reset. Choose one fix within the student's role and time.",
+    "kind": "final"
+  },
+  {
+    "key": "s34",
+    "title": "End question: a defensible resume claim",
+    "body": "Compare a true station change with an inflated culture claim.",
+    "notes": "Ask what evidence supports the result.",
+    "aria": "End question: a defensible resume claim. Compare a true station change with an inflated culture claim.",
+    "kind": "final"
+  },
+  {
+    "key": "s35",
+    "title": "Answer review",
+    "body": "Show why each choice fits the facts.",
+    "notes": "Allow unlimited retries.",
+    "aria": "Answer review. Show why each choice fits the facts.",
+    "kind": "review"
+  },
+  {
+    "key": "s36",
+    "title": "Try one change this week",
+    "body": "Choose when to return and observe the difference.",
+    "notes": "Bring the worksheet.",
+    "aria": "Try one change this week. Choose when to return and observe the difference.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s37",
+    "title": "Optional huddle template",
+    "body": "Show how one priority can reinforce the change.",
+    "notes": "Link to official resources without requiring a download. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Optional huddle template. Show how one priority can reinforce the change.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s38",
+    "title": "Optional after-action template",
+    "body": "Revisit language, stage, energy and composure after the change.",
+    "notes": "Include the questions within the class. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Optional after-action template. Revisit language, stage, energy and composure after the change.",
+    "kind": "lesson"
+  }
+]

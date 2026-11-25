@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { BuilderLayout } from "@/components/layout";
 import { Button, Chip, Card } from "@/components/ui";
+import { takeClassDraft } from "@/lib/classes/transfer";
 import { useProfile } from "@/contexts/ProfileContext";
 import { LiveResumePreview } from "@/components/LiveResumePreview";
 
@@ -79,6 +80,12 @@ export default function Step5Page() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>(
     profile.skills || []
   );
+  const [classSkill, setClassSkill] = useState('');
+  useEffect(() => {
+    if (!user) return;
+    const draft = takeClassDraft(user.id, 5);
+    if (draft) setClassSkill(draft.text);
+  }, [user]);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -128,6 +135,14 @@ export default function Step5Page() {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Column - Form */}
         <div className="flex-1 space-y-6">
+          {classSkill && <Card padding="md"><h2 className="font-semibold">Skill from your class</h2>
+            <p className="my-2">{classSkill}</p>
+            {selectedSkills.length >= 10 && !selectedSkills.includes(classSkill) && <p>Remove one selected skill to make room.</p>}
+            <button type="button" className="underline text-career-blue-dark mr-4" disabled={selectedSkills.length >= 10 && !selectedSkills.includes(classSkill)}
+              onClick={() => { if (!selectedSkills.includes(classSkill)) toggleSkill(classSkill); setClassSkill(''); }}>
+              {selectedSkills.includes(classSkill) ? 'Keep selected skill' : 'Add to selected skills'}
+            </button><button type="button" onClick={() => setClassSkill('')}>Dismiss</button>
+          </Card>}
           {/* Selected Skills Summary */}
           {selectedSkills.length > 0 && (
             <Card

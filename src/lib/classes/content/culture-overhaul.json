@@ -1,0 +1,322 @@
+[
+  {
+    "key": "s01",
+    "title": "When the Team Is Off Track",
+    "body": "Find the real problem and rebuild one routine over 30 days.",
+    "notes": "Use a real group or one of two fictional cases.",
+    "aria": "When the Team Is Off Track. Find the real problem and rebuild one routine over 30 days.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s02",
+    "title": "Culture Overhaul",
+    "body": "Part V includes the confirmed Chapter 23 theme of culture spreading through people.",
+    "notes": "Recommend L1–L4 first.",
+    "aria": "Culture Overhaul. Part V includes the confirmed Chapter 23 theme of culture spreading through people.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s03",
+    "title": "When nobody is watching",
+    "body": "Culture shows up in repeated behavior when the official lead is absent.",
+    "notes": "Use an unattended sign-in table.",
+    "aria": "When nobody is watching. Culture shows up in repeated behavior when the official lead is absent.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s04",
+    "title": "Three decisions",
+    "body": "Find the real problem, identify who leads in your absence and run the change.",
+    "notes": "Outline one month of repetition. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Three decisions. Find the real problem, identify who leads in your absence and run the change.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s05",
+    "title": "Activity: describe the slip",
+    "body": "Record one observable change without naming peers.",
+    "notes": "Separate a late start from a guess about effort.",
+    "aria": "Activity: describe the slip. Record one observable change without naming peers.",
+    "kind": "activity"
+  },
+  {
+    "key": "s06",
+    "title": "Look at your system first",
+    "body": "Check how your own instructions, routines and follow-up contribute.",
+    "notes": "Ask what someone new is told. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Look at your system first. Check how your own instructions, routines and follow-up contribute.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s07",
+    "title": "A diagnostic question",
+    "body": "Test for an unclear standard, missing follow-up, a skills gap, a schedule problem or a leader ignoring a standard.",
+    "notes": "Seek evidence before choosing.",
+    "aria": "A diagnostic question. Test for an unclear standard, missing follow-up, a skills gap, a schedule problem or a leader ignoring a standard.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s08",
+    "title": "Case A: the late club",
+    "body": "A fictional club starts 15 minutes late and laughs it off.",
+    "notes": "Check who has the key and when the agenda appears.",
+    "aria": "Case A: the late club. A fictional club starts 15 minutes late and laughs it off.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s09",
+    "title": "Case B: the busy close",
+    "body": "In a hypothetical restaurant, the closing station is messy after busy shifts.",
+    "notes": "Inspect the handoff and available time.",
+    "aria": "Case B: the busy close. In a hypothetical restaurant, the closing station is messy after busy shifts.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s10",
+    "title": "Activity: name the system problem",
+    "body": "Describe the gap in one sentence someone could test.",
+    "notes": "Use roles rather than names.",
+    "aria": "Activity: name the system problem. Describe the gap in one sentence someone could test.",
+    "kind": "activity"
+  },
+  {
+    "key": "s11",
+    "title": "Mid-quiz: three decisions",
+    "body": "Check the first place to look, behavior without supervision and a system-first explanation.",
+    "notes": "Avoid diagnosing the group.",
+    "aria": "Mid-quiz: three decisions. Check the first place to look, behavior without supervision and a system-first explanation.",
+    "kind": "mid"
+  },
+  {
+    "key": "s12",
+    "title": "Find out respectfully",
+    "body": "Ask about a handoff, observe it with permission or review the outcome.",
+    "notes": "No spying or secret recordings. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Find out respectfully. Ask about a handoff, observe it with permission or review the outcome.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s13",
+    "title": "Culture Carriers",
+    "body": "Chapter 23 describes a person who lives the standard so others can learn it.",
+    "notes": "Use behavior as the evidence. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
+    "aria": "Culture Carriers. Chapter 23 describes a person who lives the standard so others can learn it.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s14",
+    "title": "Who models the routine?",
+    "body": "Look for someone who consistently closes the loop when nobody prompts them.",
+    "notes": "Distinguish this from popularity.",
+    "aria": "Who models the routine?. Look for someone who consistently closes the loop when nobody prompts them.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s15",
+    "title": "Invite a Culture Carrier",
+    "body": "Ask them to model one opening, closing or pairing task.",
+    "notes": "Keep the work bounded and voluntary. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Invite a Culture Carrier. Ask them to model one opening, closing or pairing task.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s16",
+    "title": "When the lead is part of the problem",
+    "body": "Use a private factual conversation or involve the actual advisor or manager.",
+    "notes": "Stay within your authority. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "When the lead is part of the problem. Use a private factual conversation or involve the actual advisor or manager.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s17",
+    "title": "Activity: identify roles",
+    "body": "Describe who models the standard and who has the authority to follow up.",
+    "notes": "No full names in stored notes.",
+    "aria": "Activity: identify roles. Describe who models the standard and who has the authority to follow up.",
+    "kind": "activity"
+  },
+  {
+    "key": "s18",
+    "title": "One visible reset",
+    "body": "Write one standard, choose a huddle or review, and schedule follow-up.",
+    "notes": "Make the routine visible to a newcomer. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "One visible reset. Write one standard, choose a huddle or review, and schedule follow-up.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s19",
+    "title": "Repeat the repair",
+    "body": "A one-off reward cannot make a late agenda appear on time.",
+    "notes": "Build a cue for repetition. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Repeat the repair. A one-off reward cannot make a late agenda appear on time.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s20",
+    "title": "A four-week calendar",
+    "body": "Reset in week one, repeat in weeks two and three, and review in week four.",
+    "notes": "Name a person and time for each step.",
+    "aria": "A four-week calendar. Reset in week one, repeat in weeks two and three, and review in week four.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s21",
+    "title": "Activity: fill the 30-day plan",
+    "body": "Apply each week to the club or closing example.",
+    "notes": "Add an observable measure.",
+    "aria": "Activity: fill the 30-day plan. Apply each week to the club or closing example.",
+    "kind": "activity"
+  },
+  {
+    "key": "s22",
+    "title": "Screen recording: a culture slip",
+    "body": "Plan a 10–12 minute walkthrough of a restaurant case and paper plan.",
+    "notes": "Use a clearly fictional narrated case pending Brenen's approved story. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Screen recording: a culture slip. Plan a 10–12 minute walkthrough of a restaurant case and paper plan.",
+    "kind": "video"
+  },
+  {
+    "key": "s23",
+    "title": "Shortcuts to avoid",
+    "body": "Changing a slogan, shaming a group or adding twelve rules can hide the actual problem.",
+    "notes": "Compare with one testable routine.",
+    "aria": "Shortcuts to avoid. Changing a slogan, shaming a group or adding twelve rules can hide the actual problem.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s24",
+    "title": "When to get help",
+    "body": "For harassment, discrimination, violence or safety issues, go to a trusted adult, manager or school process.",
+    "notes": "A student does not have to investigate or resolve harm alone.",
+    "aria": "When to get help. For harassment, discrimination, violence or safety issues, go to a trusted adult, manager or school process.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s25",
+    "title": "A resume result you can support",
+    "body": "Describe what happened across real meetings only if observed.",
+    "notes": "Worked example must identify the actual dates or count.",
+    "aria": "A resume result you can support. Describe what happened across real meetings only if observed.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s26",
+    "title": "Worksheet: 30-Day Overhaul Plan",
+    "body": "Record the system problem, Culture Carrier role, weekly plan and escalation contact role.",
+    "notes": "Use a role without personal contact details.",
+    "aria": "Worksheet: 30-Day Overhaul Plan. Record the system problem, Culture Carrier role, weekly plan and escalation contact role.",
+    "kind": "worksheet"
+  },
+  {
+    "key": "s27",
+    "title": "Common traps",
+    "body": "Avoid generational blame, playing hero or giving up after one week.",
+    "notes": "Ask which part of your routine is missing.",
+    "aria": "Common traps. Avoid generational blame, playing hero or giving up after one week.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s28",
+    "title": "What will last?",
+    "body": "Connect the system check, Chapter 23 and repetition.",
+    "notes": "Show the link in one case.",
+    "aria": "What will last?. Connect the system check, Chapter 23 and repetition.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s29",
+    "title": "The two tracks",
+    "body": "Students can continue into the AI classes after leadership.",
+    "notes": "Do not assume everyone completed prior classes.",
+    "aria": "The two tracks. Students can continue into the AI classes after leadership.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s30",
+    "title": "Optional completion line",
+    "body": "Preview a record describing this class.",
+    "notes": "It carries no school or licensing credit.",
+    "aria": "Optional completion line. Preview a record describing this class.",
+    "kind": "resume"
+  },
+  {
+    "key": "s31",
+    "title": "End question: where to start",
+    "body": "Choose the first evidence to examine in a drifting team.",
+    "notes": "Return to the leader's routine.",
+    "aria": "End question: where to start. Choose the first evidence to examine in a drifting team.",
+    "kind": "final"
+  },
+  {
+    "key": "s32",
+    "title": "End question: Culture Carrier",
+    "body": "Identify a modeled behavior from Chapter 23.",
+    "notes": "Separate popularity from evidence.",
+    "aria": "End question: Culture Carrier. Identify a modeled behavior from Chapter 23.",
+    "kind": "final"
+  },
+  {
+    "key": "s33",
+    "title": "End question: repetition",
+    "body": "Compare a month of follow-up with a single pep talk.",
+    "notes": "Choose the measurable plan.",
+    "aria": "End question: repetition. Compare a month of follow-up with a single pep talk.",
+    "kind": "final"
+  },
+  {
+    "key": "s34",
+    "title": "End question: adult involvement",
+    "body": "Identify a scenario needing a trusted adult or formal process.",
+    "notes": "Never make a student handle danger alone.",
+    "aria": "End question: adult involvement. Identify a scenario needing a trusted adult or formal process.",
+    "kind": "final"
+  },
+  {
+    "key": "s35",
+    "title": "End question: a truthful result",
+    "body": "Choose a bullet supported by the observed meeting record.",
+    "notes": "Remove claims without evidence.",
+    "aria": "End question: a truthful result. Choose a bullet supported by the observed meeting record.",
+    "kind": "final"
+  },
+  {
+    "key": "s36",
+    "title": "Answer review",
+    "body": "Explain the five decisions and allow a retry.",
+    "notes": "Four correct completes the class.",
+    "aria": "Answer review. Explain the five decisions and allow a retry.",
+    "kind": "review"
+  },
+  {
+    "key": "s37",
+    "title": "Track recap: ownership",
+    "body": "Link one small repair to a standard you held.",
+    "notes": "Only claim practiced behavior.",
+    "aria": "Track recap: ownership. Link one small repair to a standard you held.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s38",
+    "title": "Track recap: people and stage",
+    "body": "Identify an actual training conversation or environment change.",
+    "notes": "Make it specific enough to describe aloud.",
+    "aria": "Track recap: people and stage. Identify an actual training conversation or environment change.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s39",
+    "title": "Track recap: techniques",
+    "body": "Choose a huddle or follow-up skill only if you used it.",
+    "notes": "Offer a modest resume wording.",
+    "aria": "Track recap: techniques. Choose a huddle or follow-up skill only if you used it.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s40",
+    "title": "Close the month",
+    "body": "Set the date for the fourth-week review.",
+    "notes": "Keep the plan and record what actually happened.",
+    "aria": "Close the month. Set the date for the fourth-week review.",
+    "kind": "close"
+  }
+]

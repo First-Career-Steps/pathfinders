@@ -3,6 +3,7 @@
 import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import { classDestination } from '@/lib/classes/catalog';
 import { WORKSHOP, workshopSignup } from '@/lib/workshop';
 import { useAuth } from '@/contexts/AuthContext';
 import Header from '@/components/Header';
@@ -12,6 +13,7 @@ import { logger } from '@/lib/logger';
 function LoginContent() {
 
   const searchParams = useSearchParams();
+  const returnClass = classDestination(searchParams.get('redirect'));
   const { signIn, resetPasswordForEmail } = useAuth();
 
   const [mode, setMode] = useState<'login' | 'forgot'>('login');
@@ -60,7 +62,8 @@ function LoginContent() {
       });
 
       const redirectTo = searchParams.get('redirect') || '/dashboard';
-      window.location.assign(redirectTo);
+      const target = new URL(redirectTo, window.location.origin);
+      window.location.assign(target.origin === window.location.origin ? target.href : '/dashboard');
     } catch (error) {
       logger.error('Login Form', error as Error, { email: formData.email });
       setServerError('An unexpected error occurred. Please try again.');
@@ -269,7 +272,7 @@ function LoginContent() {
                   ) : (
                     <>
                       Don&apos;t have an account?{' '}
-                      <Link href={searchParams.get('redirect')?.startsWith(WORKSHOP) ? workshopSignup : '/signup'} className="text-career-blue font-semibold hover:underline">
+                      <Link href={returnClass ? '/signup?redirect='+encodeURIComponent(returnClass) : searchParams.get('redirect')?.startsWith(WORKSHOP) ? workshopSignup : '/signup'} className="text-career-blue font-semibold hover:underline">
                         Create Account
                       </Link>
                     </>

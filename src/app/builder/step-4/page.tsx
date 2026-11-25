@@ -7,6 +7,8 @@ import { BuilderLayout } from "@/components/layout";
 import { Button, Input, TextArea, Select, Card } from "@/components/ui";
 import { useProfile, Experience } from "@/contexts/ProfileContext";
 import { requestResumeAI, requireAILines } from "@/lib/resume-ai-client";
+import Link from "next/link";
+import {takeClassDraft} from "@/lib/classes/transfer";
 import FreeBulletLesson from "@/components/workshop/FreeBulletLesson";
 import { draftKey } from "@/lib/workshop";
 import { LiveResumePreview } from "@/components/LiveResumePreview";
@@ -75,6 +77,17 @@ export default function Step4Page() {
       sessionStorage.removeItem(key);
       window.history.replaceState(window.history.state, '', '/builder/step-4');
     } catch { /* The learner can still paste the downloaded bullet. */ }
+  }, [user]);
+
+  useEffect(() => {
+    if (!user) return;
+    const draft = takeClassDraft(user.id, 4);
+    if (!draft) return;
+    const month = /^\d{4}-\d{2}$/.test(draft.month || '') ? draft.month! : '';
+    setFormData(current => draft.type === 'course'
+      ? {...current, type: 'other', title: draft.title, organization: 'FirstCareerSteps', description: draft.text, startDate: month, endDate: month, isCurrent: false}
+      : {...current, description: draft.text});
+    setShowForm(true);
   }, [user]);
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -227,6 +240,7 @@ export default function Step4Page() {
           <details className="rounded-xl border border-gray-200 bg-white p-4">
             <summary className="cursor-pointer font-semibold text-career-blue-dark">Try a free example: would you put this AI bullet on your resume?</summary>
             <div className="mt-4"><FreeBulletLesson inBuilder /></div>
+            <Link className="inline-block mt-3 text-sm text-career-blue-dark underline" href="/classes/ai-honestly">Learn how to edit AI suggestions honestly</Link>
           </details>
           {/* Experience List */}
           {experiences.length > 0 && !showForm && (

@@ -1,0 +1,387 @@
+[
+  {
+    "key": "s01",
+    "title": "Use AI Honestly",
+    "body": "Turn rough notes into a resume line you can explain. Along the way, decide when AI can coach you at school and when the work needs to be entirely your own.",
+    "notes": "The outcome is one checked draft and a personal rule the learner can use this week.",
+    "aria": "Use AI Honestly — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s02",
+    "title": "Start with something small",
+    "body": "Set aside about 45 minutes. You can work from a club job, babysitting, a team or a group project. If you prefer to practice with our fictional volunteer example, keep that practice separate from your own resume.",
+    "notes": "No AI account or outside service is needed to finish this class.",
+    "aria": "Start with something small — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s03",
+    "title": "Why a fluent answer can be wrong",
+    "body": "A text model predicts likely words from patterns. It can write a convincing sentence about a fundraiser without knowing who counted the cash. Check the facts against your notes or a source you trust.",
+    "notes": "Ask which details the model could know from the notes and which it could only guess.",
+    "aria": "Why a fluent answer can be wrong — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s04",
+    "title": "Where the builder can help",
+    "body": "FirstCareerSteps can suggest a headline, an About paragraph, experience wording and skills. Read every suggestion. Keep, edit or remove each claim before you download or share your resume.",
+    "notes": "Use the experience step as the walkthrough. Link to the live Privacy Policy for processing details.",
+    "aria": "Where the builder can help — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s05",
+    "title": "Coach or stand-in?",
+    "body": "Read the assignment instructions first. On a resume, a tool can help express experience that is yours.",
+    "notes": "Compare asking for practice questions with submitting the tool’s completed answer as your own.",
+    "aria": "Coach or stand-in — lesson slide",
+    "kind": "lesson",
+    "examples": [
+      {
+        "label": "AI as a coach",
+        "detail": "The teacher permits practice questions.",
+        "text": "Ask for a new example, close the chat and try solving the assigned question yourself."
+      },
+      {
+        "label": "AI as a stand-in",
+        "detail": "The assignment requires your own reflection.",
+        "text": "Having AI write the reflection leaves the tool doing the part you were asked to practice."
+      }
+    ]
+  },
+  {
+    "key": "s06",
+    "title": "Read the instructions first",
+    "body": "A teacher may permit practice questions and prohibit generated paragraphs. A job application might require an unaided writing sample. Read the instructions for this task. If they are unclear, ask the teacher or person running the application before using AI.",
+    "notes": "Have the learner name one rule that could differ between two assignments.",
+    "aria": "Read the instructions first — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s07",
+    "title": "Write your schoolwork rule",
+    "body": "Complete “For this assignment I may use AI to … and I will do … myself.” Add who you would ask if you are unsure. You can use a fictional assignment that permits explanations but requires your own final response.",
+    "notes": "Two minutes. A useful boundary names an allowed task and who writes the submitted work.",
+    "aria": "Write your schoolwork rule — practice activity",
+    "kind": "activity",
+    "field": "rule"
+  },
+  {
+    "key": "s08",
+    "title": "The interview test",
+    "body": "Read a resume line and imagine the interviewer asking, “What did you actually do?” You should be able to describe your own action, an example and what happened. If you cannot, narrow the claim or remove it.",
+    "notes": "Practicing a response is a way to find an overstatement before sending it.",
+    "aria": "The interview test — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s09",
+    "title": "Four useful requests",
+    "body": "Give the tool your own rough notes and ask for two possible bullets. Ask for a shorter verb. Ask which sentence should come first. Or ask what information a reader still needs. You can answer a question yourself instead of letting a model fill the gap.",
+    "notes": "Model the last request with a volunteer who sorted donations and did not record a total.",
+    "aria": "Four useful requests — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s10",
+    "title": "Four ways a draft can overreach",
+    "body": "Watch for a job you never held, a role upgraded to manager, a number nobody measured or a skill you cannot show. “Used a register” and “trained every cashier” describe different work, even at the same store.",
+    "notes": "Ask learners to underline claims that would need independent evidence.",
+    "aria": "Four ways a draft can overreach — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s11",
+    "title": "Three versions of one job",
+    "body": "Fictional source note: I took customer orders and checked pickup bags against receipts. See which details survive each rewrite.",
+    "notes": "Compare the verbs, title and number. An honest version can be more specific than a vague one.",
+    "aria": "Three versions of one job — lesson slide",
+    "kind": "lesson",
+    "examples": [
+      {
+        "label": "Too vague",
+        "detail": "",
+        "text": "“Helped out.” A reader cannot tell what the job involved."
+      },
+      {
+        "label": "Supported by the note",
+        "detail": "",
+        "text": "“Took orders and checked pickup bags against receipts.” Both actions are in the note."
+      },
+      {
+        "label": "Invented responsibility and result",
+        "detail": "",
+        "text": "“Managed the shift and increased accuracy 40%.” Nothing in the note supports a manager title or a measured change."
+      }
+    ]
+  },
+  {
+    "key": "s12",
+    "title": "Check five bullet claims",
+    "body": "The volunteer’s notes say: sorted donated books by age group, labeled boxes and helped visitors. Classify these claims: sorted books; labeled boxes; managed volunteers; labeled 80 boxes; helped visitors find books. Which are supported, contradicted by the role described, or still need a check?",
+    "notes": "Worked key: the first two are supported. Managing volunteers is an invented responsibility here. The count and the exact way visitors were helped need confirmation.",
+    "aria": "Check five bullet claims — practice activity",
+    "kind": "activity",
+    "field": "sort"
+  },
+  {
+    "key": "s13",
+    "title": "Tailor the example, keep the facts",
+    "body": "A job posting asks for attention to detail. A student who checked pickup bags can choose that example. They can practice explaining a receipt mismatch. They cannot claim to have managed inventory just because the posting mentions it.",
+    "notes": "Ask for one example that would stay true if the job posting disappeared.",
+    "aria": "Tailor the example, keep the facts — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s14",
+    "title": "Check your judgment",
+    "body": "Try three decisions about school help, resume claims and interview practice. Use the explanation after each choice to test your reasoning.",
+    "notes": "Allow three minutes and point students back to the source notes.",
+    "aria": "Check your judgment — practice quiz",
+    "kind": "mid"
+  },
+  {
+    "key": "s15",
+    "title": "Follow one draft from start to finish",
+    "body": "Follow the draft through one editing pass. Check every phrase you keep against the original note.",
+    "notes": "Ask what was removed, and which remaining detail required a follow-up.",
+    "aria": "Follow one draft from start to finish — lesson slide",
+    "kind": "lesson",
+    "examples": [
+      {
+        "label": "Raw note",
+        "detail": "",
+        "text": "“At the book drive I sorted donations and labeled boxes.”"
+      },
+      {
+        "label": "Suggested wording",
+        "detail": "",
+        "text": "“Directed a volunteer team and improved distribution.” The note gives no evidence of a team you supervised or a measured improvement."
+      },
+      {
+        "label": "Student edit",
+        "detail": "",
+        "text": "“Sorted donated books and labeled boxes for pickup.” Keep “for pickup” only if you can confirm where the boxes went. Otherwise end at “labeled boxes.”"
+      }
+    ]
+  },
+  {
+    "key": "s16",
+    "title": "Walk through the experience step",
+    "body": "Follow the annotated builder walkthrough below. Compare a suggestion with the original notes, remove an invented responsibility, read the revised line aloud and decide whether to keep it.",
+    "notes": "Planned 10–12 minute recording in the real builder using fictional information. The written walkthrough works on its own.",
+    "aria": "Walk through the experience step — annotated walkthrough",
+    "kind": "video"
+  },
+  {
+    "key": "s17",
+    "title": "Read it out loud",
+    "body": "Would you say “optimized stakeholder interactions” when explaining a volunteer table? Try “answered visitors’ questions and directed them to check-in.” Use a term you understand and can illustrate when asked.",
+    "notes": "Have students remove one phrase they would never use in conversation.",
+    "aria": "Read it out loud — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s18",
+    "title": "Make this About paragraph yours",
+    "body": "Write two sentences you could comfortably say in an interview. Read them aloud and check each one against the facts.",
+    "notes": "A possible edit: “I volunteer at Saturday book drives. I enjoy helping families find books their kids want to read.”",
+    "aria": "Make this About paragraph yours — practice activity",
+    "kind": "activity",
+    "field": "voice",
+    "examples": [
+      {
+        "label": "A draft to repair",
+        "detail": "",
+        "text": "“I am a results-driven professional who spearheads high-impact community initiatives.”"
+      },
+      {
+        "label": "What the student actually said",
+        "detail": "",
+        "text": "“I volunteer at Saturday book drives. I like helping families find books.”"
+      }
+    ]
+  },
+  {
+    "key": "s19",
+    "title": "When schoolwork needs disclosure",
+    "body": "Follow the teacher’s instructions about naming the tool and saying how you used it. Check factual claims in the actual book, article or dataset. A chat response can point you toward a source, but it cannot substitute for opening and checking that source.",
+    "notes": "Example disclosure if requested: “I used an AI tool to generate practice questions, then wrote my own response.”",
+    "aria": "When schoolwork needs disclosure — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s20",
+    "title": "Confidence is easy to imitate",
+    "body": "A guessed deadline, an obsolete rule or a vague phrase can sound polished. Check the current application instructions for deadlines. Test each resume sentence against what you personally did. Cross out any claim you cannot verify.",
+    "notes": "The later error-checking class applies this to titles, numbers, dates and unsupported skills.",
+    "aria": "Confidence is easy to imitate — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s21",
+    "title": "Age and professional profiles",
+    "body": "LinkedIn sets a minimum age of 16, and a higher minimum may apply where you live. At 13–15, practice a headline or About paragraph in your own document or builder. You can finish this entire class without opening a LinkedIn account.",
+    "notes": "Source: LinkedIn User Agreement, section 2.1. Do not prompt a younger student to sign up.",
+    "aria": "Age and professional profiles — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s22",
+    "title": "Your Honesty Checklist",
+    "body": "Open the worksheet. Check school rules, resume facts and interview examples. Keep a before-and-after bullet so you can point to exactly what you changed and why.",
+    "notes": "Allow three minutes. The worksheet stays with the learner.",
+    "aria": "Your Honesty Checklist — takeaway worksheet",
+    "kind": "worksheet"
+  },
+  {
+    "key": "s23",
+    "title": "Review one of your bullets",
+    "body": "Write the source facts and your current bullet. Verify the title, action and result. Delete unsupported details, then enter your final bullet. You choose whether to bring it to the builder after the end quiz.",
+    "notes": "Ask the learner to explain every word in their final version.",
+    "aria": "Review one of your bullets — practice activity",
+    "kind": "activity",
+    "field": "bullet"
+  },
+  {
+    "key": "s24",
+    "title": "Three easy traps",
+    "body": "“Everyone uses it” does not override the assignment instructions. A polished answer still needs disclosure when the teacher asks. A precise percentage still needs a measurement. In each case, name the missing permission or evidence.",
+    "notes": "Ask which of the three can be solved by asking a person directly.",
+    "aria": "Three easy traps — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s25",
+    "title": "A check before you send",
+    "body": "Read the rules. Trace each claim back to your own notes or a reliable source. Read the result aloud. Ask yourself what you would say if a teacher or interviewer asked how you produced it.",
+    "notes": "Give students a minute to apply all four checks to the same sentence.",
+    "aria": "A check before you send — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s26",
+    "title": "Choose what to practice next",
+    "body": "Prompting That Gets Useful Answers will cover asking for what you need. Catch Bad AI Answers will cover verifying a draft. AI Privacy and Safety for Students will cover sharing less. These three classes are in development.",
+    "notes": "These are upcoming outlines, not currently available courses.",
+    "aria": "Choose what to practice next — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s27",
+    "title": "How a completion can appear",
+    "body": "After passing, preview a completion line, a skill you practiced or a bullet about your own experience. You choose what goes into the builder. Finishing this class alone does not prove you ran the book drive.",
+    "notes": "Keep a practice exercise separate from an earned experience.",
+    "aria": "How a completion can appear — lesson slide",
+    "kind": "resume"
+  },
+  {
+    "key": "s28",
+    "title": "Who wrote the final answer?",
+    "body": "Check the rules in this scenario and choose an allowed kind of help.",
+    "notes": "End check 1. Ask who does the thinking the assignment assesses.",
+    "aria": "Who wrote the final answer — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s29",
+    "title": "Where did the number come from?",
+    "body": "Decide what to keep when a generated bullet adds a measured result that the student never recorded.",
+    "notes": "End check 2. Keep the observed action.",
+    "aria": "Where did the number come from — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s30",
+    "title": "What could you say in an interview?",
+    "body": "Choose a claim that the student can explain using one actual example.",
+    "notes": "End check 3. Fluency and personal evidence are different.",
+    "aria": "What could you say in an interview — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s31",
+    "title": "When does the teacher need to know?",
+    "body": "Choose a disclosure that matches the instructions and describes the tool’s actual role.",
+    "notes": "End check 4. Naming the tool alone might omit what it did.",
+    "aria": "When does the teacher need to know — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s32",
+    "title": "When can someone open a LinkedIn account?",
+    "body": "Use the age rule from this class. A resume can still be drafted offline at any age covered by this course.",
+    "notes": "End check 5. The minimum is 16 or higher if locally required.",
+    "aria": "When can someone open a LinkedIn account — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s33",
+    "title": "Review the reasons",
+    "body": "Four out of five completes the class. Read the explanation for each answer. You can revisit slides and retry without a limit. The next three cases are extra practice.",
+    "notes": "Students may continue studying even after completing the check.",
+    "aria": "Review the reasons — lesson slide",
+    "kind": "review"
+  },
+  {
+    "key": "s34",
+    "title": "Practice case: a lab report",
+    "body": "A biology teacher permits practice questions, but the analysis paragraph must be your own. Choose which task to give the AI and which task to do yourself. Explain your choice before revealing the example.",
+    "notes": "Keep the exercise focused on authorship and permission.",
+    "aria": "Practice case: a lab report — practice activity",
+    "kind": "activity",
+    "field": "lab"
+  },
+  {
+    "key": "s35",
+    "title": "Compare your lab decision",
+    "body": "One option is to ask for a quiz about reading a graph, then interpret your own results and write the paragraph yourself. Check facts in the assigned materials. Follow any disclosure instruction for the quiz help.",
+    "notes": "Ask learners to show where their reasoning enters the final work.",
+    "aria": "Compare your lab decision — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s36",
+    "title": "Practice case: a cashier title",
+    "body": "A resume draft says “Shift supervisor.” The student rang purchases and showed one new coworker how to use a register. Write an accurate line that still gives the student credit for helping the coworker.",
+    "notes": "Possible edit: “Rang customer purchases and showed a new coworker how to use the register.”",
+    "aria": "Practice case: a cashier title — practice activity",
+    "kind": "activity",
+    "field": "cashier"
+  },
+  {
+    "key": "s37",
+    "title": "Practice case: a volunteer application",
+    "body": "A volunteer application requires an unaided response about a time you helped. Plan how you will choose your example and check it without sending the question to an AI tool.",
+    "notes": "The applicant can review personal notes and write the requested response independently.",
+    "aria": "Practice case: a volunteer application — practice activity",
+    "kind": "activity",
+    "field": "application"
+  },
+  {
+    "key": "s38",
+    "title": "Compare your three decisions",
+    "body": "The lab permits a limited use. The cashier example needs a factual edit. The application requires independent work. The honest decision changes with the instructions and the evidence you have.",
+    "notes": "Ask the learner to identify which decision changes if the instructions change.",
+    "aria": "Compare your three decisions — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s39",
+    "title": "Your draft is still yours",
+    "body": "If you want to revise an answer, revisit the end check. If you passed, compare the exact resume wording in the preview before choosing to take it to the builder.",
+    "notes": "Nothing is copied to the builder until the learner acts.",
+    "aria": "Your draft is still yours — lesson slide",
+    "kind": "resume"
+  },
+  {
+    "key": "s40",
+    "title": "Edit one real line today",
+    "body": "Take your checklist and a real draft. Find one phrase you can make more specific while keeping it true. Save the revised line where you can use it for your next application.",
+    "notes": "Close with one tangible edit, even if it only changes a verb.",
+    "aria": "Edit one real line today — lesson slide",
+    "kind": "close"
+  }
+]
