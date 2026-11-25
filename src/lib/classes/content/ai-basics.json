@@ -341,14 +341,14 @@
       {
         "id": 1,
         "title": "Explain, then quiz me",
-        "use": "Learn a topic and practice recalling it.",
+        "use": "You want to learn a topic, not just get an answer to turn in.",
         "text": "Explain [TOPIC] to a first-time learner in plain language. Then ask me 5 short questions to check my understanding, one at a time. Wait for my answer before the next question. After each answer, tell me if I am right and why, without revealing the next question early. If you are unsure about a fact, say so and tell me how I could verify it. Do not invent sources.",
         "worksheet": true
       },
       {
         "id": 2,
         "title": "Tighten this draft without adding facts",
-        "use": "You wrote a draft and want clearer wording.",
+        "use": "You already wrote something and want clearer wording, not new claims.",
         "text": "Tighten the draft below. Keep my meaning. Do not add facts, numbers, titles, or claims I did not include. If something is unclear, ask me a question instead of guessing. Return: (1) the revised draft, (2) a short list of wording changes, (3) anything you were tempted to invent but did not.\n\nDRAFT:\n[PASTE YOUR DRAFT]",
         "worksheet": true
       },
@@ -362,21 +362,21 @@
       {
         "id": 4,
         "title": "Flag uncertainty",
-        "use": "Separate what you know from what needs checking.",
+        "use": "You need an overview but must not swallow guesses.",
         "text": "Answer the question below. Separate your response into: (1) What you are reasonably confident about, (2) What you are unsure about, (3) What I should verify, and where a primary source might live. Do not invent citations. If you cannot answer, say so.\n\nQUESTION:\n[YOUR QUESTION]",
         "worksheet": true
       },
       {
         "id": 5,
         "title": "Compare two options against my criteria",
-        "use": "Compare options and make your own decision.",
+        "use": "You have two real options and want a structured comparison — you will still decide.",
         "text": "Compare Option A and Option B only against the criteria I list. Do not pick a winner unless I ask. Do not invent extra criteria, costs, or facts. If a criterion cannot be judged from what I provided, say “not enough information.”\n\nOption A: [A]\nOption B: [B]\nCriteria: [LIST]\nFormat: a short table, then 3 follow-up questions that would help me decide.",
         "worksheet": true
       },
       {
         "id": 6,
         "title": "Rewrite my weak prompt",
-        "use": "Your first request produced a generic answer.",
+        "use": "Your first prompt was vague and the answer was generic.",
         "text": "Rewrite my prompt so it includes a clear task, relevant context, constraints, an output format, and an instruction not to invent facts and to flag uncertainty. Ask me up to 3 questions if you still need information. Then output the improved prompt in a code block I can copy. Do not change my goal.\n\nMY PROMPT:\n[PASTE YOUR WEAK PROMPT]",
         "worksheet": true
       },
@@ -460,10 +460,10 @@
     {
       "prompt": "Which prompt is the strongest?",
       "options": [
-        "Tell me everything about leadership.",
-        "Make this impressive.",
-        "Draft a 20-minute volunteer-club agenda for 12 members with a cleanup in 16 days. Do not invent a budget. Use a timed list, and flag assumptions.",
-        "You are an expert. Give me the best answer."
+        "“Tell me everything about leadership.”",
+        "“Make this impressive.”",
+        "“Draft a 20-minute volunteer-club agenda for 12 members with a cleanup in 16 days. Do not invent a budget. Use a timed list, and flag assumptions.”",
+        "“You are an expert. Give me the best answer.”"
       ],
       "answer": 2,
       "why": "It includes a task, context, a constraint, a format, and a request not to invent facts."
@@ -471,7 +471,7 @@
     {
       "prompt": "Which of the following should you never paste into an AI chat?",
       "options": [
-        "A made-up example about a student in a biology class.",
+        "A made-up example about “a student in a biology class.”",
         "A password, a one-time login code, or someone else’s phone number.",
         "A public club event description you already posted on the school website.",
         "A question about how to format a meeting agenda."
@@ -482,7 +482,7 @@
     {
       "prompt": "Your teacher has banned AI on a graded essay. What is the honest move?",
       "options": [
-        "Have AI write the essay and rewrite a few words.",
+        "Have the AI write the essay and rewrite a few words so it “sounds like you.”",
         "Follow the rule: do not use AI on that assignment; you may still use allowed study methods.",
         "Use AI anyway if you do not get caught.",
         "Use AI only for the citations, because citations are facts."
@@ -491,7 +491,7 @@
       "why": "Honesty means following the rules that apply to that work. AI-written citations can also be wrong."
     },
     {
-      "prompt": "You are 16 and want to try a new AI app. What should you do first?",
+      "prompt": "You are 16 and want to try a new AI app you have not used before. What should you do first?",
       "options": [
         "Invent a birthdate so you can sign up faster.",
         "Use a parent’s account without asking.",
@@ -499,7 +499,7 @@
         "Assume every AI tool has the same age rule as the last one you used."
       ],
       "answer": 2,
-      "why": "Age rules differ by tool and can change. Use permitted tools and follow their rules."
+      "why": "Age rules differ by tool and can change. Bypassing an age gate is not allowed in this class or in real life."
     }
   ],
   "walkthrough": {

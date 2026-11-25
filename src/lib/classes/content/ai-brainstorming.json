@@ -342,49 +342,49 @@
       {
         "id": 1,
         "title": "Structured brainstorm",
-        "use": "Start from a goal and ask for a wide list.",
+        "use": "You are starting from a goal and need a wide, honest list.",
         "text": "Brainstorm ideas for the goal below. Use only the constraints I provide. Do not invent budget, tools, permissions, or partners. Flag any idea that would need something I did not mention.\n\nGoal: [GOAL]\nAudience: [WHO IT IS FOR]\nConstraints: [TIME, MATERIALS, RULES, LOCATION LIMITS]\nWhat “good” looks like: [CRITERIA]\nAlready tried or rejected: [OPTIONAL]\n\nReturn:\n1) 10–12 numbered ideas in one line each\n2) The ideas grouped into 3 themes\n3) A short “risky or needs approval” list\nDo not pick a winner for me.",
         "worksheet": true
       },
       {
         "id": 2,
         "title": "Expand and group",
-        "use": "Get variety beyond the ideas already on your list.",
+        "use": "You already have a few ideas and need more variety, then a cleaner map.",
         "text": "Here are my current ideas:\n[LIST]\n\nGive me 8 additional ideas that are meaningfully different, not reworded duplicates. Then group the full set (old + new) into themes. Drop or mark any idea that breaks these constraints: [CONSTRAINTS]. Do not invent resources. I will choose later.",
         "worksheet": true
       },
       {
         "id": 3,
         "title": "What’s missing / critique",
-        "use": "Test the weak points of a shortlist.",
+        "use": "You have a shortlist and want pressure-testing, not praise.",
         "text": "Critique this shortlist against my goal and constraints. For each idea, tell me: what could go wrong, what is missing, and what would have to be true for it to work. Do not flatter me. Do not invent facts. If you lack information, ask up to 4 questions.\n\nGoal: [GOAL]\nConstraints: [CONSTRAINTS]\nShortlist:\n[IDEAS]",
         "worksheet": true
       },
       {
         "id": 4,
         "title": "Steel-man the other option",
-        "use": "Check whether you dismissed another option too quickly.",
+        "use": "You are leaning toward one idea and may be dismissing another too fast.",
         "text": "I am leaning toward Idea A and I was about to drop Idea B. Make the strongest honest case for Idea B, using only the facts I have given. Then list the genuine weaknesses of Idea A. Do not invent advantages. End with 3 questions that would help me decide — do not decide for me.\n\nIdea A: [A]\nIdea B: [B]\nFacts and constraints: [FACTS]",
         "worksheet": true
       },
       {
         "id": 5,
         "title": "Compare, don’t decide",
-        "use": "Use a table to narrow your options.",
+        "use": "You are ready to narrow and want a table, not a verdict.",
         "text": "Compare these ideas only on the criteria I list. Do not choose a winner. If a cell cannot be judged from what I provided, write “not enough information.”\n\nIdeas: [LIST]\nCriteria: [LIST]\nFormat: a table, then 3 pieces of information that would most change the decision.",
         "worksheet": true
       },
       {
         "id": 6,
         "title": "From messy notes to themes",
-        "use": "Turn a brain dump into a list you can inspect.",
+        "use": "You have a brain dump and need structure.",
         "text": "Turn these messy notes into: (1) 3–5 themes, (2) a cleaned list of ideas under those themes, (3) questions I still need to answer. Do not add ideas I did not hint at unless you label them “new suggestion.” Do not invent commitments I did not make.\n\nNOTES:\n[PASTE]",
         "worksheet": true
       },
       {
         "id": 7,
         "title": "A one-paragraph plan I will rewrite",
-        "use": "You chose an idea and want a draft structure.",
+        "use": "After you have chosen, you want a draft structure — then you rewrite it yourself.",
         "text": "Based only on the decision and facts below, draft a one-paragraph plan I can edit. Use plain language. Do not add permissions, partners, dates, or resources I did not state. After the paragraph, list any assumptions you made in bullet points so I can delete the ones that are not true. I will rewrite the final plan in my own words.\n\nDecision: [CHOSEN IDEA]\nFacts: [WHAT IS ALREADY TRUE]\nConstraints: [CONSTRAINTS]",
         "worksheet": true
       },
@@ -479,10 +479,10 @@
     {
       "prompt": "What should a brainstorming brief include before you ask for a long list of ideas?",
       "options": [
-        "Only a topic word, so the AI can be more creative.",
-        "A goal, the audience, real constraints, and what good looks like.",
+        "Only a topic word, so the AI can be “more creative.”",
+        "A goal, the audience, real constraints, and what “good” looks like.",
         "Your classmates’ full names and schedules.",
-        "A request to make it impressive."
+        "A request to “make it impressive.”"
       ],
       "answer": 1,
       "why": "Specific briefs produce more usable ideas and reduce invented resources."
@@ -518,15 +518,15 @@
         "Any use of AI is automatically banned in every class."
       ],
       "answer": 0,
-      "why": "Follow the actual rule. Brainstorming help and submitting AI-written work are different. If the teacher bans all AI, do not use it."
+      "why": "Follow the actual rule. Brainstorming help and submitting AI-written work are not the same. (If the teacher had banned all AI, you would not use it.)"
     },
     {
       "prompt": "Which follow-up prompt is most useful when a list feels generic?",
       "options": [
-        "Make these sound more professional.",
-        "Add tighter real constraints and ask what’s missing or likely to fail.",
-        "Give me the same ideas in a nicer font.",
-        "Delete anything that isn’t fun."
+        "“Make these sound more professional.”",
+        "“Add tighter real constraints and ask what’s missing or likely to fail.”",
+        "“Give me the same ideas in a nicer font.”",
+        "“Delete anything that isn’t fun.”"
       ],
       "answer": 1,
       "why": "Real constraints and critique push past generic lists. “More professional” often adds fluff."

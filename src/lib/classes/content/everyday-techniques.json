@@ -132,7 +132,7 @@
     {
       "key": "s13",
       "title": "Optional next step · Leadership Rhythm",
-      "body": "Leadership Rhythm is a free iPhone and iPad app (App Store, rated 4+) that uses timed intervals to prompt you to notice and recognize people during a shift or practice. Brenen built it to go with Chapter 20 of the book. You do not need it to finish this class. If you use an iPhone or iPad with iOS or iPadOS 16.4 or later and you want a reminder to look up and notice what someone is doing right, you can find it on the App Store.",
+      "body": "Optional next step: Leadership Rhythm is a free iPhone and iPad app (App Store, rated 4+) that uses timed intervals to prompt you to notice and recognize people during a shift or practice. Brenen built it to go with Chapter 20 of the book. You do not need it to finish this class. If you use an iPhone or iPad with iOS or iPadOS 16.4 or later and you want a reminder to look up and notice what someone is doing right, you can find it on the App Store.",
       "aria": "Optional next step · Leadership Rhythm",
       "kind": "lesson",
       "app": true,
@@ -524,7 +524,7 @@
   "walkthroughs": [
     {
       "title": "Run a huddle people can use",
-      "minutes": "5–7 minutes",
+      "minutes": "5–7",
       "steps": [
         [
           "Set up the rehearsal",
@@ -561,7 +561,7 @@
     },
     {
       "title": "A private conversation about a late handoff",
-      "minutes": "8–12 minutes",
+      "minutes": "8–12",
       "steps": [
         [
           "Set the boundary",
