@@ -1,4 +1,6 @@
 export const WORKSHOP = '/workshops/resume-bullet';
+export const WORKSHOP_PRODUCT_NOTE = 'The resume bullet workshop is a separate $4.99 one-time purchase. Student library classes are free.';
+export const WORKSHOP_AI_NOTICE = 'AI can be wrong. Check its claims before using them.';
 export const WORKSHOP_KEY = 'resume_bullet_pilot_v1';
 export const WORKSHOP_NAME = 'Write a resume bullet you can defend';
 export const workshopLogin = '/login?redirect=' + encodeURIComponent(WORKSHOP);
