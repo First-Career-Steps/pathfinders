@@ -1,0 +1,274 @@
+[
+  {
+    "key": "s01",
+    "title": "AI Privacy and Safety for Students",
+    "body": "Get useful help with a prompt that contains only what is needed.",
+    "notes": "AI can be wrong. Check facts and the tool's current rules.",
+    "aria": "AI Privacy and Safety for Students. Get useful help with a prompt that contains only what is needed.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s02",
+    "title": "Who can use this class?",
+    "body": "Students ages 13–17 and college students can work through it, including with a parent.",
+    "notes": "No sensitive examples from the learner are needed.",
+    "aria": "Who can use this class?. Students ages 13–17 and college students can work through it, including with a parent.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s03",
+    "title": "Share the minimum",
+    "body": "A tool may store what you enter. Identify the task before choosing what to share.",
+    "notes": "A sample work shift rarely needs a street address.",
+    "aria": "Share the minimum. A tool may store what you enter.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s04",
+    "title": "Read the live policies",
+    "body": "For FirstCareerSteps data practices, use the live Privacy Policy and Terms.",
+    "notes": "Do not invent retention or training promises.",
+    "aria": "Read the live policies. For FirstCareerSteps data practices, use the live Privacy Policy and Terms.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s05",
+    "title": "Keep these out",
+    "body": "Never paste SSNs, passwords, card or bank numbers, ID documents, full home addresses, medical details or other people's private information into general AI tools.",
+    "notes": "Use category labels only.",
+    "aria": "Keep these out. Never paste SSNs, passwords, card or bank numbers, ID documents, full home addresses, medical details or other people's private information into general AI tools.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s06",
+    "title": "Pause and check permission",
+    "body": "Be careful with school IDs, exact schedules, photos, restricted essays and confidential work.",
+    "notes": "Ask whether the task needs that input at all.",
+    "aria": "Pause and check permission. Be careful with school IDs, exact schedules, photos, restricted essays and confidential work.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s07",
+    "title": "Activity: sort eight items",
+    "body": "Sort fictional categories into okay, ask first and never share.",
+    "notes": "Use sample categories rather than real identifiers.",
+    "aria": "Activity: sort eight items. Sort fictional categories into okay, ask first and never share.",
+    "kind": "activity"
+  },
+  {
+    "key": "s08",
+    "title": "Privacy also belongs to others",
+    "body": "Do not upload another student's grade, a coworker's number or an unauthorized photo.",
+    "notes": "Choose a fictional example instead.",
+    "aria": "Privacy also belongs to others. Do not upload another student's grade, a coworker's number or an unauthorized photo.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s09",
+    "title": "Age and accounts",
+    "body": "FirstCareerSteps requires 13 or the higher local minimum and guardian permission under 18. LinkedIn requires at least 16.",
+    "notes": "Link to the current terms; do not direct younger users to join LinkedIn.",
+    "aria": "Age and accounts. FirstCareerSteps requires 13 or the higher local minimum and guardian permission under 18.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s10",
+    "title": "Mid-quiz: three paste decisions",
+    "body": "Decide what to do with a password, a classmate's grade and a fictional role description.",
+    "notes": "Explain each choice.",
+    "aria": "Mid-quiz: three paste decisions. Decide what to do with a password, a classmate's grade and a fictional role description.",
+    "kind": "mid"
+  },
+  {
+    "key": "s11",
+    "title": "Keep the useful context",
+    "body": "Use roles, initials and broad locations when enough for the task.",
+    "notes": "Remove details that identify another person.",
+    "aria": "Keep the useful context. Use roles, initials and broad locations when enough for the task.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s12",
+    "title": "A shorter prompt still works",
+    "body": "Compare an oversharing grocery-job request with a minimal task description.",
+    "notes": "Mark why each removed detail was unnecessary.",
+    "aria": "A shorter prompt still works. Compare an oversharing grocery-job request with a minimal task description.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s13",
+    "title": "Photos are optional",
+    "body": "Do not send ID photos or someone else's photo to a general AI tool.",
+    "notes": "Refer to site policy for product-specific processing.",
+    "aria": "Photos are optional. Do not send ID photos or someone else's photo to a general AI tool.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s14",
+    "title": "Screen recording: trim the prompt",
+    "body": "Plan a 6–8 minute redaction walkthrough.",
+    "notes": "Use an annotated fictional before-and-after until recorded.",
+    "aria": "Screen recording: trim the prompt. Plan a 6–8 minute redaction walkthrough.",
+    "kind": "video"
+  },
+  {
+    "key": "s15",
+    "title": "If you shared something private",
+    "body": "Stop adding details. Use deletion controls if available, seek a trusted adult for serious exposure and change a compromised password.",
+    "notes": "Avoid promising that deleting a chat erases all copies.",
+    "aria": "If you shared something private. Stop adding details.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s16",
+    "title": "Check the tool and its settings",
+    "body": "Review its audience, history options and rules before use.",
+    "notes": "No instructions for evading age gates or school filters.",
+    "aria": "Check the tool and its settings. Review its audience, history options and rules before use.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s17",
+    "title": "Worksheet: What I Will and Won’t Share",
+    "body": "Write personal rules and one safer version of a fictional prompt.",
+    "notes": "Keep the worksheet local.",
+    "aria": "Worksheet: What I Will and Won’t Share. Write personal rules and one safer version of a fictional prompt.",
+    "kind": "worksheet"
+  },
+  {
+    "key": "s18",
+    "title": "Your FirstCareerSteps choices",
+    "body": "Use the builder, review /privacy and /terms, and find account deletion at /dashboard/settings.",
+    "notes": "No new identity or school fields.",
+    "aria": "Your FirstCareerSteps choices. Use the builder, review /privacy and /terms, and find account deletion at /dashboard/settings.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s19",
+    "title": "Common traps",
+    "body": "A whole inbox, a yearbook page or a sibling's details share much more than a resume task needs.",
+    "notes": "Select the smallest useful excerpt.",
+    "aria": "Common traps. A whole inbox, a yearbook page or a sibling's details share much more than a resume task needs.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s20",
+    "title": "Recap",
+    "body": "Decide what is needed, what is private and who can authorize sharing.",
+    "notes": "Students can use sample data.",
+    "aria": "Recap. Decide what is needed, what is private and who can authorize sharing.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s21",
+    "title": "Optional completion record",
+    "body": "Preview a truthful completion line.",
+    "notes": "Do not present it as a privacy credential.",
+    "aria": "Optional completion record. Preview a truthful completion line.",
+    "kind": "resume"
+  },
+  {
+    "key": "s22",
+    "title": "End question: never paste",
+    "body": "Identify a sensitive category among ordinary prompt details.",
+    "notes": "Use no real secrets.",
+    "aria": "End question: never paste. Identify a sensitive category among ordinary prompt details.",
+    "kind": "final"
+  },
+  {
+    "key": "s23",
+    "title": "End question: another person's data",
+    "body": "Choose a respectful way to work without a classmate's details.",
+    "notes": "Permission and necessity both matter.",
+    "aria": "End question: another person's data. Choose a respectful way to work without a classmate's details.",
+    "kind": "final"
+  },
+  {
+    "key": "s24",
+    "title": "End question: safer rewrite",
+    "body": "Find the prompt that keeps the task and removes location and contact details.",
+    "notes": "Explain what the answer needs.",
+    "aria": "End question: safer rewrite. Find the prompt that keeps the task and removes location and contact details.",
+    "kind": "final"
+  },
+  {
+    "key": "s25",
+    "title": "End question: exposed password",
+    "body": "Choose changing the password and seeking help as appropriate.",
+    "notes": "Do not rely on chat deletion alone.",
+    "aria": "End question: exposed password. Choose changing the password and seeking help as appropriate.",
+    "kind": "final"
+  },
+  {
+    "key": "s26",
+    "title": "End question: LinkedIn age",
+    "body": "Recall the minimum age and the possibility of a higher local requirement.",
+    "notes": "Offer offline practice for younger students.",
+    "aria": "End question: LinkedIn age. Recall the minimum age and the possibility of a higher local requirement.",
+    "kind": "final"
+  },
+  {
+    "key": "s27",
+    "title": "Answer review",
+    "body": "Explain each answer and offer a retry.",
+    "notes": "Pass at four out of five.",
+    "aria": "Answer review. Explain each answer and offer a retry.",
+    "kind": "review"
+  },
+  {
+    "key": "s28",
+    "title": "Decision tree: a restricted essay",
+    "body": "Identify the teacher's restriction before choosing an input.",
+    "notes": "Use an invented example if allowed.",
+    "aria": "Decision tree: a restricted essay. Identify the teacher's restriction before choosing an input.",
+    "kind": "activity"
+  },
+  {
+    "key": "s29",
+    "title": "Decision tree: a team picture",
+    "body": "Ask who appears and whether sharing is permitted or needed.",
+    "notes": "A role description can replace the image.",
+    "aria": "Decision tree: a team picture. Ask who appears and whether sharing is permitted or needed.",
+    "kind": "activity"
+  },
+  {
+    "key": "s30",
+    "title": "Decision tree: an interview invite",
+    "body": "Keep the job task while removing private contact details.",
+    "notes": "Do not paste the invitation wholesale.",
+    "aria": "Decision tree: an interview invite. Keep the job task while removing private contact details.",
+    "kind": "activity"
+  },
+  {
+    "key": "s31",
+    "title": "Compare the three decisions",
+    "body": "Show when to stop, seek permission or substitute a fictional prompt.",
+    "notes": "Use text labels as well as visual cues.",
+    "aria": "Compare the three decisions. Show when to stop, seek permission or substitute a fictional prompt.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s32",
+    "title": "Practice one safe rewrite",
+    "body": "Build a version that still gets the learner useful interview practice.",
+    "notes": "Check it for remaining identifiers.",
+    "aria": "Practice one safe rewrite. Build a version that still gets the learner useful interview practice.",
+    "kind": "activity"
+  },
+  {
+    "key": "s33",
+    "title": "Close: keep the worksheet",
+    "body": "Choose one sharing rule to use this week.",
+    "notes": "Do not ask for examples of actual secrets.",
+    "aria": "Close: keep the worksheet. Choose one sharing rule to use this week.",
+    "kind": "close"
+  },
+  {
+    "key": "s34",
+    "title": "Use the minimum",
+    "body": "Try a prompt with the least information needed and check its answer.",
+    "notes": "Link to the live policies for further questions.",
+    "aria": "Use the minimum. Try a prompt with the least information needed and check its answer.",
+    "kind": "lesson"
+  }
+]

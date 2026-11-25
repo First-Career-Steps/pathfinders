@@ -1,0 +1,290 @@
+[
+  {
+    "key": "s01",
+    "title": "Catch Bad AI Answers",
+    "body": "Use a six-point check on a confident draft.",
+    "notes": "AI can be wrong even when its prose is fluent.",
+    "aria": "Catch Bad AI Answers. Use a six-point check on a confident draft.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s02",
+    "title": "Why check?",
+    "body": "A fake skill can turn into an interview question.",
+    "notes": "Start with a claim a student could explain.",
+    "aria": "Why check?. A fake skill can turn into an interview question.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s03",
+    "title": "Six questions about a draft",
+    "body": "Verify facts, added details, titles and numbers, filler, date and context, and spoken explanation.",
+    "notes": "Use the same list throughout the class.",
+    "aria": "Six questions about a draft. Verify facts, added details, titles and numbers, filler, date and context, and spoken explanation.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s04",
+    "title": "Invented facts",
+    "body": "Look for a tool, GPA or award absent from the notes.",
+    "notes": "Trace one noun back to a source.",
+    "aria": "Invented facts. Look for a tool, GPA or award absent from the notes.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s05",
+    "title": "Inflated titles",
+    "body": "Compare a crew member's duties with an unsupported operations-lead title.",
+    "notes": "Restore the actual title.",
+    "aria": "Inflated titles. Compare a crew member's duties with an unsupported operations-lead title.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s06",
+    "title": "Invented measurements",
+    "body": "Ask where a claim of 40% sales growth came from.",
+    "notes": "Remove the number if it was never measured.",
+    "aria": "Invented measurements. Ask where a claim of 40% sales growth came from.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s07",
+    "title": "Confident filler",
+    "body": "Look for sentences that contain no observable action.",
+    "notes": "Replace one with a concrete verb.",
+    "aria": "Confident filler. Look for sentences that contain no observable action.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s08",
+    "title": "Wrong time or context",
+    "body": "Check current application instructions, age requirements and location.",
+    "notes": "A true rule elsewhere may not fit here.",
+    "aria": "Wrong time or context. Check current application instructions, age requirements and location.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s09",
+    "title": "Someone else's story",
+    "body": "Separate what the team did from what the student did.",
+    "notes": "Identify who owned the result.",
+    "aria": "Someone else's story. Separate what the team did from what the student did.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s10",
+    "title": "Activity: mark six lines",
+    "body": "Plant a fake tool, title and number in a fictional resume paragraph.",
+    "notes": "Give source notes for comparison.",
+    "aria": "Activity: mark six lines. Plant a fake tool, title and number in a fictional resume paragraph.",
+    "kind": "activity"
+  },
+  {
+    "key": "s11",
+    "title": "Mid-quiz: three snippets",
+    "body": "Identify a failure in each snippet and explain the evidence.",
+    "notes": "Mix missing facts with unsupported claims.",
+    "aria": "Mid-quiz: three snippets. Identify a failure in each snippet and explain the evidence.",
+    "kind": "mid"
+  },
+  {
+    "key": "s12",
+    "title": "Find independent evidence",
+    "body": "Use personal records for work and an assigned reliable source for school.",
+    "notes": "Another AI answer does not verify a claim.",
+    "aria": "Find independent evidence. Use personal records for work and an assigned reliable source for school.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s13",
+    "title": "When evidence is missing",
+    "body": "Delete the claim or choose a narrower statement you can support.",
+    "notes": "Keep the revision useful.",
+    "aria": "When evidence is missing. Delete the claim or choose a narrower statement you can support.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s14",
+    "title": "Screen recording: repair a bad draft",
+    "body": "Plan an 8–10 minute six-point check and correction of a made-up skill.",
+    "notes": "Recording needed before paid release.",
+    "aria": "Screen recording: repair a bad draft. Plan an 8–10 minute six-point check and correction of a made-up skill.",
+    "kind": "video"
+  },
+  {
+    "key": "s15",
+    "title": "Activity: a homework paragraph",
+    "body": "Find an invented date and a vague sentence using a supplied source excerpt.",
+    "notes": "Do not ask for restricted student work.",
+    "aria": "Activity: a homework paragraph. Find an invented date and a vague sentence using a supplied source excerpt.",
+    "kind": "activity"
+  },
+  {
+    "key": "s16",
+    "title": "Resume red flags",
+    "body": "Check unfamiliar tools, formal titles, sports stats and language fluency.",
+    "notes": "Ask what a student can actually demonstrate.",
+    "aria": "Resume red flags. Check unfamiliar tools, formal titles, sports stats and language fluency.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s17",
+    "title": "Worksheet: 6-Point Check",
+    "body": "Keep the checklist beside a draft and its corrected version.",
+    "notes": "Include a place for the source of each correction.",
+    "aria": "Worksheet: 6-Point Check. Keep the checklist beside a draft and its corrected version.",
+    "kind": "worksheet"
+  },
+  {
+    "key": "s18",
+    "title": "Before download",
+    "body": "Review the exact resume text in the builder.",
+    "notes": "The student decides which changes to keep.",
+    "aria": "Before download. Review the exact resume text in the builder.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s19",
+    "title": "Common traps",
+    "body": "Grammar can improve while a wrong number stays.",
+    "notes": "Audit claims before polishing style.",
+    "aria": "Common traps. Grammar can improve while a wrong number stays.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s20",
+    "title": "Recap",
+    "body": "Name one way to verify each kind of error.",
+    "notes": "Use the interview test last.",
+    "aria": "Recap. Name one way to verify each kind of error.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s21",
+    "title": "Next: privacy",
+    "body": "Practice checking a prompt before sharing it.",
+    "notes": "Point to A4.",
+    "aria": "Next: privacy. Practice checking a prompt before sharing it.",
+    "kind": "lesson"
+  },
+  {
+    "key": "s22",
+    "title": "Optional completion line",
+    "body": "Preview a record of finishing the class.",
+    "notes": "A practice scenario is not job experience.",
+    "aria": "Optional completion line. Preview a record of finishing the class.",
+    "kind": "resume"
+  },
+  {
+    "key": "s23",
+    "title": "End question: an invented detail",
+    "body": "Find a claim missing from the note card.",
+    "notes": "Ask which words need evidence.",
+    "aria": "End question: an invented detail. Find a claim missing from the note card.",
+    "kind": "final"
+  },
+  {
+    "key": "s24",
+    "title": "End question: an inflated title",
+    "body": "Choose the title that matches the student's role.",
+    "notes": "Explain how duties differ from titles.",
+    "aria": "End question: an inflated title. Choose the title that matches the student's role.",
+    "kind": "final"
+  },
+  {
+    "key": "s25",
+    "title": "End question: a fake metric",
+    "body": "Use the check for dates, numbers and supporting records.",
+    "notes": "Identify missing measurement.",
+    "aria": "End question: a fake metric. Use the check for dates, numbers and supporting records.",
+    "kind": "final"
+  },
+  {
+    "key": "s26",
+    "title": "End question: an unverified claim",
+    "body": "Choose a smaller true claim or remove it.",
+    "notes": "Reject a second unsupported guess.",
+    "aria": "End question: an unverified claim. Choose a smaller true claim or remove it.",
+    "kind": "final"
+  },
+  {
+    "key": "s27",
+    "title": "End question: generic text",
+    "body": "Find the line that provides no identifiable action.",
+    "notes": "Offer a concrete replacement.",
+    "aria": "End question: generic text. Find the line that provides no identifiable action.",
+    "kind": "final"
+  },
+  {
+    "key": "s28",
+    "title": "Answer review",
+    "body": "Explain each answer and provide a retry.",
+    "notes": "Four of five completes the class.",
+    "aria": "Answer review. Explain each answer and provide a retry.",
+    "kind": "review"
+  },
+  {
+    "key": "s29",
+    "title": "Practice draft one: source",
+    "body": "Use an equipment check-in volunteer's raw notes.",
+    "notes": "Identify duties and tools.",
+    "aria": "Practice draft one: source. Use an equipment check-in volunteer's raw notes.",
+    "kind": "activity"
+  },
+  {
+    "key": "s30",
+    "title": "Practice draft one: audit",
+    "body": "Check for a fake supervisor title and unsupported totals.",
+    "notes": "Mark which check found each.",
+    "aria": "Practice draft one: audit. Check for a fake supervisor title and unsupported totals.",
+    "kind": "activity"
+  },
+  {
+    "key": "s31",
+    "title": "Practice draft one: repair",
+    "body": "Write one defensible line.",
+    "notes": "Read it as an interviewer would.",
+    "aria": "Practice draft one: repair. Write one defensible line.",
+    "kind": "activity"
+  },
+  {
+    "key": "s32",
+    "title": "Practice draft two: source",
+    "body": "Provide a short fictional application notice with a date and location.",
+    "notes": "Keep enough detail to check the answer.",
+    "aria": "Practice draft two: source. Provide a short fictional application notice with a date and location.",
+    "kind": "activity"
+  },
+  {
+    "key": "s33",
+    "title": "Practice draft two: audit",
+    "body": "Catch a superseded deadline and an assumption about age.",
+    "notes": "Identify the source for each correction.",
+    "aria": "Practice draft two: audit. Catch a superseded deadline and an assumption about age.",
+    "kind": "activity"
+  },
+  {
+    "key": "s34",
+    "title": "Practice draft two: repair",
+    "body": "Draft a short accurate summary and flag what remains unknown.",
+    "notes": "Compare it with the notice.",
+    "aria": "Practice draft two: repair. Draft a short accurate summary and flag what remains unknown.",
+    "kind": "activity"
+  },
+  {
+    "key": "s35",
+    "title": "Close: use the checklist",
+    "body": "Choose one sentence from a real draft to check.",
+    "notes": "Work privately on paper or in a document.",
+    "aria": "Close: use the checklist. Choose one sentence from a real draft to check.",
+    "kind": "close"
+  },
+  {
+    "key": "s36",
+    "title": "What you can defend",
+    "body": "Retain the final wording and the evidence for it.",
+    "notes": "Leave uncertain claims out.",
+    "aria": "What you can defend. Retain the final wording and the evidence for it.",
+    "kind": "lesson"
+  }
+]

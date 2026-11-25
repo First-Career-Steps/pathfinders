@@ -1,0 +1,19 @@
+# Student classes
+
+The public catalog is at `/classes`. Launch content lives in `src/lib/classes/content`. Edit titles, slide keys, teaching copy, notes and alt text there. Published slides keep stable keys so existing learners can resume. The launch courses use `lead-yourself` and `ai-honestly`. The other seven files are editorial outlines. Their landing pages describe planned contents and cannot open a player.
+
+The mapping and excerpt placeholders are private speaker notes. Brenen supplies the chapter map, approved excerpts and personal stories before the relevant paid release. Restaurant illustrations are labeled as such. The recording fallback scripts and annotated walkthroughs live in `media.ts` and `lessons.ts`. Supply a video URL, English WebVTT captions and a transcript together in the recording field, and update the landing-page availability. Use the actual learner flow when recording.
+
+## Free enrollment and progress
+
+The SQL migration under `supabase/migrations` creates owner-readable progress with an auth-user deletion cascade. The server grades quizzes. A four-out-of-five pass is retained across later attempts. Worksheets download as editable local HTML with a Print or save as PDF action. Activity drafts stay in the open tab. The only resume transfer is an explicit preview and confirmation, followed by an editable builder draft.
+
+## Later paid release
+
+`CLASSES_PAID_ENABLED` is off unless its server environment value is exactly `true`. Leave it off in v1. Existing enrollments, including started classes, retain full access. With the flag on and no purchase integration, new enrollment closes.
+
+After owner approval, add `class_purchases`, a separate $4.99 one-time Stripe price, a class-specific checkout route, a signature-verified idempotent webhook and a few preview slides. Map purchased entitlements per user and course. Preserve prior free enrollments. Keep the annual subscription flow separate.
+
+## Release checks
+
+Open the catalog and both launch landings signed out. Try the player directly and follow its return link through sign-in. In a test account, navigate away and return, check the mid-quiz, score 3/5 then 4/5 on the end quiz, retry and confirm the pass remains. Download a filled worksheet and print it offline. Preview a completion, skill or bullet, dismiss it, then explicitly confirm a draft and remove it in the builder. Check desktop and phone widths, the keyboard outline and captions when a recording is added. Check database ownership and the account deletion cascade against test identities.

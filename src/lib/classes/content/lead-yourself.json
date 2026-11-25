@@ -1,0 +1,418 @@
+[
+  {
+    "key": "s01",
+    "title": "Lead Yourself First",
+    "body": "Pick a standard you can keep on a difficult day. Over the next week, you’ll test it, own a missed promise and give someone else specific credit.",
+    "notes": "Ask learners to have a recent meeting, practice or work shift in mind. A fictional club also works.",
+    "aria": "Lead Yourself First — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s02",
+    "title": "Where you already lead",
+    "body": "Allow about 45 minutes today, including time to write. Then try your plan on three days this week. You can lead by checking a handoff at a first job or making sure a quiet teammate gets a turn.",
+    "notes": "A student who has never supervised anyone can use an ordinary group project throughout.",
+    "aria": "Where you already lead — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s03",
+    "title": "Where these ideas come from",
+    "body": "Brenen Morse wrote The Little Black Book on Leadership from his experience in restaurant operations. This class draws on Part I, You. Chapter 3 informs our ownership practice and Chapter 6 informs our consistency plan.",
+    "notes": "The student scenes are teaching examples. Additional Part I themes await the author's chapter map.",
+    "aria": "Where these ideas come from — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s04",
+    "title": "A standard anyone can set",
+    "body": "The publisher introduces the book with “Leadership is not a title you are given. It is a standard you set.” In a group project, anyone can say which draft is due, post it where everyone can find it, and keep that promise.",
+    "notes": "Attribute this one line to the published book description. Ask who could take that action without an officer title.",
+    "aria": "A standard anyone can set — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s05",
+    "title": "Where do people count on you?",
+    "body": "Picture the last time a group waited for something you could do. Maybe you brought practice cones or opened the sign-in table. Write the setting and the action someone could see. Use roles instead of names.",
+    "notes": "Allow two minutes. An observable answer is “I text the meeting location before practice.”",
+    "aria": "Where do people count on you — practice activity",
+    "kind": "activity",
+    "field": "setting"
+  },
+  {
+    "key": "s06",
+    "title": "What counts as a standard?",
+    "body": "A standard tells you what acceptable work looks like. “Be responsible” leaves people guessing. “I check the supply bin before we promise materials” gives someone a way to see whether you did it.",
+    "notes": "Test a proposed standard by asking whether a teammate could observe it.",
+    "aria": "What counts as a standard — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s07",
+    "title": "When a value costs something",
+    "body": "Honesty might cost five awkward minutes correcting a timesheet. Respect might mean speaking up when a friend mocks a new player. A value becomes a standard when you can name the action you will take despite the cost.",
+    "notes": "Keep the examples hypothetical. Do not request a personal disclosure. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "When a value costs something — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s08",
+    "title": "Choose your standards",
+    "body": "Write three values. Choose two or three you will keep when it is inconvenient. For each, finish “You can count on me to…” with something visible. For example, “I’ll check my hours before I submit them.”",
+    "notes": "Allow three minutes. The worksheet has room for the values and the standards they become.",
+    "aria": "Choose your standards — practice activity",
+    "kind": "activity",
+    "field": "standards"
+  },
+  {
+    "key": "s09",
+    "title": "A pause you can use under pressure",
+    "body": "A tense group chat or a rush can make your first reply sharper than you intend. Choose a cue. When three messages arrive at once, pause, restate the shared goal and send one clear request.",
+    "notes": "Model the request: “We need the current file. Can someone confirm which link opens it?” [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "A pause you can use under pressure — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s10",
+    "title": "The part you can change",
+    "body": "Chapter 3 connects ownership to what happens next. If a slide goes missing, identify one decision you controlled. Tell the team what happened, the repair you will make and when they can check back.",
+    "notes": "Use a small repair the student can carry out. A repair and a deadline make the apology usable. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
+    "aria": "The part you can change — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s11",
+    "title": "Four chances to take ownership",
+    "body": "Pick a scene. Which response gives your teammate something they can act on?",
+    "notes": "In each case, contrast naming someone else's mistake with stating your own next move.",
+    "aria": "Four chances to take ownership — lesson slide",
+    "kind": "lesson",
+    "examples": [
+      {
+        "label": "Late group slide",
+        "detail": "“Nobody told me when it was due.”",
+        "text": "“I missed the handoff. I’ll post my draft at lunch and confirm you can open it.”"
+      },
+      {
+        "label": "Wrong pickup order",
+        "detail": "“Somebody packed it wrong.”",
+        "text": "“I can compare the bag with the ticket and ask the lead how to fix it.”"
+      },
+      {
+        "label": "Missed practice",
+        "detail": "“The time kept changing.”",
+        "text": "“I missed the update. I’ll check the schedule before practice and ask how to make up the drill.”"
+      },
+      {
+        "label": "Messy closing station",
+        "detail": "“The other shift left it like that.”",
+        "text": "“I signed off too soon. I’ll check the station with the closer before I leave.”"
+      }
+    ]
+  },
+  {
+    "key": "s12",
+    "title": "Rewrite the first reply",
+    "body": "The group says the poster file is late. Your first reply is “Nobody told me when it was due.” Rewrite it with one fact, your part and a specific repair. A teammate should know when to look for the file.",
+    "notes": "Example: “I missed the time in the chat. I’ll post the draft by 4 and ask for tomorrow’s deadline before we leave.”",
+    "aria": "Rewrite the first reply — practice activity",
+    "kind": "activity",
+    "field": "ownership"
+  },
+  {
+    "key": "s13",
+    "title": "Where ownership stops",
+    "body": "You can ask for help, report an unsafe situation or leave an unsafe space. Harassment, discrimination and abuse are the responsibility of the person causing harm. A trusted adult, manager or school process can help. You never have to handle that alone.",
+    "notes": "Do not ask for personal examples. A student may use the late-poster scenario instead. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Where ownership stops — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s14",
+    "title": "Give credit where it belongs",
+    "body": "After a successful fundraiser, name the person who checked the totals and the action that helped. If you skipped a check, own that separately. Giving credit and keeping the standard can happen in the same conversation.",
+    "notes": "Practice a sentence that names the contribution without claiming the team’s result. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "Give credit where it belongs — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s15",
+    "title": "Who did the research?",
+    "body": "A teammate found the sources for your presentation. You presented them. When the teacher praises the evidence, try “My teammate compared the reports and found that table. I explained how we used it.” Both contributions stay visible.",
+    "notes": "Ask which verb belongs to each person. Let the learner try a different accurate answer.",
+    "aria": "Who did the research — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s16",
+    "title": "Check your judgment",
+    "body": "Try three short decisions about standards, ownership and safety. Read the reason after each choice. You can go back to a slide whenever you need it.",
+    "notes": "Pause for discussion about the boundary between a repair and taking responsibility for harm.",
+    "aria": "Check your judgment — practice quiz",
+    "kind": "mid"
+  },
+  {
+    "key": "s17",
+    "title": "A promise you can repeat",
+    "body": "Chapter 6 emphasizes consistency. Pick a small action that fits into ordinary days. Posting the next meeting time after each meeting gives the team more to rely on than a huge plan you only carry out once.",
+    "notes": "Ask what cue makes the action repeatable when the learner is tired. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
+    "aria": "A promise you can repeat — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s18",
+    "title": "Compare two weeks of effort",
+    "body": "Which routine gives the team time to spot a missing source? Explain your choice.",
+    "notes": "The draft history gives the team repeated opportunities to correct course.",
+    "aria": "Compare two weeks of effort — lesson slide",
+    "kind": "lesson",
+    "examples": [
+      {
+        "label": "One long session",
+        "detail": "Sunday night",
+        "text": "Sam rewrites the whole project, then misses two check-ins. Nobody sees the new draft until it is due."
+      },
+      {
+        "label": "Three small sessions",
+        "detail": "After class on Monday, Wednesday and Friday",
+        "text": "Alex spends 25 minutes on one section and posts it after each session. Teammates can respond while there is time to make a change."
+      }
+    ]
+  },
+  {
+    "key": "s19",
+    "title": "The Friday test",
+    "body": "If you check deliveries on Monday but skip the check on a busy Friday, the team learns when the rule disappears. Decide how to keep the essential check even when you shorten the rest of the routine.",
+    "notes": "Illustrative restaurant example: match the printed order to the bag during a rush. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "The Friday test — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s20",
+    "title": "Look back seven days",
+    "body": "Choose one standard. For each of the last seven days, mark held, slipped, or no opportunity. Add one sentence about when it was hardest. A day with no meeting tells you nothing about meeting behavior.",
+    "notes": "Track observations and avoid inventing chances to meet the standard.",
+    "aria": "Look back seven days — practice activity",
+    "kind": "activity",
+    "field": "past"
+  },
+  {
+    "key": "s21",
+    "title": "A five-minute review",
+    "body": "After the work, ask five things. Who did what well? Where did the process break down? What one change will we try next time? Whose work should we recognize? How did the space, pace or tone affect the work?",
+    "notes": "Student adaptation of the official Post-Shift After-Action Review. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "A five-minute review — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s22",
+    "title": "A club meeting, reviewed",
+    "body": "Work through this fictional club meeting. Each line gives the next meeting a specific starting point.",
+    "notes": "Read each sentence against one of the five review prompts.",
+    "aria": "A club meeting, reviewed — lesson slide",
+    "kind": "lesson",
+    "examples": [
+      {
+        "label": "What worked?",
+        "detail": "",
+        "text": "The recorder posted decisions before everyone left."
+      },
+      {
+        "label": "What broke?",
+        "detail": "",
+        "text": "Two volunteers edited different sign-up sheets."
+      },
+      {
+        "label": "What will change?",
+        "detail": "",
+        "text": "Pin one sign-up link before the meeting."
+      },
+      {
+        "label": "Who deserves credit?",
+        "detail": "",
+        "text": "Thank the recorder for capturing the decisions while the group was together."
+      },
+      {
+        "label": "What did the room teach us?",
+        "detail": "",
+        "text": "The entrance table was noisy. Move sign-in beside the bulletin board."
+      }
+    ]
+  },
+  {
+    "key": "s23",
+    "title": "Try your own after-action",
+    "body": "Choose a recent meeting, shift or practice, or use the club example. Write one short answer to each of the five prompts. Describe a step that broke down in enough detail that someone could try a change tomorrow.",
+    "notes": "Allow four minutes. For a fictional case, label it practice and keep it off a resume.",
+    "aria": "Try your own after-action — practice activity",
+    "kind": "activity",
+    "field": "review"
+  },
+  {
+    "key": "s24",
+    "title": "What would a teammate notice?",
+    "body": "Imagine a teammate describing what it’s like to work with you. “They tell us early when a deadline is slipping” is something you can practice. What small habit would give someone reason to say that about you?",
+    "notes": "A learner can answer privately or on paper. [BRENEN MAP] Official theme from the published site/templates, but no chapter number/title is confirmed. Brenen will map this lesson to the actual chapter before the paid version ships. Do not invent a title.",
+    "aria": "What would a teammate notice — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s25",
+    "title": "Walk through a missed handoff",
+    "body": "Follow the annotated walkthrough below. Watch how a fictional club lead goes from a late room notice to a repair, a five-part review and a calendar cue for next week.",
+    "notes": "Recording brief: Brenen may replace the fictional walkthrough with one approved ownership example and one consistency miss. Do not supply a story on his behalf.",
+    "aria": "Walk through a missed handoff — annotated walkthrough",
+    "kind": "video"
+  },
+  {
+    "key": "s26",
+    "title": "Five traps you can spot",
+    "body": "A title without follow-through leaves teammates waiting. A dramatic promise can be hard to repeat. Blaming everyone stalls a repair. Taking responsibility for someone’s mistreatment is unfair. Giving a friend a special exception makes the standard unpredictable.",
+    "notes": "Ask the learner to choose the trap closest to the fictional case and name a visible alternative.",
+    "aria": "Five traps you can spot — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s27",
+    "title": "Restaurant example: a busy pickup counter",
+    "body": "In this hypothetical shift, two similar bags sit beside the register. The cashier compares the name on the receipt with the bag before handing it over, even while a line forms. The standard fits into one repeatable movement.",
+    "notes": "Illustration only. Replace with an approved restaurant excerpt if Brenen provides one. [BRENEN EXCERPT: 2–4 sentences from the mapped chapter, approved by Brenen]",
+    "aria": "Restaurant example: a busy pickup counter — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s28",
+    "title": "From behavior to a resume line",
+    "body": "Check the wording against what the student actually did. This example assumes the recaps and the switch to one sign-up sheet really happened.",
+    "notes": "If the learner has only planned the activity, use a completion line or wait until the work happens.",
+    "aria": "From behavior to a resume line — lesson slide",
+    "kind": "lesson",
+    "examples": [
+      {
+        "label": "Too vague",
+        "detail": "",
+        "text": "“Visionary leader who transformed operations.”"
+      },
+      {
+        "label": "An action and an observed result",
+        "detail": "",
+        "text": "“Ran a recap after each weekly club meeting and helped the group switch to a single sign-up sheet.”"
+      }
+    ]
+  },
+  {
+    "key": "s29",
+    "title": "Draft a bullet you could explain",
+    "body": "Write what you did, what changed and how you know. Leave out any number you did not record. If the example is fictional, keep it for practice. Only your own past work belongs in the builder.",
+    "notes": "Example when true: “Posted the agreed sign-up link after club meetings so volunteers could find their assignments.”",
+    "aria": "Draft a bullet you could explain — practice activity",
+    "kind": "activity",
+    "field": "bullet"
+  },
+  {
+    "key": "s30",
+    "title": "Plan three opportunities",
+    "body": "Choose one standard, a cue to notice a miss and a five-minute review. Pick at least three practice days out of the next seven. Choose a time you can keep on a busy day as well as a quiet one.",
+    "notes": "For a weekly club, one opportunity can be preparing the handoff or checking back afterward.",
+    "aria": "Plan three opportunities — practice activity",
+    "kind": "activity",
+    "field": "plan"
+  },
+  {
+    "key": "s31",
+    "title": "My Standards and First Week Plan",
+    "body": "Open your worksheet. It brings your standards, ownership rewrite, seven-day grid and after-action into one place. Fill it here or download a copy for your device.",
+    "notes": "Give students two minutes to transfer any paper notes and check the dates they chose.",
+    "aria": "My Standards and First Week Plan — takeaway worksheet",
+    "kind": "worksheet"
+  },
+  {
+    "key": "s32",
+    "title": "What a finished plan looks like",
+    "body": "A workable plan names an action, a cue and a review time. “After practice on Monday, Wednesday and Friday, I’ll post our next setup job before I leave. Friday evening I’ll check which posts I actually made.”",
+    "notes": "Encourage a smaller action if the plan depends on a perfect week.",
+    "aria": "What a finished plan looks like — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s33",
+    "title": "What to take with you",
+    "body": "Set a standard others can see. Own a repair you can make. Repeat one small commitment. Give people credit for identifiable work and check the process after the shift or meeting.",
+    "notes": "Ask learners to explain the difference between Chapter 3 and Chapter 6 using one example.",
+    "aria": "What to take with you — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s34",
+    "title": "From leading yourself to helping others",
+    "body": "The next leadership class looks at how a teammate learns, what they want to become and what motivates them. Before then, practice noticing a contribution you would otherwise overlook.",
+    "notes": "See and Develop People is an upcoming class.",
+    "aria": "From leading yourself to helping others — lesson slide",
+    "kind": "lesson"
+  },
+  {
+    "key": "s35",
+    "title": "How a completion can appear",
+    "body": "After you pass, you can preview a completion line or a skill you practiced. You decide whether to carry it into the builder. A real experience bullet can wait until you have done the work it describes.",
+    "notes": "The completion record describes finishing this FirstCareerSteps class.",
+    "aria": "How a completion can appear — lesson slide",
+    "kind": "resume"
+  },
+  {
+    "key": "s36",
+    "title": "Which action sets a standard?",
+    "body": "Read the club scenario and choose the action another person could see and repeat.",
+    "notes": "End check 1. Use an observable behavior as the deciding test.",
+    "aria": "Which action sets a standard — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s37",
+    "title": "Who owns the next move?",
+    "body": "Choose the reply that names the speaker’s part and gives the group a repair it can check.",
+    "notes": "End check 2. Distinguish a repair from an excuse.",
+    "aria": "Who owns the next move — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s38",
+    "title": "Which habit will last?",
+    "body": "Look for a routine that the student can repeat under ordinary conditions and verify after each meeting.",
+    "notes": "End check 3. Focus on the cue and the observable follow-through.",
+    "aria": "Which habit will last — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s39",
+    "title": "Which review changes the process?",
+    "body": "A useful review leaves someone able to change the way the work gets done. Choose a question that helps the group do that.",
+    "notes": "End check 4. Ask about the handoff rather than the character of a teammate.",
+    "aria": "Which review changes the process — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s40",
+    "title": "Which line belongs on a resume?",
+    "body": "Match the claim to the work the student actually did and the result the student can explain.",
+    "notes": "End check 5. Separate plans from completed actions.",
+    "aria": "Which line belongs on a resume — final quiz question",
+    "kind": "final"
+  },
+  {
+    "key": "s41",
+    "title": "Review your five decisions",
+    "body": "Check the reason behind each answer. Four correct answers complete the class. You can revisit any slide and try the check again as often as you like.",
+    "notes": "Review the missed concept and invite a fresh attempt without a penalty.",
+    "aria": "Review your five decisions — lesson slide",
+    "kind": "review"
+  },
+  {
+    "key": "s42",
+    "title": "Put your plan to work",
+    "body": "Take the worksheet with you. At your first chosen time, try the action once and mark what happened. After the third opportunity, decide what to keep or change. If you passed, you can also preview an addition to your resume below.",
+    "notes": "Close by naming the next real opportunity. Leave resume additions optional.",
+    "aria": "Put your plan to work — lesson slide",
+    "kind": "close"
+  }
+]
