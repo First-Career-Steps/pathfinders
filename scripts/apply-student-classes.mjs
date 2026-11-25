@@ -6,7 +6,13 @@ const uri = process.env.DATABASE_URL || process.env.DIRECT_DATABASE_URL;
 if (!uri || !uri.includes(ref)) throw new Error('Expected the FirstCareerSteps database connection.');
 const url = new URL(uri);
 if (!/\.supabase\.(com|co)$/.test(url.hostname)) throw new Error('Unexpected database host.');
-const db = new pg.Client({connectionString:uri,connectionTimeoutMillis:15000});
+// Use Supabase's published database trust root in addition to the system roots.
+const certResponse = await fetch('https://supabase-downloads.s3-ap-southeast-1.amazonaws.com/prod/ssl/prod-ca-2021.crt', {signal: AbortSignal.timeout(15000)});
+if (!certResponse.ok) throw new Error('Could not load the Supabase database root certificate.');
+const ca = await certResponse.text();
+if (!ca.startsWith('-----BEGIN CERTIFICATE-----')) throw new Error('Invalid Supabase database root certificate.');
+for (const key of ['sslmode','sslrootcert','sslcert','sslkey']) url.searchParams.delete(key);
+const db = new pg.Client({connectionString:url.href,ssl:{ca,rejectUnauthorized:true},connectionTimeoutMillis:15000});
 try {
  await db.connect();
  await db.query('begin');
